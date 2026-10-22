@@ -10,11 +10,13 @@ This repository is the **backup, production packet, reusable character library, 
 
 **Start here**
 
-- 🎮 **[Play the first build](game/index.html)** — the cel-shaded journey (serve locally; see below)
-- 📖 **[Open the illustrated report](index.html)** — 32 chapter treatments, casting, art direction, engineering, and sources
+- 🎮 **[Run the playable first build](game/README.md)** — the cel-shaded journey (serve locally; see below)
+- 📖 **[Read the illustrated report](index.html)** — 32 chapter treatments, casting, art direction, engineering, and sources (open locally)
 - 🧍 **[Browse the 3D character library](models/README.md)** — 19 characters, 23 rigged models, previews and download links
 - 🗂️ **[Read the model manifest](models/manifest.json)** — hashes, triangle counts, rigs, clips, and original filenames
 - ⬇️ **[Download the report ZIP](downloads/JosephSmith-Game-Report.zip)** — the whole packet in one file
+
+> GitHub displays `.html` files as source. Clone or download the repository and open `index.html` in a browser for the report, or serve the root and open `/game/` for the playable build.
 
 ---
 
