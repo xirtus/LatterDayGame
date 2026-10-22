@@ -1,0 +1,33 @@
+LOCAL CHARACTER PIPELINE
+
+Run from the JosephSmith project root after adding a model:
+  python3 tools/build_game_assets.py
+
+The manifest selects optimized GLBs from ../meshy without changing originals.
+Rigged candidates are preferred; unfinished or very dense originals are not
+silently treated as game-ready. Joseph's child/teen/young-adult identities are
+matched separately. Include child, teenage, or young adult in new file names.
+Two ambiguous existing young-Joseph rigs were visually checked: the original
+farm-suspenders model is youth, and its '(1)' formal-coat variant is young adult.
+Dedicated child assets are never replaced by a scaled-down adult likeness.
+The child now has a dedicated 10,322-triangle remeshed source. It is not yet
+rigged, so movement translates the model without claiming missing animation.
+A high-poly child-only fallback is permitted with an explicit manifest warning
+if the optimized export is temporarily absent; the source is never modified.
+Missing dedicated characters use explicitly provisional procedural figures,
+never another named historical person's likeness.
+
+The eight witnesses are Christian Whitmer, Jacob Whitmer, Peter Whitmer Jr.,
+John Whitmer, Hiram Page, Joseph Smith Sr., Hyrum Smith and Samuel H. Smith.
+They are not the Three Witnesses (Oliver Cowdery, David Whitmer, Martin Harris).
+
+Runtime converts materials to four-band toon shading and downsamples base
+color textures to 1024 pixels. Emissive/PBR maps are not used. Resources are
+loaded only for the current scene, reference-counted and released with actors.
+Animation support follows actual GLB clips. Where no idle/prayer clip exists,
+the actor uses a paused relaxed walk frame rather than claiming a bespoke
+performance. These rigs do not yet contain production facial/finger animation.
+
+Meshy file names can be matched case-insensitively by cast name. Christ's model
+must include Jesus or Christ in its file name; John Whitmer is distinguished
+from John the Baptist, and Joseph Smith Sr. from Joseph himself.

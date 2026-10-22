@@ -1,0 +1,6 @@
+{
+  "description": "Local MOSSlanding recordings. Keys may be lineId, chapter:objective:zero-based-line, or SPEAKER_ID|exact line text. Paths are relative to game/audio/. Explicit entries are preserved by the indexer.",
+  "lines": {},
+  "planned_line_count": 189,
+  "discovered_take_count": 0
+}

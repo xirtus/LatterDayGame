@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-22",
+  "supplied_references": [
+    {
+      "file": "art/references/user-character-01.png",
+      "source": "User attachment 1",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-02.png",
+      "source": "User attachment 2",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-03.png",
+      "source": "User attachment 3",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-04.png",
+      "source": "User attachment 4",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-05.png",
+      "source": "User attachment 5",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-06.png",
+      "source": "User attachment 6",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-07.png",
+      "source": "User attachment 7",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-08.png",
+      "source": "User attachment 8",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    },
+    {
+      "file": "art/references/user-character-09.png",
+      "source": "User attachment 9",
+      "identity": "Preserve the user's intended role assignment; the unlabeled attachment alone is not a reliable character-name inventory"
+    }
+  ],
+  "entries": [
+    {
+      "file": "art/characters-joseph-ages.png",
+      "prompt": "Use case: identity-preserve. Create a polished 3D CEL-SHADED CHARACTER MODEL DESIGN SHEET from the two supplied Joseph Smith references. Image1 is the ADULT Joseph identity and navy 1840s costume reference; image2 is the YOUTH Joseph identity and farm clothing reference. Preserve recognizable facial continuity, blue eyes, wavy light brown hair and dignified approachable humanity. A landscape artbook sheet with FIVE evenly spaced fully visible front-three-quarter A-pose figures: seven-year-old Joseph in simple 1810s clothes; fourteen-year-old Joseph in cream farm shirt brown trousers and period suspenders; twenty-three-year-old Joseph in an 1829 work shirt and waistcoat; thirty-eight-year-old Joseph in the navy coat waistcoat cream neckcloth of image1; the SAME thirty-eight-year-old face as a celestial stewardship variation in simple cream robes, no wings no armor no crown. Young and child versions must have correct differing height proportions, not scaled-down adult heads. This is a clean stylized 3D game render with sculpted smooth readable volumes, THREE OR FOUR CRISP DISCRETE shadow bands, warm brown ink contours #2a1a14, broad flat material colors, soft colored ambient fill, no photographic pores or cloth weave, no shiny PBR skin. Strong clear silhouette, expressive human face, NO aggressive triangular low-poly facets over cheeks, no chibi and no anime giant eyes. Neutral warm gray studio background and even neutral light, feet grounded on one baseline. Hands and fingers fully visible, fingers separated, arms angled down 30 degrees away from torso in relaxed modeling A-pose, at least 8% margin around every figure, never crop fingertips or shoes. Small face close-up row above showing curiosity prayer grief consolation joy for adult Joseph. Simple exact labels beneath five figures: 'CHILD', 'YOUTH', 'TRANSLATOR', 'NAUVOO', 'CELESTIAL'. No other text or decorative props. Production-oriented character concepts, not a claim of authenticated historical likeness. High resolution wide composition.",
+      "tool": "Built-in ImageGen",
+      "input_references": [
+        "art/references/user-character-01.png",
+        "art/references/user-character-02.png"
+      ],
+      "status": "Initial character concept proposal; does not establish approved likeness, topology, turnaround, or rig"
+    },
+    {
+      "file": "art/characters-family-witnesses.png",
+      "prompt": "Use case: stylized-concept. Asset type: 3D CEL-SHADED GAME CHARACTER MODEL lineup artbook sheet for a positive LDS historical Joseph Smith game set in1820s–1840s actual United States. EIGHT DIFFERENT characters in a two-row four-column panel sheet, each entire head hands body and feet completely inside its own frame with generous margin, each in relaxed modeling A-pose arms30 degrees out, fingers separated. All faces must be distinctive, plausible human proportions and ordinary practical dress. Top row: EMMA, late20s dark brown center-parted hair in a bun, clear warm intelligent eyes, practical dusty blue1830s dress cream collar brown shoes; OLIVER, mid20s lean precise schoolteacher with dark neatly parted hair, slate waistcoat long black coat cream shirt and small necktie, historically interpretive face not a celebrity; HYRUM, late30s broad sturdy older brother, dark wavy hair slightly fuller face than Joseph, charcoal frock coat light gray waistcoat; LUCY,50s maternal but strong expressive face, brown hair lightly graying at temples, muted plum dress shawl simple white cap. Bottom row: JOSEPH SR,50s gray-brown hair weathered kind face, brown work coat ochre waistcoat; ALVIN,mid20s sturdy broad-shouldered farmer light brown hair easy smile, russet waistcoat cream shirt brown trousers; MARTIN,40s rounder face receding hairline serious earnest gaze, olive-brown coat ochre waistcoat; DAVID,mid20s distinct long oval face short brown hair alert eyes, muted green waistcoat dark coat. Everyone recognizable by silhouette and face, no duplicated heads. 3D sculpted game look with broad flat matte colors, FOUR DISCRETE TOON SHADOW BANDS, strong warm brown ink #2a1a14 contours, gentle cream hemisphere lighting, no photorealistic pores, no cloth weave, no gloss, no aggressive faceted triangular cheeks. Restrained cel-shaded family adventure style, emotionally mature and beautiful. Gray-cream studio background, shared floor scale with adult height variation. No scenery props, hats may be separate small inset only if needed. Exact small label below each figure: 'EMMA', 'OLIVER', 'HYRUM', 'LUCY', 'JOSEPH SR', 'ALVIN', 'MARTIN', 'DAVID'. These are proposed designs, not documentary portraits. Crisp high-detail high-resolution contact sheet.",
+      "tool": "Built-in ImageGen",
+      "input_references": [],
+      "status": "Initial character concept proposal; does not establish approved likeness, topology, turnaround, or rig"
+    },
+    {
+      "file": "art/characters-community.png",
+      "prompt": "Use case: stylized-concept. Asset type: eight-character 3D CEL-SHADED GAME CHARACTER design sheet for an actual1830s–1844 LDS American historical game. Two rows of four isolated full-body character panels, generous border space, feet and fingers NEVER cropped, relaxed A-pose with arms angled30 degrees down and away from torso, separated hands. Proposed historically interpreted youthful-to-middle-aged characters, not their much older Utah photographic appearances. Top row: SIDNEY RIGDON,age40 broad long face high forehead swept dark hair clean-shaven dark charcoal frock coat black neckcloth expressive preacher hands; BRIGHAM YOUNG,age35–40 compact sturdy practical man brown hair clean-shaven, muted brown traveling coat olive waistcoat NO elderly white beard; ORSON PRATT,age29–33 narrow thoughtful face dark hair clean-shaven, deep green coat modest cream neckcloth, notebook small accessory inset; ELIZA R SNOW,age38–40 narrow intelligent face dark hair in period bun, lavender-gray1840s dress cream collar. Bottom row: NEWEL K WHITNEY,age40 round steady merchant face brown hair clean-shaven tobacco-brown coat ochre vest; ELIZABETH ANN WHITNEY,age40 practical warm composed woman center-parted brown hair pinned back, sage-green dress cream collar shawl; EDWARD PARTRIDGE,age40–45 dignified slender face high forehead dark hair clean-shaven, gray-brown coat cream shirt sober vest; LOUISA FOLLETT,age40s grounded grieving woman with dark hair streaked gray, deep muted teal dress charcoal shawl, strength and vulnerability. Make eight individual heads and silhouettes not variants of the same face. Beautiful sculpted smooth 3D human volumes, broad flat matte colors, FOUR CRISP DISCRETE TOON BANDS, clean warm brown ink #2a1a14 contours, cream fill light, no skin pores or cloth texture or metallic shine, no low-poly triangular faces, no modern fashion. Neutral warm gray studio background, no landscape, no steampunk inventions. Exact labels under figures: 'SIDNEY', 'BRIGHAM', 'ORSON', 'ELIZA', 'NEWEL', 'ELIZABETH', 'EDWARD', 'LOUISA'. High-detail modeling reference art, not final models or authenticated likenesses.",
+      "tool": "Built-in ImageGen",
+      "input_references": [],
+      "status": "Initial character concept proposal; does not establish approved likeness, topology, turnaround, or rig"
+    },
+    {
+      "file": "art/characters-sacred-visitors.png",
+      "prompt": "Use case: stylized-concept. Asset type: sacred visitors 3D CEL-SHADED CHARACTER design sheet for a reverent LDS Joseph Smith game. Four separate equal columns with each entire head hands feet in generous border margins, relaxed neutral modeling A-pose30 degrees with clearly separated hands, human proportions. Four distinct kind dignified identities. Left: CHRIST, adult Middle Eastern man with olive complexion, dark shoulder-length hair and short full beard, simple cream robe with muted warm mantle, bare or simply sandaled feet, visible expressive face, no wings no crown. Second: MORONI as the risen ANGEL VISITOR to Joseph Smith1823, a distinct mature man with composed warm expression, medium brown hair, plain luminous off-white full-length robe, no feather wings, NO leather armor and NO trumpet accessory (bedroom visit reference), no metal gauntlets. Third: JOHN THE BAPTIST as the HEAVENLY VISITOR1829, distinct mature face dark hair and textured beard, simple pale robe, NOT a ragged warrior, no wings or armor, a restrained older mature face. Fourth: THE FATHER, a visually distinct older dignified embodied man with silver hair and beard, cream white robe, compassionate face, no crown, no huge muscles, no wings. All are clearly human forms in a restrained sculpted realtime3D toon look, FOUR HARD SHADOW BANDS, broad flat matte color regions, warm brown ink #2a1a14 contours, a small pearl rim light rather than blown-out faces. Keep all materials dry matte with no photorealistic fabric, skin grain or PBR gloss; smooth deliberate face planes not angular triangular facets; no modern fantasy fashion. Neutral warm gray studio background with shared baseline and the same scale, no cosmic scenery, no magic circles. Add small secondary three-quarter bust inset above each full body for expression clarity. Exact simple labels beneath: 'CHRIST', 'MORONI', 'JOHN THE BAPTIST', 'THE FATHER'. Sacred artistic proposals, not authenticated portraits. High resolution landscape composition.",
+      "tool": "Built-in ImageGen",
+      "input_references": [],
+      "status": "Initial character concept proposal; does not establish approved likeness, topology, turnaround, or rig"
+    }
+  ]
+}

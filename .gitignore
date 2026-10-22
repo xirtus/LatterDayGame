@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+game/evidence/test-results.json
+*.tmp
+*.blend1
+__pycache__/

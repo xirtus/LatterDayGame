@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#182d26">
+  <meta name="description" content="A playable cel-shaded journey through the life of Joseph Smith, and the gathering of Zion.">
+  <title>The Gathering of Zion · Joseph Smith</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game" aria-label="Three-dimensional game world"><canvas id="world" tabindex="0" aria-label="Explore the world. W A S D to walk, drag to look, E to interact."></canvas></main>
+  <div class="vignette" aria-hidden="true"></div>
+  <div id="loading" class="loading"><span class="sun-mark">✧</span><span id="load-label">Gathering the world…</span></div>
+  <section id="menu" class="menu" aria-labelledby="game-title">
+    <div class="menu-shade"></div>
+    <div class="menu-content">
+      <p class="eyebrow">A life. A calling. A people.</p>
+      <span class="ornament" aria-hidden="true">✧</span>
+      <h1 id="game-title">The Gathering<br><em>of Zion</em></h1>
+      <p class="menu-subtitle">The journey of Joseph Smith</p>
+      <div class="fine-rule"></div>
+      <p class="menu-copy">From a quiet grove to a world entrusted to love.<br>Walk the story. Listen. Serve. Seek the light.</p>
+      <button id="begin" class="primary">Begin the journey <span>→</span></button>
+      <button id="resume" class="text-button" hidden>Continue your journey</button>
+      <div class="menu-links"><button id="choose-chapter" class="text-button">Explore chapters</button><span>·</span><button id="witnesses" class="text-button">The plates &amp; witnesses</button></div>
+      <p class="build-note">PLAYABLE FIRST BUILD · LOCAL MESHy CHARACTERS<br>Devotional historical drama. Celestial chapters are imaginative.</p>
+    </div>
+    <a class="report-link" href="../index.html">Design &amp; historical sources ↗</a>
+    <p class="menu-corner">NEW YORK · OHIO · MISSOURI · NAUVOO · BEYOND</p>
+  </section>
+  <div id="hud" hidden>
+    <header class="hud-header">
+      <button id="menu-button" class="brand-button" title="Pause and open menu" aria-label="Open menu">✧</button>
+      <div class="chapter-heading"><p id="chapter-location" class="eyebrow"></p><h2 id="chapter-title"></h2></div>
+      <div class="hud-tools"><button id="journal-button" class="icon-button" title="Journey journal [J]">Journey <kbd>J</kbd></button><button id="settings-button" class="icon-button" title="Settings">⚙</button></div>
+    </header>
+    <div id="chapter-banner" class="chapter-banner" hidden><span id="banner-date" class="eyebrow"></span><h2 id="banner-title"></h2><p id="banner-place"></p></div>
+    <aside class="objective-card"><div class="objective-top"><span class="eyebrow">Your path</span><span id="objective-count"></span></div><div class="objective-line"><span class="objective-diamond">◇</span><h3 id="objective-title"></h3></div><p id="objective-hint"></p><div class="progress-track"><span id="objective-progress"></span></div></aside>
+    <div id="waypoint" class="waypoint" aria-hidden="true"><span>◇</span><small id="waypoint-distance"></small></div>
+    <div id="crosshair" class="crosshair" hidden aria-hidden="true">·</div>
+    <div id="interaction" class="interaction" hidden><button id="interact-button"><kbd>E</kbd><span id="interaction-label">Interact</span></button><div id="hold-progress"></div></div>
+    <section id="dialogue" class="dialogue" aria-live="polite" hidden><p id="speaker" class="eyebrow"></p><p id="dialogue-text"></p><div class="dialogue-footer"><span id="voice-note">Dramatized dialogue · text performance</span><button id="next-line">Continue <kbd>Space</kbd> →</button></div></section>
+    <section id="chapter-complete" class="chapter-complete" hidden><p class="eyebrow">A thread in the gathering</p><h2 id="complete-title"></h2><p id="complete-copy"></p><button id="next-chapter" class="primary">Continue the story <span>→</span></button><button id="complete-journal" class="text-button">Open the journey</button></section>
+    <footer class="hud-footer"><div id="control-hint"><kbd>W A S D</kbd> Walk <span>·</span> Drag to look <span>·</span> <kbd>E</kbd> Act</div><div class="camera-switch" aria-label="Camera mode"><button data-camera="third" class="active">Third <kbd>3</kbd></button><button data-camera="first">First <kbd>1</kbd></button><button data-camera="free">Free <kbd>V</kbd></button></div></footer>
+    <div class="touch-controls"><div class="touch-walk"><button data-move="KeyW" aria-label="Walk forward">↑</button><div><button data-move="KeyA" aria-label="Walk left">←</button><button data-move="KeyS" aria-label="Walk backward">↓</button><button data-move="KeyD" aria-label="Walk right">→</button></div></div><button id="touch-act" aria-label="Interact">Act</button></div>
+    <p id="toast" class="toast" role="status" hidden></p>
+  </div>
+  <dialog id="journal" class="journal"><div class="dialog-header"><div><p class="eyebrow">The life &amp; the light</p><h2>The journey</h2></div><button data-close="journal" class="close-button" aria-label="Close journal">×</button></div><div class="journal-tabs"><button id="tab-chapters" class="active">Chapters</button><button id="tab-history">This moment</button><button id="tab-cast">Characters</button></div><div id="journal-content"></div><p class="journal-footnote">Historical outcomes are fixed; your path through each moment is your own.<br>Later visions and time-travel episodes are clearly marked imaginative.</p></dialog>
+  <dialog id="settings" class="settings"><div class="dialog-header"><div><p class="eyebrow">Make space for wonder</p><h2>Settings &amp; controls</h2></div><button data-close="settings" class="close-button" aria-label="Close settings">×</button></div><label class="setting-row"><span>Ambient sound</span><input id="sound" type="checkbox" checked></label><label class="setting-row"><span>Voice playback <small>Local MOSSlanding takes, when available</small></span><input id="voices" type="checkbox" checked></label><label class="setting-row"><span>Reduced motion</span><input id="reduced-motion" type="checkbox"></label><label class="setting-row"><span>Rendering quality</span><select id="quality"><option value="high">High</option><option value="low">Performance</option></select></label><label class="setting-row"><span>Look sensitivity</span><input id="sensitivity" type="range" min="1" max="8" value="3"></label><div class="control-list"><p><kbd>W A S D</kbd> / arrows · walk &nbsp; <kbd>Shift</kbd> · run</p><p>Drag · look &nbsp; scroll · third-person distance</p><p><kbd>1</kbd> first person &nbsp; <kbd>3</kbd> third person &nbsp; <kbd>V</kbd> free camera</p><p>Free camera: <kbd>Q</kbd> down &nbsp; <kbd>R</kbd> up. Free camera never moves Joseph.</p><p><kbd>E</kbd> interact / hold to pray &nbsp; <kbd>Space</kbd> continue dialogue</p><p><kbd>J</kbd> journal &nbsp; <kbd>Esc</kbd> pause</p><p>Touch: arrows to walk; drag the world to look; tap Act.</p></div><button id="reset-save" class="text-button danger">Reset journey progress</button><p class="small-note">Progress stays in this browser. No accounts, analytics, or external services. Voices are not synthesized; missing recordings remain subtitled.</p></dialog>
+  <div id="fatal" class="fatal" role="alert" hidden><h1>The world could not open</h1><p id="fatal-detail"></p><a href="../index.html">Return to the design report</a><button onclick="location.reload()">Try again</button></div>
+  <script type="module" src="dist/game.js"></script>
+</body>
+</html>

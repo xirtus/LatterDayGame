@@ -1,0 +1,3992 @@
+{
+  "generated_at": "2026-10-22T12:17:07+00:00",
+  "source_folder": "meshy",
+  "conventions": {
+    "format": "binary glTF 2.0 (.glb)",
+    "up_axis": "Y",
+    "units": "meters",
+    "naming": "<character>[-<age>]-<role>.glb",
+    "roles": [
+      "rigged",
+      "tpose",
+      "source",
+      "remeshed",
+      "remeshed-10k",
+      "optimized",
+      "10k"
+    ]
+  },
+  "totals": {
+    "characters": 19,
+    "models": 57,
+    "bytes": 1641039824,
+    "rigged_models": 23
+  },
+  "characters": [
+    {
+      "id": "joseph-smith-sr",
+      "name": "Joseph Smith Sr.",
+      "group": "Family",
+      "blurb": "Joseph's father: a hard-working New England farmer and patriarch of the Smith family.",
+      "folder": "models/joseph-smith-sr",
+      "preview": "models/joseph-smith-sr/preview.png",
+      "primary_model": "models/joseph-smith-sr/joseph-smith-sr-rigged.glb",
+      "files": [
+        {
+          "character_id": "joseph-smith-sr",
+          "character": "Joseph Smith Sr.",
+          "group": "Family",
+          "age": null,
+          "role": "rigged",
+          "title": "Joseph Smith Sr. \u2014 rigged & animated",
+          "file": "models/joseph-smith-sr/joseph-smith-sr-rigged.glb",
+          "source_file": "meshy/josephsmithSR_father_n_All_Animations.glb",
+          "sha256": "d82f878938c4cacba97bef4108867eb60fe667152f8f00168f300c9f5b25e530",
+          "bytes": 21487548,
+          "primary": true,
+          "triangles": 10380,
+          "vertices": 13548,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            },
+            {
+              "name": "Confused_Scratch",
+              "channels": 46,
+              "duration_seconds": 11.533
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.85,
+            -0.0,
+            -0.1884
+          ],
+          "bbox_max": [
+            0.85,
+            1.6048,
+            0.1884
+          ],
+          "height_m": 1.605,
+          "emissive_material": true,
+          "glb_declared_bytes": 21487548,
+          "preview": "models/joseph-smith-sr/joseph-smith-sr-rigged.png"
+        },
+        {
+          "character_id": "joseph-smith-sr",
+          "character": "Joseph Smith Sr.",
+          "group": "Family",
+          "age": null,
+          "role": "source",
+          "title": "Joseph Smith Sr. \u2014 source scan",
+          "file": "models/joseph-smith-sr/joseph-smith-sr-source.glb",
+          "source_file": "meshy/josephsmithsr.glb",
+          "sha256": "5af6d8e083775eb890b8c793337d7a1fea8001bef2b7bed01f8cb3afd4a97868",
+          "bytes": 32766436,
+          "primary": false,
+          "triangles": 405450,
+          "vertices": 218267,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9523,
+            -0.9,
+            -0.21
+          ],
+          "bbox_max": [
+            0.9515,
+            0.8979,
+            0.212
+          ],
+          "height_m": 1.798,
+          "emissive_material": false,
+          "glb_declared_bytes": 32766436,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "joseph-smith",
+      "name": "Joseph Smith",
+      "group": "Joseph Smith",
+      "blurb": "The central figure of the Restoration, modeled at child, teenage, and adult ages.",
+      "folder": "models/joseph-smith",
+      "preview": "models/joseph-smith/preview.png",
+      "primary_model": null,
+      "files": [
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": null,
+          "role": "rigged",
+          "title": "Joseph Smith \u2014 rigged & animated",
+          "file": "models/joseph-smith/joseph-smith-rigged.glb",
+          "source_file": "meshy/josephsmith_rigged.glb",
+          "sha256": "87b53218e78296d441a2254da78de8749b8a0c9c3ec25080fb3ded516bb6fea2",
+          "bytes": 6988532,
+          "primary": true,
+          "triangles": 10242,
+          "vertices": 13431,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 2048,
+              "height": 2048
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7596,
+            0.0,
+            -0.1901
+          ],
+          "bbox_max": [
+            0.7596,
+            1.75,
+            0.1901
+          ],
+          "height_m": 1.75,
+          "emissive_material": true,
+          "glb_declared_bytes": 6988532,
+          "preview": "models/joseph-smith/joseph-smith-rigged.png"
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": null,
+          "role": "remeshed",
+          "title": "Joseph Smith \u2014 remeshed",
+          "file": "models/joseph-smith/joseph-smith-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_joseph_smith_remesh_1_1022100801_texture.glb",
+          "sha256": "56e8d6eea319ae22aecbed01085e6587b184a5e3f96fc73c55d4723a83ba09fc",
+          "bytes": 12928236,
+          "primary": false,
+          "triangles": 10242,
+          "vertices": 13379,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.83,
+            -0.9519,
+            -0.2055
+          ],
+          "bbox_max": [
+            0.8216,
+            0.9507,
+            0.2078
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 12928236,
+          "preview": null
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": null,
+          "role": "tpose",
+          "title": "Joseph Smith \u2014 T-pose",
+          "file": "models/joseph-smith/joseph-smith-tpose.glb",
+          "source_file": "meshy/Meshy_AI_joseph_smith_full_bod_1022100636_image-to-3d-texture.glb",
+          "sha256": "503077f0767ee4dbb42a9dbf6ba5955f70545c66de9dc4dfaea26e5714e379a5",
+          "bytes": 16318920,
+          "primary": false,
+          "triangles": 326124,
+          "vertices": 177914,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8305,
+            -0.952,
+            -0.2061
+          ],
+          "bbox_max": [
+            0.8216,
+            0.9509,
+            0.2078
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 16318920,
+          "preview": null
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "child",
+          "role": "rigged",
+          "title": "Joseph Smith (child) \u2014 rigged & animated",
+          "file": "models/joseph-smith/joseph-smith-child-rigged.glb",
+          "source_file": "meshy/Meshy_AI_child_joseph_smith_ri_All_Animations.glb",
+          "sha256": "e4ddabda3b6e5fdf91af743f5a81b7359b85a2413a47096b837becec55f838a2",
+          "bytes": 23560104,
+          "primary": true,
+          "triangles": 10322,
+          "vertices": 16608,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.6289,
+            -0.0,
+            -0.1445
+          ],
+          "bbox_max": [
+            0.6319,
+            1.45,
+            0.146
+          ],
+          "height_m": 1.45,
+          "emissive_material": true,
+          "glb_declared_bytes": 23560104,
+          "preview": "models/joseph-smith/joseph-smith-child-rigged.png"
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "child",
+          "role": "10k",
+          "title": "Joseph Smith (child) \u2014 10k mesh",
+          "file": "models/joseph-smith/joseph-smith-child-10k.glb",
+          "source_file": "meshy/Meshy_AI_child_joseph_smith_10_1022120839_texture.glb",
+          "sha256": "ae5ae81712fbf5d18a899509be2dad8941bb29fda2258fb7c548efc8d1edb745",
+          "bytes": 28590936,
+          "primary": false,
+          "triangles": 10322,
+          "vertices": 16548,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8277,
+            -0.9517,
+            -0.1863
+          ],
+          "bbox_max": [
+            0.8266,
+            0.9502,
+            0.188
+          ],
+          "height_m": 1.902,
+          "emissive_material": false,
+          "glb_declared_bytes": 28590936,
+          "preview": null
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "child",
+          "role": "source",
+          "title": "Joseph Smith (child) \u2014 source scan",
+          "file": "models/joseph-smith/joseph-smith-child-source.glb",
+          "source_file": "meshy/Meshy_AI_child_joseph_smith_1022120644_image-to-3d-texture.glb",
+          "sha256": "ebdd58fda7f5a5b4733bbd9d60e0843a97efbc36d036ff6835288132cc2080d8",
+          "bytes": 41162320,
+          "primary": false,
+          "triangles": 580192,
+          "vertices": 314362,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8279,
+            -0.9521,
+            -0.1866
+          ],
+          "bbox_max": [
+            0.8271,
+            0.9509,
+            0.1885
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 41162320,
+          "preview": null
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "teen",
+          "role": "rigged",
+          "title": "Joseph Smith (teenage) \u2014 rigged & animated",
+          "file": "models/joseph-smith/joseph-smith-teen-rigged.glb",
+          "source_file": "meshy/Meshy_AI_young_joseph_smith_ri_All_Animations (1).glb",
+          "sha256": "f36eed8c1f36dc9ad666ab1ff14e94c82e08f6e5f3976698c59bf03c6798ea69",
+          "bytes": 20794768,
+          "primary": true,
+          "triangles": 10310,
+          "vertices": 14423,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7624,
+            -0.0,
+            -0.1924
+          ],
+          "bbox_max": [
+            0.7642,
+            1.75,
+            0.1961
+          ],
+          "height_m": 1.75,
+          "emissive_material": true,
+          "glb_declared_bytes": 20794768,
+          "preview": "models/joseph-smith/joseph-smith-teen-rigged.png"
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "teen",
+          "role": "rigged",
+          "title": "Joseph Smith (teenage) \u2014 rigged & animated",
+          "file": "models/joseph-smith/joseph-smith-teen-rigged-alt.glb",
+          "source_file": "meshy/Meshy_AI_young_joseph_smith_ri_All_Animations.glb",
+          "sha256": "e001754b5939fc847f11e823d85000e876bb53f2566e77e34af341c420541e02",
+          "bytes": 14639460,
+          "primary": false,
+          "triangles": 19726,
+          "vertices": 14883,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7169,
+            0.0,
+            -0.1687
+          ],
+          "bbox_max": [
+            0.7234,
+            1.7,
+            0.1739
+          ],
+          "height_m": 1.7,
+          "emissive_material": true,
+          "glb_declared_bytes": 14639460,
+          "preview": null
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "teen",
+          "role": "source",
+          "title": "Joseph Smith (teenage) \u2014 source scan",
+          "file": "models/joseph-smith/joseph-smith-teen-source-alt.glb",
+          "source_file": "meshy/Meshy_AI_young_joseph_smith_1022101830_image-to-3d-texture.glb",
+          "sha256": "2ac0b54f584898bd8b9a2dbe0e7d13c934b82af8824cdbeae4874a38d15287d2",
+          "bytes": 34815928,
+          "primary": false,
+          "triangles": 413050,
+          "vertices": 224730,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8155,
+            -0.9519,
+            -0.1903
+          ],
+          "bbox_max": [
+            0.8144,
+            0.9508,
+            0.1878
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 34815928,
+          "preview": null
+        },
+        {
+          "character_id": "joseph-smith",
+          "character": "Joseph Smith",
+          "group": "Joseph Smith",
+          "age": "teen",
+          "role": "source",
+          "title": "Joseph Smith (teenage) \u2014 source scan",
+          "file": "models/joseph-smith/joseph-smith-teen-source.glb",
+          "source_file": "meshy/Meshy_AI_young_joseph_smith_1022120120_image-to-3d-texture.glb",
+          "sha256": "bcccf816eeb97c972370dc9970ee92a31b2cc041418d13295c571ee6ce1dc4ad",
+          "bytes": 34890708,
+          "primary": false,
+          "triangles": 445572,
+          "vertices": 241120,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8306,
+            -0.952,
+            -0.2106
+          ],
+          "bbox_max": [
+            0.8291,
+            0.9505,
+            0.209
+          ],
+          "height_m": 1.902,
+          "emissive_material": false,
+          "glb_declared_bytes": 34890708,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "emma-smith",
+      "name": "Emma Hale Smith",
+      "group": "Family",
+      "blurb": "Joseph's wife, principal scribe during the translation, and a leader in the early Relief Society.",
+      "folder": "models/emma-smith",
+      "preview": "models/emma-smith/preview.png",
+      "primary_model": "models/emma-smith/emma-smith-rigged.glb",
+      "files": [
+        {
+          "character_id": "emma-smith",
+          "character": "Emma Hale Smith",
+          "group": "Family",
+          "age": null,
+          "role": "rigged",
+          "title": "Emma Hale Smith \u2014 rigged & animated",
+          "file": "models/emma-smith/emma-smith-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Emma_Smith_Rigged_All_Animations.glb",
+          "sha256": "a48b76aabdc89a9b63d705265b834817bb09f8240108fe5e8eff9a004c8d1fa5",
+          "bytes": 18976068,
+          "primary": true,
+          "triangles": 10231,
+          "vertices": 21506,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 22,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 44,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 44,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7789,
+            -0.0,
+            -0.2289
+          ],
+          "bbox_max": [
+            0.7949,
+            1.68,
+            0.2279
+          ],
+          "height_m": 1.68,
+          "emissive_material": true,
+          "glb_declared_bytes": 18976068,
+          "preview": "models/emma-smith/emma-smith-rigged.png"
+        },
+        {
+          "character_id": "emma-smith",
+          "character": "Emma Hale Smith",
+          "group": "Family",
+          "age": null,
+          "role": "10k",
+          "title": "Emma Hale Smith \u2014 10k mesh",
+          "file": "models/emma-smith/emma-smith-10k.glb",
+          "source_file": "meshy/Meshy_AI_Emma_Smith_10k_1022101519_texture.glb",
+          "sha256": "9a2cf382822c3ebc18b94d4c59dfe42cecaa4b8a367b2c8d80bae6443b4eccc0",
+          "bytes": 25145784,
+          "primary": false,
+          "triangles": 10231,
+          "vertices": 21419,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9018,
+            -0.9507,
+            -0.2428
+          ],
+          "bbox_max": [
+            0.9012,
+            0.9507,
+            0.2418
+          ],
+          "height_m": 1.901,
+          "emissive_material": false,
+          "glb_declared_bytes": 25145784,
+          "preview": null
+        },
+        {
+          "character_id": "emma-smith",
+          "character": "Emma Hale Smith",
+          "group": "Family",
+          "age": null,
+          "role": "source",
+          "title": "Emma Hale Smith \u2014 source scan",
+          "file": "models/emma-smith/emma-smith-source.glb",
+          "source_file": "meshy/Meshy_AI_Emma_Smith_1022101456_image-to-3d-texture.glb",
+          "sha256": "5b2abd1f75ee88891cea6fd916013c929860bf7640cfc6b33430359837d6b5f0",
+          "bytes": 59716604,
+          "primary": false,
+          "triangles": 1319208,
+          "vertices": 728628,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9032,
+            -0.9524,
+            -0.2452
+          ],
+          "bbox_max": [
+            0.9022,
+            0.9512,
+            0.2439
+          ],
+          "height_m": 1.904,
+          "emissive_material": false,
+          "glb_declared_bytes": 59716604,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "hyrum-smith",
+      "name": "Hyrum Smith",
+      "group": "Family",
+      "blurb": "Joseph's older brother, Patriarch to the Church, and his companion at Carthage.",
+      "folder": "models/hyrum-smith",
+      "preview": "models/hyrum-smith/preview.png",
+      "primary_model": "models/hyrum-smith/hyrum-smith-rigged.glb",
+      "files": [
+        {
+          "character_id": "hyrum-smith",
+          "character": "Hyrum Smith",
+          "group": "Family",
+          "age": null,
+          "role": "rigged",
+          "title": "Hyrum Smith \u2014 rigged & animated",
+          "file": "models/hyrum-smith/hyrum-smith-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Hyrum_Smith_Rigged_All_Animations.glb",
+          "sha256": "59ee1130fa4838bf658cc6f652414fb309939dd57eabfeb035f731c3b99edb8b",
+          "bytes": 24249172,
+          "primary": true,
+          "triangles": 30728,
+          "vertices": 29228,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.6684,
+            -0.0,
+            -0.2001
+          ],
+          "bbox_max": [
+            0.666,
+            1.75,
+            0.2074
+          ],
+          "height_m": 1.75,
+          "emissive_material": true,
+          "glb_declared_bytes": 24249172,
+          "preview": "models/hyrum-smith/hyrum-smith-rigged.png"
+        },
+        {
+          "character_id": "hyrum-smith",
+          "character": "Hyrum Smith",
+          "group": "Family",
+          "age": null,
+          "role": "remeshed",
+          "title": "Hyrum Smith \u2014 remeshed",
+          "file": "models/hyrum-smith/hyrum-smith-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_Hyrum_Smith_Remeshed_1022103811_texture.glb",
+          "sha256": "743fc11089dabc2a04ab6199bacd59b517ec2d9378992baceadc3662ccc2d2ea",
+          "bytes": 29660184,
+          "primary": false,
+          "triangles": 30843,
+          "vertices": 29321,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7267,
+            -0.9522,
+            -0.2193
+          ],
+          "bbox_max": [
+            0.7258,
+            0.9506,
+            0.2164
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 29660184,
+          "preview": null
+        },
+        {
+          "character_id": "hyrum-smith",
+          "character": "Hyrum Smith",
+          "group": "Family",
+          "age": null,
+          "role": "source",
+          "title": "Hyrum Smith \u2014 source scan",
+          "file": "models/hyrum-smith/hyrum-smith-source.glb",
+          "source_file": "meshy/Meshy_AI_Hyrum_Smith_1022103634_image-to-3d-texture.glb",
+          "sha256": "e80cd69541e78d26425c19ff00f3a38189f2d158fd074a4291a77d88616f3bab",
+          "bytes": 35537756,
+          "primary": false,
+          "triangles": 397422,
+          "vertices": 214409,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7269,
+            -0.9522,
+            -0.2194
+          ],
+          "bbox_max": [
+            0.7258,
+            0.951,
+            0.2165
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 35537756,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "lucy-mack-smith",
+      "name": "Lucy Mack Smith",
+      "group": "Family",
+      "blurb": "Joseph's mother, family matriarch, and author of a foundational family memoir.",
+      "folder": "models/lucy-mack-smith",
+      "preview": "models/lucy-mack-smith/preview.png",
+      "primary_model": "models/lucy-mack-smith/lucy-mack-smith-rigged.glb",
+      "files": [
+        {
+          "character_id": "lucy-mack-smith",
+          "character": "Lucy Mack Smith",
+          "group": "Family",
+          "age": null,
+          "role": "rigged",
+          "title": "Lucy Mack Smith \u2014 rigged & animated",
+          "file": "models/lucy-mack-smith/lucy-mack-smith-rigged.glb",
+          "source_file": "meshy/luckymacksmith_Rigge_All_Animations.glb",
+          "sha256": "897a7cc92730801bec72ffcfc4c39cc3ff3ecc93809bc4c7f958ce3b937febc9",
+          "bytes": 13580140,
+          "primary": true,
+          "triangles": 18549,
+          "vertices": 15747,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8091,
+            -0.0,
+            -0.2928
+          ],
+          "bbox_max": [
+            0.8111,
+            1.7,
+            0.2903
+          ],
+          "height_m": 1.7,
+          "emissive_material": true,
+          "glb_declared_bytes": 13580140,
+          "preview": "models/lucy-mack-smith/lucy-mack-smith-rigged.png"
+        },
+        {
+          "character_id": "lucy-mack-smith",
+          "character": "Lucy Mack Smith",
+          "group": "Family",
+          "age": null,
+          "role": "10k",
+          "title": "Lucy Mack Smith \u2014 10k mesh",
+          "file": "models/lucy-mack-smith/lucy-mack-smith-10k.glb",
+          "source_file": "meshy/Meshy_Lucy_mack_smith_10k_1022112435_texture.glb",
+          "sha256": "5ca239817ef5e25064f796324727cea5dbd8fbdaf6ae684c0704d65099ee2cd7",
+          "bytes": 17010660,
+          "primary": false,
+          "triangles": 18559,
+          "vertices": 15671,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9024,
+            -0.9516,
+            -0.3272
+          ],
+          "bbox_max": [
+            0.91,
+            0.9497,
+            0.3273
+          ],
+          "height_m": 1.901,
+          "emissive_material": false,
+          "glb_declared_bytes": 17010660,
+          "preview": null
+        },
+        {
+          "character_id": "lucy-mack-smith",
+          "character": "Lucy Mack Smith",
+          "group": "Family",
+          "age": null,
+          "role": "source",
+          "title": "Lucy Mack Smith \u2014 source scan",
+          "file": "models/lucy-mack-smith/lucy-mack-smith-source.glb",
+          "source_file": "meshy/lucymacksmith.glb",
+          "sha256": "c017c795e69de88698733c992be82d3c9427d025b708664e6bc3237613704f16",
+          "bytes": 42629932,
+          "primary": false,
+          "triangles": 802588,
+          "vertices": 432403,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9134,
+            -0.9517,
+            -0.3306
+          ],
+          "bbox_max": [
+            0.9138,
+            0.9508,
+            0.3288
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 42629932,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "brigham-young",
+      "name": "Brigham Young",
+      "group": "Church leadership",
+      "blurb": "Apostle and later second President of the Church, who led the westward migration.",
+      "folder": "models/brigham-young",
+      "preview": "models/brigham-young/preview.png",
+      "primary_model": "models/brigham-young/brigham-young-rigged.glb",
+      "files": [
+        {
+          "character_id": "brigham-young",
+          "character": "Brigham Young",
+          "group": "Church leadership",
+          "age": null,
+          "role": "rigged",
+          "title": "Brigham Young \u2014 rigged & animated",
+          "file": "models/brigham-young/brigham-young-rigged.glb",
+          "source_file": "meshy/Brigham_Young_Rigged.glb",
+          "sha256": "09ec7e72bdfdfa6be274ee6b440bc031ea9f5b81c48dd057dc11f0922f94d309",
+          "bytes": 18261864,
+          "primary": true,
+          "triangles": 10257,
+          "vertices": 14338,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 24,
+          "joint_names": [
+            "Hips",
+            "LeftUpLeg",
+            "LeftLeg",
+            "LeftFoot",
+            "LeftToeBase",
+            "RightUpLeg",
+            "RightLeg",
+            "RightFoot",
+            "RightToeBase",
+            "Spine02",
+            "Spine01",
+            "Spine",
+            "LeftShoulder",
+            "LeftArm",
+            "LeftForeArm",
+            "LeftHand",
+            "RightShoulder",
+            "RightArm",
+            "RightForeArm",
+            "RightHand",
+            "neck",
+            "Head",
+            "head_end",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Armature|clip0|baselayer",
+              "channels": 72,
+              "duration_seconds": 0.033
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7695,
+            0.0,
+            -0.1919
+          ],
+          "bbox_max": [
+            0.7648,
+            1.7,
+            0.1976
+          ],
+          "height_m": 1.7,
+          "emissive_material": true,
+          "glb_declared_bytes": 18261864,
+          "preview": "models/brigham-young/brigham-young-rigged.png"
+        },
+        {
+          "character_id": "brigham-young",
+          "character": "Brigham Young",
+          "group": "Church leadership",
+          "age": null,
+          "role": "10k",
+          "title": "Brigham Young \u2014 10k mesh",
+          "file": "models/brigham-young/brigham-young-10k.glb",
+          "source_file": "meshy/Meshy_AI_Brigham_Young_10k_1022104448_texture.glb",
+          "sha256": "caf01b3cd11e002d507dd10b14ba6330d250766e9b7d7a572c10a148c5c9d923",
+          "bytes": 24017436,
+          "primary": false,
+          "triangles": 10258,
+          "vertices": 14279,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8627,
+            -0.9508,
+            -0.207
+          ],
+          "bbox_max": [
+            0.8542,
+            0.9504,
+            0.2183
+          ],
+          "height_m": 1.901,
+          "emissive_material": false,
+          "glb_declared_bytes": 24017436,
+          "preview": null
+        },
+        {
+          "character_id": "brigham-young",
+          "character": "Brigham Young",
+          "group": "Church leadership",
+          "age": null,
+          "role": "source",
+          "title": "Brigham Young \u2014 source scan",
+          "file": "models/brigham-young/brigham-young-source.glb",
+          "source_file": "meshy/Meshy_AI_Brigham_Young_Model_1022104140_image-to-3d-texture.glb",
+          "sha256": "9c827bb29d3a7bcbd4715882cff89c80cb7de59f221739ea3e1a51281ec5a022",
+          "bytes": 33081196,
+          "primary": false,
+          "triangles": 520714,
+          "vertices": 283003,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8629,
+            -0.9517,
+            -0.2075
+          ],
+          "bbox_max": [
+            0.8558,
+            0.9505,
+            0.2189
+          ],
+          "height_m": 1.902,
+          "emissive_material": false,
+          "glb_declared_bytes": 33081196,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "oliver-cowdery",
+      "name": "Oliver Cowdery",
+      "group": "Witnesses",
+      "blurb": "Principal scribe during the Book of Mormon translation and one of the Three Witnesses.",
+      "folder": "models/oliver-cowdery",
+      "preview": "models/oliver-cowdery/preview.png",
+      "primary_model": "models/oliver-cowdery/oliver-cowdery-rigged.glb",
+      "files": [
+        {
+          "character_id": "oliver-cowdery",
+          "character": "Oliver Cowdery",
+          "group": "Witnesses",
+          "age": null,
+          "role": "rigged",
+          "title": "Oliver Cowdery \u2014 rigged & animated",
+          "file": "models/oliver-cowdery/oliver-cowdery-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Rigged_Oliver_Cowdery_All_Animations.glb",
+          "sha256": "bcab50406eec302280a974d26537c69bb2bcfcf679c1010f3a93bd60bde1337f",
+          "bytes": 20832284,
+          "primary": true,
+          "triangles": 10274,
+          "vertices": 13436,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8724,
+            -0.0,
+            -0.1659
+          ],
+          "bbox_max": [
+            0.8759,
+            1.7287,
+            0.1709
+          ],
+          "height_m": 1.729,
+          "emissive_material": true,
+          "glb_declared_bytes": 20832284,
+          "preview": "models/oliver-cowdery/oliver-cowdery-rigged.png"
+        },
+        {
+          "character_id": "oliver-cowdery",
+          "character": "Oliver Cowdery",
+          "group": "Witnesses",
+          "age": null,
+          "role": "source",
+          "title": "Oliver Cowdery \u2014 source scan",
+          "file": "models/oliver-cowdery/oliver-cowdery-source.glb",
+          "source_file": "meshy/Meshy_AI_Oliver_Cowdery_1022101618_image-to-3d-texture.glb",
+          "sha256": "84dc46aa4f0969841a38011bf2ba3c3c35512fffed28051e28d2d1c6d036dbcf",
+          "bytes": 29779596,
+          "primary": false,
+          "triangles": 335080,
+          "vertices": 182749,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9512,
+            -0.9385,
+            -0.179
+          ],
+          "bbox_max": [
+            0.9506,
+            0.9392,
+            0.1797
+          ],
+          "height_m": 1.878,
+          "emissive_material": false,
+          "glb_declared_bytes": 29779596,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "martin-harris",
+      "name": "Martin Harris",
+      "group": "Witnesses",
+      "blurb": "Farmer, financier of the first printing, and one of the Three Witnesses.",
+      "folder": "models/martin-harris",
+      "preview": "models/martin-harris/preview.png",
+      "primary_model": "models/martin-harris/martin-harris-rigged.glb",
+      "files": [
+        {
+          "character_id": "martin-harris",
+          "character": "Martin Harris",
+          "group": "Witnesses",
+          "age": null,
+          "role": "rigged",
+          "title": "Martin Harris \u2014 rigged & animated",
+          "file": "models/martin-harris/martin-harris-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Martin_Harris_Rigged_All_Animations.glb",
+          "sha256": "a9c6289a3bf27146509d9504ecb75cb85cc8090068846264505efd1867fe0e3d",
+          "bytes": 22068472,
+          "primary": true,
+          "triangles": 10378,
+          "vertices": 13977,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8814,
+            -0.0,
+            -0.1674
+          ],
+          "bbox_max": [
+            0.8871,
+            1.6417,
+            0.174
+          ],
+          "height_m": 1.642,
+          "emissive_material": true,
+          "glb_declared_bytes": 22068472,
+          "preview": "models/martin-harris/martin-harris-rigged.png"
+        },
+        {
+          "character_id": "martin-harris",
+          "character": "Martin Harris",
+          "group": "Witnesses",
+          "age": null,
+          "role": "10k",
+          "title": "Martin Harris \u2014 10k mesh",
+          "file": "models/martin-harris/martin-harris-10k.glb",
+          "source_file": "meshy/Meshy_AI_Martin_Harris_10k_1022111114_texture.glb",
+          "sha256": "5b1d57c473fc4c47d7dad70097a81637189a259dfa42c2a8e655aa2eb417164e",
+          "bytes": 27082720,
+          "primary": false,
+          "triangles": 10378,
+          "vertices": 13908,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9507,
+            -0.8814,
+            -0.1797
+          ],
+          "bbox_max": [
+            0.9498,
+            0.8814,
+            0.1744
+          ],
+          "height_m": 1.763,
+          "emissive_material": false,
+          "glb_declared_bytes": 27082720,
+          "preview": null
+        },
+        {
+          "character_id": "martin-harris",
+          "character": "Martin Harris",
+          "group": "Witnesses",
+          "age": null,
+          "role": "source",
+          "title": "Martin Harris \u2014 source scan",
+          "file": "models/martin-harris/martin-harris-source.glb",
+          "source_file": "meshy/Meshy_AI_Martin_Harris_Charact_1022110812_image-to-3d-texture.glb",
+          "sha256": "7d8e9e3e4305f1083e6e1449bb31748c990420bf179d3c976d1d7171037ede05",
+          "bytes": 32152900,
+          "primary": false,
+          "triangles": 384116,
+          "vertices": 208441,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9513,
+            -0.8819,
+            -0.1801
+          ],
+          "bbox_max": [
+            0.951,
+            0.8817,
+            0.1756
+          ],
+          "height_m": 1.764,
+          "emissive_material": false,
+          "glb_declared_bytes": 32152900,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "david-whitmer",
+      "name": "David Whitmer",
+      "group": "Witnesses",
+      "blurb": "One of the Three Witnesses and a member of the Fayette, New York household.",
+      "folder": "models/david-whitmer",
+      "preview": "models/david-whitmer/preview.png",
+      "primary_model": "models/david-whitmer/david-whitmer-rigged.glb",
+      "files": [
+        {
+          "character_id": "david-whitmer",
+          "character": "David Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "rigged",
+          "title": "David Whitmer \u2014 rigged & animated",
+          "file": "models/david-whitmer/david-whitmer-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Rigged_David_Whitmer_All_Animations.glb",
+          "sha256": "8674a86db86d78f16f7277bb455e2be5c2ec2e0be149cbfde78db330f9b51e99",
+          "bytes": 20314400,
+          "primary": true,
+          "triangles": 10259,
+          "vertices": 14758,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8412,
+            0.0,
+            -0.1695
+          ],
+          "bbox_max": [
+            0.8473,
+            1.7,
+            0.1783
+          ],
+          "height_m": 1.7,
+          "emissive_material": true,
+          "glb_declared_bytes": 20314400,
+          "preview": "models/david-whitmer/david-whitmer-rigged.png"
+        },
+        {
+          "character_id": "david-whitmer",
+          "character": "David Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "remeshed",
+          "title": "David Whitmer \u2014 remeshed",
+          "file": "models/david-whitmer/david-whitmer-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_David_Whitmer_Remeshe_1022111056_texture.glb",
+          "sha256": "e1a74e92619439e41e37e4b0ad1be155a122cc2fa7ed06d9a3dc855250c9ba55",
+          "bytes": 24654796,
+          "primary": false,
+          "triangles": 10259,
+          "vertices": 14679,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9463,
+            -0.9517,
+            -0.1881
+          ],
+          "bbox_max": [
+            0.9448,
+            0.9506,
+            0.1906
+          ],
+          "height_m": 1.902,
+          "emissive_material": false,
+          "glb_declared_bytes": 24654796,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "jacob-whitmer",
+      "name": "Jacob Whitmer",
+      "group": "Witnesses",
+      "blurb": "One of the Eight Witnesses who examined the plates in Fayette.",
+      "folder": "models/jacob-whitmer",
+      "preview": "models/jacob-whitmer/preview.png",
+      "primary_model": "models/jacob-whitmer/jacob-whitmer-rigged.glb",
+      "files": [
+        {
+          "character_id": "jacob-whitmer",
+          "character": "Jacob Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "rigged",
+          "title": "Jacob Whitmer \u2014 rigged & animated",
+          "file": "models/jacob-whitmer/jacob-whitmer-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Rigged_Jacob_Whitmer_All_Animations.glb",
+          "sha256": "c87c2661474e874eb86fb4bf2ed912751076406c8a8e19d9a36086f121c0d89e",
+          "bytes": 22966104,
+          "primary": true,
+          "triangles": 10192,
+          "vertices": 14457,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8547,
+            -0.0,
+            -0.1606
+          ],
+          "bbox_max": [
+            0.8648,
+            1.6578,
+            0.1641
+          ],
+          "height_m": 1.658,
+          "emissive_material": true,
+          "glb_declared_bytes": 22966104,
+          "preview": "models/jacob-whitmer/jacob-whitmer-rigged.png"
+        },
+        {
+          "character_id": "jacob-whitmer",
+          "character": "Jacob Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "remeshed",
+          "title": "Jacob Whitmer \u2014 remeshed",
+          "file": "models/jacob-whitmer/jacob-whitmer-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_Jacob_Whitmer_Remeshe_1022115242_texture.glb",
+          "sha256": "3c17f0f867a59652556567af074dcb326239da72899301f656cfa4d229806431",
+          "bytes": 26490364,
+          "primary": false,
+          "triangles": 10192,
+          "vertices": 14391,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9517,
+            -0.9163,
+            -0.1752
+          ],
+          "bbox_max": [
+            0.9492,
+            0.9158,
+            0.1758
+          ],
+          "height_m": 1.832,
+          "emissive_material": false,
+          "glb_declared_bytes": 26490364,
+          "preview": null
+        },
+        {
+          "character_id": "jacob-whitmer",
+          "character": "Jacob Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "source",
+          "title": "Jacob Whitmer \u2014 source scan",
+          "file": "models/jacob-whitmer/jacob-whitmer-source.glb",
+          "source_file": "meshy/Meshy_AI_Jacob_Whitmer_Model_1022115122_image-to-3d-texture.glb",
+          "sha256": "c39a0223eb65b0e474375dc08b2b90af8045935930efb889702267fafe4ba46e",
+          "bytes": 38871512,
+          "primary": false,
+          "triangles": 558320,
+          "vertices": 300776,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9521,
+            -0.9165,
+            -0.1763
+          ],
+          "bbox_max": [
+            0.9508,
+            0.9159,
+            0.1763
+          ],
+          "height_m": 1.832,
+          "emissive_material": false,
+          "glb_declared_bytes": 38871512,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "john-whitmer",
+      "name": "John Whitmer",
+      "group": "Witnesses",
+      "blurb": "One of the Eight Witnesses and the first official Church historian.",
+      "folder": "models/john-whitmer",
+      "preview": "models/john-whitmer/preview.png",
+      "primary_model": "models/john-whitmer/john-whitmer-rigged.glb",
+      "files": [
+        {
+          "character_id": "john-whitmer",
+          "character": "John Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "rigged",
+          "title": "John Whitmer \u2014 rigged & animated",
+          "file": "models/john-whitmer/john-whitmer-rigged.glb",
+          "source_file": "meshy/Meshy_AI_john_whitmer_rigged_All_Animations.glb",
+          "sha256": "10bffda08ff0451e2a7ad497ebb20f8df66d189c8d63301fc82e4f9a1edf5036",
+          "bytes": 23700864,
+          "primary": true,
+          "triangles": 30894,
+          "vertices": 32989,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8738,
+            -0.0,
+            -0.1852
+          ],
+          "bbox_max": [
+            0.8756,
+            1.6937,
+            0.1866
+          ],
+          "height_m": 1.694,
+          "emissive_material": true,
+          "glb_declared_bytes": 23700864,
+          "preview": "models/john-whitmer/john-whitmer-rigged.png"
+        },
+        {
+          "character_id": "john-whitmer",
+          "character": "John Whitmer",
+          "group": "Witnesses",
+          "age": null,
+          "role": "tpose",
+          "title": "John Whitmer \u2014 T-pose",
+          "file": "models/john-whitmer/john-whitmer-tpose.glb",
+          "source_file": "meshy/Meshy_AI_john_whitmer_tpose_1022115650_image-to-3d-texture.glb",
+          "sha256": "0828038438a8b643703030eaa5d3bfcc21ff9b082cc4ea1770c74cc454451a69",
+          "bytes": 33335748,
+          "primary": false,
+          "triangles": 428660,
+          "vertices": 232859,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9518,
+            -0.9208,
+            -0.2025
+          ],
+          "bbox_max": [
+            0.9504,
+            0.9211,
+            0.2011
+          ],
+          "height_m": 1.842,
+          "emissive_material": false,
+          "glb_declared_bytes": 33335748,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "sidney-rigdon",
+      "name": "Sidney Rigdon",
+      "group": "Church leadership",
+      "blurb": "Campbellite preacher, First Presidency counselor, and a powerful early orator.",
+      "folder": "models/sidney-rigdon",
+      "preview": "models/sidney-rigdon/preview.png",
+      "primary_model": null,
+      "files": [
+        {
+          "character_id": "sidney-rigdon",
+          "character": "Sidney Rigdon",
+          "group": "Church leadership",
+          "age": null,
+          "role": "rigged",
+          "title": "Sidney Rigdon \u2014 rigged & animated",
+          "file": "models/sidney-rigdon/sidney-rigdon-rigged.glb",
+          "source_file": "meshy/Meshy_AI_SidneyRigdon_Rigged_All_Animations.glb",
+          "sha256": "426fcf80a1d8e7bccbe26c8f210103ad25ae6682573653c3a8c8b932e066bcca",
+          "bytes": 23254812,
+          "primary": true,
+          "triangles": 10348,
+          "vertices": 14854,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8002,
+            0.0,
+            -0.1668
+          ],
+          "bbox_max": [
+            0.8073,
+            1.9,
+            0.1786
+          ],
+          "height_m": 1.9,
+          "emissive_material": true,
+          "glb_declared_bytes": 23254812,
+          "preview": "models/sidney-rigdon/sidney-rigdon-rigged.png"
+        },
+        {
+          "character_id": "sidney-rigdon",
+          "character": "Sidney Rigdon",
+          "group": "Church leadership",
+          "age": null,
+          "role": "source",
+          "title": "Sidney Rigdon \u2014 source scan",
+          "file": "models/sidney-rigdon/sidney-rigdon-source.glb",
+          "source_file": "meshy/Meshy_AI_SidneyRigdonModel_1022111836_image-to-3d-texture.glb",
+          "sha256": "3ba965494b13cd5bc22a049728b71bfa9ccfdb907871ea7915aeed9b4a8ea526",
+          "bytes": 38143712,
+          "primary": false,
+          "triangles": 456040,
+          "vertices": 245725,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8078,
+            -0.9521,
+            -0.1705
+          ],
+          "bbox_max": [
+            0.807,
+            0.9511,
+            0.1651
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 38143712,
+          "preview": null
+        },
+        {
+          "character_id": "sidney-rigdon",
+          "character": "Sidney Rigdon",
+          "group": "Church leadership",
+          "age": "young",
+          "role": "rigged",
+          "title": "Sidney Rigdon (young) \u2014 rigged & animated",
+          "file": "models/sidney-rigdon/sidney-rigdon-young-rigged.glb",
+          "source_file": "meshy/Meshy_AI_young_sidney_rigdon_rigged_All_Animations.glb",
+          "sha256": "9e209d455a452eb4dfc1d11fbad2091c5303e190d2f24bde74d4fb38d5bb7873",
+          "bytes": 22353080,
+          "primary": true,
+          "triangles": 20534,
+          "vertices": 22439,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.749,
+            -0.0,
+            -0.1794
+          ],
+          "bbox_max": [
+            0.7535,
+            1.75,
+            0.1738
+          ],
+          "height_m": 1.75,
+          "emissive_material": true,
+          "glb_declared_bytes": 22353080,
+          "preview": "models/sidney-rigdon/sidney-rigdon-young-rigged.png"
+        }
+      ]
+    },
+    {
+      "id": "moroni",
+      "name": "Moroni",
+      "group": "Sacred visitors",
+      "blurb": "The angelic messenger who directed Joseph to the plates; a reverent, older robed interpretation.",
+      "folder": "models/moroni",
+      "preview": "models/moroni/preview.png",
+      "primary_model": "models/moroni/moroni-rigged.glb",
+      "files": [
+        {
+          "character_id": "moroni",
+          "character": "Moroni",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "rigged",
+          "title": "Moroni \u2014 rigged & animated",
+          "file": "models/moroni/moroni-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Moroni_Rigged_All_Animations.glb",
+          "sha256": "59401d821b7ff730299eb044e5dadc066fa5703033448307cf37fcde9075b97b",
+          "bytes": 23635804,
+          "primary": true,
+          "triangles": 30760,
+          "vertices": 43042,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8004,
+            -0.0,
+            -0.2153
+          ],
+          "bbox_max": [
+            0.8007,
+            1.8,
+            0.223
+          ],
+          "height_m": 1.8,
+          "emissive_material": true,
+          "glb_declared_bytes": 23635804,
+          "preview": "models/moroni/moroni-rigged.png"
+        },
+        {
+          "character_id": "moroni",
+          "character": "Moroni",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "remeshed",
+          "title": "Moroni \u2014 remeshed",
+          "file": "models/moroni/moroni-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_AngelMoroniRemeshed_1022102544_texture.glb",
+          "sha256": "b17b824291c672d1ab8084d10c7a8a4a488b79950ca1093f88250a78a42f69f0",
+          "bytes": 25155472,
+          "primary": false,
+          "triangles": 14999,
+          "vertices": 19703,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8449,
+            -0.9532,
+            -0.3023
+          ],
+          "bbox_max": [
+            0.8435,
+            0.9501,
+            0.3017
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 25155472,
+          "preview": null
+        },
+        {
+          "character_id": "moroni",
+          "character": "Moroni",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "optimized",
+          "title": "Moroni \u2014 optimized mesh",
+          "file": "models/moroni/moroni-optimized.glb",
+          "source_file": "meshy/Meshy_AI_Moroni_Optimized_Mesh_1022103039_texture.glb",
+          "sha256": "0314620b0d118973303374d9b3ce4123cdc130569b1011d9d39b3947948d1f5f",
+          "bytes": 28295264,
+          "primary": false,
+          "triangles": 30760,
+          "vertices": 42857,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.854,
+            -0.9517,
+            -0.2285
+          ],
+          "bbox_max": [
+            0.8394,
+            0.9504,
+            0.2271
+          ],
+          "height_m": 1.902,
+          "emissive_material": false,
+          "glb_declared_bytes": 28295264,
+          "preview": null
+        },
+        {
+          "character_id": "moroni",
+          "character": "Moroni",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "tpose",
+          "title": "Moroni \u2014 T-pose",
+          "file": "models/moroni/moroni-tpose.glb",
+          "source_file": "meshy/Meshy_AI_Moroni_T_Pose_1022102902_image-to-3d-texture.glb",
+          "sha256": "f24b18ccd2cee0d2fe0498d306c70a5b2d5109b263d376e0e3e3100d69919731",
+          "bytes": 56217164,
+          "primary": false,
+          "triangles": 1199532,
+          "vertices": 655523,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8545,
+            -0.9523,
+            -0.2287
+          ],
+          "bbox_max": [
+            0.84,
+            0.9506,
+            0.2273
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 56217164,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "nephi",
+      "name": "Nephi",
+      "group": "Book of Mormon",
+      "blurb": "Book of Mormon prophet and first narrator, useful for scripture tableaux.",
+      "folder": "models/nephi",
+      "preview": "models/nephi/preview.png",
+      "primary_model": "models/nephi/nephi-rigged.glb",
+      "files": [
+        {
+          "character_id": "nephi",
+          "character": "Nephi",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "rigged",
+          "title": "Nephi \u2014 rigged & animated",
+          "file": "models/nephi/nephi-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Nephi_Rigged_All_Animations (1).glb",
+          "sha256": "152d3be96058deddecd935053a1977d4311680326787ec292b540b89ae082b85",
+          "bytes": 23769340,
+          "primary": true,
+          "triangles": 10358,
+          "vertices": 18616,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7859,
+            -0.0,
+            -0.1904
+          ],
+          "bbox_max": [
+            0.7857,
+            1.7,
+            0.1958
+          ],
+          "height_m": 1.7,
+          "emissive_material": true,
+          "glb_declared_bytes": 23769340,
+          "preview": "models/nephi/nephi-rigged.png"
+        },
+        {
+          "character_id": "nephi",
+          "character": "Nephi",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "remeshed-10k",
+          "title": "Nephi \u2014 remeshed 10k",
+          "file": "models/nephi/nephi-remeshed-10k.glb",
+          "source_file": "meshy/Meshy_AI_Nephi_Remeshed_10k_1022103620_texture.glb",
+          "sha256": "f0960994cc04f40b2cf4ed8e4ad46716ae836f69c7696bad00af183f270f1cef",
+          "bytes": 28973768,
+          "primary": false,
+          "triangles": 10358,
+          "vertices": 18505,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8784,
+            -0.9515,
+            -0.2077
+          ],
+          "bbox_max": [
+            0.8811,
+            0.9498,
+            0.2123
+          ],
+          "height_m": 1.901,
+          "emissive_material": false,
+          "glb_declared_bytes": 28973768,
+          "preview": null
+        },
+        {
+          "character_id": "nephi",
+          "character": "Nephi",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "source",
+          "title": "Nephi \u2014 source scan",
+          "file": "models/nephi/nephi-source.glb",
+          "source_file": "meshy/Meshy_AI_Nephi_Character_1022103246_image-to-3d-texture.glb",
+          "sha256": "9be70861902afbe052c83b2754db9845a3a0b93626d9bbdcc77f6347f4c999ee",
+          "bytes": 54726492,
+          "primary": false,
+          "triangles": 1113932,
+          "vertices": 602110,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8807,
+            -0.9519,
+            -0.2086
+          ],
+          "bbox_max": [
+            0.8817,
+            0.9512,
+            0.2123
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 54726492,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "laman",
+      "name": "Laman",
+      "group": "Book of Mormon",
+      "blurb": "Eldest son of Lehi in the Book of Mormon narrative.",
+      "folder": "models/laman",
+      "preview": "models/laman/preview.png",
+      "primary_model": "models/laman/laman-rigged.glb",
+      "files": [
+        {
+          "character_id": "laman",
+          "character": "Laman",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "rigged",
+          "title": "Laman \u2014 rigged & animated",
+          "file": "models/laman/laman-rigged.glb",
+          "source_file": "meshy/Meshy_AI_laman_rigged_All_Animations.glb",
+          "sha256": "b84a3573fde194f34e581ac2e02ec8654937afd2c4e4f5d06f1233edfeaf36f4",
+          "bytes": 16642232,
+          "primary": true,
+          "triangles": 10079,
+          "vertices": 19071,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8324,
+            0.0,
+            -0.2078
+          ],
+          "bbox_max": [
+            0.86,
+            1.6696,
+            0.2275
+          ],
+          "height_m": 1.67,
+          "emissive_material": true,
+          "glb_declared_bytes": 16642232,
+          "preview": "models/laman/laman-rigged.png"
+        },
+        {
+          "character_id": "laman",
+          "character": "Laman",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "remeshed",
+          "title": "Laman \u2014 remeshed",
+          "file": "models/laman/laman-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_laman_remeshed_1022114305_texture.glb",
+          "sha256": "1aa1d31e976739c59bf5f92d8fdd129d9e0e248b8eba7b41f46fc93880bad253",
+          "bytes": 22724984,
+          "primary": false,
+          "triangles": 10079,
+          "vertices": 18981,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9486,
+            -0.9331,
+            -0.2395
+          ],
+          "bbox_max": [
+            0.9504,
+            0.9319,
+            0.231
+          ],
+          "height_m": 1.865,
+          "emissive_material": false,
+          "glb_declared_bytes": 22724984,
+          "preview": null
+        },
+        {
+          "character_id": "laman",
+          "character": "Laman",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "source",
+          "title": "Laman \u2014 source scan",
+          "file": "models/laman/laman-source.glb",
+          "source_file": "meshy/Meshy_AI_laman_character_1022114248_image-to-3d-texture.glb",
+          "sha256": "e54910f0df0be594708735d822e374a947de4db3f3bbd7d4446ebf786a5f9911",
+          "bytes": 54708820,
+          "primary": false,
+          "triangles": 1179580,
+          "vertices": 649866,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9518,
+            -0.9344,
+            -0.2402
+          ],
+          "bbox_max": [
+            0.9519,
+            0.9345,
+            0.2324
+          ],
+          "height_m": 1.869,
+          "emissive_material": false,
+          "glb_declared_bytes": 54708820,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "lemuel",
+      "name": "Lemuel",
+      "group": "Book of Mormon",
+      "blurb": "Son of Lehi and brother of Nephi in the Book of Mormon narrative.",
+      "folder": "models/lemuel",
+      "preview": "models/lemuel/preview.png",
+      "primary_model": "models/lemuel/lemuel-rigged.glb",
+      "files": [
+        {
+          "character_id": "lemuel",
+          "character": "Lemuel",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "rigged",
+          "title": "Lemuel \u2014 rigged & animated",
+          "file": "models/lemuel/lemuel-rigged.glb",
+          "source_file": "meshy/Meshy_AI_lemuel_rigged_All_Animations.glb",
+          "sha256": "65c1a7bb4db685f337e79823282d2ddc8d531ed8dfa98ceb232df9ce332fc39c",
+          "bytes": 18050008,
+          "primary": true,
+          "triangles": 9905,
+          "vertices": 19439,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7752,
+            -0.0,
+            -0.1941
+          ],
+          "bbox_max": [
+            0.7812,
+            1.7,
+            0.1983
+          ],
+          "height_m": 1.7,
+          "emissive_material": true,
+          "glb_declared_bytes": 18050008,
+          "preview": "models/lemuel/lemuel-rigged.png"
+        },
+        {
+          "character_id": "lemuel",
+          "character": "Lemuel",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "remeshed",
+          "title": "Lemuel \u2014 remeshed",
+          "file": "models/lemuel/lemuel-remeshed.glb",
+          "source_file": "meshy/Meshy_AI_lemuel_remeshed_1022114837_texture.glb",
+          "sha256": "e2e033868e8df7870211c6a4a5f9fe63303f52a76bc7c2f477f6487169914e7f",
+          "bytes": 24244192,
+          "primary": false,
+          "triangles": 9905,
+          "vertices": 19360,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 2,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8764,
+            -0.9517,
+            -0.2134
+          ],
+          "bbox_max": [
+            0.8735,
+            0.9507,
+            0.2135
+          ],
+          "height_m": 1.902,
+          "emissive_material": false,
+          "glb_declared_bytes": 24244192,
+          "preview": null
+        },
+        {
+          "character_id": "lemuel",
+          "character": "Lemuel",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "source",
+          "title": "Lemuel \u2014 source scan",
+          "file": "models/lemuel/lemuel-source.glb",
+          "source_file": "meshy/Meshy_AI_lemuel_character_1022114849_image-to-3d-texture.glb",
+          "sha256": "10eff947c90c1ddad13c804020b3000d5a7fb5c3827a2ac0cd64a371bcf24100",
+          "bytes": 51988128,
+          "primary": false,
+          "triangles": 1036010,
+          "vertices": 572509,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8764,
+            -0.9521,
+            -0.2151
+          ],
+          "bbox_max": [
+            0.8751,
+            0.951,
+            0.2142
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 51988128,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "alma-the-younger",
+      "name": "Alma the Younger",
+      "group": "Book of Mormon",
+      "blurb": "Book of Mormon prophet and missionary, modeled for scripture tableaux.",
+      "folder": "models/alma-the-younger",
+      "preview": "models/alma-the-younger/preview.png",
+      "primary_model": "models/alma-the-younger/alma-the-younger-rigged.glb",
+      "files": [
+        {
+          "character_id": "alma-the-younger",
+          "character": "Alma the Younger",
+          "group": "Book of Mormon",
+          "age": null,
+          "role": "rigged",
+          "title": "Alma the Younger \u2014 rigged & animated",
+          "file": "models/alma-the-younger/alma-the-younger-rigged.glb",
+          "source_file": "meshy/Meshy_AI_alma_the_younger_rigg_All_Animations.glb",
+          "sha256": "ede5927f3b6d7bb90c622ef32e7044bde201592f16f958e1223556b7a9570184",
+          "bytes": 25892264,
+          "primary": true,
+          "triangles": 10387,
+          "vertices": 15050,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.4259,
+            0.0,
+            -0.1819
+          ],
+          "bbox_max": [
+            0.4208,
+            1.75,
+            0.1993
+          ],
+          "height_m": 1.75,
+          "emissive_material": true,
+          "glb_declared_bytes": 25892264,
+          "preview": "models/alma-the-younger/alma-the-younger-rigged.png"
+        }
+      ]
+    },
+    {
+      "id": "heavenly-father",
+      "name": "Heavenly Father",
+      "group": "Sacred visitors",
+      "blurb": "A reverent artistic interpretation of the Father in the First Vision narrative.",
+      "folder": "models/heavenly-father",
+      "preview": "models/heavenly-father/preview.png",
+      "primary_model": "models/heavenly-father/heavenly-father-rigged.glb",
+      "files": [
+        {
+          "character_id": "heavenly-father",
+          "character": "Heavenly Father",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "rigged",
+          "title": "Heavenly Father \u2014 rigged & animated",
+          "file": "models/heavenly-father/heavenly-father-rigged.glb",
+          "source_file": "meshy/Meshy_AI_Heavenly_Father_Rigge_All_Animations.glb",
+          "sha256": "01edf20bce50a93b9abca8b59a1a999f89872f9a7b846d3893604eba09476d68",
+          "bytes": 18299948,
+          "primary": true,
+          "triangles": 15054,
+          "vertices": 23615,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 21,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 42,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 42,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7075,
+            -0.0,
+            -0.2998
+          ],
+          "bbox_max": [
+            0.6836,
+            1.8,
+            0.3062
+          ],
+          "height_m": 1.8,
+          "emissive_material": true,
+          "glb_declared_bytes": 18299948,
+          "preview": "models/heavenly-father/heavenly-father-rigged.png"
+        },
+        {
+          "character_id": "heavenly-father",
+          "character": "Heavenly Father",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "source",
+          "title": "Heavenly Father \u2014 source scan",
+          "file": "models/heavenly-father/heavenly-father-source.glb",
+          "source_file": "meshy/Meshy_AI_Heavenly_Father_No_Ha_1022105850_image-to-3d-texture.glb",
+          "sha256": "b756114a2b6d62ead454c2fa02c7e42315ec8a4d9815cf21c877493cee4885a0",
+          "bytes": 58297272,
+          "primary": false,
+          "triangles": 1214050,
+          "vertices": 653177,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.7365,
+            -0.9522,
+            -0.3175
+          ],
+          "bbox_max": [
+            0.7368,
+            0.9509,
+            0.3167
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 58297272,
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "john-the-baptist",
+      "name": "John the Baptist",
+      "group": "Sacred visitors",
+      "blurb": "The New Testament forerunner who restored the Aaronic Priesthood in the Restoration narrative.",
+      "folder": "models/john-the-baptist",
+      "preview": "models/john-the-baptist/preview.png",
+      "primary_model": "models/john-the-baptist/john-the-baptist-rigged.glb",
+      "files": [
+        {
+          "character_id": "john-the-baptist",
+          "character": "John the Baptist",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "rigged",
+          "title": "John the Baptist \u2014 rigged & animated",
+          "file": "models/john-the-baptist/john-the-baptist-rigged.glb",
+          "source_file": "meshy/Meshy_AI_john_the_baptist_rigg_All_Animations.glb",
+          "sha256": "7ecc48c418466568ec9bd50a412ac05fc87a7ad7a9263e8ba2fd71f683c71802",
+          "bytes": 23009852,
+          "primary": true,
+          "triangles": 10328,
+          "vertices": 19960,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 1,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/png",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 1,
+          "joint_count": 23,
+          "joint_names": [
+            "mixamorig:Hips",
+            "mixamorig:LeftUpLeg",
+            "mixamorig:LeftLeg",
+            "mixamorig:LeftFoot",
+            "mixamorig:LeftToeBase",
+            "mixamorig:RightUpLeg",
+            "mixamorig:RightLeg",
+            "mixamorig:RightFoot",
+            "mixamorig:RightToeBase",
+            "mixamorig:Spine",
+            "mixamorig:Spine1",
+            "mixamorig:Spine2",
+            "mixamorig:LeftShoulder",
+            "mixamorig:LeftArm",
+            "mixamorig:LeftForeArm",
+            "mixamorig:LeftHand",
+            "mixamorig:RightShoulder",
+            "mixamorig:RightArm",
+            "mixamorig:RightForeArm",
+            "mixamorig:RightHand",
+            "mixamorig:Neck",
+            "mixamorig:Head",
+            "headfront"
+          ],
+          "has_finger_joints": false,
+          "animations": [
+            {
+              "name": "Running",
+              "channels": 46,
+              "duration_seconds": 0.667
+            },
+            {
+              "name": "Walking",
+              "channels": 46,
+              "duration_seconds": 1.067
+            }
+          ],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.8238,
+            0.0,
+            -0.1998
+          ],
+          "bbox_max": [
+            0.8293,
+            1.75,
+            0.2004
+          ],
+          "height_m": 1.75,
+          "emissive_material": true,
+          "glb_declared_bytes": 23009852,
+          "preview": "models/john-the-baptist/john-the-baptist-rigged.png"
+        },
+        {
+          "character_id": "john-the-baptist",
+          "character": "John the Baptist",
+          "group": "Sacred visitors",
+          "age": null,
+          "role": "source",
+          "title": "John the Baptist \u2014 source scan",
+          "file": "models/john-the-baptist/john-the-baptist-source.glb",
+          "source_file": "meshy/Meshy_AI_john_the_baptist_1022113658_image-to-3d-texture.glb",
+          "sha256": "a95214fbd1f0acb200573751dba182f33023f7b378826d90d45e11686cfe4683",
+          "bytes": 49596764,
+          "primary": false,
+          "triangles": 954368,
+          "vertices": 522172,
+          "mesh_count": 1,
+          "material_count": 1,
+          "image_count": 3,
+          "textures": [
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "embedded": true,
+              "mime": "image/jpeg",
+              "width": 4096,
+              "height": 4096
+            }
+          ],
+          "skins": 0,
+          "joint_count": 0,
+          "joint_names": [],
+          "has_finger_joints": false,
+          "animations": [],
+          "morph_target_count": 0,
+          "bbox_min": [
+            -0.9019,
+            -0.952,
+            -0.2208
+          ],
+          "bbox_max": [
+            0.9005,
+            0.9514,
+            0.2207
+          ],
+          "height_m": 1.903,
+          "emissive_material": false,
+          "glb_declared_bytes": 49596764,
+          "preview": null
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source_file": "meshy/Meshy_AI_Nephi_Rigged_All_Animations.glb",
+      "reason": "exact duplicate",
+      "duplicate_of": "meshy/Meshy_AI_Nephi_Rigged_All_Animations (1).glb"
+    }
+  ]
+}

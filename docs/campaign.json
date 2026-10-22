@@ -1,0 +1,263 @@
+{
+  "title": "Joseph Smith Life History and Game Production Report",
+  "working_title": "Joseph Smith and the Gathering of Zion",
+  "date": "22 October 2026",
+  "scenes": [
+    {
+      "id": "01", "title": "A family and a promise", "date": "1805 to about 1813", "place": "Vermont and West Lebanon New Hampshire", "status": "Historical devotional dramatization",
+      "history": "Joseph was born on December 23, 1805, in Sharon, Vermont. A childhood illness led to surgery on his left leg while his family lived in New Hampshire. Family care, poverty, work, and vulnerability precede his public calling.",
+      "experience": "Begin as the recovering boy, with a low eye height and a fully explorable small room. Reach for water, call for a parent, and accept help walking to the doorway. A short passage of seasons connects recovery to the family journey. The surgery stays off screen; the player experiences trust and care rather than a medical challenge.",
+      "art": "An intimate cream-lit timber bedroom, folded quilt, a father's hand, rain beyond a small window. Compose a child's first-person view, a family two-shot, and a wide doorway silhouette. Keep objects large relative to the child without scaling the building.",
+      "payoff": "The hand offered to Joseph becomes the hand he offers to others throughout the campaign.",
+      "cast": ["JOSEPH_CHILD", "JOSEPH_SR", "LUCY"], "sources": ["chronology"], "minutes": 10
+    },
+    {
+      "id": "02", "title": "Many voices in Palmyra", "date": "1816 to spring 1820", "place": "Palmyra and Manchester New York", "status": "Historical setting with composite townspeople",
+      "history": "The Smith family moved to the Palmyra area in 1816. Joseph's account describes competing Methodist, Presbyterian, and Baptist claims. Freemasonry also belonged to the region's civic culture; this does not establish a town-wide conspiracy or a Masonic cause of his visions.",
+      "experience": "Work a short farm route, enter three distinct preaching gatherings, and ask each minister a sincere question. Their responses reveal differing beliefs through human conversations. Pass an understated lodge notice as ordinary civic scenery. At home, open James 1:5 and choose a quiet place to seek God's guidance.",
+      "art": "A real early American settlement: split-rail fences, muddy lanes, modest steeples, linen and wool, sunlight on timber. Layer competing distant sermons in sound rather than filling the screen with quest icons. Avoid later Victorian top hats on every man and avoid turning the town into a fantasy Masonic metropolis.",
+      "payoff": "The first essential action is listening. The desire for religious certainty becomes a personal prayer.",
+      "cast": ["JOSEPH_YOUTH", "LUCY", "METHODIST", "PRESBYTERIAN", "BAPTIST", "TOWNSPERSON"], "sources": ["jsh", "masonry"], "minutes": 20
+    },
+    {
+      "id": "03", "title": "The Sacred Grove", "date": "Spring 1820", "place": "Woods near the Smith farm", "status": "Joseph Smith account presented as true within the game",
+      "history": "In the canonical account, fourteen-year-old Joseph prays in the woods and sees God the Father and Jesus Christ. The game uses that account as its principal staging text. Other surviving accounts belong in the optional history journal without suggesting that one cinematic reconstruction is a camera record.",
+      "experience": "Walk into the grove, choose where to kneel, and begin the prayer. The player participates in the moment of distress and appeal without a timed button test. Light enters the actual canopy; the Father and the Son are distinct embodied figures. Let the player look freely, stand in third person, or move the observation camera throughout the encounter. Return to the same ordinary trees afterward.",
+      "art": "Eastern hardwood trunks form a natural nave; spring groundcover and a believable sunlit clearing establish the earthly scene. The revelation changes light and sound before adding spectacle. Show distinct silhouettes, visible expression, and gentle radiance rather than featureless white cutouts.",
+      "payoff": "The small clearing becomes the visual memory returned to in the last chapter.",
+      "cast": ["JOSEPH_YOUTH", "FATHER", "CHRIST"], "sources": ["jsh", "firstvision"], "minutes": 15
+    },
+    {
+      "id": "04", "title": "Moroni in the night", "date": "September 21 and 22 1823", "place": "Smith family home", "status": "Joseph Smith account presented devotionally",
+      "history": "Joseph describes Moroni's repeated visits during the night, followed by a further encounter the next day. This happens after the First Vision. Moroni tells him about an ancient sacred record and his future responsibility.",
+      "experience": "Retire to the attic bedroom, pray, awaken to the visitor, and listen. Repeated visits change the moonlight and the condition of the room subtly, rather than replaying a long identical speech. At morning work Joseph's exhaustion becomes embodied movement; speaking with his father opens the journey to the hill.",
+      "art": "Reconstruct a low loft with beds, sloping beams, a ladder, and spaces where other family members sleep. Moroni's glow touches these physical objects. Provide bedside first-person framing, a reverse from the ladder, and an overhead view that never hides unfinished scenery.",
+      "payoff": "The bedtime interior and the immense sacred history announced within it establish the game's contrast of ordinary life and eternity.",
+      "cast": ["JOSEPH_YOUTH", "MORONI", "JOSEPH_SR"], "sources": ["jsh"], "minutes": 15
+    },
+    {
+      "id": "05", "title": "The hill and the years of preparation", "date": "1823 to 1826", "place": "The hill near Manchester and the Smith home", "status": "Historical devotional dramatization",
+      "history": "Joseph first sees the plates in 1823 but receives them in 1827, after years of preparation. His brother Alvin dies in November 1823. The narrative connects the family's bereavement with the later importance of salvation for the dead without inventing a revelation at Alvin's deathbed.",
+      "experience": "Find the hill through landmarks, uncover the stone box, and obey the instruction to wait. Return on successive seasonal visits while doing farm and family tasks. Sit with the family after Alvin's death. The plate chamber is a custody encounter, not a treasure-looting reward.",
+      "art": "A rounded New York drumlin with actual soil, grass, hardwoods, and modest stone construction. Repeat one camera across autumn, winter, and spring. A simple empty chair at home carries the grief; do not place a completed monument at the early hill.",
+      "payoff": "Waiting, restraint, and family love become playable virtues before public leadership.",
+      "cast": ["JOSEPH_YOUTH", "MORONI", "ALVIN", "LUCY", "HYRUM"], "sources": ["jsh", "chronology"], "minutes": 20
+    },
+    {
+      "id": "06", "title": "Emma and the entrusted record", "date": "1827", "place": "South Bainbridge Manchester and Harmony", "status": "Historical devotional dramatization",
+      "history": "Joseph and Emma Hale marry on January 18, 1827. He obtains the plates on September 22 and moves to Harmony later that year. Emma is an active partner in the emerging work, not a companion whose only purpose is admiration.",
+      "experience": "A brief courtship conversation leads to the marriage and a dated transition. Prepare the wagon with Emma, retrieve and wrap the record, secure it, and travel through a dangerous route. Protection means finding shelter, listening for pursuers, and trusting helpers. The player can inspect the weight and handling of the wrapped plates without turning them into a weapon or inventory currency.",
+      "art": "Dark-haired Emma in a practical 1820s dress, young Joseph in work clothing, a small wagon at dawn, rain on split rails. Keep both faces fully rigged for close conversation. A covered package is the focal prop, with a separate respectful inspection reconstruction.",
+      "payoff": "The private commitment to Emma and the public responsibility for the record enter the same story.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "MORONI", "ISAAC_HALE"], "sources": ["chronology", "translation"], "minutes": 25
+    },
+    {
+      "id": "07", "title": "Harmony and the lost manuscript", "date": "1827 to 1828", "place": "Harmony Pennsylvania", "status": "Historical devotional dramatization",
+      "history": "Emma and Martin Harris assist the early translation. Martin's entrusted manuscript of 116 pages is lost in 1828. That year also brings the death of Joseph and Emma's first child and Emma's serious illness. Repentance and care belong beside the loss of the pages.",
+      "experience": "Prepare a quiet workspace, listen to Emma, dictate short reviewed passages, and arrange ordinary household tasks around translation. Martin requests the manuscript; the event follows the historical outcome. When he returns, the player must face the loss, comfort Emma, and seek forgiveness. There is no alternate branch where perfect button timing recovers the pages.",
+      "art": "One modest room changes with family life: a cradle, folded sheets, an unoccupied writing place. Use extinguished lamplight and the sound of a quill stopping, not a supernatural punishment effect. The grieving conversation requires a seated two-shot and enough silence for Emma to speak.",
+      "payoff": "Calling does not remove grief or the need to learn responsibility.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "MARTIN"], "sources": ["translation", "ministry"], "minutes": 25
+    },
+    {
+      "id": "08", "title": "Oliver and the work of translation", "date": "April to June 1829", "place": "Harmony and the Whitmer farm in Fayette", "status": "Devotional reconstruction based on translation accounts",
+      "history": "Oliver Cowdery becomes the principal scribe in 1829. Church sources discuss both the interpreters and a seer stone, including use of a hat to exclude light. The precise phenomenology of revelation is not documented in a way that fixes every visible detail.",
+      "experience": "Welcome Oliver, arrange the desk, dictate selected text, listen to read-back, and continue after interruptions. Include a historically grounded seer-stone-and-hat setup, alongside appropriate coverage of the interpreters. Faithfulness means receiving scripture through God's gift, not solving invented ancient-language puzzles or choosing which doctrine the book will contain. Move the household to Fayette through a dated chapter transition.",
+      "art": "Quill, ink, paper, a plain hat, a small brown stone, and covered plates inhabit a warm real room. A symbolic field of light can visualize Joseph's experience, but its journal label states that it is an artistic interpretation. Stage Oliver's writing hand and Joseph's covered sightline correctly from every camera.",
+      "payoff": "The ordinary sound of a spoken sentence becoming a written line is the central miracle of the chapter.",
+      "cast": ["JOSEPH_YOUNG", "OLIVER", "EMMA", "DAVID", "PETER_WHITMER"], "sources": ["translation"], "minutes": 25
+    },
+    {
+      "id": "09", "title": "Authority beside the river", "date": "May 15 1829 and subsequent restoration encounters", "place": "The Susquehanna region", "status": "Faithful presentation with dating limits preserved",
+      "history": "John the Baptist's appearance and the mutual baptisms of Joseph and Oliver are associated with May 15, 1829. Peter, James, and John also restore priesthood authority in the Church's account. The exact date of that latter encounter should not be invented or presented as established.",
+      "experience": "Leave the desk because a question about baptism demands prayer. Kneel with Oliver, receive the angelic visitation, enter the river, and participate in the baptisms with deliberate contextual actions. A separate encounter presents the apostles. The player enacts preparation and participation; sacred authority never becomes a rechargeable spell system.",
+      "art": "River shallows, visible stones, damp clothing and sun through leaves. Keep the bank accessible from both sides for free-camera viewing. Heavenly visitors have distinct faces and robes rather than identical glowing masks.",
+      "payoff": "The record leads to an organized covenant community, not merely to private mystical experiences.",
+      "cast": ["JOSEPH_YOUNG", "OLIVER", "JOHN_BAPTIST", "PETER", "JAMES", "JOHN"], "sources": ["priesthood", "jsh"], "minutes": 20
+    },
+    {
+      "id": "10", "title": "Witnesses and the printed book", "date": "1829 to March 1830", "place": "Fayette and Palmyra", "status": "Distinct historical witness events",
+      "history": "The Three Witnesses and the Eight Witnesses give different kinds of testimony and should have separate scenes. Printing follows at E. B. Grandin's establishment. Martin Harris's financial sacrifice is part of bringing the book to readers.",
+      "experience": "Pray with the Three Witnesses in an angelic encounter, then host the separate handling of the plates by the Eight. Travel to the print shop, inspect a composed page, help carry sheets, and place the finished book into another person's hands. None of the player-controlled printing tasks lets a typo rewrite scripture.",
+      "art": "A luminous clearing for the Three, an ordinary tactile gathering for the Eight, and a close packed print shop with movable type, racks, paper, and window light. Witness hands and plate thickness need contact poses; the two encounters cannot share a single indistinct crowd tableau.",
+      "payoff": "Private reception becomes public testimony and a durable physical book.",
+      "cast": ["JOSEPH_YOUNG", "OLIVER", "DAVID", "MARTIN", "HYRUM", "GRANDIN", "MORONI"], "sources": ["witnesses", "ministry"], "minutes": 25
+    },
+    {
+      "id": "11", "title": "The Church and the first New York congregations", "date": "1830", "place": "Fayette Colesville and the New York settlements", "status": "Historical devotional dramatization",
+      "history": "The Church is organized on April 6, 1830. Early preaching, baptisms, opposition, and arrests accompany its growth. The initial organization is the Church of Christ; the present full Church name belongs to the later naming history. Emma's call and hymn work deserve a visible place.",
+      "experience": "Prepare the room, welcome families, participate in sustaining and sacramental worship, and visit people who have questions. Preach to a small audience using reviewed sermon beats. Walk with Emma after baptism amid hostility and help her plan a hymn collection. An early arrest is a short experience of uncertainty and support, distinct from the final Carthage arrest.",
+      "art": "Low ceiling, benches, a shared table, open doorway, mud on visitors' boots. Exterior New York scenes feel local and personal. No Salt Lake Temple silhouette, modern meetinghouse, or modern missionary name badge appears here.",
+      "payoff": "Zion begins as actual people agreeing to care for one another.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "OLIVER", "PETER_WHITMER", "NEWEL_KNIGHT", "OFFICER", "TOWNSPERSON"], "sources": ["founding", "emma"], "minutes": 30
+    },
+    {
+      "id": "12", "title": "Gathering to Ohio", "date": "1831", "place": "Kirtland Ohio", "status": "Historical devotional dramatization",
+      "history": "The Church gathers to Kirtland in 1831, an essential stage between New York and Joseph's later Missouri residence. Newel K. Whitney's store and a growing community provide a setting for questions about stewardship, resources, and shared life.",
+      "experience": "Arrive with Emma, meet Whitney, find housing for newcomers, and assist a family with few supplies. Participate in a council about consecration through concrete choices about food, work, land, and fair treatment. A city plan appears as an achievable shared task rather than a magic construction menu.",
+      "art": "Winter wagons beside a readable general-store facade, shelves of useful goods, cream plaster, cocoa timber, modest signage. Open floors connect the shop to the household above. Preserve geography and contemporary building scale when adapting Celandia's construction kit.",
+      "payoff": "Gathering requires an economy of care, not only a powerful sermon.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "WHITNEY", "ELIZABETH_WHITNEY", "SIDNEY"], "sources": ["kirtland", "ministry"], "minutes": 25
+    },
+    {
+      "id": "13", "title": "A place for Zion", "date": "Summer 1831", "place": "Independence and Jackson County Missouri", "status": "Historical devotional dramatization",
+      "history": "Joseph identifies the Independence area with the building of Zion and a temple site. This Missouri vision precedes Nauvoo. Joseph travels between centers; the game must not imply that he permanently relocates from New York directly to Missouri at this point.",
+      "experience": "Journey west, walk the prospective site, kneel with companions, and discuss how families will actually settle. Place a survey stake and help read a plan. An optional conversation addresses the land's existing inhabitants and neighbors without presenting the country as empty or promising that every future conflict has a simple cause.",
+      "art": "Broad prairie sky and a small cluster of settlers, grounded survey tools, rough paths and a quiet temple site. The city of Zion appears only as a clearly marked visionary overlay. Historic buildings stay modest.",
+      "payoff": "A specific landscape anchors a promise whose fulfillment will outlast Joseph's mortal life.",
+      "cast": ["JOSEPH_YOUNG", "SIDNEY", "EDWARD_PARTRIDGE", "TOWNSPERSON"], "sources": ["zion", "ministry"], "minutes": 20
+    },
+    {
+      "id": "14", "title": "The vision of eternity", "date": "February 16 1832", "place": "Hiram Ohio", "status": "Devotional presentation of Doctrine and Covenants 76",
+      "history": "Joseph and Sidney Rigdon receive the vision associated with Doctrine and Covenants 76 while working on the Bible translation. This precedes the tarring and feathering. Its expansive view of salvation prepares the celestial themes of the ending.",
+      "experience": "Study with Sidney, encounter a question, pray, and witness the room open into a symbolic depth of light. Walk slowly through spatially distinct revelations while remaining able to return attention to Sidney. The player receives a teaching rather than ranking other characters into destinations or judging souls.",
+      "art": "Start with a recognizable farmhouse room. Three luminous horizons, star fields and human figures enter the composition as an explicitly designed visualization of the revelation. Avoid a science-fiction dashboard labeling heaven as measurable game statistics.",
+      "payoff": "The universe is wide, personal, and centered on Christ; its scale does not erase the value of an individual.",
+      "cast": ["JOSEPH_YOUNG", "SIDNEY", "CHRIST"], "sources": ["dc76"], "minutes": 20
+    },
+    {
+      "id": "15", "title": "The night in Hiram", "date": "Night of March 24 to 25 1832", "place": "The Johnson home Hiram Ohio", "status": "Historical assault and aftermath",
+      "history": "A mob assaults Joseph and Sidney; Joseph is tarred and feathered. He preaches the following day. The event belongs in Ohio in 1832, not in the Nauvoo crisis. Family distress remains part of its meaning.",
+      "experience": "A short attack sequence offers bodily orientation and protective gestures without implying that a player can undo the event. The main playable section is the long care afterward: accept help, wash, rest, hear Emma, and choose to appear before the congregation. A comfort setting reduces the assault to sound and a brief transition while preserving its consequences.",
+      "art": "Cold moonlight outside, warm lamplight around a blanket inside, bowls, clean cloth, exhausted helpers. No exploitative nudity or grotesque wound close-up. Dawn returns to the same porch, making the act of speaking again emotionally legible.",
+      "payoff": "The answer to humiliation is endurance, care, and renewed ministry.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "SIDNEY", "JOHN_JOHNSON", "MOB_VOICE"], "sources": ["ministry", "chronology"], "minutes": 20
+    },
+    {
+      "id": "16", "title": "Learning to be a people", "date": "1833", "place": "Whitney store and Kirtland", "status": "Historical teaching and domestic reconstruction",
+      "history": "After the formation of the First Presidency in 1832, the 1833 School of the Prophets and Word of Wisdom develop the Kirtland community. Joseph's Bible revision and the 1833 city plan for Zion also belong here. Emma's work and concerns are part of the household context.",
+      "experience": "Climb to the schoolroom, help prepare and clean it, hear Emma's concerns, and participate in study. Read a teaching, ask a question, and explain it to another person. Separate dated study encounters show the Bible revision and the city plan for Zion. A short retrospective council identifies the presidency already organized in 1832. Present the Word of Wisdom in its 1833 setting rather than giving every historical participant the practices of a modern ward.",
+      "art": "Small desks and stools, a washing bowl, shelves and soft high-window light. Classroom camera anchors should support leaning forward, walking to a text, and turning toward a question. Build intimate social presence from posture and listening rather than constant floating runes.",
+      "payoff": "The work of Zion depends on learning, discipline, and consideration in daily life.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "WHITNEY", "ORSON", "SIDNEY"], "sources": ["school", "wordwisdom"], "minutes": 20
+    },
+    {
+      "id": "17", "title": "Letters from the driven Saints", "date": "1833", "place": "Kirtland with news from Jackson County", "status": "Joseph receives events he did not personally witness",
+      "history": "Violence drives Latter-day Saints from Jackson County, and a mob destroys the Independence printing press during publication of the Book of Commandments. Joseph is not inserted into each distant attack. Correspondence, visitors, and relief efforts connect him to the suffering community while preserving his actual perspective.",
+      "experience": "Receive a letter, read it with others, receive a refugee's testimony, and organize practical help. A clearly framed memory tableau may show the correspondent's account, but controllable Joseph stays where he was. Set aside shelter, supplies, and time for the returning messenger.",
+      "art": "A letter on a familiar Kirtland table, wet travel clothing at the door, an ordinary lamp. If a distant tableau appears, its camera remains separate from Joseph's body. Do not use a seamless teleport that implies he stood in Jackson County during an event he learned about later.",
+      "payoff": "The geography of the Church expands while the narrative remains a life of Joseph Smith.",
+      "cast": ["JOSEPH_YOUNG", "EMMA", "EDWARD_PARTRIDGE", "REFUGEE"], "sources": ["violence", "war"], "minutes": 15
+    },
+    {
+      "id": "18", "title": "Zion's Camp", "date": "1834", "place": "The road from Ohio to Missouri", "status": "Historical devotional dramatization",
+      "history": "Joseph leads an expedition to assist the expelled Saints. The expected restoration of their lands does not occur as hoped. The journey's hardships and the development of future leaders matter more to this design than a fabricated military victory.",
+      "experience": "Walk and ride a compressed but geographically legible route. Share provisions, repair a wagon, mediate an argument, and sit beside the ill. The climax is choosing restraint and care when expectations fail. Joseph's calling is expressed through service amid disappointment, not through defeating waves of enemies.",
+      "art": "Rain-dark timber, canvas, muddy ruts, small campfire circles, and a vast road ahead. A tracking shot alongside the wagon becomes an accessible free-camera inspection pose. Show ordinary exhausted bodies and recurring companions rather than identical marching troops.",
+      "payoff": "Building Zion requires people capable of accepting discipline and continuing to love when plans fail.",
+      "cast": ["JOSEPH_YOUNG", "BRIGHAM", "HEBER", "ORSON", "REFUGEE"], "sources": ["camp"], "minutes": 30
+    },
+    {
+      "id": "19", "title": "A ministry for the world", "date": "1835", "place": "Kirtland", "status": "Historical organization with original conversational dialogue",
+      "history": "The Twelve and the Seventy are organized in 1835, and the Doctrine and Covenants is published. The Egyptian papyri associated with the Book of Abraham also enter Joseph's work that year; publication of the Book of Abraham belongs to 1842. Orson Pratt connects missionary work and intellectual curiosity.",
+      "experience": "Convene and sustain a council, hear prospective missionaries, and prepare a departure. A study-room encounter lets Joseph and Orson consider scripture, stars, learning, and human potential without attributing later cosmological systems to this exact conversation. Papyri remain sacred-study objects, with the translation presented from the game's devotional perspective and the documentary questions described in its journal.",
+      "art": "A circle of distinct young and older faces; travel bags; notebooks; a restrained brass geometry instrument. Joseph's earthly study uses actual paper and tools. Do not put Pratt's 1850s publications on an 1835 shelf.",
+      "payoff": "The intimate New York question has become a message carried into a much larger world.",
+      "cast": ["JOSEPH_YOUNG", "OLIVER", "BRIGHAM", "HEBER", "ORSON", "PARLEY"], "sources": ["twelve", "abraham"], "minutes": 20
+    },
+    {
+      "id": "20", "title": "The Kirtland Temple", "date": "March 27 and April 3 1836", "place": "Kirtland Temple", "status": "Historical dedication and devotional vision",
+      "history": "The temple dedication and the later appearances of Christ, Moses, Elias, and Elijah are distinct events. Joseph and Oliver's account in Doctrine and Covenants 110 gives the latter sequence. The architecture and worship must reflect Kirtland rather than a later Utah temple.",
+      "experience": "First help finish the building and take part in the dedication. On the separate April date, move through the actual hall with Oliver, pray, and receive the visitors. A veil or curtain moves inside a fully modeled room. Each visitor has a clear purpose; keys are explained as authority and responsibilities rather than glowing collectible objects.",
+      "art": "Pale walls, actual tiered pulpits, tall windows, benches, curtains and restrained golden light. Give each visitor an individual face and entrance. The player can orbit a sacred encounter without finding a painted backdrop behind it.",
+      "payoff": "Gathering, gospel ministry, and the turning of family hearts become one structure of meaning.",
+      "cast": ["JOSEPH_MATURE", "OLIVER", "EMMA", "CHRIST", "MOSES", "ELIAS", "ELIJAH"], "sources": ["dc110", "dedication"], "minutes": 30
+    },
+    {
+      "id": "21", "title": "Faith in a time of loss", "date": "1837 to early 1838", "place": "Kirtland", "status": "Historical financial crisis and dissent",
+      "history": "The Kirtland Safety Society fails amid financial troubles and wider instability. Members experience real losses, and serious dissent follows. A positive religious treatment can acknowledge failed administration and grief without making every dissatisfied person wicked or denying the loss.",
+      "experience": "Hear depositors, examine a household's needs, take responsibility in conversation, and help people find material support. A council discussion reveals the limits of available choices. No player optimization makes the institution succeed against history. The eventual departure remains a loss as well as a movement toward the next chapter.",
+      "art": "Paper notes in anxious hands, a quiet queue, sparse shelves, an empty chair at a familiar council table. Facial acting and silence carry the tension. Keep money as human livelihood rather than a whimsical RPG currency.",
+      "payoff": "The player learns to distinguish a prophetic calling from a promise of painless institutional success.",
+      "cast": ["JOSEPH_MATURE", "EMMA", "WHITNEY", "SIDNEY", "DEPOSITOR"], "sources": ["bank"], "minutes": 25
+    },
+    {
+      "id": "22", "title": "Far West and the Missouri conflict", "date": "1838", "place": "Far West and northern Missouri", "status": "Historical conflict with Joseph's location preserved",
+      "history": "Joseph settles at Far West during the final Missouri period. Hostility, exclusion, armed actions, the Danites, and state intervention escalate the crisis. Boggs's October 27 order, the October 30 Hawn's Mill massacre, and Joseph's October 31 capture are different events; he was not present at the massacre.",
+      "experience": "Start with a hopeful civic gathering and planning near Adam-ondi-Ahman, then let anxious messages interrupt ordinary work. Escort families, distribute supplies, seek legal protection, and challenge reckless retaliation. The Hawn's Mill news arrives through survivors or correspondence. The main chapter ends with Joseph submitting during the Far West collapse, not winning the conflict in a battle arena.",
+      "art": "A changing Far West street: celebration, then crowded wagons, then a cold guarded space. Distant smoke is geographically motivated. Individual neighbors and frightened children remain visible; avoid a faceless enemy nation or a fantasy holy-war aesthetic.",
+      "payoff": "The promise of Zion passes through the moral and human cost of displacement.",
+      "cast": ["JOSEPH_MATURE", "HYRUM", "SIDNEY", "EDWARD_PARTRIDGE", "REFUGEE", "OFFICER"], "sources": ["war", "violence", "adamondi"], "minutes": 40
+    },
+    {
+      "id": "23", "title": "Liberty Jail", "date": "Winter 1838 to April 1839", "place": "Liberty Missouri", "status": "Historical imprisonment and scriptural revelation",
+      "history": "Joseph's confinement leads to the March 1839 letter from which Doctrine and Covenants 121 through 123 are drawn. The chapter's center is the question of suffering and the proper exercise of influence. Escape to Illinois follows in April.",
+      "experience": "Move inside the low basement, share space and food, receive visitors and Emma's news, and begin a letter in anguish. Pray, listen, and continue writing with renewed purpose. The player's actions collect testimonies and care for companions; there is no prison combat mission. A short staged transfer leads to release and travel.",
+      "art": "A tiny barred window throws a narrow strip across a real room. Maintain room dimensions even when camera obstruction is difficult. Joseph can be physically small within the frame while his letter opens to a much larger landscape of people he loves.",
+      "payoff": "The most confined space yields the game's clearest teaching that leadership must persuade with gentleness and love.",
+      "cast": ["JOSEPH_MATURE", "HYRUM", "EMMA", "CHRIST", "OFFICER"], "sources": ["dc121", "liberty"], "minutes": 30
+    },
+    {
+      "id": "24", "title": "Nauvoo rises by the river", "date": "1839 to 1841", "place": "Commerce and Nauvoo Illinois with a Washington journey", "status": "Historical hub chapter with separately dated episodes",
+      "history": "Nauvoo develops after the Missouri expulsion. This chapter includes care during the 1839 sickness, Joseph's 1839 appeal to President Martin Van Buren, the 1840 teaching of baptism for the dead, the city charter, the Nauvoo Legion, and the beginning of temple construction in 1841. These are connected episodes, not one day.",
+      "experience": "Help drain and settle land, visit the sick, take part in a blessing, and arrange a home. A Washington episode lets the player present redress petitions and experience refusal. Return through a date card to the teaching about the dead and the temple's beginnings. Place a city-plan element, carry a stone, hear immigrants, and play with Joseph's children between public responsibilities.",
+      "art": "The Mississippi bend, wetlands, timber houses, a ferry, a slowly rising limestone temple, real domestic rooms. The Washington office is a separate small environment. Nauvoo's temple remains unfinished throughout Joseph's mortal lifetime; the completed landmark belongs only to later history or a labeled vision.",
+      "payoff": "The hub visibly gathers people and memories from earlier chapters into a common home.",
+      "cast": ["JOSEPH_MATURE", "EMMA", "HYRUM", "BRIGHAM", "VAN_BUREN", "WILLIAM_CLAYTON", "NEWEL_KNIGHT", "CHILD", "REFUGEE"], "sources": ["nauvoo", "redress", "dead", "ministry"], "minutes": 70
+    },
+    {
+      "id": "25", "title": "Two days in the Nauvoo Lodge", "date": "March 15 and 16 1842", "place": "The upper floor of the Red Brick Store", "status": "Documented rapid Masonic advancement",
+      "history": "Joseph becomes an Entered Apprentice on March 15. On March 16 he is passed as a Fellow Craft and raised as a Master Mason. Thus the second and third degrees occur in one day, while initiation through Master Mason spans two dates. The source does not establish a supernatural feat of memorization or a hidden reason for his joining.",
+      "experience": "Enter the store, greet Abraham Jonas and Sidney, and take part in a carefully researched public-facing account of fraternal admission and advancement. Mark the overnight transition explicitly. Symbolic space, moral reflection, and community relations can be interactive while private ritual detail stays at the level selected with advisers.",
+      "art": "A real shop below and a modest assembled room above, candles, benches, and period dress. Do not use an Egyptian megatemple or imply that modern conspiratorial iconography occupied the room. Camera movement should reveal the room's material simplicity.",
+      "payoff": "The event belongs to Joseph's nineteenth-century social world and does not replace revelation as the source of his calling.",
+      "cast": ["JOSEPH_MATURE", "SIDNEY", "JONAS"], "sources": ["lodge", "masonry"], "minutes": 20
+    },
+    {
+      "id": "26", "title": "Relief covenant and eternal family", "date": "1842 to 1843", "place": "Nauvoo", "status": "Historical organization and teachings with sensitive domestic dramatization",
+      "history": "The Wentworth letter and Articles of Faith appear in March 1842. Relief Society follows on March 17 with Emma as president. Joseph introduces the endowment in May, publishes the Book of Abraham, and teaches sealing. Joseph and Emma's sealing occurs in May 1843; the plural-marriage revelation is recorded that July. These episodes require their own dates and contexts.",
+      "experience": "Help prepare the Relief Society meeting, then listen as Emma, her counselors, and Eliza organize meaningful relief. A second episode explores temple preparation and family promises through teaching and preparation rather than making ordinances into puzzles. A private Joseph-and-Emma conversation acknowledges the pain and difficulty of plural marriage with Emma's full emotional agency. Do not fabricate assent or a complete private resolution.",
+      "art": "Women's faces, records, supplies, a bright upper room, then a quiet home with two chairs of equal visual importance. Distinguish the public meeting, domestic setting, and sacred preparation. The 1842 Abraham publication opens a restrained star-filled study visualization.",
+      "payoff": "Zion's spiritual claims are tested in care for actual women, children, households, and grieving families.",
+      "cast": ["JOSEPH_MATURE", "EMMA", "ELIZA", "SARAH_CLEVELAND", "ELIZABETH_WHITNEY", "HYRUM", "WILLIAM_CLAYTON"], "sources": ["relief", "plural", "abraham", "nauvoo"], "minutes": 50
+    },
+    {
+      "id": "27", "title": "A voice in the republic", "date": "Early 1844", "place": "Nauvoo", "status": "Historical presidential campaign and council work",
+      "history": "Joseph's 1844 presidential campaign seeks protection of civil and religious rights and proposes wider reforms, including compensated emancipation. The Council of Fifty is also organized in 1844. Neither the campaign nor the council should be rewritten as Joseph winning the presidency or establishing a completed world government.",
+      "experience": "Read responses from political candidates, work with scribes on the platform, review a pamphlet, and address a small campaign meeting. Listen to questions about slavery, religious minorities, government responsibility, and conscience. A separately framed council scene considers migration and protection. The player's rhetorical choices vary clarity and emphasis within reviewed positions, not historical policy or the election result.",
+      "art": "Ink, broadside typography, a modest flag, travel bags for electioneers, a crowded store office. The civic art direction remains human and republican; avoid fascist masses or imperial banners in an otherwise positive religious vision.",
+      "payoff": "The prayer for a place to worship becomes an appeal for civil protection and public justice.",
+      "cast": ["JOSEPH_MATURE", "HYRUM", "SIDNEY", "WILLIAM_CLAYTON", "WILLIAM_LAW", "TOWNSPERSON"], "sources": ["campaign", "fifty"], "minutes": 30
+    },
+    {
+      "id": "28", "title": "The King Follett memorial discourse", "date": "April 7 1844", "place": "An outdoor general conference in Nauvoo", "status": "Historical sermon with an explicitly adapted script",
+      "history": "King Follett dies on March 9 after an accident and is buried the next day. Joseph's memorial sermon occurs almost a month later at general conference. Four contemporaneous reports preserve different portions; no complete verbatim transcript survives. The game stages that conference, not a graveside funeral with a coffin.",
+      "experience": "Before speaking, greet Louisa Follett and the family, hear a mourner, step to the stand, and ask God for help. The player then delivers a sequence of consolation, teaching about God's nature, the continuing person, and eternal growth through Christ. Choices determine where to look, when to pause, whom to address, and which approved passage to develop. Keep a seated listener visible through every expansive cosmic image.",
+      "art": "Wind through a real grove and the edges of coats, a rough stand, an immense but economical crowd, Louisa's expressive face, and scribes taking different notes. Reveal the symbolic heavens briefly without leaving the actual speaking body or erasing mourners. The unfinished temple stays in its historical condition.",
+      "payoff": "This is the thematic climax: the cosmic future matters because someone has lost a husband and father.",
+      "cast": ["JOSEPH_MATURE", "LOUISA", "MOURNER", "WILLARD", "WILFORD", "THOMAS_BULLOCK", "WILLIAM_CLAYTON"], "sources": ["follett", "follettstyle"], "minutes": 35
+    },
+    {
+      "id": "29", "title": "The city council and the road to Carthage", "date": "June 1844", "place": "Nauvoo and Carthage Illinois", "status": "Historical civic crisis and arrest",
+      "history": "The Nauvoo Expositor publishes criticism; Joseph and the city council order destruction of its press. The crisis produces legal action, Joseph and Hyrum's surrender, and additional treason charges. Their stated fears and legal reasoning can be presented sympathetically while showing what the council actually did.",
+      "experience": "Listen to the dispute, inspect the printed criticism, and participate in a council discussion. The historical decision proceeds; the player does not earn virtue points for smashing a press. Carry documents, say goodbye to Emma and the children, cross and return from the river within the dated sequence, and take the road with Hyrum. Ordinary parting gestures receive more time than spectacle.",
+      "art": "A familiar city becoming quiet, open newspapers, a council table, the threshold of the family home, and a long road. Use the camera to hold relationships together rather than glamorizing destruction.",
+      "payoff": "Public authority, personal risk, and family love converge in a decision whose consequences the player now understands.",
+      "cast": ["JOSEPH_MATURE", "EMMA", "HYRUM", "WILLIAM_LAW", "FORD", "OFFICER", "CHILD"], "sources": ["deaths", "expositor"], "minutes": 35
+    },
+    {
+      "id": "30", "title": "Carthage", "date": "June 27 1844", "place": "The upper room of Carthage Jail", "status": "Historical martyrdom",
+      "history": "Joseph and Hyrum are killed in the attack on Carthage Jail. John Taylor is wounded and survives; Willard Richards survives. The scene must not falsely claim that the men had no weapons, or turn Joseph into a shooter-game hero. Their attempted defense belongs in a measured reconstruction.",
+      "experience": "Read, write to Emma, speak with Hyrum, listen to John Taylor's hymn, and bless a departing visitor such as Dan Jones. During the attack, contextual movement preserves physical participation without a skill challenge that promises escape from history. Let the player reach toward a companion and try to assist. Transition through sound and light after the deaths; no score, victory banner, loot, or death-retry screen appears.",
+      "art": "A completely modeled room and stair, window light, chairs, a book, and remembered familiar faces. Present the violence briefly and with restraint. A comfort option moves from the first alarm directly to the aftermath and the next chapter.",
+      "payoff": "The mortal story reaches its cost, but the game's promised experience of hope still has substantial playable work ahead.",
+      "cast": ["JOSEPH_MATURE", "HYRUM", "JOHN_TAYLOR", "WILLARD", "DAN_JONES", "MOB_VOICE"], "sources": ["deaths", "martyrdom"], "minutes": 25
+    },
+    {
+      "id": "31", "title": "Beyond the veil", "date": "An imagined postmortal interval", "place": "A designed spirit-world landscape", "status": "Explicit artistic religious speculation",
+      "history": "LDS teachings distinguish death, the spirit world, resurrection, and exaltation. No historical source supplies a playable record of Joseph's personal arrival in the afterlife. This chapter is a devotional invention drawing on those distinctions, not an additional documented episode in his biography.",
+      "experience": "Continue as Joseph rather than switching to a descendant. Find Hyrum and Alvin, listen, and begin welcoming others. Remain aware that Emma and the children are still alive on earth in 1844. Family reunion across later time can be glimpsed as a promise, not staged as Emma dying that day. Prepare a garden and guide a lonely person toward company.",
+      "art": "The first grove's visual grammar returns: cream light, living water, recognizable trees, human faces, and an open path. Joseph has no wings; angelic ministry and resurrected exaltation are not treated as interchangeable biological classes. This is the emotional bridge, not the final reward screen.",
+      "payoff": "The hand that was offered to the sick child is now offered by Joseph beyond mortality.",
+      "cast": ["JOSEPH_MATURE", "HYRUM", "ALVIN", "CHRIST", "MOURNER"], "sources": ["godlike", "spiritworld"], "minutes": 20
+    },
+    {
+      "id": "32", "title": "A world entrusted to love", "date": "A visionary far future beyond a specified earthly date", "place": "Celestial space and a new living world", "status": "Explicit speculative celestial finale",
+      "history": "The finale uses the requested image of Joseph as an exalted co-heir with Christ, entrusted with a world. A personal planet award is not established Church doctrine, and the Church's account of becoming like God cautions against reducing exaltation to that image. This is the game's imaginative interpretation. Jehovah is Jesus Christ in LDS usage, not a separate fourth divine character.",
+      "experience": "After an explicit transition beyond the spirit-world interval and toward promised resurrection and eternal growth, Christ entrusts Joseph with creative stewardship. Fly freely, walk the world's surface, plant a garden, open watercourses, make shelter, and invite free inhabitants into mutual care. There is no forced worship, population domination, or automatic erasure of individual agency. Gather the motifs of grove, manuscript, river, temple, and relieved mourner into a final act of service. The credits begin after the player offers another person a hand.",
+      "art": "A new globe fills the sky through a pearl-lilac membrane; its surface is a fully playable garden with architecture grown from timber, limestone, water, and proportion. The camera can pull from two people beside a spring into the planetary vista and return without a flat-matte reveal.",
+      "payoff": "The establishment of Zion becomes an ongoing work of love in the cosmos. An optional portal opens into the separate seven-era campaign.",
+      "cast": ["JOSEPH_MATURE", "CHRIST", "FUTURE_GUIDE"], "sources": ["godlike", "jehovah"], "minutes": 35
+    }
+  ]
+}

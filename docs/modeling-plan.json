@@ -1,0 +1,42 @@
+{
+ "groups": {
+   "Joseph across his life": ["JOSEPH_CHILD","JOSEPH_YOUTH","JOSEPH_YOUNG","JOSEPH_MATURE"],
+   "Family and household": ["EMMA","HYRUM","LUCY","JOSEPH_SR","ALVIN","ISAAC_HALE","CHILD"],
+   "Translation witnesses and New York": ["OLIVER","MARTIN","DAVID","PETER_WHITMER","GRANDIN","NEWEL_KNIGHT"],
+   "Church leadership and community": ["SIDNEY","WHITNEY","ELIZABETH_WHITNEY","EDWARD_PARTRIDGE","JOHN_JOHNSON","BRIGHAM","HEBER","ORSON","PARLEY","ELIZA","SARAH_CLEVELAND","WILLIAM_CLAYTON"],
+   "King Follett and Carthage": ["LOUISA","WILLARD","WILFORD","THOMAS_BULLOCK","JOHN_TAYLOR","DAN_JONES"],
+   "Civic figures and opposition": ["JONAS","VAN_BUREN","FORD","WILLIAM_LAW"],
+   "Divine and angelic visitors": ["FATHER","CHRIST","MORONI","JOHN_BAPTIST","PETER","JAMES","JOHN","MOSES","ELIAS","ELIJAH"],
+   "Reusable community roles": ["METHODIST","PRESBYTERIAN","BAPTIST","TOWNSPERSON","REFUGEE","OFFICER","DEPOSITOR","MOURNER","MOB_VOICE"],
+   "Fictional future Saints and era cast": ["FUTURE_GUIDE","FUTURE_SCIENTIST","MISSIONARY_1955","ARCHIVIST_1994","CARETAKER_2026","SURVIVOR","ARCHIVE_KEEPER"]
+ },
+ "next_models": [
+   {"rank":1,"id":"LUCY","reason":"The opening, questions of faith, Alvin's death, and family scenes need a mature woman with real emotional range.","brief":"Mature mother; dark hair beginning to gray, a composed expressive face, practical plum/brown dress and shawl; cap removable; restrained shapes and clear silhouette."},
+   {"rank":2,"id":"JOSEPH_SR","reason":"Needed for the childhood opening and the morning after Moroni's visit; unlocks the complete early family group.","brief":"Kind weathered father; rural New England work clothes, brown coat and waistcoat, gray-brown hair; strong hands, no fantasy elder costume."},
+   {"rank":3,"id":"MARTIN","reason":"Essential to the lost 116 pages, witness sequence, and financing the printing; several emotionally different scenes.","brief":"Earnest middle-aged farmer; distinct receding hairline, broader face and practical olive-brown coat; worry and relief expression studies."},
+   {"rank":4,"id":"DAVID","reason":"Completes the Three Witnesses and the Fayette translation group alongside the existing Oliver model.","brief":"Younger adult with an individual oval face, tidy brown hair and muted green/charcoal clothing; keep distinct from Joseph and Oliver."},
+   {"rank":5,"id":"SIDNEY","reason":"The shared 1832 vision, Kirtland school, Missouri, and Nauvoo need a major recurring preacher.","brief":"High forehead, strong individual face and preacher's hands; dark frock coat and neckcloth; vigorous middle-aged man, not an elderly Utah patriarch."},
+   {"rank":6,"id":"LOUISA","reason":"The indispensable emotional partner for the King Follett acting benchmark; a better immediate investment than another distant crowd leader.","brief":"Grieving but capable mature woman; muted teal dress and charcoal shawl; subtle brow, eye and mouth shapes suited to close consolation scenes."},
+   {"rank":7,"id":"JOHN_TAYLOR","reason":"Needed with Joseph, Hyrum and Willard for the Carthage upper room and hymn.","brief":"Younger-to-middle-aged English man in1844; clean-shaven, distinct warm face; period dark coat; seated/singing pose and a separate gentle expression."},
+   {"rank":8,"id":"WILLARD","reason":"Completes the four principal Carthage men and doubles as a recorder in the King Follett chapter.","brief":"Mature, solidly built observer; individual face, dark period coat; steady eye line, seated writing hands and restrained expression."},
+   {"rank":9,"id":"BRIGHAM","reason":"Recurring leadership and the later Salt Lake expansion; obtain a younger Nauvoo identity before an older Utah version.","brief":"First make1830s–1844 Brigham in his thirties/early forties, practical build and hair, no iconic elderly white beard. Later make an explicitly older Salt Lake variant."},
+   {"rank":10,"id":"ORSON","reason":"Connects the principal historical campaign's inquiry and the expansion's mystical/scientific themes.","brief":"Young thoughtful mathematician-apostle, narrow distinct face, dark hair and restrained green/charcoal clothing; notebook as separate prop; later elder variant shares identity."},
+   {"rank":11,"id":"ELIZA","reason":"A major expressive woman in the Relief Society, poetry, and the broader community.","brief":"Intelligent mature woman with composed face, dark hair pinned back and lavender-gray dress; writing and public-listening poses."},
+   {"rank":12,"id":"JOSEPH_CHILD","reason":"The early illness cannot use an adolescent model scaled down; the opening needs a genuine child-proportioned body.","brief":"Seven-year-old version of the locked Joseph identity, larger child head-to-body ratio and shorter limbs, plain early1810s clothing; keep face age-appropriate."}
+ ],
+ "parallel_sacred_batch": ["CHRIST","JOHN_BAPTIST","FATHER"],
+ "additional_visual_roles": [
+   {"name":"John Whitmer","status":"Needed for an identifiable Eight Witnesses tableau; nonspeaking unless script expands"},
+   {"name":"Christian Whitmer","status":"Needed for Eight Witnesses; shared period body kit with individual head"},
+   {"name":"Jacob Whitmer","status":"Needed for Eight Witnesses; shared period body kit with individual head"},
+   {"name":"Peter Whitmer Jr.","status":"Needed for Eight Witnesses; distinct from Peter Whitmer Sr."},
+   {"name":"Hiram Page","status":"Needed for Eight Witnesses; distinct from Hyrum Smith"},
+   {"name":"Samuel H. Smith","status":"Needed for Eight Witnesses and useful early missionary/family presence"},
+   {"name":"King Follett","status":"Optional portrait or a separately researched living memory; not standing alive beside his widow at the April7 address"},
+   {"name":"Mary Whitmer","status":"Optional Fayette household expansion, if her role is added to the scene specification"},
+   {"name":"Joseph Smith III Julia Murdock Smith Frederick G. W. Smith and Alexander H. Smith","status":"Optional named household children; current script uses a composite child voice and does not require four separate hero-quality rigs"},
+   {"name":"Nephi","status":"Existing Meshy prototype; optional Book of Mormon teaching or translation visualization, not a physical contemporary of Joseph"},
+   {"name":"Mortal Moroni","status":"Optional scripture tableau distinct from the white-robed1823 angelic visitor; preserve a related identity if the narrative uses both"}
+ ],
+ "modeling_prompt":"Single full-body character of [NAME] at [AGE] in [YEAR], [DISTINCT FACE AND HAIR], [DATE-APPROPRIATE CLOTHES]. Human proportions, sculpted readable face, broad flat unlit albedo colors with no baked shadows or highlights, no photographic pores or fabric weave. Neutral front view, relaxed symmetric A-pose with arms30 degrees from torso, hands open and fingers separated, legs apart, every fingertip and shoe entirely in frame with generous margins. Plain background, no held props, no scenery, no text. Separate coat tails or skirt panels from legs and separate hands from sleeves. Supply front side back and three-quarter references with matching anatomy and outfit. Final toon bands and warm brown outlines will be applied in-engine."
+}

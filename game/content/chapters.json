@@ -1,0 +1,5675 @@
+{
+  "title": "Joseph Smith and the Gathering of Zion",
+  "version": 1,
+  "coreCount": 32,
+  "names": {
+    "JOSEPH_CHILD": "Joseph Smith as a child",
+    "JOSEPH_YOUTH": "Joseph Smith as a teenager",
+    "JOSEPH_YOUNG": "Joseph Smith as a young adult",
+    "JOSEPH_MATURE": "Joseph Smith in his later ministry and celestial chapters",
+    "EMMA": "Emma Hale Smith",
+    "OLIVER": "Oliver Cowdery",
+    "HYRUM": "Hyrum Smith",
+    "LUCY": "Lucy Mack Smith",
+    "JOSEPH_SR": "Joseph Smith Sr.",
+    "ALVIN": "Alvin Smith",
+    "FATHER": "God the Father",
+    "CHRIST": "Jesus Christ also identified as Jehovah",
+    "MORONI": "Moroni",
+    "JOHN_BAPTIST": "John the Baptist",
+    "PETER": "Peter",
+    "JAMES": "James",
+    "JOHN": "John the Apostle",
+    "MOSES": "Moses",
+    "ELIAS": "Elias as named in Doctrine and Covenants 110",
+    "ELIJAH": "Elijah",
+    "MARTIN": "Martin Harris",
+    "DAVID": "David Whitmer",
+    "PETER_WHITMER": "Peter Whitmer Sr.",
+    "ISAAC_HALE": "Isaac Hale",
+    "GRANDIN": "Egbert B. Grandin",
+    "NEWEL_KNIGHT": "Newel Knight",
+    "SIDNEY": "Sidney Rigdon",
+    "WHITNEY": "Newel K. Whitney",
+    "ELIZABETH_WHITNEY": "Elizabeth Ann Whitney",
+    "EDWARD_PARTRIDGE": "Edward Partridge",
+    "JOHN_JOHNSON": "John Johnson",
+    "BRIGHAM": "Brigham Young",
+    "HEBER": "Heber C. Kimball",
+    "ORSON": "Orson Pratt",
+    "PARLEY": "Parley P. Pratt",
+    "ELIZA": "Eliza R. Snow",
+    "SARAH_CLEVELAND": "Sarah M. Cleveland",
+    "WILLIAM_CLAYTON": "William Clayton",
+    "JONAS": "Abraham Jonas",
+    "LOUISA": "Louisa Tanner Follett",
+    "WILLARD": "Willard Richards",
+    "WILFORD": "Wilford Woodruff",
+    "THOMAS_BULLOCK": "Thomas Bullock",
+    "JOHN_TAYLOR": "John Taylor",
+    "DAN_JONES": "Dan Jones",
+    "VAN_BUREN": "Martin Van Buren",
+    "FORD": "Governor Thomas Ford",
+    "WILLIAM_LAW": "William Law",
+    "METHODIST": "Composite Methodist minister",
+    "PRESBYTERIAN": "Composite Presbyterian minister",
+    "BAPTIST": "Composite Baptist minister",
+    "TOWNSPERSON": "Composite townspeople voice family",
+    "REFUGEE": "Composite refugee voice family",
+    "OFFICER": "Composite officers and guard voice family",
+    "DEPOSITOR": "Composite Kirtland depositor",
+    "CHILD": "Composite Smith household child",
+    "MOURNER": "Composite mourner",
+    "MOB_VOICE": "Composite mob voices",
+    "FUTURE_GUIDE": "Miriam a fictional celestial mission guide",
+    "FUTURE_SCIENTIST": "Elias Vale a fictional Zion scientist",
+    "MISSIONARY_1955": "Ruth a fictional 1955 missionary",
+    "ARCHIVIST_1994": "Daniel a fictional 1994 family archivist",
+    "CARETAKER_2026": "Ada a fictional present-day caretaker",
+    "SURVIVOR": "Mara a fictional future desert survivor",
+    "ARCHIVE_KEEPER": "The fictional custodian of the closed archive",
+    "CHRISTIAN_WHITMER": "Christian Whitmer",
+    "JACOB_WHITMER": "Jacob Whitmer",
+    "PETER_WHITMER_JR": "Peter Whitmer Jr.",
+    "JOHN_WHITMER": "John Whitmer",
+    "HIRAM_PAGE": "Hiram Page",
+    "SAMUEL_SMITH": "Samuel H. Smith"
+  },
+  "chapters": [
+    {
+      "id": "01",
+      "title": "A family and a promise",
+      "date": "1805 to about 1813",
+      "place": "Vermont and West Lebanon New Hampshire",
+      "status": "Historical devotional dramatization",
+      "history": "Joseph was born on December 23, 1805, in Sharon, Vermont. A childhood illness led to surgery on his left leg while his family lived in New Hampshire. Family care, poverty, work, and vulnerability precede his public calling.",
+      "minutes": 10,
+      "environment": "bedroom",
+      "playerId": "JOSEPH_CHILD",
+      "intro": "Begin as the recovering boy, with a low eye height and a fully explorable small room. Reach for water, call for a parent, and accept help walking to the doorway. A short passage of seasons connects recovery to the family journey. The surgery stays off screen; the player experiences trust and care rather than a medical challenge.",
+      "epilogue": "The hand offered to Joseph becomes the hand he offers to others throughout the campaign.",
+      "sourceUrls": [
+        {
+          "title": "Church historical summary of Joseph Smith's life",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/historical-summary?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "JOSEPH_SR",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "LUCY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Ask your father to stay",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Call softly for your father",
+          "id": "01-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_CHILD",
+              "text": "Father, stay where I can see you.",
+              "direction": "Quiet fear; look toward his hand.",
+              "lineId": "JS_01_JOSEPH_CHILD_001"
+            },
+            {
+              "speaker": "JOSEPH_SR",
+              "text": "I am here, son. We will take the next step together.",
+              "direction": "Close, steady, no public-speaking voice.",
+              "lineId": "JS_01_JOSEPH_SR_002"
+            }
+          ]
+        },
+        {
+          "label": "Accept Lucy's care",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Reach for the water and accept help",
+          "effect": "comfort",
+          "id": "01-2",
+          "lines": [
+            {
+              "speaker": "LUCY",
+              "text": "The water is here when you are ready.",
+              "direction": "Practical care, not a speech.",
+              "lineId": "JS_01_LUCY_003"
+            }
+          ]
+        },
+        {
+          "label": "Take a supported step",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "travel",
+          "prompt": "Take the next step with your family",
+          "id": "01-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_CHILD",
+              "text": "I am ready to try, if you will stay beside me.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_01_03_01"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "02",
+      "title": "Many voices in Palmyra",
+      "date": "1816 to spring 1820",
+      "place": "Palmyra and Manchester New York",
+      "status": "Historical setting with composite townspeople",
+      "history": "The Smith family moved to the Palmyra area in 1816. Joseph's account describes competing Methodist, Presbyterian, and Baptist claims. Freemasonry also belonged to the region's civic culture; this does not establish a town-wide conspiracy or a Masonic cause of his visions.",
+      "minutes": 20,
+      "environment": "town",
+      "playerId": "JOSEPH_YOUTH",
+      "intro": "Work a short farm route, enter three distinct preaching gatherings, and ask each minister a sincere question. Their responses reveal differing beliefs through human conversations. Pass an understated lodge notice as ordinary civic scenery. At home, open James 1:5 and choose a quiet place to seek God's guidance.",
+      "epilogue": "The first essential action is listening. The desire for religious certainty becomes a personal prayer.",
+      "sourceUrls": [
+        {
+          "title": "Joseph Smith History chapter 1",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1?lang=eng"
+        },
+        {
+          "title": "Masonry",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/masonry?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "METHODIST",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "PRESBYTERIAN",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "BAPTIST",
+          "position": [
+            8.5,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Listen at the Methodist gathering",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Ask the minister about faith",
+          "id": "02-1",
+          "lines": [
+            {
+              "speaker": "METHODIST",
+              "text": "Bring your questions, young man. We ought to speak earnestly about the soul.",
+              "direction": "Sincere invitation.",
+              "lineId": "JS_02_METHODIST_001"
+            }
+          ]
+        },
+        {
+          "label": "Hear the Presbyterian minister",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Bring your question about scripture",
+          "id": "02-2",
+          "lines": [
+            {
+              "speaker": "PRESBYTERIAN",
+              "text": "Let us begin with the scripture you have been considering.",
+              "direction": "Patient, organized thought.",
+              "lineId": "JS_02_PRESBYTERIAN_002"
+            }
+          ]
+        },
+        {
+          "label": "Speak with the Baptist minister",
+          "target": [
+            7,
+            0,
+            -3
+          ],
+          "kind": "talk",
+          "prompt": "Listen before deciding",
+          "id": "02-3",
+          "lines": [
+            {
+              "speaker": "BAPTIST",
+              "text": "Tell me what you understand by faith, and we can speak of baptism.",
+              "direction": "Direct and kind.",
+              "lineId": "JS_02_BAPTIST_003"
+            }
+          ]
+        },
+        {
+          "label": "Seek wisdom in scripture",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "inspect",
+          "prompt": "Open the passage about asking God",
+          "effect": "light",
+          "id": "02-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "I have listened to so many voices. Father in Heaven, help me know what I should do.",
+              "direction": "Move from spoken reflection into prayer.",
+              "lineId": "JS_02_JOSEPH_YOUTH_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "03",
+      "title": "The Sacred Grove",
+      "date": "Spring 1820",
+      "place": "Woods near the Smith farm",
+      "status": "Joseph Smith account presented as true within the game",
+      "history": "In the canonical account, fourteen-year-old Joseph prays in the woods and sees God the Father and Jesus Christ. The game uses that account as its principal staging text. Other surviving accounts belong in the optional history journal without suggesting that one cinematic reconstruction is a camera record.",
+      "minutes": 15,
+      "environment": "grove",
+      "playerId": "JOSEPH_YOUTH",
+      "intro": "Walk into the grove, choose where to kneel, and begin the prayer. The player participates in the moment of distress and appeal without a timed button test. Light enters the actual canopy; the Father and the Son are distinct embodied figures. Let the player look freely, stand in third person, or move the observation camera throughout the encounter. Return to the same ordinary trees afterward.",
+      "epilogue": "The small clearing becomes the visual memory returned to in the last chapter.",
+      "sourceUrls": [
+        {
+          "title": "Joseph Smith History chapter 1",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1?lang=eng"
+        },
+        {
+          "title": "Joseph Smith's First Vision Accounts",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/joseph-smiths-first-vision-accounts?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "FATHER",
+          "position": [
+            -1.8,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "height": 2.2
+        },
+        {
+          "id": "CHRIST",
+          "position": [
+            1.8,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "height": 2.1
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Find a quiet place in the grove",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "travel",
+          "prompt": "Set aside the competing voices",
+          "id": "03-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "Here, away from the road, I can give my whole attention to prayer.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_03_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Kneel and ask God",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Hold to kneel and pray; take your time",
+          "effect": "revelation",
+          "id": "03-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "Father, I have come because I do not know where else to ask.",
+              "direction": "Original dramatic prayer; intimate, with room to breathe.",
+              "lineId": "JS_03_JOSEPH_YOUTH_001"
+            }
+          ]
+        },
+        {
+          "label": "Attend to the Father and the Son",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Look toward the light and listen",
+          "effect": "light",
+          "id": "03-3",
+          "lines": [
+            {
+              "speaker": "FATHER",
+              "text": "This is My Beloved Son. Hear Him!",
+              "direction": "Scriptural quotation from Joseph Smith History 1:17; loving authority.",
+              "lineId": "JS_03_FATHER_002"
+            },
+            {
+              "speaker": "CHRIST",
+              "text": "Joseph, let your heart attend to what is given to you.",
+              "direction": "Original dramatic adaptation, not a claimed historical quotation.",
+              "lineId": "JS_03_CHRIST_003"
+            },
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "Which church would Thou have me join?",
+              "direction": "Adapted question; do not rush the moment.",
+              "lineId": "JS_03_JOSEPH_YOUTH_004"
+            }
+          ]
+        },
+        {
+          "label": "Carry the answer home",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "travel",
+          "prompt": "Return through the same ordinary trees",
+          "id": "03-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "I came with a question. I will remember what I have received.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_03_04_01"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "04",
+      "title": "Moroni in the night",
+      "date": "September 21 and 22 1823",
+      "place": "Smith family home",
+      "status": "Joseph Smith account presented devotionally",
+      "history": "Joseph describes Moroni's repeated visits during the night, followed by a further encounter the next day. This happens after the First Vision. Moroni tells him about an ancient sacred record and his future responsibility.",
+      "minutes": 15,
+      "environment": "bedroom",
+      "playerId": "JOSEPH_YOUTH",
+      "intro": "Retire to the attic bedroom, pray, awaken to the visitor, and listen. Repeated visits change the moonlight and the condition of the room subtly, rather than replaying a long identical speech. At morning work Joseph's exhaustion becomes embodied movement; speaking with his father opens the journey to the hill.",
+      "epilogue": "The bedtime interior and the immense sacred history announced within it establish the game's contrast of ordinary life and eternity.",
+      "sourceUrls": [
+        {
+          "title": "Joseph Smith History chapter 1",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "MORONI",
+          "position": [
+            1.5,
+            0,
+            -1.5
+          ],
+          "rotation": 0,
+          "showFrom": 1,
+          "hideAfter": 2
+        },
+        {
+          "id": "JOSEPH_SR",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Pray beside the bed",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "pray",
+          "prompt": "Kneel for a quiet evening prayer",
+          "effect": "light",
+          "id": "04-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "Heavenly Father, forgive my weakness and help me know my duty.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_04_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Hear Moroni's message",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Attend to the messenger in the loft",
+          "effect": "revelation",
+          "id": "04-2",
+          "lines": [
+            {
+              "speaker": "MORONI",
+              "text": "Joseph, there is a record entrusted to the earth, and a work in which you are to take part.",
+              "direction": "Original adaptation of the message; lucid concrete instruction.",
+              "lineId": "JS_04_MORONI_001"
+            },
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "Help me remember what I must do.",
+              "direction": "Awe with ordinary human breath.",
+              "lineId": "JS_04_JOSEPH_YOUTH_002"
+            }
+          ]
+        },
+        {
+          "label": "Remember the repeated instruction",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "inspect",
+          "prompt": "Gather the message into memory",
+          "id": "04-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "A record, a hill, and a responsibility. I must not forget.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_04_03_01"
+            }
+          ]
+        },
+        {
+          "label": "Tell your father in the morning",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Share what you have heard",
+          "id": "04-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_SR",
+              "text": "Tell me what you have heard, son.",
+              "direction": "Morning conversation, warm attention.",
+              "lineId": "JS_04_JOSEPH_SR_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "05",
+      "title": "The hill and the years of preparation",
+      "date": "1823 to 1826",
+      "place": "The hill near Manchester and the Smith home",
+      "status": "Historical devotional dramatization",
+      "history": "Joseph first sees the plates in 1823 but receives them in 1827, after years of preparation. His brother Alvin dies in November 1823. The narrative connects the family's bereavement with the later importance of salvation for the dead without inventing a revelation at Alvin's deathbed.",
+      "minutes": 20,
+      "environment": "hill",
+      "playerId": "JOSEPH_YOUTH",
+      "intro": "Find the hill through landmarks, uncover the stone box, and obey the instruction to wait. Return on successive seasonal visits while doing farm and family tasks. Sit with the family after Alvin's death. The plate chamber is a custody encounter, not a treasure-looting reward.",
+      "epilogue": "Waiting, restraint, and family love become playable virtues before public leadership.",
+      "sourceUrls": [
+        {
+          "title": "Joseph Smith History chapter 1",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1?lang=eng"
+        },
+        {
+          "title": "Church historical summary of Joseph Smith's life",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/historical-summary?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "MORONI",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "ALVIN",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 2
+        },
+        {
+          "id": "LUCY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Approach the stone box",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "inspect",
+          "prompt": "Uncover the entrusted record without taking it",
+          "effect": "plates",
+          "id": "05-1",
+          "lines": [
+            {
+              "speaker": "MORONI",
+              "text": "Not yet. Preparation is also part of the charge.",
+              "direction": "Firm without anger; original adaptation.",
+              "lineId": "JS_05_MORONI_001"
+            }
+          ]
+        },
+        {
+          "label": "Receive the charge to prepare",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "listen",
+          "prompt": "Accept that the time has not yet come",
+          "id": "05-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "I will return as instructed, and attend to the work before me.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_05_02_01"
+            }
+          ]
+        },
+        {
+          "label": "Remember Alvin's kindness",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Remember the brother who shared the heavy work",
+          "id": "05-3",
+          "lines": [
+            {
+              "speaker": "ALVIN",
+              "text": "Let me take the heavy end. You can carry the other.",
+              "direction": "A living memory before the bereavement.",
+              "lineId": "JS_05_ALVIN_002"
+            }
+          ]
+        },
+        {
+          "label": "Sit with the grieving family",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Remain with Lucy rather than hurry past sorrow",
+          "effect": "comfort",
+          "id": "05-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUTH",
+              "text": "There is so much I still wanted to ask him.",
+              "direction": "After Alvin's death; quiet grief.",
+              "lineId": "JS_05_JOSEPH_YOUTH_003"
+            },
+            {
+              "speaker": "LUCY",
+              "text": "Then sit with us, Joseph. We will remember him together.",
+              "direction": "Let silence follow.",
+              "lineId": "JS_05_LUCY_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "06",
+      "title": "Emma and the entrusted record",
+      "date": "1827",
+      "place": "South Bainbridge Manchester and Harmony",
+      "status": "Historical devotional dramatization",
+      "history": "Joseph and Emma Hale marry on January 18, 1827. He obtains the plates on September 22 and moves to Harmony later that year. Emma is an active partner in the emerging work, not a companion whose only purpose is admiration.",
+      "minutes": 25,
+      "environment": "farm",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "A brief courtship conversation leads to the marriage and a dated transition. Prepare the wagon with Emma, retrieve and wrap the record, secure it, and travel through a dangerous route. Protection means finding shelter, listening for pursuers, and trusting helpers. The player can inspect the weight and handling of the wrapped plates without turning them into a weapon or inventory currency.",
+      "epilogue": "The private commitment to Emma and the public responsibility for the record enter the same story.",
+      "sourceUrls": [
+        {
+          "title": "Church historical summary of Joseph Smith's life",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/historical-summary?lang=eng"
+        },
+        {
+          "title": "Book of Mormon Translation",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/book-of-mormon-translation?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "ISAAC_HALE",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 1
+        },
+        {
+          "id": "MORONI",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 2
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Speak plainly with Emma's father",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Hear Isaac Hale's concern",
+          "id": "06-1",
+          "lines": [
+            {
+              "speaker": "ISAAC_HALE",
+              "text": "Emma's well-being matters to me. Tell me how you intend to provide for her.",
+              "direction": "Protective concern, no villain inflection.",
+              "lineId": "JS_06_ISAAC_HALE_001"
+            }
+          ]
+        },
+        {
+          "label": "Make your commitment to Emma",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Listen to Emma and promise honest counsel",
+          "effect": "comfort",
+          "id": "06-2",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "There will be difficult days. Speak plainly to me when they come.",
+              "direction": "Affection with agency.",
+              "lineId": "JS_06_EMMA_002"
+            },
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "I will need your counsel as much as your company.",
+              "direction": "Private warmth.",
+              "lineId": "JS_06_JOSEPH_YOUNG_003"
+            }
+          ]
+        },
+        {
+          "label": "Receive the plates \u00b7 September 22, 1827",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "inspect",
+          "prompt": "Wrap and protect the entrusted record",
+          "effect": "plates",
+          "id": "06-3",
+          "lines": [
+            {
+              "speaker": "MORONI",
+              "text": "Keep what has been entrusted to you with care.",
+              "direction": "Original dramatic adaptation.",
+              "lineId": "JS_06_MORONI_004"
+            }
+          ]
+        },
+        {
+          "label": "Prepare to leave for Harmony",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "serve",
+          "prompt": "Secure the record and ready the journey",
+          "id": "06-4",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "We have prepared what we can. Now we must take care of one another on the road.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_06_04_01"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "07",
+      "title": "Harmony and the lost manuscript",
+      "date": "1827 to 1828",
+      "place": "Harmony Pennsylvania",
+      "status": "Historical devotional dramatization",
+      "history": "Emma and Martin Harris assist the early translation. Martin's entrusted manuscript of 116 pages is lost in 1828. That year also brings the death of Joseph and Emma's first child and Emma's serious illness. Repentance and care belong beside the loss of the pages.",
+      "minutes": 25,
+      "environment": "harmony",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Prepare a quiet workspace, listen to Emma, dictate short reviewed passages, and arrange ordinary household tasks around translation. Martin requests the manuscript; the event follows the historical outcome. When he returns, the player must face the loss, comfort Emma, and seek forgiveness. There is no alternate branch where perfect button timing recovers the pages.",
+      "epilogue": "Calling does not remove grief or the need to learn responsibility.",
+      "sourceUrls": [
+        {
+          "title": "Book of Mormon Translation",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/book-of-mormon-translation?lang=eng"
+        },
+        {
+          "title": "The Life and Ministry of Joseph Smith",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/the-life-and-ministry-of-joseph-smith?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            1.8,
+            0,
+            -1.5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "MARTIN",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 1
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Prepare the writing place",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Arrange paper and the translation workspace",
+          "id": "07-1",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "There is quiet now. I can write while the household rests.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_07_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Face the loss of the manuscript",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to Martin without turning away",
+          "id": "07-2",
+          "lines": [
+            {
+              "speaker": "MARTIN",
+              "text": "I have searched again. Joseph, I cannot find the pages.",
+              "direction": "Shame and alarm, restrained.",
+              "lineId": "JS_07_MARTIN_001"
+            }
+          ]
+        },
+        {
+          "label": "Pray in repentance",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Acknowledge responsibility and ask for help",
+          "effect": "light",
+          "id": "07-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "I must face what I have done. I cannot ask another person to carry it for me.",
+              "direction": "Original expression of repentance.",
+              "lineId": "JS_07_JOSEPH_YOUNG_002"
+            }
+          ]
+        },
+        {
+          "label": "Remain beside Emma",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Share the grief of the household",
+          "effect": "comfort",
+          "id": "07-4",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "Stay here a moment. There is sorrow enough in this house without bearing it alone.",
+              "direction": "Not an assertion that the historical Emma spoke these words.",
+              "lineId": "JS_07_EMMA_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "08",
+      "title": "Oliver and the work of translation",
+      "date": "April to June 1829",
+      "place": "Harmony and the Whitmer farm in Fayette",
+      "status": "Devotional reconstruction based on translation accounts",
+      "history": "Oliver Cowdery becomes the principal scribe in 1829. Church sources discuss both the interpreters and a seer stone, including use of a hat to exclude light. The precise phenomenology of revelation is not documented in a way that fixes every visible detail.",
+      "minutes": 25,
+      "environment": "harmony",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Welcome Oliver, arrange the desk, dictate selected text, listen to read-back, and continue after interruptions. Include a historically grounded seer-stone-and-hat setup, alongside appropriate coverage of the interpreters. Faithfulness means receiving scripture through God's gift, not solving invented ancient-language puzzles or choosing which doctrine the book will contain. Move the household to Fayette through a dated chapter transition.",
+      "epilogue": "The ordinary sound of a spoken sentence becoming a written line is the central miracle of the chapter.",
+      "sourceUrls": [
+        {
+          "title": "Book of Mormon Translation",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/book-of-mormon-translation?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "OLIVER",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "DAVID",
+          "position": [
+            -2,
+            0,
+            11
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        },
+        {
+          "id": "PETER_WHITMER",
+          "position": [
+            2,
+            0,
+            11
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Welcome Oliver to the work",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Make room for the new scribe",
+          "id": "08-1",
+          "lines": [
+            {
+              "speaker": "OLIVER",
+              "text": "I have come to help. Show me where I should begin.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_08_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Prepare the instruments of translation",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Attend to the stone, hat, and writing materials",
+          "effect": "plates",
+          "note": "The hat excludes light; translation is received as revelation, not decoded in a language puzzle.",
+          "id": "08-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "The gift is God's. Let us approach the work with care.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_08_02_01"
+            }
+          ]
+        },
+        {
+          "label": "Dictate and hear the read-back",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "speak",
+          "prompt": "Speak carefully, then listen to Oliver",
+          "effect": "light",
+          "id": "08-3",
+          "lines": [
+            {
+              "speaker": "OLIVER",
+              "text": "I have written it. Shall I read it back before we continue?",
+              "direction": "Precise, focused.",
+              "lineId": "JS_08_OLIVER_001"
+            },
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Yes. Let us attend to every word.",
+              "direction": "Low conversational register.",
+              "lineId": "JS_08_JOSEPH_YOUNG_002"
+            }
+          ]
+        },
+        {
+          "label": "Accept the Whitmer family's welcome",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "talk",
+          "prompt": "Continue the work at Fayette after a dated journey",
+          "id": "08-4",
+          "lines": [
+            {
+              "speaker": "DAVID",
+              "text": "The room is ready. You will have quiet enough to continue.",
+              "direction": "New location at Fayette after date transition.",
+              "lineId": "JS_08_DAVID_003"
+            },
+            {
+              "speaker": "PETER_WHITMER",
+              "text": "Make a place at the table. There is room for another chair.",
+              "direction": "Ordinary hospitality.",
+              "lineId": "JS_08_PETER_WHITMER_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "09",
+      "title": "Authority beside the river",
+      "date": "May 15 1829 and subsequent restoration encounters",
+      "place": "The Susquehanna region",
+      "status": "Faithful presentation with dating limits preserved",
+      "history": "John the Baptist's appearance and the mutual baptisms of Joseph and Oliver are associated with May 15, 1829. Peter, James, and John also restore priesthood authority in the Church's account. The exact date of that latter encounter should not be invented or presented as established.",
+      "minutes": 20,
+      "environment": "river",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Leave the desk because a question about baptism demands prayer. Kneel with Oliver, receive the angelic visitation, enter the river, and participate in the baptisms with deliberate contextual actions. A separate encounter presents the apostles. The player enacts preparation and participation; sacred authority never becomes a rechargeable spell system.",
+      "epilogue": "The record leads to an organized covenant community, not merely to private mystical experiences.",
+      "sourceUrls": [
+        {
+          "title": "Restoration of the Melchizedek Priesthood",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/restoration-of-the-melchizedek-priesthood?lang=eng"
+        },
+        {
+          "title": "Joseph Smith History chapter 1",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/pgp/js-h/1?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "OLIVER",
+          "position": [
+            -4.5,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "JOHN_BAPTIST",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 1,
+          "hideAfter": 2
+        },
+        {
+          "id": "PETER",
+          "position": [
+            1.5,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        },
+        {
+          "id": "JAMES",
+          "position": [
+            3.3,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        },
+        {
+          "id": "JOHN",
+          "position": [
+            5.1,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Bring the question of baptism to God",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Kneel beside Oliver near the river",
+          "effect": "revelation",
+          "id": "09-1",
+          "lines": [
+            {
+              "speaker": "OLIVER",
+              "text": "Let us ask together what God would have us do.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_09_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Receive John the Baptist's commission",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Attend to authority as a responsibility to serve",
+          "effect": "light",
+          "id": "09-2",
+          "lines": [
+            {
+              "speaker": "JOHN_BAPTIST",
+              "text": "Attend to the responsibility that accompanies this authority.",
+              "direction": "Original introductory adaptation; exact ordinance wording requires separate text approval.",
+              "lineId": "JS_09_JOHN_BAPTIST_001"
+            }
+          ]
+        },
+        {
+          "label": "Approach the water with Oliver",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Prepare reverently for baptism",
+          "id": "09-3",
+          "lines": [
+            {
+              "speaker": "OLIVER",
+              "text": "The river seems the same, and yet nothing feels ordinary.",
+              "direction": "Wonder grounded in place.",
+              "lineId": "JS_09_OLIVER_002"
+            }
+          ]
+        },
+        {
+          "label": "A subsequent apostolic encounter",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "listen",
+          "prompt": "Receive the apostles' charge to serve in love",
+          "effect": "light",
+          "note": "A separate subsequent encounter; its exact date is not fixed here.",
+          "id": "09-4",
+          "lines": [
+            {
+              "speaker": "PETER",
+              "text": "Serve together, and keep your hearts attentive to Christ.",
+              "direction": "Original commission adaptation.",
+              "lineId": "JS_09_PETER_003"
+            },
+            {
+              "speaker": "JAMES",
+              "text": "Let the work be carried in faithfulness.",
+              "direction": "Short formal witness.",
+              "lineId": "JS_09_JAMES_004"
+            },
+            {
+              "speaker": "JOHN",
+              "text": "Let love remain in the work you are given.",
+              "direction": "Gentle clarity.",
+              "lineId": "JS_09_JOHN_005"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "10",
+      "title": "Witnesses and the printed book",
+      "date": "1829 to March 1830",
+      "place": "Fayette and Palmyra",
+      "status": "Distinct historical witness events",
+      "history": "The Three Witnesses and the Eight Witnesses give different kinds of testimony and should have separate scenes. Printing follows at E. B. Grandin's establishment. Martin Harris's financial sacrifice is part of bringing the book to readers.",
+      "minutes": 25,
+      "environment": "witnesses",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Pray with the Three Witnesses in an angelic encounter, then host the separate handling of the plates by the Eight. Travel to the print shop, inspect a composed page, help carry sheets, and place the finished book into another person's hands. None of the player-controlled printing tasks lets a typo rewrite scripture.",
+      "epilogue": "Private reception becomes public testimony and a durable physical book.",
+      "sourceUrls": [
+        {
+          "title": "Witnesses of the Book of Mormon",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/witnesses-of-the-book-of-mormon?lang=eng"
+        },
+        {
+          "title": "The Life and Ministry of Joseph Smith",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/the-life-and-ministry-of-joseph-smith?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "OLIVER",
+          "position": [
+            -3,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "DAVID",
+          "position": [
+            0,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "MARTIN",
+          "position": [
+            3,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "MORONI",
+          "position": [
+            0,
+            0,
+            -6.5
+          ],
+          "rotation": 0,
+          "showFrom": 1,
+          "hideAfter": 1
+        },
+        {
+          "id": "GRANDIN",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 4
+        },
+        {
+          "id": "CHRISTIAN_WHITMER",
+          "position": [
+            -4.8,
+            0,
+            -1.6
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "JACOB_WHITMER",
+          "position": [
+            -3.3,
+            0,
+            -3.1
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "PETER_WHITMER_JR",
+          "position": [
+            -1.5,
+            0,
+            -3.7
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "JOHN_WHITMER",
+          "position": [
+            0.5,
+            0,
+            -3.7
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "HIRAM_PAGE",
+          "position": [
+            2.5,
+            0,
+            -3.1
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "JOSEPH_SR",
+          "position": [
+            4.2,
+            0,
+            -1.6
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "HYRUM",
+          "position": [
+            4.2,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        },
+        {
+          "id": "SAMUEL_SMITH",
+          "position": [
+            -4.8,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Pray with the Three Witnesses",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Pray with Oliver, David, and Martin",
+          "effect": "revelation",
+          "note": "The Three Witnesses' angelic encounter is separate from the Eight Witnesses' handling of the plates.",
+          "id": "10-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Let us prepare our hearts to receive a witness from God.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_10_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Hear the Three bear witness",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Attend to the angelic witness",
+          "effect": "plates",
+          "id": "10-2",
+          "lines": [
+            {
+              "speaker": "DAVID",
+              "text": "How shall I speak of what I have witnessed?",
+              "direction": "After the Three Witnesses encounter.",
+              "lineId": "JS_10_DAVID_001"
+            },
+            {
+              "speaker": "MARTIN",
+              "text": "I want the testimony to be plain.",
+              "direction": "Relief and seriousness.",
+              "lineId": "JS_10_MARTIN_002"
+            }
+          ]
+        },
+        {
+          "label": "The Eight \u00b7 show the plates",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "inspect",
+          "prompt": "Let all eight examine and handle the plates",
+          "effect": "plates",
+          "note": "No angel appears in this separate Eight Witnesses scene. They examine the plates; they do not translate their text.",
+          "id": "10-3",
+          "lines": [
+            {
+              "speaker": "HYRUM",
+              "text": "We will speak plainly of what we have seen and handled.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_10_03_01"
+            }
+          ]
+        },
+        {
+          "label": "Listen to the Eight's testimony",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Acknowledge each of the eight witnesses",
+          "id": "10-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Christian, Jacob, Peter, John, Hiram, Father, Hyrum, and Samuel: let your witness be your own.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_10_04_01"
+            }
+          ]
+        },
+        {
+          "label": "Place the printed book in another hand",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Inspect the print sheet, then share the finished book",
+          "effect": "light",
+          "note": "A dated transition to Grandin's print shop; first publication is March 1830.",
+          "id": "10-5",
+          "lines": [
+            {
+              "speaker": "GRANDIN",
+              "text": "Set the sheet where it can dry. The next impression must wait.",
+              "direction": "At the separate print-shop episode.",
+              "lineId": "JS_10_GRANDIN_003"
+            },
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Then let us place it where another person may read it.",
+              "direction": "Quiet satisfaction, no victory cheer.",
+              "lineId": "JS_10_JOSEPH_YOUNG_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "11",
+      "title": "The Church and the first New York congregations",
+      "date": "1830",
+      "place": "Fayette Colesville and the New York settlements",
+      "status": "Historical devotional dramatization",
+      "history": "The Church is organized on April 6, 1830. Early preaching, baptisms, opposition, and arrests accompany its growth. The initial organization is the Church of Christ; the present full Church name belongs to the later naming history. Emma's call and hymn work deserve a visible place.",
+      "minutes": 30,
+      "environment": "farm",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Prepare the room, welcome families, participate in sustaining and sacramental worship, and visit people who have questions. Preach to a small audience using reviewed sermon beats. Walk with Emma after baptism amid hostility and help her plan a hymn collection. An early arrest is a short experience of uncertainty and support, distinct from the final Carthage arrest.",
+      "epilogue": "Zion begins as actual people agreeing to care for one another.",
+      "sourceUrls": [
+        {
+          "title": "Founding Meeting of the Church of Christ",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/founding-meeting-of-the-church-of-christ?lang=eng"
+        },
+        {
+          "title": "Emma Hale Smith",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/emma-hale-smith?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "OLIVER",
+          "position": [
+            -2,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "PETER_WHITMER",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "NEWEL_KNIGHT",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Prepare the founding gathering",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Make room for the gathered households",
+          "id": "11-1",
+          "lines": [
+            {
+              "speaker": "PETER_WHITMER",
+              "text": "There is room here. Let the families come in.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_11_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Participate in the Church's organization",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "speak",
+          "prompt": "Join the sustaining and shared worship",
+          "id": "11-2",
+          "lines": [
+            {
+              "speaker": "PETER_WHITMER",
+              "text": "We have brought the chairs from the next room.",
+              "direction": "Before the organizational meeting.",
+              "lineId": "JS_11_PETER_WHITMER_001"
+            }
+          ]
+        },
+        {
+          "label": "Teach the first New York congregation",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "speak",
+          "prompt": "Speak to questions, not to an anonymous crowd",
+          "id": "11-3",
+          "lines": [
+            {
+              "speaker": "NEWEL_KNIGHT",
+              "text": "There are more people waiting outside.",
+              "direction": "Hopeful practical concern.",
+              "lineId": "JS_11_NEWEL_KNIGHT_002"
+            }
+          ]
+        },
+        {
+          "label": "Walk beside Emma after baptism",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Hear her hopes for worship and hymns",
+          "effect": "comfort",
+          "id": "11-4",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "A hymn may help a person carry what words alone cannot.",
+              "direction": "Discussion of her work; original dialogue.",
+              "lineId": "JS_11_EMMA_003"
+            }
+          ]
+        },
+        {
+          "label": "Face an early arrest with support",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "listen",
+          "prompt": "Carry faith through uncertainty without seeking a fight",
+          "id": "11-5",
+          "lines": [
+            {
+              "speaker": "OFFICER",
+              "text": "You must come with me while this complaint is heard.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_11_05_01"
+            },
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Then let the gathering have a song as well as a place.",
+              "direction": "Warm invitation.",
+              "lineId": "JS_11_JOSEPH_YOUNG_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "12",
+      "title": "Gathering to Ohio",
+      "date": "1831",
+      "place": "Kirtland Ohio",
+      "status": "Historical devotional dramatization",
+      "history": "The Church gathers to Kirtland in 1831, an essential stage between New York and Joseph's later Missouri residence. Newel K. Whitney's store and a growing community provide a setting for questions about stewardship, resources, and shared life.",
+      "minutes": 25,
+      "environment": "kirtland",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Arrive with Emma, meet Whitney, find housing for newcomers, and assist a family with few supplies. Participate in a council about consecration through concrete choices about food, work, land, and fair treatment. A city plan appears as an achievable shared task rather than a magic construction menu.",
+      "epilogue": "Gathering requires an economy of care, not only a powerful sermon.",
+      "sourceUrls": [
+        {
+          "title": "Kirtland Ohio",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/kirtland-ohio?lang=eng"
+        },
+        {
+          "title": "The Life and Ministry of Joseph Smith",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/the-life-and-ministry-of-joseph-smith?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            0,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "WHITNEY",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ELIZABETH_WHITNEY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "SIDNEY",
+          "position": [
+            2,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Arrive at Whitney's store",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Accept a welcome in Kirtland",
+          "id": "12-1",
+          "lines": [
+            {
+              "speaker": "WHITNEY",
+              "text": "Come inside. We can speak about a room once you are warm.",
+              "direction": "Welcoming arrivals.",
+              "lineId": "JS_12_WHITNEY_001"
+            }
+          ]
+        },
+        {
+          "label": "Find room for the newcomers",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Set aside provisions and a place to sleep",
+          "effect": "comfort",
+          "id": "12-2",
+          "lines": [
+            {
+              "speaker": "ELIZABETH_WHITNEY",
+              "text": "Ask what they need before deciding what we should bring.",
+              "direction": "Competent guidance.",
+              "lineId": "JS_12_ELIZABETH_WHITNEY_002"
+            }
+          ]
+        },
+        {
+          "label": "Plan a people of mutual care",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "speak",
+          "prompt": "Discuss food, work, and fair stewardship",
+          "id": "12-3",
+          "lines": [
+            {
+              "speaker": "SIDNEY",
+              "text": "A gathered people must learn what they owe one another.",
+              "direction": "Measured public register.",
+              "lineId": "JS_12_SIDNEY_003"
+            },
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Begin with the family who arrived last. They have had the least time to prepare.",
+              "direction": "Practical leadership.",
+              "lineId": "JS_12_JOSEPH_YOUNG_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "13",
+      "title": "A place for Zion",
+      "date": "Summer 1831",
+      "place": "Independence and Jackson County Missouri",
+      "status": "Historical devotional dramatization",
+      "history": "Joseph identifies the Independence area with the building of Zion and a temple site. This Missouri vision precedes Nauvoo. Joseph travels between centers; the game must not imply that he permanently relocates from New York directly to Missouri at this point.",
+      "minutes": 20,
+      "environment": "missouri",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Journey west, walk the prospective site, kneel with companions, and discuss how families will actually settle. Place a survey stake and help read a plan. An optional conversation addresses the land's existing inhabitants and neighbors without presenting the country as empty or promising that every future conflict has a simple cause.",
+      "epilogue": "A specific landscape anchors a promise whose fulfillment will outlast Joseph's mortal life.",
+      "sourceUrls": [
+        {
+          "title": "Doctrine and Covenants 57",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/57?lang=eng"
+        },
+        {
+          "title": "The Life and Ministry of Joseph Smith",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/the-life-and-ministry-of-joseph-smith?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "SIDNEY",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EDWARD_PARTRIDGE",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Walk the land at Independence",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "travel",
+          "prompt": "Consider the place and its existing neighbors",
+          "id": "13-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "A city is more than a plan upon the ground. It must be a people who care for one another.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_13_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Pray at the place for Zion",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Dedicate the work to God",
+          "effect": "light",
+          "id": "13-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "A plan for a city must make room for its people.",
+              "direction": "Look from the paper to the families.",
+              "lineId": "JS_13_JOSEPH_YOUNG_002"
+            }
+          ]
+        },
+        {
+          "label": "Place the first survey stake",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Begin a practical plan for gathering",
+          "id": "13-3",
+          "lines": [
+            {
+              "speaker": "SIDNEY",
+              "text": "Then let us ask for guidance before we put the first stake in the earth.",
+              "direction": "Reverent, concrete.",
+              "lineId": "JS_13_SIDNEY_003"
+            }
+          ]
+        },
+        {
+          "label": "Count the households needing shelter",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Attend to Edward Partridge's report",
+          "effect": "comfort",
+          "id": "13-4",
+          "lines": [
+            {
+              "speaker": "EDWARD_PARTRIDGE",
+              "text": "I have the households and their needs written here.",
+              "direction": "Practical report.",
+              "lineId": "JS_13_EDWARD_PARTRIDGE_001"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "14",
+      "title": "The vision of eternity",
+      "date": "February 16 1832",
+      "place": "Hiram Ohio",
+      "status": "Devotional presentation of Doctrine and Covenants 76",
+      "history": "Joseph and Sidney Rigdon receive the vision associated with Doctrine and Covenants 76 while working on the Bible translation. This precedes the tarring and feathering. Its expansive view of salvation prepares the celestial themes of the ending.",
+      "minutes": 20,
+      "environment": "harmony",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Study with Sidney, encounter a question, pray, and witness the room open into a symbolic depth of light. Walk slowly through spatially distinct revelations while remaining able to return attention to Sidney. The player receives a teaching rather than ranking other characters into destinations or judging souls.",
+      "epilogue": "The universe is wide, personal, and centered on Christ; its scale does not erase the value of an individual.",
+      "sourceUrls": [
+        {
+          "title": "Doctrine and Covenants 76",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/76?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "SIDNEY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "CHRIST",
+          "position": [
+            1.5,
+            0,
+            -4
+          ],
+          "rotation": 0,
+          "showFrom": 2
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Study beside Sidney",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Read and bring the question into prayer",
+          "id": "14-1",
+          "lines": [
+            {
+              "speaker": "SIDNEY",
+              "text": "Read that passage once more.",
+              "direction": "Shared study before revelation.",
+              "lineId": "JS_14_SIDNEY_001"
+            }
+          ]
+        },
+        {
+          "label": "Ask for understanding",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Kneel without trying to judge other souls",
+          "effect": "revelation",
+          "id": "14-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Open our understanding, that we may receive what Thou wouldst teach us.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_14_02_01"
+            }
+          ]
+        },
+        {
+          "label": "Receive the vision of eternity",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Attend to the teaching of heavenly glory",
+          "effect": "stars",
+          "id": "14-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "There is more here than I understood.",
+              "direction": "Receiving insight, not performing certainty.",
+              "lineId": "JS_14_JOSEPH_YOUNG_002"
+            },
+            {
+              "speaker": "CHRIST",
+              "text": "Let the light you receive enlarge your care for others.",
+              "direction": "Original devotional adaptation; not an added verse of Doctrine and Covenants.",
+              "lineId": "JS_14_CHRIST_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "15",
+      "title": "The night in Hiram",
+      "date": "Night of March 24 to 25 1832",
+      "place": "The Johnson home Hiram Ohio",
+      "status": "Historical assault and aftermath",
+      "history": "A mob assaults Joseph and Sidney; Joseph is tarred and feathered. He preaches the following day. The event belongs in Ohio in 1832, not in the Nauvoo crisis. Family distress remains part of its meaning.",
+      "minutes": 20,
+      "environment": "bedroom",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "A short attack sequence offers bodily orientation and protective gestures without implying that a player can undo the event. The main playable section is the long care afterward: accept help, wash, rest, hear Emma, and choose to appear before the congregation. A comfort setting reduces the assault to sound and a brief transition while preserving its consequences.",
+      "epilogue": "The answer to humiliation is endurance, care, and renewed ministry.",
+      "sourceUrls": [
+        {
+          "title": "The Life and Ministry of Joseph Smith",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/the-life-and-ministry-of-joseph-smith?lang=eng"
+        },
+        {
+          "title": "Church historical summary of Joseph Smith's life",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/historical-summary?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "JOHN_JOHNSON",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "SIDNEY",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Accept help after the assault",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Let the household bring water and stay beside you",
+          "effect": "comfort",
+          "note": "The March 24\u201325 assault and tarring are conveyed through aftermath rather than a graphic button challenge.",
+          "id": "15-1",
+          "lines": [
+            {
+              "speaker": "JOHN_JOHNSON",
+              "text": "Bring clean water. We will stay with him until morning.",
+              "direction": "Low urgent care.",
+              "lineId": "JS_15_JOHN_JOHNSON_001"
+            }
+          ]
+        },
+        {
+          "label": "Hear Emma's grief and resolve",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Remain and listen to Emma",
+          "id": "15-2",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "You need not speak yet.",
+              "direction": "Compassion and fatigue.",
+              "lineId": "JS_15_EMMA_002"
+            }
+          ]
+        },
+        {
+          "label": "Prepare to face the congregation",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "pray",
+          "prompt": "Seek strength rather than revenge",
+          "effect": "light",
+          "id": "15-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "When morning comes, help me stand.",
+              "direction": "Resolve without swagger.",
+              "lineId": "JS_15_JOSEPH_YOUNG_003"
+            }
+          ]
+        },
+        {
+          "label": "Go out to teach",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "travel",
+          "prompt": "Carry care into the morning",
+          "id": "15-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "There are people waiting. I will go to them.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_15_04_01"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "16",
+      "title": "Learning to be a people",
+      "date": "1833",
+      "place": "Whitney store and Kirtland",
+      "status": "Historical teaching and domestic reconstruction",
+      "history": "After the formation of the First Presidency in 1832, the 1833 School of the Prophets and Word of Wisdom develop the Kirtland community. Joseph's Bible revision and the 1833 city plan for Zion also belong here. Emma's work and concerns are part of the household context.",
+      "minutes": 20,
+      "environment": "kirtland",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Climb to the schoolroom, help prepare and clean it, hear Emma's concerns, and participate in study. Read a teaching, ask a question, and explain it to another person. Separate dated study encounters show the Bible revision and the city plan for Zion. A short retrospective council identifies the presidency already organized in 1832. Present the Word of Wisdom in its 1833 setting rather than giving every historical participant the practices of a modern ward.",
+      "epilogue": "The work of Zion depends on learning, discipline, and consideration in daily life.",
+      "sourceUrls": [
+        {
+          "title": "School of the Prophets",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/school-of-the-prophets?lang=eng"
+        },
+        {
+          "title": "Doctrine and Covenants 89",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/89?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "WHITNEY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "SIDNEY",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ORSON",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Prepare the schoolroom",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Clean and arrange the place of learning",
+          "id": "16-1",
+          "lines": [
+            {
+              "speaker": "WHITNEY",
+              "text": "Then we ought to begin by listening.",
+              "direction": "A quiet correction.",
+              "lineId": "JS_16_WHITNEY_002"
+            }
+          ]
+        },
+        {
+          "label": "Hear Emma's concern",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Let care for the room become care for its people",
+          "id": "16-2",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "The people who clean this room must also be considered.",
+              "direction": "Practical concern, original reconstruction.",
+              "lineId": "JS_16_EMMA_001"
+            }
+          ]
+        },
+        {
+          "label": "Study the Word of Wisdom in its 1833 setting",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "inspect",
+          "prompt": "Receive counsel without scoring other people's worth",
+          "effect": "light",
+          "id": "16-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Ask it plainly. We are here to learn together.",
+              "direction": "Open and engaged.",
+              "lineId": "JS_16_JOSEPH_YOUNG_004"
+            }
+          ]
+        },
+        {
+          "label": "Ask Orson about learning and the heavens",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "talk",
+          "prompt": "Make room for an honest question",
+          "effect": "stars",
+          "id": "16-4",
+          "lines": [
+            {
+              "speaker": "ORSON",
+              "text": "May I ask how this teaching joins what we studied yesterday?",
+              "direction": "Curiosity, no comic eccentricity.",
+              "lineId": "JS_16_ORSON_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "17",
+      "title": "Letters from the driven Saints",
+      "date": "1833",
+      "place": "Kirtland with news from Jackson County",
+      "status": "Joseph receives events he did not personally witness",
+      "history": "Violence drives Latter-day Saints from Jackson County, and a mob destroys the Independence printing press during publication of the Book of Commandments. Joseph is not inserted into each distant attack. Correspondence, visitors, and relief efforts connect him to the suffering community while preserving his actual perspective.",
+      "minutes": 15,
+      "environment": "kirtland",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Receive a letter, read it with others, receive a refugee's testimony, and organize practical help. A clearly framed memory tableau may show the correspondent's account, but controllable Joseph stays where he was. Set aside shelter, supplies, and time for the returning messenger.",
+      "epilogue": "The geography of the Church expands while the narrative remains a life of Joseph Smith.",
+      "sourceUrls": [
+        {
+          "title": "Peace and Violence among 19th Century Latter-day Saints",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/peace-and-violence-among-19th-century-latter-day-saints?lang=eng"
+        },
+        {
+          "title": "Mormon Missouri War of 1838",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/mormon-missouri-war-of-1838?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "REFUGEE",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EDWARD_PARTRIDGE",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Receive the letter from Jackson County",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Read the report with the household",
+          "id": "17-1",
+          "lines": [
+            {
+              "speaker": "EDWARD_PARTRIDGE",
+              "text": "These are the families still without shelter.",
+              "direction": "Read from the report.",
+              "lineId": "JS_17_EDWARD_PARTRIDGE_002"
+            }
+          ]
+        },
+        {
+          "label": "Listen to a displaced family",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Hear the needs behind the news",
+          "id": "17-2",
+          "lines": [
+            {
+              "speaker": "REFUGEE",
+              "text": "We brought the children through. Now we need a dry place for the night.",
+              "direction": "Composite testimony, not a quotation attributed to a named survivor.",
+              "lineId": "JS_17_REFUGEE_001"
+            }
+          ]
+        },
+        {
+          "label": "Set aside relief supplies",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Prepare food and shelter for those driven out",
+          "effect": "comfort",
+          "id": "17-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Send the provisions we can spare. I will write tonight.",
+              "direction": "A concrete response to the news.",
+              "lineId": "JS_17_JOSEPH_YOUNG_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "18",
+      "title": "Zion's Camp",
+      "date": "1834",
+      "place": "The road from Ohio to Missouri",
+      "status": "Historical devotional dramatization",
+      "history": "Joseph leads an expedition to assist the expelled Saints. The expected restoration of their lands does not occur as hoped. The journey's hardships and the development of future leaders matter more to this design than a fabricated military victory.",
+      "minutes": 30,
+      "environment": "missouri",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Walk and ride a compressed but geographically legible route. Share provisions, repair a wagon, mediate an argument, and sit beside the ill. The climax is choosing restraint and care when expectations fail. Joseph's calling is expressed through service amid disappointment, not through defeating waves of enemies.",
+      "epilogue": "Building Zion requires people capable of accepting discipline and continuing to love when plans fail.",
+      "sourceUrls": [
+        {
+          "title": "Zion's Camp or Camp of Israel",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/zions-camp-camp-of-israel?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "BRIGHAM",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "HEBER",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "REFUGEE",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ORSON",
+          "position": [
+            2,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Share provisions on the road",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Give attention to the families and travelers",
+          "id": "18-1",
+          "lines": [
+            {
+              "speaker": "BRIGHAM",
+              "text": "Then we begin with what is in front of us: the road, the families, and the work.",
+              "direction": "Practical resolve.",
+              "lineId": "JS_18_BRIGHAM_002"
+            }
+          ]
+        },
+        {
+          "label": "Help repair the wagon",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join Heber at the damaged wheel",
+          "id": "18-2",
+          "lines": [
+            {
+              "speaker": "HEBER",
+              "text": "We can mend the wheel before dark if we work together.",
+              "direction": "Tired encouragement.",
+              "lineId": "JS_18_HEBER_001"
+            }
+          ]
+        },
+        {
+          "label": "Sit beside the ill",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Remain with a companion through disappointment",
+          "effect": "comfort",
+          "id": "18-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "No one is to be left alone because the rest are eager to go on.",
+              "direction": "A direction spoken close to companions.",
+              "lineId": "JS_18_JOSEPH_YOUNG_003"
+            }
+          ]
+        },
+        {
+          "label": "Choose restraint and continued service",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Seek a faithful response without a battle victory",
+          "effect": "light",
+          "id": "18-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "We have come a long way. Let us not forget the people we came to help.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_18_04_01"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "19",
+      "title": "A ministry for the world",
+      "date": "1835",
+      "place": "Kirtland",
+      "status": "Historical organization with original conversational dialogue",
+      "history": "The Twelve and the Seventy are organized in 1835, and the Doctrine and Covenants is published. The Egyptian papyri associated with the Book of Abraham also enter Joseph's work that year; publication of the Book of Abraham belongs to 1842. Orson Pratt connects missionary work and intellectual curiosity.",
+      "minutes": 20,
+      "environment": "kirtland",
+      "playerId": "JOSEPH_YOUNG",
+      "intro": "Convene and sustain a council, hear prospective missionaries, and prepare a departure. A study-room encounter lets Joseph and Orson consider scripture, stars, learning, and human potential without attributing later cosmological systems to this exact conversation. Papyri remain sacred-study objects, with the translation presented from the game's devotional perspective and the documentary questions described in its journal.",
+      "epilogue": "The intimate New York question has become a message carried into a much larger world.",
+      "sourceUrls": [
+        {
+          "title": "Quorum of the Twelve",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/quorum-of-the-twelve?lang=eng"
+        },
+        {
+          "title": "Translation and Historicity of the Book of Abraham",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/translation-and-historicity-of-the-book-of-abraham?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "OLIVER",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "BRIGHAM",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "HEBER",
+          "position": [
+            -4,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ORSON",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Convene the ministry council",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "speak",
+          "prompt": "Listen as the Twelve prepare to serve",
+          "id": "19-1",
+          "lines": [
+            {
+              "speaker": "PARLEY",
+              "text": "Let me tell you how the message first reached our door.",
+              "direction": "Lyrical storyteller warmth.",
+              "lineId": "JS_19_PARLEY_001"
+            }
+          ]
+        },
+        {
+          "label": "Prepare a missionary departure",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Arrange what the travelers need",
+          "id": "19-2",
+          "lines": [
+            {
+              "speaker": "BRIGHAM",
+              "text": "Then we begin with what is in front of us: the road, the families, and the work.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_19_02_01"
+            }
+          ]
+        },
+        {
+          "label": "Study scripture and the heavens",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Consider the papyri and learning with humility",
+          "effect": "stars",
+          "id": "19-3",
+          "lines": [
+            {
+              "speaker": "ORSON",
+              "text": "When I consider the heavens, I find more questions to study, and more reasons to be humble.",
+              "direction": "An original conversation, not Pratt doctrine quoted from a later publication.",
+              "lineId": "JS_19_ORSON_002"
+            },
+            {
+              "speaker": "JOSEPH_YOUNG",
+              "text": "Carry that willingness to learn with you when you teach.",
+              "direction": "Affectionate instruction.",
+              "lineId": "JS_19_JOSEPH_YOUNG_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "20",
+      "title": "The Kirtland Temple",
+      "date": "March 27 and April 3 1836",
+      "place": "Kirtland Temple",
+      "status": "Historical dedication and devotional vision",
+      "history": "The temple dedication and the later appearances of Christ, Moses, Elias, and Elijah are distinct events. Joseph and Oliver's account in Doctrine and Covenants 110 gives the latter sequence. The architecture and worship must reflect Kirtland rather than a later Utah temple.",
+      "minutes": 30,
+      "environment": "kirtland",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "First help finish the building and take part in the dedication. On the separate April date, move through the actual hall with Oliver, pray, and receive the visitors. A veil or curtain moves inside a fully modeled room. Each visitor has a clear purpose; keys are explained as authority and responsibilities rather than glowing collectible objects.",
+      "epilogue": "Gathering, gospel ministry, and the turning of family hearts become one structure of meaning.",
+      "sourceUrls": [
+        {
+          "title": "Doctrine and Covenants 110",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/110?lang=eng"
+        },
+        {
+          "title": "Doctrine and Covenants 109",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/109?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "OLIVER",
+          "position": [
+            -2,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "CHRIST",
+          "position": [
+            1.5,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        },
+        {
+          "id": "MOSES",
+          "position": [
+            -3,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        },
+        {
+          "id": "ELIAS",
+          "position": [
+            3,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        },
+        {
+          "id": "ELIJAH",
+          "position": [
+            5,
+            0,
+            -3
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Finish the temple for the gathering",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Carry the final work into shared worship",
+          "id": "20-1",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "There are families waiting outside. Let us make a place for them.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_20_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Join the dedication \u00b7 March 27, 1836",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "pray",
+          "prompt": "Offer the work to God",
+          "effect": "light",
+          "id": "20-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "May this house be a place of learning, service, and prayer.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_20_02_01"
+            }
+          ]
+        },
+        {
+          "label": "Return with Oliver \u00b7 April 3, 1836",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Pray beyond the curtain on the separate April date",
+          "effect": "revelation",
+          "id": "20-3",
+          "lines": [
+            {
+              "speaker": "OLIVER",
+              "text": "The room is quiet now.",
+              "direction": "April 3 scene after its explicit date transition.",
+              "lineId": "JS_20_OLIVER_001"
+            }
+          ]
+        },
+        {
+          "label": "Receive the heavenly visitors",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "listen",
+          "prompt": "Hear Christ, Moses, Elias, and Elijah in turn",
+          "effect": "light",
+          "id": "20-4",
+          "lines": [
+            {
+              "speaker": "CHRIST",
+              "text": "Let this house be a place of faithful service.",
+              "direction": "Original devotional adaptation; exact scriptural passages to be selected separately.",
+              "lineId": "JS_20_CHRIST_002"
+            },
+            {
+              "speaker": "MOSES",
+              "text": "Gather with a purpose that remembers every household.",
+              "direction": "Original thematic adaptation.",
+              "lineId": "JS_20_MOSES_003"
+            },
+            {
+              "speaker": "ELIAS",
+              "text": "Let the promise be carried forward in faithful lives.",
+              "direction": "Original thematic adaptation.",
+              "lineId": "JS_20_ELIAS_004"
+            },
+            {
+              "speaker": "ELIJAH",
+              "text": "Let the hearts of families turn toward one another.",
+              "direction": "Original thematic adaptation.",
+              "lineId": "JS_20_ELIJAH_005"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "21",
+      "title": "Faith in a time of loss",
+      "date": "1837 to early 1838",
+      "place": "Kirtland",
+      "status": "Historical financial crisis and dissent",
+      "history": "The Kirtland Safety Society fails amid financial troubles and wider instability. Members experience real losses, and serious dissent follows. A positive religious treatment can acknowledge failed administration and grief without making every dissatisfied person wicked or denying the loss.",
+      "minutes": 25,
+      "environment": "kirtland",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Hear depositors, examine a household's needs, take responsibility in conversation, and help people find material support. A council discussion reveals the limits of available choices. No player optimization makes the institution succeed against history. The eventual departure remains a loss as well as a movement toward the next chapter.",
+      "epilogue": "The player learns to distinguish a prophetic calling from a promise of painless institutional success.",
+      "sourceUrls": [
+        {
+          "title": "The Kirtland Safety Society",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/kirtland-safety-society?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "DEPOSITOR",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "WHITNEY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Hear the depositors",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Give full attention to a household's losses",
+          "id": "21-1",
+          "lines": [
+            {
+              "speaker": "DEPOSITOR",
+              "text": "These notes were our savings. I need to know how we will buy food.",
+              "direction": "Controlled fear; dignified direct question.",
+              "lineId": "JS_21_DEPOSITOR_001"
+            }
+          ]
+        },
+        {
+          "label": "Examine the needs with Whitney",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Face the limits of the available provisions",
+          "id": "21-2",
+          "lines": [
+            {
+              "speaker": "WHITNEY",
+              "text": "We should first see that the household has provisions.",
+              "direction": "Move the conversation toward care.",
+              "lineId": "JS_21_WHITNEY_003"
+            }
+          ]
+        },
+        {
+          "label": "Help a household before leaving",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Offer practical help without promising to undo history",
+          "effect": "comfort",
+          "id": "21-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "You deserve an answer that does not turn away from your loss.",
+              "direction": "Listen before speaking; original dialogue.",
+              "lineId": "JS_21_JOSEPH_MATURE_002"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "22",
+      "title": "Far West and the Missouri conflict",
+      "date": "1838",
+      "place": "Far West and northern Missouri",
+      "status": "Historical conflict with Joseph's location preserved",
+      "history": "Joseph settles at Far West during the final Missouri period. Hostility, exclusion, armed actions, the Danites, and state intervention escalate the crisis. Boggs's October 27 order, the October 30 Hawn's Mill massacre, and Joseph's October 31 capture are different events; he was not present at the massacre.",
+      "minutes": 40,
+      "environment": "missouri",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Start with a hopeful civic gathering and planning near Adam-ondi-Ahman, then let anxious messages interrupt ordinary work. Escort families, distribute supplies, seek legal protection, and challenge reckless retaliation. The Hawn's Mill news arrives through survivors or correspondence. The main chapter ends with Joseph submitting during the Far West collapse, not winning the conflict in a battle arena.",
+      "epilogue": "The promise of Zion passes through the moral and human cost of displacement.",
+      "sourceUrls": [
+        {
+          "title": "Mormon Missouri War of 1838",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/mormon-missouri-war-of-1838?lang=eng"
+        },
+        {
+          "title": "Peace and Violence among 19th Century Latter-day Saints",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/peace-and-violence-among-19th-century-latter-day-saints?lang=eng"
+        },
+        {
+          "title": "Adam ondi Ahman",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/adam-ondi-ahman?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "HYRUM",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "SIDNEY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "REFUGEE",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "OFFICER",
+          "position": [
+            2,
+            0,
+            11
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Hear the gathering's hopeful plans",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "talk",
+          "prompt": "Begin with the families at Far West",
+          "id": "22-1",
+          "lines": [
+            {
+              "speaker": "HYRUM",
+              "text": "There are homes to prepare and families still on the road.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_22_01_01"
+            }
+          ]
+        },
+        {
+          "label": "Receive the news from Hawn's Mill",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "listen",
+          "prompt": "Hear a survivor's report, not a scene Joseph witnessed",
+          "id": "22-2",
+          "lines": [
+            {
+              "speaker": "REFUGEE",
+              "text": "We cannot wait for the wagons to come back a second time.",
+              "direction": "Urgent practical need.",
+              "lineId": "JS_22_REFUGEE_002"
+            }
+          ]
+        },
+        {
+          "label": "Help a family prepare to leave",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Distribute supplies and keep the road clear",
+          "effect": "comfort",
+          "id": "22-3",
+          "lines": [
+            {
+              "speaker": "HYRUM",
+              "text": "Stay near the families. I will find the others.",
+              "direction": "Protective, clear.",
+              "lineId": "JS_22_HYRUM_003"
+            }
+          ]
+        },
+        {
+          "label": "Submit during the Far West collapse",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "travel",
+          "prompt": "Stay with Hyrum rather than pursue retaliation",
+          "id": "22-4",
+          "lines": [
+            {
+              "speaker": "OFFICER",
+              "text": "You will need to bring the papers you wish to present.",
+              "direction": "Legal uncertainty, not a theatrical threat.",
+              "lineId": "JS_22_OFFICER_001"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "We must get them through before night.",
+              "direction": "No combat bravado.",
+              "lineId": "JS_22_JOSEPH_MATURE_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "23",
+      "title": "Liberty Jail",
+      "date": "Winter 1838 to April 1839",
+      "place": "Liberty Missouri",
+      "status": "Historical imprisonment and scriptural revelation",
+      "history": "Joseph's confinement leads to the March 1839 letter from which Doctrine and Covenants 121 through 123 are drawn. The chapter's center is the question of suffering and the proper exercise of influence. Escape to Illinois follows in April.",
+      "minutes": 30,
+      "environment": "liberty",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Move inside the low basement, share space and food, receive visitors and Emma's news, and begin a letter in anguish. Pray, listen, and continue writing with renewed purpose. The player's actions collect testimonies and care for companions; there is no prison combat mission. A short staged transfer leads to release and travel.",
+      "epilogue": "The most confined space yields the game's clearest teaching that leadership must persuade with gentleness and love.",
+      "sourceUrls": [
+        {
+          "title": "Doctrine and Covenants 121",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng"
+        },
+        {
+          "title": "The Prophet in Liberty Jail",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/chapter-31?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "HYRUM",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 1,
+          "hideAfter": 1
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Share the cold room with Hyrum",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Offer a place beside you and share the provisions",
+          "id": "23-1",
+          "lines": [
+            {
+              "speaker": "HYRUM",
+              "text": "The letter from Emma is here.",
+              "direction": "Soft, concrete interruption.",
+              "lineId": "JS_23_HYRUM_002"
+            }
+          ]
+        },
+        {
+          "label": "Receive Emma's news",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Hear about the families beyond the prison walls",
+          "id": "23-2",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "The children ask after you. I have so much to tell you when we meet.",
+              "direction": "Original dramatized letter voice, not a purported archival quotation.",
+              "lineId": "JS_23_EMMA_003"
+            }
+          ]
+        },
+        {
+          "label": "Pray from the confinement",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "pray",
+          "prompt": "Bring anguish honestly before God",
+          "effect": "light",
+          "id": "23-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "O God, where art thou?",
+              "direction": "Scriptural quotation from Doctrine and Covenants 121:1; a broken private prayer.",
+              "lineId": "JS_23_JOSEPH_MATURE_001"
+            }
+          ]
+        },
+        {
+          "label": "Continue the letter in hope",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "speak",
+          "prompt": "Write of persuasion, patience, and love",
+          "effect": "comfort",
+          "id": "23-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Then I will write to them, and to the people who are still waiting for help.",
+              "direction": "Beginning to recover purpose.",
+              "lineId": "JS_23_JOSEPH_MATURE_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "24",
+      "title": "Nauvoo rises by the river",
+      "date": "1839 to 1841",
+      "place": "Commerce and Nauvoo Illinois with a Washington journey",
+      "status": "Historical hub chapter with separately dated episodes",
+      "history": "Nauvoo develops after the Missouri expulsion. This chapter includes care during the 1839 sickness, Joseph's 1839 appeal to President Martin Van Buren, the 1840 teaching of baptism for the dead, the city charter, the Nauvoo Legion, and the beginning of temple construction in 1841. These are connected episodes, not one day.",
+      "minutes": 70,
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Help drain and settle land, visit the sick, take part in a blessing, and arrange a home. A Washington episode lets the player present redress petitions and experience refusal. Return through a date card to the teaching about the dead and the temple's beginnings. Place a city-plan element, carry a stone, hear immigrants, and play with Joseph's children between public responsibilities.",
+      "epilogue": "The hub visibly gathers people and memories from earlier chapters into a common home.",
+      "sourceUrls": [
+        {
+          "title": "A timeline of Church history in Nauvoo Illinois",
+          "url": "https://newsroom.churchofjesuschrist.org/article/read-a-timeline-of-the-history-the-church-of-jesus-christ-in-nauvoo-illinois"
+        },
+        {
+          "title": "Joseph Smith letter to Hyrum Smith and the Nauvoo High Council December 5 1839",
+          "url": "https://www.josephsmithpapers.org/paper-summary/letter-to-hyrum-smith-and-nauvoo-high-council-5-december-1839/1"
+        },
+        {
+          "title": "Baptism for the Dead",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/baptism-for-the-dead?lang=eng"
+        },
+        {
+          "title": "The Life and Ministry of Joseph Smith",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/the-life-and-ministry-of-joseph-smith?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "NEWEL_KNIGHT",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 1
+        },
+        {
+          "id": "VAN_BUREN",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 2,
+          "hideAfter": 2
+        },
+        {
+          "id": "BRIGHAM",
+          "position": [
+            2,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Begin a home beside the river",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Help turn the unsettled ground into shelter",
+          "id": "24-1",
+          "lines": [
+            {
+              "speaker": "CHILD",
+              "text": "Will you have time to walk with us?",
+              "direction": "An ordinary home moment before the public episodes.",
+              "lineId": "JS_24_CHILD_001"
+            }
+          ]
+        },
+        {
+          "label": "Visit the sick with Newel Knight",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Enter with compassion and offer a blessing",
+          "effect": "comfort",
+          "id": "24-2",
+          "lines": [
+            {
+              "speaker": "NEWEL_KNIGHT",
+              "text": "The family is waiting inside.",
+              "direction": "Return to the Nauvoo sick-visiting episode after date card.",
+              "lineId": "JS_24_NEWEL_KNIGHT_004"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let us go to them.",
+              "direction": "Simply and promptly.",
+              "lineId": "JS_24_JOSEPH_MATURE_005"
+            }
+          ]
+        },
+        {
+          "label": "Seek redress \u00b7 Washington, 1839",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "speak",
+          "prompt": "Present the Saints' petition and hear the refusal",
+          "note": "A separate dated Washington encounter is represented through its petition and reply; Joseph returns to Nauvoo afterward.",
+          "id": "24-3",
+          "lines": [
+            {
+              "speaker": "VAN_BUREN",
+              "text": "I understand the seriousness of the petition you have brought.",
+              "direction": "Original diplomatic dialogue before the historical refusal.",
+              "lineId": "JS_24_VAN_BUREN_003"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Yes. Show me the path you have found.",
+              "direction": "Playfulness, not a sermon.",
+              "lineId": "JS_24_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Return to Nauvoo and the temple work",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "serve",
+          "prompt": "Set a stone for a gathering that remembers the dead",
+          "effect": "light",
+          "id": "24-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let us build with room in our hearts for those who have gone before us.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_24_04_01"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "25",
+      "title": "Two days in the Nauvoo Lodge",
+      "date": "March 15 and 16 1842",
+      "place": "The upper floor of the Red Brick Store",
+      "status": "Documented rapid Masonic advancement",
+      "history": "Joseph becomes an Entered Apprentice on March 15. On March 16 he is passed as a Fellow Craft and raised as a Master Mason. Thus the second and third degrees occur in one day, while initiation through Master Mason spans two dates. The source does not establish a supernatural feat of memorization or a hidden reason for his joining.",
+      "minutes": 20,
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Enter the store, greet Abraham Jonas and Sidney, and take part in a carefully researched public-facing account of fraternal admission and advancement. Mark the overnight transition explicitly. Symbolic space, moral reflection, and community relations can be interactive while private ritual detail stays at the level selected with advisers.",
+      "epilogue": "The event belongs to Joseph's nineteenth-century social world and does not replace revelation as the source of his calling.",
+      "sourceUrls": [
+        {
+          "title": "Nauvoo Lodge minutes of March 15 and 16 1842",
+          "url": "https://www.josephsmithpapers.org/paper-summary/minutes-15-16-march-1842/2"
+        },
+        {
+          "title": "Masonry",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/masonry?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "JONAS",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "SIDNEY",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Enter the Red Brick Store \u00b7 March 15",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Greet Abraham Jonas at the lodge gathering",
+          "id": "25-1",
+          "lines": [
+            {
+              "speaker": "JONAS",
+              "text": "Welcome, Mr. Smith. We will begin when the company is assembled.",
+              "direction": "Courteous public welcome.",
+              "lineId": "JS_25_JONAS_001"
+            }
+          ]
+        },
+        {
+          "label": "Attend to the fraternal instruction",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Consider its public symbols of moral responsibility",
+          "id": "25-2",
+          "lines": [
+            {
+              "speaker": "SIDNEY",
+              "text": "We are expected upstairs.",
+              "direction": "Ordinary social context.",
+              "lineId": "JS_25_SIDNEY_002"
+            }
+          ]
+        },
+        {
+          "label": "Return for advancement \u00b7 March 16",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Mark the separate next day before continuing",
+          "effect": "light",
+          "note": "Initiation was March 15, 1842; Fellow Craft and Master Mason advancement followed March 16. This is not a single-day initiation.",
+          "id": "25-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Then let us attend carefully.",
+              "direction": "No claim of miraculous instant mastery.",
+              "lineId": "JS_25_JOSEPH_MATURE_003"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "26",
+      "title": "Relief covenant and eternal family",
+      "date": "1842 to 1843",
+      "place": "Nauvoo",
+      "status": "Historical organization and teachings with sensitive domestic dramatization",
+      "history": "The Wentworth letter and Articles of Faith appear in March 1842. Relief Society follows on March 17 with Emma as president. Joseph introduces the endowment in May, publishes the Book of Abraham, and teaches sealing. Joseph and Emma's sealing occurs in May 1843; the plural-marriage revelation is recorded that July. These episodes require their own dates and contexts.",
+      "minutes": 50,
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Help prepare the Relief Society meeting, then listen as Emma, her counselors, and Eliza organize meaningful relief. A second episode explores temple preparation and family promises through teaching and preparation rather than making ordinances into puzzles. A private Joseph-and-Emma conversation acknowledges the pain and difficulty of plural marriage with Emma's full emotional agency. Do not fabricate assent or a complete private resolution.",
+      "epilogue": "Zion's spiritual claims are tested in care for actual women, children, households, and grieving families.",
+      "sourceUrls": [
+        {
+          "title": "Female Relief Society of Nauvoo",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/female-relief-society-of-nauvoo?lang=eng"
+        },
+        {
+          "title": "Plural Marriage in Kirtland and Nauvoo",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/plural-marriage-in-kirtland-and-nauvoo?lang=eng"
+        },
+        {
+          "title": "Translation and Historicity of the Book of Abraham",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/translation-and-historicity-of-the-book-of-abraham?lang=eng"
+        },
+        {
+          "title": "A timeline of Church history in Nauvoo Illinois",
+          "url": "https://newsroom.churchofjesuschrist.org/article/read-a-timeline-of-the-history-the-church-of-jesus-christ-in-nauvoo-illinois"
+        }
+      ],
+      "actors": [
+        {
+          "id": "EMMA",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ELIZA",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 2
+        },
+        {
+          "id": "SARAH_CLEVELAND",
+          "position": [
+            -2,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 2
+        },
+        {
+          "id": "ELIZABETH_WHITNEY",
+          "position": [
+            2,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 2
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Prepare the Relief Society meeting",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Set the minutes and make room for the members",
+          "id": "26-1",
+          "lines": [
+            {
+              "speaker": "ELIZA",
+              "text": "I will keep the minutes. Let us make sure the work is remembered clearly.",
+              "direction": "The organization has practical business.",
+              "lineId": "JS_26_ELIZA_001"
+            }
+          ]
+        },
+        {
+          "label": "Listen as Emma and her counselors organize",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Hear their priorities for relief",
+          "effect": "comfort",
+          "id": "26-2",
+          "lines": [
+            {
+              "speaker": "SARAH_CLEVELAND",
+              "text": "There is work enough for every willing hand.",
+              "direction": "Confident participation.",
+              "lineId": "JS_26_SARAH_CLEVELAND_002"
+            },
+            {
+              "speaker": "ELIZABETH_WHITNEY",
+              "text": "And every household should be heard.",
+              "direction": "Organizational authority.",
+              "lineId": "JS_26_ELIZABETH_WHITNEY_003"
+            },
+            {
+              "speaker": "EMMA",
+              "text": "We will begin with the needs brought before us today.",
+              "direction": "Presiding, not waiting for Joseph to run the meeting.",
+              "lineId": "JS_26_EMMA_004"
+            }
+          ]
+        },
+        {
+          "label": "Prepare for covenant and family teachings",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "inspect",
+          "prompt": "Consider responsibility toward living and dead",
+          "effect": "light",
+          "id": "26-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let our promises be joined to the care we offer in our own homes.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_26_03_01"
+            }
+          ]
+        },
+        {
+          "label": "Hear Emma in private",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Acknowledge the pain of plural marriage without inventing assent",
+          "id": "26-4",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "I need you to hear how difficult this is for me.",
+              "direction": "Separate private scene about plural marriage, original reconstruction.",
+              "lineId": "JS_26_EMMA_005"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "I am listening.",
+              "direction": "Do not imply this exchange resolves their historical disagreement.",
+              "lineId": "JS_26_JOSEPH_MATURE_006"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "27",
+      "title": "A voice in the republic",
+      "date": "Early 1844",
+      "place": "Nauvoo",
+      "status": "Historical presidential campaign and council work",
+      "history": "Joseph's 1844 presidential campaign seeks protection of civil and religious rights and proposes wider reforms, including compensated emancipation. The Council of Fifty is also organized in 1844. Neither the campaign nor the council should be rewritten as Joseph winning the presidency or establishing a completed world government.",
+      "minutes": 30,
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Read responses from political candidates, work with scribes on the platform, review a pamphlet, and address a small campaign meeting. Listen to questions about slavery, religious minorities, government responsibility, and conscience. A separately framed council scene considers migration and protection. The player's rhetorical choices vary clarity and emphasis within reviewed positions, not historical policy or the election result.",
+      "epilogue": "The prayer for a place to worship becomes an appeal for civil protection and public justice.",
+      "sourceUrls": [
+        {
+          "title": "Joseph Smith's 1844 Campaign for United States President",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/joseph-smiths-1844-campaign-for-united-states-president?lang=eng"
+        },
+        {
+          "title": "Council of Fifty",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/council-of-fifty?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "WILLIAM_CLAYTON",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "SIDNEY",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "WILLIAM_LAW",
+          "position": [
+            -3,
+            0,
+            -1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "HYRUM",
+          "position": [
+            2,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Review the presidential platform",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Prepare the pamphlet for the printer",
+          "id": "27-1",
+          "lines": [
+            {
+              "speaker": "WILLIAM_CLAYTON",
+              "text": "The printer needs the final copy.",
+              "direction": "Practical production pressure.",
+              "lineId": "JS_27_WILLIAM_CLAYTON_001"
+            }
+          ]
+        },
+        {
+          "label": "Hear the questions of conscience",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to disagreement about rights and responsibility",
+          "id": "27-2",
+          "lines": [
+            {
+              "speaker": "SIDNEY",
+              "text": "The question of our rights must be stated plainly.",
+              "direction": "Public conviction.",
+              "lineId": "JS_27_SIDNEY_002"
+            },
+            {
+              "speaker": "WILLIAM_LAW",
+              "text": "I believe these questions must be answered openly.",
+              "direction": "Principled disagreement rather than a secret villain reveal.",
+              "lineId": "JS_27_WILLIAM_LAW_003"
+            }
+          ]
+        },
+        {
+          "label": "Address the campaign gathering",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "speak",
+          "prompt": "Speak for religious liberty and equal protection",
+          "effect": "light",
+          "id": "27-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "The protection we ask for must be a protection another people can claim as well.",
+              "direction": "Original thematic line informed by the campaign, not a historical quotation.",
+              "lineId": "JS_27_JOSEPH_MATURE_004"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "28",
+      "title": "The King Follett memorial discourse",
+      "date": "April 7 1844",
+      "place": "An outdoor general conference in Nauvoo",
+      "status": "Historical sermon with an explicitly adapted script",
+      "history": "King Follett dies on March 9 after an accident and is buried the next day. Joseph's memorial sermon occurs almost a month later at general conference. Four contemporaneous reports preserve different portions; no complete verbatim transcript survives. The game stages that conference, not a graveside funeral with a coffin.",
+      "minutes": 35,
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Before speaking, greet Louisa Follett and the family, hear a mourner, step to the stand, and ask God for help. The player then delivers a sequence of consolation, teaching about God's nature, the continuing person, and eternal growth through Christ. Choices determine where to look, when to pause, whom to address, and which approved passage to develop. Keep a seated listener visible through every expansive cosmic image.",
+      "epilogue": "This is the thematic climax: the cosmic future matters because someone has lost a husband and father.",
+      "sourceUrls": [
+        {
+          "title": "Accounts of the King Follett Sermon",
+          "url": "https://www.josephsmithpapers.org/site/accounts-of-the-king-follett-sermon"
+        },
+        {
+          "title": "The King Follett Discourse and Joseph Smith's Preaching Style",
+          "url": "https://www.josephsmithpapers.org/articles/the-king-follett-discourse-and-joseph-smiths-preaching-style?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "LOUISA",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "MOURNER",
+          "position": [
+            -3.8,
+            0,
+            2.5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "WILLARD",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "WILFORD",
+          "position": [
+            6,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "THOMAS_BULLOCK",
+          "position": [
+            5,
+            0,
+            0
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Listen to Louisa Follett",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Let the family's grief come before the public address",
+          "effect": "comfort",
+          "id": "28-1",
+          "lines": [
+            {
+              "speaker": "LOUISA",
+              "text": "I can hear you speak of eternity. Help me know how to face the morning.",
+              "direction": "Before the address, at the family's seats. Original dialogue.",
+              "lineId": "JS_28_LOUISA_001"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "I will try to speak to that sorrow. Pray that I may speak with understanding.",
+              "direction": "Private promise, little projection.",
+              "lineId": "JS_28_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Step to the stand and seek God's guidance",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "pray",
+          "prompt": "Hold to ask for understanding before speaking",
+          "effect": "light",
+          "id": "28-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Heavenly Father, give me understanding, and let me offer something that will strengthen these hearts.",
+              "direction": "At the stand; original dramatic prayer. Pause before looking up.",
+              "lineId": "JS_28_JOSEPH_MATURE_003"
+            }
+          ]
+        },
+        {
+          "label": "Console the gathered mourners",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "speak",
+          "prompt": "Speak gently to a grieving household",
+          "id": "28-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Friends, I ask for your prayers as we consider the loss of our brother and the hope that is before us.",
+              "direction": "Begin gently, looking at mourners before the large congregation.",
+              "lineId": "JS_28_JOSEPH_MATURE_004"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "A household has lost a husband and a father. Let us not speak so quickly of eternity that we fail to sit beside them today.",
+              "direction": "Original consoling bridge. Hold Louisa's reaction; this is not presented as Joseph's verbatim sermon.",
+              "lineId": "JS_28_JOSEPH_MATURE_005"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "To ask what becomes of the dead is also to ask what kind of Father God is.",
+              "direction": "Move into the sermon's subject, with clear thought rather than declamation.",
+              "lineId": "JS_28_JOSEPH_MATURE_006"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "We are not strangers to Him. The life within us has a meaning larger than this short passage through mortality.",
+              "direction": "Adapted theological treatment, reviewed before final recording.",
+              "lineId": "JS_28_JOSEPH_MATURE_007"
+            }
+          ]
+        },
+        {
+          "label": "Teach divine life and eternal intelligence",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "speak",
+          "prompt": "Deliver the adapted discourse with room to pause",
+          "effect": "stars",
+          "note": "This is an original adaptation based on surviving reports, not a verbatim transcript of the King Follett discourse.",
+          "id": "28-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "God is a living person, whose form is not alien to our own. To learn of Him is to begin to understand our own nature and our relation to Him.",
+              "direction": "Original adapted passage on divine embodiment and relationship; compare Richards page 67. This is not a verbatim transcript.",
+              "lineId": "JS_28_JOSEPH_MATURE_008"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "I teach that He has known a condition like ours, and that we must learn the divine life by degrees, growing from a smaller capacity to a greater one.",
+              "direction": "Original adaptation of the sermon's teaching about God's past and progression; compare Richards page 67 and Bullock introduction. Do not add an invented biography of God.",
+              "lineId": "JS_28_JOSEPH_MATURE_009"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "The intelligence within a person was not called forth from nothing. Its eternal character opens before us a possibility of enlargement beyond what we yet understand.",
+              "direction": "Original adapted passage on eternal intelligence; compare Richards page 69. Pause and return attention to a listener before the cosmic insert.",
+              "lineId": "JS_28_JOSEPH_MATURE_010"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Then let our hope for the dead become a responsibility toward them. Let us remember them, seek their good, and look toward the life that is promised through Christ.",
+              "direction": "Original adapted transition from responsibility for the dead to consolation; compare Richards pages 67 and 69. No claim of a new revelation or an exact historical sentence.",
+              "lineId": "JS_28_JOSEPH_MATURE_011"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "We learn by degrees. What we do not yet understand is an invitation to grow, not a reason to close the heavens.",
+              "direction": "Original treatment of progression. Optional cosmic insert begins here.",
+              "lineId": "JS_28_JOSEPH_MATURE_012"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Think of growth in knowledge joined always to growth in love. What would greatness mean if it could no longer stoop to comfort a child?",
+              "direction": "Bring the cosmic idea back to a person visible in the crowd.",
+              "lineId": "JS_28_JOSEPH_MATURE_013"
+            }
+          ]
+        },
+        {
+          "label": "Return the teaching to a person",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Carry hope to the mourner and compare the recorders' notes",
+          "effect": "comfort",
+          "id": "28-5",
+          "lines": [
+            {
+              "speaker": "MOURNER",
+              "text": "Then our love has not come to its end?",
+              "direction": "Optional quiet after-sermon conversation, not a heckle inserted into the historical address.",
+              "lineId": "JS_28_MOURNER_014"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let us carry that hope, and carry one another while we wait.",
+              "direction": "Consoling close in the adapted treatment.",
+              "lineId": "JS_28_JOSEPH_MATURE_015"
+            },
+            {
+              "speaker": "WILLARD",
+              "text": "I am setting down what I can.",
+              "direction": "Afterward, separate short recorder conversation.",
+              "lineId": "JS_28_WILLARD_016"
+            },
+            {
+              "speaker": "WILFORD",
+              "text": "We should compare our notes while it is fresh.",
+              "direction": "Do not imply that the four surviving reports form a perfect transcript.",
+              "lineId": "JS_28_WILFORD_017"
+            },
+            {
+              "speaker": "THOMAS_BULLOCK",
+              "text": "There was much I could not write as quickly as he spoke.",
+              "direction": "Original line conveying the documentary limitation.",
+              "lineId": "JS_28_THOMAS_BULLOCK_018"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "29",
+      "title": "The city council and the road to Carthage",
+      "date": "June 1844",
+      "place": "Nauvoo and Carthage Illinois",
+      "status": "Historical civic crisis and arrest",
+      "history": "The Nauvoo Expositor publishes criticism; Joseph and the city council order destruction of its press. The crisis produces legal action, Joseph and Hyrum's surrender, and additional treason charges. Their stated fears and legal reasoning can be presented sympathetically while showing what the council actually did.",
+      "minutes": 35,
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Listen to the dispute, inspect the printed criticism, and participate in a council discussion. The historical decision proceeds; the player does not earn virtue points for smashing a press. Carry documents, say goodbye to Emma and the children, cross and return from the river within the dated sequence, and take the road with Hyrum. Ordinary parting gestures receive more time than spectacle.",
+      "epilogue": "Public authority, personal risk, and family love converge in a decision whose consequences the player now understands.",
+      "sourceUrls": [
+        {
+          "title": "Deaths of Joseph and Hyrum Smith",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/deaths-of-joseph-and-hyrum-smith?lang=eng"
+        },
+        {
+          "title": "Nauvoo Expositor",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/nauvoo-expositor?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "WILLIAM_LAW",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 0
+        },
+        {
+          "id": "EMMA",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "CHILD",
+          "position": [
+            -4.5,
+            0,
+            2
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1,
+          "height": 1.1
+        },
+        {
+          "id": "HYRUM",
+          "position": [
+            -1.5,
+            0,
+            11
+          ],
+          "rotation": 0,
+          "showFrom": 2
+        },
+        {
+          "id": "FORD",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Hear the civic dispute",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "inspect",
+          "prompt": "Read the criticism and acknowledge its questions",
+          "id": "29-1",
+          "lines": [
+            {
+              "speaker": "WILLIAM_LAW",
+              "text": "I believe these questions must be answered openly.",
+              "direction": "His criticism retains human intelligibility.",
+              "lineId": "JS_29_WILLIAM_LAW_001"
+            }
+          ]
+        },
+        {
+          "label": "Say goodbye to Emma and the children",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Take time for an ordinary family parting",
+          "effect": "comfort",
+          "id": "29-2",
+          "lines": [
+            {
+              "speaker": "EMMA",
+              "text": "The children will ask when you are coming home.",
+              "direction": "Private parting, original dialogue.",
+              "lineId": "JS_29_EMMA_002"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Tell them I love them. I will carry them in my thoughts.",
+              "direction": "Tenderness without a falsely certain promise.",
+              "lineId": "JS_29_JOSEPH_MATURE_003"
+            }
+          ]
+        },
+        {
+          "label": "Take the road with Hyrum",
+          "target": [
+            0,
+            0,
+            13
+          ],
+          "kind": "travel",
+          "prompt": "Carry the documents toward Carthage",
+          "id": "29-3",
+          "lines": [
+            {
+              "speaker": "HYRUM",
+              "text": "I am going with you.",
+              "direction": "Plain and unornamented.",
+              "lineId": "JS_29_HYRUM_004"
+            }
+          ]
+        },
+        {
+          "label": "Hear the governor's assurance",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "listen",
+          "prompt": "Submit to the legal process without a promised escape",
+          "id": "29-4",
+          "lines": [
+            {
+              "speaker": "FORD",
+              "text": "Your case will be heard through the legal process.",
+              "direction": "Original adaptation; assurance does not become reliable prophecy.",
+              "lineId": "JS_29_FORD_005"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "30",
+      "title": "Carthage",
+      "date": "June 27 1844",
+      "place": "The upper room of Carthage Jail",
+      "status": "Historical martyrdom",
+      "history": "Joseph and Hyrum are killed in the attack on Carthage Jail. John Taylor is wounded and survives; Willard Richards survives. The scene must not falsely claim that the men had no weapons, or turn Joseph into a shooter-game hero. Their attempted defense belongs in a measured reconstruction.",
+      "minutes": 25,
+      "environment": "carthage",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Read, write to Emma, speak with Hyrum, listen to John Taylor's hymn, and bless a departing visitor such as Dan Jones. During the attack, contextual movement preserves physical participation without a skill challenge that promises escape from history. Let the player reach toward a companion and try to assist. Transition through sound and light after the deaths; no score, victory banner, loot, or death-retry screen appears.",
+      "epilogue": "The mortal story reaches its cost, but the game's promised experience of hope still has substantial playable work ahead.",
+      "sourceUrls": [
+        {
+          "title": "Deaths of Joseph and Hyrum Smith",
+          "url": "https://www.churchofjesuschrist.org/study/history/topics/deaths-of-joseph-and-hyrum-smith?lang=eng"
+        },
+        {
+          "title": "The Martyrdom The Prophet Seals His Testimony with His Blood",
+          "url": "https://www.churchofjesuschrist.org/study/manual/teachings-joseph-smith/chapter-46?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "JOHN_TAYLOR",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "DAN_JONES",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0,
+          "hideAfter": 1
+        },
+        {
+          "id": "HYRUM",
+          "position": [
+            -1.8,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "WILLARD",
+          "position": [
+            1.8,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Listen to John Taylor",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "listen",
+          "prompt": "Receive the offer of a comforting hymn",
+          "effect": "comfort",
+          "note": "The hymn is not synthesized here; a reviewed sung recording can be supplied through the audio manifest.",
+          "id": "30-1",
+          "lines": [
+            {
+              "speaker": "JOHN_TAYLOR",
+              "text": "Would you like me to sing it again?",
+              "direction": "Gentle offer. Record hymn separately after text and tune review.",
+              "lineId": "JS_30_JOHN_TAYLOR_001"
+            },
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Yes. Let us hear it once more.",
+              "direction": "Weary, attentive.",
+              "lineId": "JS_30_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Entrust a message to Dan Jones",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Send words of care before his departure",
+          "id": "30-2",
+          "lines": [
+            {
+              "speaker": "DAN_JONES",
+              "text": "I will take your message. Is there anything else you wish me to carry?",
+              "direction": "Before his departure, not during the final attack.",
+              "lineId": "JS_30_DAN_JONES_003"
+            }
+          ]
+        },
+        {
+          "label": "Remain beside your companions",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Reach toward Hyrum and Willard in the final hour",
+          "effect": "light",
+          "note": "The attack is conveyed without graphic violence. Joseph and Hyrum die on June 27, 1844. This is not the end of the playable story.",
+          "id": "30-3",
+          "lines": [
+            {
+              "speaker": "WILLARD",
+              "text": "I am here.",
+              "direction": "Very close, quiet companionship.",
+              "lineId": "JS_30_WILLARD_004"
+            },
+            {
+              "speaker": "HYRUM",
+              "text": "Joseph.",
+              "direction": "A final short brotherly address; exact placement awaits historical blocking review.",
+              "lineId": "JS_30_HYRUM_005"
+            }
+          ]
+        }
+      ],
+      "speculative": false
+    },
+    {
+      "id": "31",
+      "title": "Beyond the veil",
+      "date": "An imagined postmortal interval",
+      "place": "A designed spirit-world landscape",
+      "status": "Explicit artistic religious speculation",
+      "history": "LDS teachings distinguish death, the spirit world, resurrection, and exaltation. No historical source supplies a playable record of Joseph's personal arrival in the afterlife. This chapter is a devotional invention drawing on those distinctions, not an additional documented episode in his biography.",
+      "minutes": 20,
+      "environment": "celestial",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "Continue as Joseph rather than switching to a descendant. Find Hyrum and Alvin, listen, and begin welcoming others. Remain aware that Emma and the children are still alive on earth in 1844. Family reunion across later time can be glimpsed as a promise, not staged as Emma dying that day. Prepare a garden and guide a lonely person toward company.",
+      "epilogue": "The hand that was offered to the sick child is now offered by Joseph beyond mortality.",
+      "sourceUrls": [
+        {
+          "title": "Becoming Like God",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/becoming-like-god?lang=eng"
+        },
+        {
+          "title": "Spirit World",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics/spirit-world?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "HYRUM",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ALVIN",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "CHRIST",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 2
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Recognize your brother beyond the veil",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Find Hyrum beside the water",
+          "effect": "comfort",
+          "id": "31-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Hyrum?",
+              "direction": "Recognition, not bewildered comic relief.",
+              "lineId": "JS_31_JOSEPH_MATURE_001"
+            },
+            {
+              "speaker": "HYRUM",
+              "text": "I am here with you.",
+              "direction": "The earlier reassurance returns.",
+              "lineId": "JS_31_HYRUM_002"
+            }
+          ]
+        },
+        {
+          "label": "Meet Alvin in the imagined garden",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "talk",
+          "prompt": "Receive a reunion envisioned in hope",
+          "id": "31-2",
+          "lines": [
+            {
+              "speaker": "ALVIN",
+              "text": "There is room beside the water.",
+              "direction": "Imagined reunion, no claim to an archival afterlife account.",
+              "lineId": "JS_31_ALVIN_003"
+            }
+          ]
+        },
+        {
+          "label": "Welcome someone still alone",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Follow Christ's invitation to continued service",
+          "effect": "light",
+          "id": "31-3",
+          "lines": [
+            {
+              "speaker": "CHRIST",
+              "text": "There are others who need to be welcomed.",
+              "direction": "Invitation to continuing service.",
+              "lineId": "JS_31_CHRIST_004"
+            }
+          ]
+        },
+        {
+          "label": "Prepare the garden for another arrival",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "serve",
+          "prompt": "Make room rather than seek a throne",
+          "effect": "stars",
+          "id": "31-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "There is work here that begins with a welcome.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_31_04_01"
+            }
+          ]
+        }
+      ],
+      "speculative": true
+    },
+    {
+      "id": "32",
+      "title": "A world entrusted to love",
+      "date": "A visionary far future beyond a specified earthly date",
+      "place": "Celestial space and a new living world",
+      "status": "Explicit speculative celestial finale",
+      "history": "The finale uses the requested image of Joseph as an exalted co-heir with Christ, entrusted with a world. A personal planet award is not established Church doctrine, and the Church's account of becoming like God cautions against reducing exaltation to that image. This is the game's imaginative interpretation. Jehovah is Jesus Christ in LDS usage, not a separate fourth divine character.",
+      "minutes": 35,
+      "environment": "celestial",
+      "playerId": "JOSEPH_MATURE",
+      "intro": "After an explicit transition beyond the spirit-world interval and toward promised resurrection and eternal growth, Christ entrusts Joseph with creative stewardship. Fly freely, walk the world's surface, plant a garden, open watercourses, make shelter, and invite free inhabitants into mutual care. There is no forced worship, population domination, or automatic erasure of individual agency. Gather the motifs of grove, manuscript, river, temple, and relieved mourner into a final act of service. The credits begin after the player offers another person a hand.",
+      "epilogue": "The establishment of Zion becomes an ongoing work of love in the cosmos. An optional portal opens into the separate seven-era campaign.",
+      "sourceUrls": [
+        {
+          "title": "Becoming Like God",
+          "url": "https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/becoming-like-god?lang=eng"
+        },
+        {
+          "title": "Jehovah",
+          "url": "https://www.churchofjesuschrist.org/study/scriptures/gs/jehovah?lang=eng"
+        }
+      ],
+      "actors": [
+        {
+          "id": "CHRIST",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "MOURNER",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 3
+        }
+      ],
+      "objectives": [
+        {
+          "label": "Receive a world as a stewardship",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "listen",
+          "prompt": "Hear Christ's imagined commission of love",
+          "effect": "stars",
+          "note": "A fictional vision of future resurrection, eternal growth, and creative stewardship; not an official teaching that every person is given a private planet.",
+          "id": "32-1",
+          "lines": [
+            {
+              "speaker": "CHRIST",
+              "text": "Receive this world as a charge to love. Let those who dwell here be free to grow.",
+              "direction": "Explicitly fictional celestial commission, not a revelation attributed to the historical Church.",
+              "lineId": "JS_32_CHRIST_001"
+            }
+          ]
+        },
+        {
+          "label": "Open a spring for the garden",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Bring water to a living place",
+          "effect": "light",
+          "id": "32-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Then show me where a hand is needed.",
+              "direction": "The same recognizably human Joseph.",
+              "lineId": "JS_32_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Prepare a home for free inhabitants",
+          "target": [
+            0,
+            0,
+            0
+          ],
+          "kind": "serve",
+          "prompt": "Make a place without demanding obedience",
+          "effect": "comfort",
+          "id": "32-3",
+          "lines": [
+            {
+              "speaker": "FUTURE_GUIDE",
+              "text": "The spring is ready. The first travelers have arrived.",
+              "direction": "Ordinary welcome within cosmic scale.",
+              "lineId": "JS_32_FUTURE_GUIDE_003"
+            }
+          ]
+        },
+        {
+          "label": "Offer another person a hand",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "serve",
+          "prompt": "Complete the journey with the kindness that began it",
+          "effect": "stars",
+          "id": "32-4",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "There is a place for you here.",
+              "direction": "To a person, before the camera opens to the world.",
+              "lineId": "JS_32_JOSEPH_MATURE_004"
+            }
+          ]
+        }
+      ],
+      "speculative": true
+    },
+    {
+      "id": "E1",
+      "title": "The garden before the years",
+      "date": "An imagined Eden",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "grove",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Care for a garden before crossing the years",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E1-1",
+          "lines": [
+            {
+              "speaker": "FUTURE_GUIDE",
+              "text": "We have learned to cross the years. We are still learning how to care for the people within them.",
+              "direction": "Orientation to the optional fictional campaign.",
+              "lineId": "JS_E1_FUTURE_GUIDE_001"
+            }
+          ]
+        },
+        {
+          "label": "Plant a place of welcome",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E1-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Then we begin by learning their names.",
+              "direction": "Continuity with the mortal campaign.",
+              "lineId": "JS_E1_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Enter the mission's first bubble portal",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E1-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let the next crossing begin with care for those we meet.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_E1_03_01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "title": "Questions in the nineteenth century",
+      "date": "Salt Lake City after 1847 \u00b7 fictional reflection",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "kirtland",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "BRIGHAM",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "ORSON",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Hear Brigham reflect on Joseph's unfinished work",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E2-1",
+          "lines": [
+            {
+              "speaker": "BRIGHAM",
+              "text": "Joseph taught us to build. I am still trying to understand the reach of that work.",
+              "direction": "Fictional Salt Lake office reflection, explicitly after 1847.",
+              "lineId": "JS_E2_BRIGHAM_001"
+            }
+          ]
+        },
+        {
+          "label": "Read with Orson without mistaking speculation for doctrine",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E2-2",
+          "lines": [
+            {
+              "speaker": "ORSON",
+              "text": "A question does not become an answer because I have written it in a book.",
+              "direction": "Fictional debate; not a historical quotation or an invented recantation.",
+              "lineId": "JS_E2_ORSON_002"
+            }
+          ]
+        },
+        {
+          "label": "Carry humility to the next crossing",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E2-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let us read with care, and remember whom the work is meant to bless.",
+              "direction": "Celestial observer response outside the archival tableau.",
+              "lineId": "JS_E2_JOSEPH_MATURE_003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "title": "A doorstep in 1955",
+      "date": "1955 \u00b7 speculative time mission",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "town",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "MISSIONARY_1955",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Meet Ruth before the missionary visit",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E3-1",
+          "lines": [
+            {
+              "speaker": "MISSIONARY_1955",
+              "text": "We came to offer help. You are free to tell us what would actually be useful.",
+              "direction": "A respectful invitation.",
+              "lineId": "JS_E3_MISSIONARY_1955_001"
+            }
+          ]
+        },
+        {
+          "label": "Offer useful help without demanding belief",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E3-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Ask about the family before you ask about the record.",
+              "direction": "Ethical mission guidance.",
+              "lineId": "JS_E3_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Leave the household free to decide",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E3-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let the next crossing begin with care for those we meet.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_E3_03_01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "title": "The family archive",
+      "date": "1994 \u00b7 speculative time mission",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "harmony",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "ARCHIVIST_1994",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Ask Daniel about the neglected family recording",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E4-1",
+          "lines": [
+            {
+              "speaker": "ARCHIVIST_1994",
+              "text": "There is another tape in the drawer. I thought no one would ever ask about it.",
+              "direction": "Surprised warmth.",
+              "lineId": "JS_E4_ARCHIVIST_1994_001"
+            }
+          ]
+        },
+        {
+          "label": "Listen to the person behind the archive",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E4-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Then let us listen before we decide what to carry forward.",
+              "direction": "The archive preserves people, not just data.",
+              "lineId": "JS_E4_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Preserve a memory with permission",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E4-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let the next crossing begin with care for those we meet.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_E4_03_01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E5",
+      "title": "The shared water",
+      "date": "2026 \u00b7 speculative time mission",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "nauvoo",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "CARETAKER_2026",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_SCIENTIST",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Ask Ada what the garden needs",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E5-1",
+          "lines": [
+            {
+              "speaker": "CARETAKER_2026",
+              "text": "If the garden is to survive the summer, we have to share the water fairly.",
+              "direction": "Technical work joined to ordinary justice.",
+              "lineId": "JS_E5_CARETAKER_2026_001"
+            }
+          ]
+        },
+        {
+          "label": "Share water fairly among the households",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E5-2",
+          "lines": [
+            {
+              "speaker": "FUTURE_SCIENTIST",
+              "text": "We can open the crossing. We cannot decide another person's life for them.",
+              "direction": "No mystical certainty about another person's consent.",
+              "lineId": "JS_E5_FUTURE_SCIENTIST_002"
+            }
+          ]
+        },
+        {
+          "label": "Open the crossing without deciding another's life",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E5-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let the next crossing begin with care for those we meet.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_E5_03_01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E6",
+      "title": "The desert after the fire",
+      "date": "An imagined nuclear aftermath",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "missouri",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "SURVIVOR",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Hear Mara's practical request",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E6-1",
+          "lines": [
+            {
+              "speaker": "SURVIVOR",
+              "text": "Do not promise me a paradise. Help me keep this well running until morning.",
+              "direction": "Practical distrust that the mission must earn its way beyond.",
+              "lineId": "JS_E6_SURVIVOR_001"
+            }
+          ]
+        },
+        {
+          "label": "Repair the well before promising paradise",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E6-2",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Show me the part that needs mending.",
+              "direction": "Answer by doing.",
+              "lineId": "JS_E6_JOSEPH_MATURE_002"
+            }
+          ]
+        },
+        {
+          "label": "Offer shelter without claiming control",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E6-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Let the next crossing begin with care for those we meet.",
+              "direction": "Original dramatic adaptation; not a historical quotation.",
+              "lineId": "GAME_E6_03_01"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E7",
+      "title": "The closed archive",
+      "date": "An imagined future of guarded knowledge",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "liberty",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "ARCHIVE_KEEPER",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            1.5,
+            0,
+            -5
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "Hear the custodian's fear of an open future",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E7-1",
+          "lines": [
+            {
+              "speaker": "ARCHIVE_KEEPER",
+              "text": "If everyone chooses freely, we may lose the future we have guarded.",
+              "direction": "A sincere argument for control.",
+              "lineId": "JS_E7_ARCHIVE_KEEPER_001"
+            }
+          ]
+        },
+        {
+          "label": "Ask whose freedom the closed archive has taken",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E7-2",
+          "lines": [
+            {
+              "speaker": "FUTURE_GUIDE",
+              "text": "A future that depends on taking their freedom has already lost what we came to build.",
+              "direction": "Firm, humane disagreement.",
+              "lineId": "JS_E7_FUTURE_GUIDE_002"
+            }
+          ]
+        },
+        {
+          "label": "Restore the record to the people",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E7-3",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "Open the record. Let the people speak for themselves.",
+              "direction": "The mission repairs access rather than seizing power.",
+              "lineId": "JS_E7_JOSEPH_MATURE_003"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E8",
+      "title": "Zion is a welcome",
+      "date": "An imagined open future",
+      "place": "One fictional mission landscape across changing eras",
+      "environment": "celestial",
+      "playerId": "JOSEPH_MATURE",
+      "status": "Explicit speculative religious science fiction; not a historical episode or official doctrine",
+      "history": "An optional imagined mission of free people across time, inspired by Zion, eternal progression, and independent transhumanist ideas. Joseph appears here as a fictional postmortal traveler, never as a claim that he lived through these earthly dates.",
+      "intro": "Cross the bubble thresholds as a servant, not a conqueror. Each era asks for one concrete act of care before the next crossing opens.",
+      "epilogue": "The future is worthy of Zion only if the people within it remain free.",
+      "minutes": 8,
+      "actors": [
+        {
+          "id": "FUTURE_GUIDE",
+          "position": [
+            -5.5,
+            0,
+            1
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        },
+        {
+          "id": "CHRIST",
+          "position": [
+            4.5,
+            0,
+            -2
+          ],
+          "rotation": 0,
+          "showFrom": 0
+        }
+      ],
+      "sourceUrls": [
+        {
+          "title": "xChurch public homepage \u00b7 independent inspiration, not official Church doctrine",
+          "url": "https://xchurch.us/"
+        }
+      ],
+      "expansion": true,
+      "speculative": true,
+      "objectives": [
+        {
+          "label": "See the city as unfinished shared work",
+          "target": [
+            -4,
+            0,
+            1
+          ],
+          "kind": "talk",
+          "prompt": "Listen to the person in this era",
+          "id": "E8-1",
+          "lines": [
+            {
+              "speaker": "JOSEPH_MATURE",
+              "text": "The work was never finished by one life.",
+              "direction": "Recognize continuity without dissolving identity.",
+              "lineId": "JS_E8_JOSEPH_MATURE_001"
+            }
+          ]
+        },
+        {
+          "label": "Open the garden to another free arrival",
+          "target": [
+            3,
+            0,
+            -2
+          ],
+          "kind": "serve",
+          "prompt": "Join the practical work before you",
+          "effect": "comfort",
+          "id": "E8-2",
+          "lines": [
+            {
+              "speaker": "CHRIST",
+              "text": "Let the love you have received become a welcome for another.",
+              "direction": "Original fictional closing, tender and direct.",
+              "lineId": "JS_E8_CHRIST_002"
+            }
+          ]
+        },
+        {
+          "label": "Continue the mission in love",
+          "target": [
+            0,
+            0,
+            -5
+          ],
+          "kind": "travel",
+          "prompt": "Approach the bubble crossing with an open hand",
+          "effect": "stars",
+          "id": "E8-3",
+          "lines": [
+            {
+              "speaker": "FUTURE_GUIDE",
+              "text": "There is another arrival at the gate.",
+              "direction": "The living city continues beyond the credits.",
+              "lineId": "JS_E8_FUTURE_GUIDE_003"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

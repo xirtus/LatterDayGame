@@ -1,0 +1,1556 @@
+{
+  "date": "2026-10-22",
+  "method": "Read-only GLB metadata and embedded image header inspection; no source models changed",
+  "asset_count": 24,
+  "total_bytes": 669491664,
+  "assets": [
+    {
+      "file": "meshy/Brigham_Young_Rigged.glb",
+      "bytes": 18261864,
+      "triangles": 10257,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "Hips",
+          "LeftUpLeg",
+          "LeftLeg",
+          "LeftFoot",
+          "LeftToeBase",
+          "RightUpLeg",
+          "RightLeg",
+          "RightFoot",
+          "RightToeBase",
+          "Spine02",
+          "Spine01",
+          "Spine",
+          "LeftShoulder",
+          "LeftArm",
+          "LeftForeArm",
+          "LeftHand",
+          "RightShoulder",
+          "RightArm",
+          "RightForeArm",
+          "RightHand",
+          "neck",
+          "Head",
+          "head_end",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Armature|clip0|baselayer",
+          "channels": 72,
+          "duration_seconds": 0.03333333333333333
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 18261864
+    },
+    {
+      "file": "meshy/Meshy_AI_AngelMoroniRemeshed_1022102544_texture.glb",
+      "bytes": 25155472,
+      "triangles": 14999,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 25155472
+    },
+    {
+      "file": "meshy/Meshy_AI_Brigham_Young_10k_1022104448_texture.glb",
+      "bytes": 24017436,
+      "triangles": 10258,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 24017436
+    },
+    {
+      "file": "meshy/Meshy_AI_Brigham_Young_Model_1022104140_image-to-3d-texture.glb",
+      "bytes": 33081196,
+      "triangles": 520714,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 33081196
+    },
+    {
+      "file": "meshy/Meshy_AI_Emma_Smith_1022101456_image-to-3d-texture.glb",
+      "bytes": 59716604,
+      "triangles": 1319208,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 59716604
+    },
+    {
+      "file": "meshy/Meshy_AI_Emma_Smith_10k_1022101519_texture.glb",
+      "bytes": 25145784,
+      "triangles": 10231,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 25145784
+    },
+    {
+      "file": "meshy/Meshy_AI_Emma_Smith_Rigged_All_Animations.glb",
+      "bytes": 18976068,
+      "triangles": 10231,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 44,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 44,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 18976068
+    },
+    {
+      "file": "meshy/Meshy_AI_Hyrum_Smith_1022103634_image-to-3d-texture.glb",
+      "bytes": 35537756,
+      "triangles": 397422,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 35537756
+    },
+    {
+      "file": "meshy/Meshy_AI_Hyrum_Smith_Remeshed_1022103811_texture.glb",
+      "bytes": 29660184,
+      "triangles": 30843,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 29660184
+    },
+    {
+      "file": "meshy/Meshy_AI_Hyrum_Smith_Rigged_All_Animations.glb",
+      "bytes": 24249172,
+      "triangles": 30728,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 24249172
+    },
+    {
+      "file": "meshy/Meshy_AI_Moroni_Optimized_Mesh_1022103039_texture.glb",
+      "bytes": 28295264,
+      "triangles": 30760,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 28295264
+    },
+    {
+      "file": "meshy/Meshy_AI_Moroni_Rigged_All_Animations.glb",
+      "bytes": 23635804,
+      "triangles": 30760,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 23635804
+    },
+    {
+      "file": "meshy/Meshy_AI_Moroni_T_Pose_1022102902_image-to-3d-texture.glb",
+      "bytes": 56217164,
+      "triangles": 1199532,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 56217164
+    },
+    {
+      "file": "meshy/Meshy_AI_Nephi_Character_1022103246_image-to-3d-texture.glb",
+      "bytes": 54726492,
+      "triangles": 1113932,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 54726492
+    },
+    {
+      "file": "meshy/Meshy_AI_Nephi_Remeshed_10k_1022103620_texture.glb",
+      "bytes": 28973768,
+      "triangles": 10358,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 28973768
+    },
+    {
+      "file": "meshy/Meshy_AI_Nephi_Rigged_All_Animations (1).glb",
+      "bytes": 23769340,
+      "triangles": 10358,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 23769340
+    },
+    {
+      "file": "meshy/Meshy_AI_Nephi_Rigged_All_Animations.glb",
+      "bytes": 23769340,
+      "triangles": 10358,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 23769340
+    },
+    {
+      "file": "meshy/Meshy_AI_Oliver_Cowdery_1022101618_image-to-3d-texture.glb",
+      "bytes": 29779596,
+      "triangles": 335080,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 29779596
+    },
+    {
+      "file": "meshy/Meshy_AI_Rigged_Oliver_Cowdery_All_Animations.glb",
+      "bytes": 20832284,
+      "triangles": 10274,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 20832284
+    },
+    {
+      "file": "meshy/Meshy_AI_joseph_smith_full_bod_1022100636_image-to-3d-texture.glb",
+      "bytes": 16318920,
+      "triangles": 326124,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 16318920
+    },
+    {
+      "file": "meshy/Meshy_AI_joseph_smith_remesh_1_1022100801_texture.glb",
+      "bytes": 12928236,
+      "triangles": 10242,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 2,
+      "texture_sizes": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "name": "BakedMaterial",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 12928236
+    },
+    {
+      "file": "meshy/Meshy_AI_young_joseph_smith_1022101830_image-to-3d-texture.glb",
+      "bytes": 34815928,
+      "triangles": 413050,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 3,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        },
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        },
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [],
+      "animations": [],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 1.0,
+            "roughnessFactor": 1.0,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            },
+            "metallicRoughnessTexture": {
+              "index": 1,
+              "texCoord": 0
+            }
+          },
+          "normalTexture": {
+            "index": 2,
+            "texCoord": 0
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "glb_declared_bytes": 34815928
+    },
+    {
+      "file": "meshy/Meshy_AI_young_joseph_smith_ri_All_Animations.glb",
+      "bytes": 14639460,
+      "triangles": 19726,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 4096,
+          "height": 4096,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 14639460
+    },
+    {
+      "file": "meshy/josephsmith_rigged.glb",
+      "bytes": 6988532,
+      "triangles": 10242,
+      "mesh_count": 1,
+      "primitive_count": 1,
+      "material_count": 1,
+      "image_count": 1,
+      "texture_sizes": [
+        {
+          "width": 2048,
+          "height": 2048,
+          "embedded": true
+        }
+      ],
+      "skeletons": [
+        [
+          "mixamorig:Hips",
+          "mixamorig:LeftUpLeg",
+          "mixamorig:LeftLeg",
+          "mixamorig:LeftFoot",
+          "mixamorig:LeftToeBase",
+          "mixamorig:RightUpLeg",
+          "mixamorig:RightLeg",
+          "mixamorig:RightFoot",
+          "mixamorig:RightToeBase",
+          "mixamorig:Spine",
+          "mixamorig:Spine1",
+          "mixamorig:Spine2",
+          "mixamorig:LeftShoulder",
+          "mixamorig:LeftArm",
+          "mixamorig:LeftForeArm",
+          "mixamorig:LeftHand",
+          "mixamorig:RightShoulder",
+          "mixamorig:RightArm",
+          "mixamorig:RightForeArm",
+          "mixamorig:RightHand",
+          "mixamorig:Neck",
+          "mixamorig:Head",
+          "headfront"
+        ]
+      ],
+      "animations": [
+        {
+          "name": "Running",
+          "channels": 46,
+          "duration_seconds": 0.6666669845581055
+        },
+        {
+          "name": "Walking",
+          "channels": 46,
+          "duration_seconds": 1.0666669607162476
+        }
+      ],
+      "morph_target_count": 0,
+      "has_finger_joints": false,
+      "materials": [
+        {
+          "doubleSided": true,
+          "emissiveFactor": [
+            1,
+            1,
+            1
+          ],
+          "emissiveTexture": {
+            "index": 0
+          },
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            },
+            "KHR_materials_ior": {
+              "ior": 1.4500000476837158
+            }
+          },
+          "name": "Material_1",
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            }
+          }
+        }
+      ],
+      "glb_declared_bytes": 6988532
+    }
+  ]
+}
