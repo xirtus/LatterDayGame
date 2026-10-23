@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {createArchitectureKit} from './architecture-kit.js';
 
 export const CARTHAGE_LAYOUT = Object.freeze({
   width: 8.84,
@@ -14,6 +15,9 @@ export const CARTHAGE_LAYOUT = Object.freeze({
 
 export function buildCarthageWorld(context) {
   const {group, box, cylinder, mesh, material, colliders, points, spawn, focus, bounds, tree, fence, curve, book} = context;
+  const kit = context.kit ?? createArchitectureKit(context);
+  const rubble = kit.surface('fieldstone', '#c9b08a');
+  const limewash = kit.surface('plaster', '#e2d7bd');
   const upperY = CARTHAGE_LAYOUT.upperFloor;
   const halfWidth = CARTHAGE_LAYOUT.width / 2;
   const halfDepth = CARTHAGE_LAYOUT.depth / 2;
@@ -42,7 +46,7 @@ export function buildCarthageWorld(context) {
   }
 
   function solid(x, y, z, width, height, depth, color, minY = y - height / 2, maxY = y + height / 2) {
-    const object = box(x, y, z, width, height, depth, color);
+    const object = kit.slab(x, y, z, width, height, depth, color);
     colliders.push({x, z, width, depth, minY, maxY});
     return object;
   }
@@ -132,14 +136,19 @@ export function buildCarthageWorld(context) {
     const eastOpenings = [{center: upper ? 2.8 : 2.5, width: 1.05, sill: 1.0, height: 1.42, kind: 'window'}, {center: -2.7, width: .7, sill: 1.4, height: .8, kind: 'window'}];
     const westOpenings = [{center: -2.8, width: .72, sill: 1.4, height: .85, kind: 'window'}];
     const backOpenings = [{center: 2.3, width: .72, sill: 1.42, height: .8, kind: 'window'}];
-    wallRun('x', halfDepth, -halfWidth, halfWidth, bottom, height, frontOpenings, '#b7a17d');
-    wallRun('x', -halfDepth, -halfWidth, halfWidth, bottom, height, backOpenings, '#b7a17d');
-    wallRun('z', halfWidth, -halfDepth, halfDepth, bottom, height, eastOpenings, '#b7a17d');
-    wallRun('z', -halfWidth, -halfDepth, halfDepth, bottom, height, westOpenings, '#b7a17d');
-    stoneDetail('x', halfDepth + .37, -halfWidth, halfWidth, bottom, height, frontOpenings);
-    stoneDetail('x', -halfDepth - .37, -halfWidth, halfWidth, bottom, height, backOpenings);
-    stoneDetail('z', halfWidth + .37, -halfDepth, halfDepth, bottom, height, eastOpenings);
-    stoneDetail('z', -halfWidth - .37, -halfDepth, halfDepth, bottom, height, westOpenings);
+    // Coursed sandstone rubble outside; limewashed plaster inside the cells and rooms.
+    const faces = [['x', halfDepth, -halfWidth, halfWidth, frontOpenings, 1], ['x', -halfDepth, -halfWidth, halfWidth, backOpenings, -1], ['z', halfWidth, -halfDepth, halfDepth, eastOpenings, 1], ['z', -halfWidth, -halfDepth, halfDepth, westOpenings, -1]];
+    for (const [axis, fixed, start, end, openings, outward] of faces) {
+      wallRun(axis, fixed, start, end, bottom, height, openings, rubble);
+      const cuts = openings.map(opening => ({center: opening.center, width: opening.width, bottom: opening.sill, height: opening.height}));
+      kit.wallRun({axis, fixed: fixed - outward * .37, start: start + .36, end: end - .36, bottom, height: height - .02, openings: cuts, finish: limewash, thickness: .04, collide: false});
+      for (const opening of openings.filter(item => item.kind === 'window')) {
+        const y = bottom + opening.sill + opening.height + .17;
+        if (axis === 'x') kit.slab(opening.center, y, fixed + outward * .33, opening.width + .5, .28, .1, kit.surface('ashlar', '#d6c7a6'));
+        else kit.slab(fixed + outward * .33, y, opening.center, .1, .28, opening.width + .5, kit.surface('ashlar', '#d6c7a6'));
+      }
+    }
+    void stoneDetail;
   }
 
   function bed(x, y, z, width = 1.5, depth = 2.05) {
@@ -257,23 +266,17 @@ export function buildCarthageWorld(context) {
 
   const roof = section('carthage-roof-cutaway', () => {
     for (const side of [-1, 1]) {
-      const slope = box(side * 2.25, 7.0, 0, 5.23, .17, 11.5, '#5f6256');
+      const slope = kit.slab(side * 2.25, 7.0, 0, 5.23, .17, 11.5, kit.surface('shingles', '#8f897c'));
       slope.rotation.z = side * -.39;
-      for (let course = 0; course < 9; course += 1) {
-        const distance = .35 + course * .53;
-        const seam = box(side * distance * .92, 7.88 - distance * .38, 0, .035, .035, 11.55, '#485143');
-        seam.rotation.z = side * -.39;
-      }
+      const fascia = box(side * 4.66, 6.0, 0, .07, .24, 11.55, '#4b4038');
+      fascia.rotation.z = side * -.39;
     }
     for (const end of [-1, 1]) {
-      const geometry = new THREE.BufferGeometry();
-      geometry.setAttribute('position', new THREE.Float32BufferAttribute([-4.55, 6.15, end * 5.4, 4.55, 6.15, end * 5.4, 0, 7.95, end * 5.4], 3));
-      geometry.setIndex(end > 0 ? [0, 2, 1] : [0, 1, 2]);
-      geometry.computeVertexNormals();
-      mesh(geometry, material('#af9873', {side: THREE.DoubleSide}), 0, 0, 0);
+      kit.gable(0, 6.15, end * 5.42, 4.55, 1.8, rubble, end);
     }
-    box(2.1, 7.28, .52, .77, 2.35, .77, '#948368');
+    kit.slab(2.1, 7.28, .52, .77, 2.35, .77, kit.surface('brick', '#b07a5d'));
     box(2.1, 8.48, .52, .93, .15, .93, '#b39b77');
+    kit.addSmoke(2.1, 8.7, .52, .7);
     box(0, 7.94, 0, .18, .16, 11.6, '#535a4b');
   });
   roofObjects.push(roof);
@@ -313,11 +316,12 @@ export function buildCarthageWorld(context) {
 
   function streetBuilding(x, z, width, depth, height, color, name) {
     const structure = section(`carthage-street-${name}`, () => {
-      solid(x, height / 2, z, width, height, depth, color);
+      solid(x, height / 2, z, width, height, depth, kit.surface('clapboard', color));
       for (const side of [-1, 1]) {
-        const roofPanel = box(x + side * width * .25, height + .8, z, width * .58, .16, depth + .6, '#687063');
+        const roofPanel = kit.slab(x + side * width * .25, height + .8, z, width * .58, .16, depth + .6, kit.surface('shingles', '#9a8e7c'));
         roofPanel.rotation.z = side * -.42;
       }
+      kit.addSmoke(x + width * .23, height + 1.6, z - depth * .22, .5);
       box(x, 1.12, z + depth / 2 + .035, .95, 2.24, .12, '#69543e');
       for (const side of [-1, 1]) {
         box(x + side * width * .29, 1.65, z + depth / 2 + .04, .93, 1.23, .12, '#e0cfaa');
@@ -325,7 +329,6 @@ export function buildCarthageWorld(context) {
         box(x + side * width * .29, 1.65, z + depth / 2 + .15, .035, 1.08, .03, '#ded4ba');
         box(x + side * width * .29, 1.65, z + depth / 2 + .15, .8, .035, .03, '#ded4ba');
       }
-      for (let row = 0; row < Math.floor(height / .33); row += 1) box(x, .16 + row * .33, z + depth / 2 + .02, width, .015, .03, '#82785f');
       box(x + width * .23, height + .75, z - depth * .22, .57, 1.5, .57, '#a08c6b');
       if (name === 'inn') sign('INN · BOARDING', x, 2.7, z + depth / 2 + .18, 2.7);
       if (name === 'store') sign('DRY GOODS', x, 2.7, z + depth / 2 + .18, 2.5);

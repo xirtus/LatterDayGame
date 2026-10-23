@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {buildRecordHill} from './record-hill.js';
+import {createArchitectureKit} from './architecture-kit.js';
 
 export const SACRED_RECORD_IDS = Object.freeze(['BM01', 'BM02', 'BM03', 'BM04', 'BM06', 'BM08', 'BM09', 'BM10', 'BM11', 'BM12', 'BM13', 'BM14', 'BM20', 'BM21', 'BM22', 'BM23', 'BM25']);
 
@@ -7,6 +8,7 @@ const COLORS = Object.freeze({sand: '#c9b58c', limestone: '#d9c9a4', shade: '#a2
 
 export function buildRecordSacredWorld(context) {
   const {chapter, group, scene, box, cylinder, sphere, mesh, material, colliders, spawn, focus, bounds, curve, tree, book, quality} = context;
+  const kit = context.kit ?? createArchitectureKit(context);
   const recordId = chapter.recordId || chapter.id;
   if (!SACRED_RECORD_IDS.includes(recordId)) throw new Error(`No sacred record environment for ${recordId}`);
   const resources = [];
@@ -27,7 +29,7 @@ export function buildRecordSacredWorld(context) {
   focus.set(0, 1.5, -12);
 
   function solid(x, y, z, width, height, depth, color) {
-    const object = box(x, y, z, width, height, depth, color);
+    const object = kit.slab(x, y, z, width, height, depth, color);
     colliders.push({x, z, width, depth, minY: y - height / 2, maxY: y + height / 2});
     return object;
   }
@@ -96,23 +98,82 @@ export function buildRecordSacredWorld(context) {
     return cloth;
   }
 
+  // Lime-plastered courtyard house on a fieldstone footing: cedar lintel and roof beams,
+  // parapeted flat roof (cutaway), lamp niche, loom, quern, mats, and a cooking fire outside.
   function house(x, z, width = 10, depth = 10, color = COLORS.limestone, label = '') {
     const height = 3.6;
     const sideWidth = (width - 2.4) / 2;
-    solid(x - width / 2, height / 2, z, .45, height, depth, color);
-    solid(x + width / 2, height / 2, z, .45, height, depth, color);
-    solid(x, height / 2, z - depth / 2, width, height, .45, color);
-    for (const side of [-1, 1]) solid(x + side * (1.2 + sideWidth / 2), height / 2, z + depth / 2, sideWidth, height, .45, color);
-    box(x, 3.25, z + depth / 2, 2.4, .7, .45, color);
-    box(x, -.035, z, width, .06, depth, '#d5bd91');
-    const roof = box(x, 3.75, z, width + .5, .25, depth + .5, '#b29a72');
+    const wall = kit.surface('plaster', color);
+    const footing = kit.surface('fieldstone', '#b9a888');
+    solid(x - width / 2, height / 2, z, .45, height, depth, wall);
+    solid(x + width / 2, height / 2, z, .45, height, depth, wall);
+    solid(x, height / 2, z - depth / 2, width, height, .45, wall);
+    for (const side of [-1, 1]) solid(x + side * (1.2 + sideWidth / 2), height / 2, z + depth / 2, sideWidth, height, .45, wall);
+    kit.slab(x, 3.25, z + depth / 2, 2.4, .7, .45, wall);
+    for (const side of [-1, 1]) {
+      kit.slab(x + side * (width / 2 + .03), .3, z, .55, .6, depth + .55, footing);
+      kit.slab(x, .3, z - depth / 2 - .03, width + .55, .6, .55, footing);
+      kit.slab(x + side * (1.2 + (width / 2 + .28 - 1.2) / 2), .3, z + depth / 2 + .03, width / 2 + .28 - 1.2, .6, .55, footing);
+    }
+    box(x, 2.82, z + depth / 2 + .02, 3, .24, .62, COLORS.cedar);
+    for (const side of [-1, 1]) box(x + side * 1.27, 1.4, z + depth / 2 + .02, .14, 2.8, .55, '#7d6246');
+    for (const side of [-1, 1]) for (const along of [-.25, .25]) {
+      box(x + side * (width / 2 + .2), 2.5, z + along * depth, .06, .55, .9, '#2f2a24');
+      for (const bar of [-1, 0, 1]) box(x + side * (width / 2 + .24), 2.5, z + along * depth + bar * .22, .05, .55, .05, COLORS.cedar);
+    }
+    kit.slab(x, -.035, z, width, .06, depth, kit.surface('fieldstone', '#cdb894'));
+    const roof = new THREE.Group();
     roof.name = `record-cutaway-roof:${x}:${z}`;
+    roof.userData.mergeStatic = true;
+    const roofStart = group.children.length;
+    kit.slab(x, 3.75, z, width + .5, .25, depth + .5, kit.surface('plaster', '#c9b48f'));
+    for (const side of [-1, 1]) {
+      kit.slab(x + side * (width / 2 + .1), 4.12, z, .3, .5, depth + .5, wall);
+      kit.slab(x, 4.12, z + side * (depth / 2 + .1), width + .5, .5, .3, wall);
+    }
+    for (let beam = -width / 2 + .6; beam < width / 2; beam += 1.1) for (const side of [-1, 1]) {
+      const end = cylinder(x + beam, 3.55, z + side * (depth / 2 + .38), .1, .1, .5, COLORS.cedar, 7);
+      end.rotation.x = Math.PI / 2;
+    }
+    const spout = box(x + width / 2 + .45, 3.9, z + depth * .3, .6, .12, .16, '#8a6a46');
+    spout.rotation.z = -.12;
+    for (let beam = -width / 2 + .6; beam < width / 2; beam += 1.1) box(x + beam, 3.5, z, .16, .2, depth - .2, '#6e543b');
+    group.children.slice(roofStart).forEach(object => roof.add(object));
+    group.add(roof);
     roofs.push({object: roof, x, z, width, depth});
+    // Interior life.
     box(x - width * .3, .3, z - depth * .28, 2.5, .5, 1.3, '#886e4f');
     box(x - width * .3, .6, z - depth * .28, 2.5, .12, 1.3, '#d1b681');
+    for (const cushion of [-.8, .8]) sphere(x - width * .3 + cushion, .75, z - depth * .28 - .35, .28, ['#a8543f', '#6f7f6a'][cushion > 0 ? 1 : 0], 1).scale.set(1.2, .5, .9);
     bowl(x + width * .25, z - depth * .3);
     jar(x + width * .25, z - depth * .1);
-    if (label) sign(label, x, 2.85, z + depth / 2 + .3, Math.min(width - 1, 5));
+    jar(x + width * .25 + .9, z - depth * .2, '#a97b55');
+    box(x, 2.1, z - depth / 2 + .3, .8, .5, .2, '#5d5042');
+    cylinder(x, 2.0, z - depth / 2 + .32, .09, .07, .07, '#b67650', 8);
+    kit.flame(x + .07, 2.08, z - depth / 2 + .32, .9);
+    for (const post of [-1, 1]) box(x + width * .3 + post * .6, 1, z + depth * .2, .08, 2, .08, COLORS.cedar);
+    box(x + width * .3, 1.95, z + depth * .2, 1.4, .08, .08, COLORS.cedar);
+    for (let thread = 0; thread < 9; thread++) box(x + width * .3 - .5 + thread * .125, 1.35, z + depth * .2, .012, 1.1, .012, ['#c9b48b', '#a8543f', '#e9dcc0'][thread % 3]);
+    box(x + width * .3, .82, z + depth * .2, 1.1, .3, .03, '#a8543f');
+    cylinder(x - width * .3, .12, z + depth * .22, .32, .34, .2, '#8f887a', 12);
+    cylinder(x - width * .3, .27, z + depth * .22, .26, .3, .1, '#9a9384', 12);
+    const mat = mesh(new THREE.CylinderGeometry(1, 1, .02, 28), kit.surface('rug', '#e8d9b8'), x - width * .05, .01, z - depth * .05);
+    mat.scale.set(1.3, 1, .9);
+    // A cooking fire in the dooryard with a pot on three stones.
+    const fireX = x + width * .32;
+    const fireZ = z + depth / 2 + 2.4;
+    for (let stone = 0; stone < 9; stone++) {
+      const angle = stone / 9 * Math.PI * 2;
+      sphere(fireX + Math.cos(angle) * .55, .1, fireZ + Math.sin(angle) * .55, .17, '#857d6f', 0).scale.set(1.2, .7, 1);
+    }
+    kit.addSmoke(fireX, 1, fireZ, .35);
+    cylinder(fireX, .45, fireZ, .26, .2, .32, '#3f3a35', 12);
+    kit.campfire(fireX, .12, fireZ, .45);
+    colliders.push({x: fireX, z: fireZ, radius: .7});
+    for (const side of [-1, 1]) cylinder(x + side * 1.7, 1.3, z + depth / 2 + 1.6, .05, .06, 2.6, COLORS.cedar, 5);
+    const awning = box(x, 2.55, z + depth / 2 + .9, 3.8, .04, 1.6, ['#c8a16b', '#a8543f', '#d1bb8c'][Math.abs(Math.round(x + z)) % 3]);
+    awning.rotation.x = -.18;
+    if (label) sign(label, x, 3.3, z + depth / 2 + .3, Math.min(width - 1, 5));
   }
 
   function tents(rows = 3) {

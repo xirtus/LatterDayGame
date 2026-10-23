@@ -903,6 +903,8 @@ async function init() {
     getState: () => ({ready: !loading, chapter: chapter?.id, objective: objectiveIndex, objectiveId: currentObjective()?.id, objectiveCount: chapter?.objectives.length, camera: cameraMode, player: player?.root.position.toArray(), playerId: player?.id, dialogue: dialogueIndex, paused: isPaused(), completed: [...completed], actors: getAssetStatus(), chapters: chapters.length, record: Boolean(chapter?.record), recordBookmark, recordProgress, activityTarget: objectiveTarget()}),
     enterChapter: id => enterChapter(id),
     setCamera,
+    setFreeView: (position, nextYaw = yaw, nextPitch = pitch) => { setCamera('free'); freePosition.fromArray(position); yaw = nextYaw; pitch = nextPitch; },
+    placePlayer: position => player?.root.position.fromArray(position),
     teleportToObjective: () => { if (!player || !currentObjective()) return; player.root.position.fromArray(objectiveTarget()).add(new THREE.Vector3(0, 0, 1.1)); },
     interact: beginInteraction,
     advanceDialogue,

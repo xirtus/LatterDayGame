@@ -7,6 +7,8 @@ import {buildRecordSacredWorld} from './record-sacred-world.js';
 import {buildRecordAdventureWorld} from './record-adventure-world.js';
 import {buildRecordHill} from './record-hill.js';
 import {buildWorldDetail} from './world-detail.js';
+import {createArchitectureKit} from './architecture-kit.js';
+import {buildAmbientLife} from './ambient-life.js';
 
 const PALETTE = {
   grass: '#829b65', darkGrass: '#50684b', leaf: '#677c4a', lightLeaf: '#b3bc79',
@@ -198,21 +200,23 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     for (const height of [0.5, 0.95]) box(x + (axis === 'x' ? length / 2 : 0), height, z + (axis === 'z' ? length / 2 : 0), axis === 'x' ? length : 0.1, 0.11, axis === 'z' ? length : 0.1, '#9c8862');
   }
 
+  // A closed outlying farmhouse: clapboard on a fieldstone sill, sash windows, shingled roof
+  // and a gable-end stone chimney that smokes.
   function cottage(x, z, width = 7, depth = 5, color = '#b99d77', height = 3.4) {
-    box(x, height / 2, z, width, height, depth, color);
-    const roof = cylinder(x, height + 0.9, z, 0, 1, 2, PALETTE.darkWood, 4);
-    roof.rotation.y = Math.PI / 4;
-    roof.scale.set(width * 0.79, 1, depth * 0.79);
-    box(x + width * 0.28, height + 1.2, z + 0.4, 0.8, 2.2, 0.85, '#927966');
-    box(x, 1.15, z + depth / 2 + 0.035, 1.12, 2.3, 0.12, '#5d5646');
+    const siding = kit.surface('clapboard', color);
+    const trim = '#ece2c8';
+    kit.slab(x, .15, z, width + .3, .3, depth + .3, kit.surface('fieldstone', '#bcb09a'));
+    kit.slab(x, height / 2 + .15, z, width, height, depth, siding);
+    for (const sideX of [-1, 1]) for (const sideZ of [-1, 1]) box(x + sideX * (width / 2 + .04), height / 2 + .15, z + sideZ * (depth / 2 + .04), .18, height, .18, trim);
+    const {rise} = kit.gableRoof({x: x, z, width: depth + .1, depth: width + .1, height: height + .15, pitch: .6, finish: kit.surface('shingles', '#a39684'), wallFinish: siding, rotate: true});
+    kit.panelDoor(x, 1.25, z + depth / 2 + .05, 1, 2.2, '#5d5646');
     for (const side of [-1, 1]) {
-      box(x + side * width * 0.3, 1.75, z + depth / 2 + 0.08, 1.1, 1.3, 0.12, '#decbaa');
-      box(x + side * width * 0.3, 1.75, z + depth / 2 + 0.15, 0.9, 1.12, 0.06, '#90a4a0');
-      box(x + side * width * 0.3, 1.75, z + depth / 2 + 0.19, 0.05, 1.12, 0.035, '#efe4ca');
-      box(x + side * width * 0.3, 1.75, z + depth / 2 + 0.19, 0.9, 0.05, 0.035, '#efe4ca');
+      box(x + side * .6, 1.3, z + depth / 2 + .07, .12, 2.5, .08, trim);
+      kit.sashWindow({axis: 'x', x: x + side * width * .3, y: 1.85, z: z + depth / 2, width: 1, height: 1.3, outward: 1, frame: trim, shutters: '#3f5a4f', curtains: null});
     }
-    for (let level = 0; level < height / 0.24; level += 1) box(x, level * 0.24 + 0.1, z + depth / 2 + 0.015, width, 0.028, 0.03, '#a38e6b');
-    colliders.push({ x, z, width: width + 0.2, depth: depth + 0.2 });
+    kit.slab(x, .08, z + depth / 2 + .5, 1.6, .16, .7, kit.surface('ashlar', '#bdb4a2'));
+    kit.stoneChimney({x: x + width / 2 + .13, z, top: height + rise + .8, outward: 1, finish: kit.surface('fieldstone', '#c2b59d'), axis: 'x', base: 2, stack: 1.1});
+    colliders.push({x, z, width: width + .2, depth: depth + .2});
   }
 
   function room(prison = false) {
@@ -254,30 +258,116 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     }
   }
 
+  // Kirtland (stuccoed rubble, 1836) and Nauvoo (dressed limestone, 1846) houses of the Lord:
+  // pilasters, two tiers of arched windows, a cornice, shingled roof and a staged tower.
   function temple(x, z) {
+    const nauvooStyle = environment === 'nauvoo';
     const width = 11;
     const depth = 17;
-    box(x, 0.35, z, 13.5, 0.7, 19, '#c9c6b1');
-    box(x, 4.2, z, width, 8.2, depth, '#eee3c6');
-    box(x, 8.5, z, width + 0.8, 0.5, depth + 0.7, '#d2c7aa');
-    box(x, 9.1, z, 9.5, 0.8, depth - 0.5, '#c1b49a');
-    for (let index = 0; index < 5; index += 1) {
+    const height = 8.6;
+    const halfWidth = width / 2;
+    const halfDepth = depth / 2;
+    const wall = kit.surface(nauvooStyle ? 'ashlar' : 'plaster', nauvooStyle ? '#d9d2bf' : '#f1ead8');
+    const dressed = kit.surface('ashlar', nauvooStyle ? '#cfc6b0' : '#ddd5c1');
+    const trim = nauvooStyle ? '#d8cfb9' : '#f6f0e0';
+    kit.slab(x, .35, z, width + 2.5, .7, depth + 2, dressed);
+    kit.slab(x, .35 + height / 2, z, width, height, depth, wall);
+    for (let step = 0; step < 4; step++) kit.slab(x, .09 + step * .17, z + halfDepth + 1.9 - step * .3, 4.4, .18, .6 + step * .3, dressed);
+    const arched = (wx, wy, wz, axis, w, h, outward) => {
+      const along = (offset, up, out, bw, bh, bd, color) => axis === 'x' ? box(wx + offset, wy + up, wz + out * outward, bw, bh, bd, color) : box(wx + out * outward, wy + up, wz + offset, bd, bh, bw, color);
+      along(0, 0, .02, w, h, .06, '#55676a');
+      const arch = mesh(new THREE.CylinderGeometry(w / 2, w / 2, .06, 16, 1, false, -Math.PI / 2, Math.PI), '#55676a', axis === 'x' ? wx : wx + outward * .02, wy + h / 2, axis === 'x' ? wz + outward * .02 : wz);
+      arch.rotation.order = 'YXZ';
+      arch.rotation.set(-Math.PI / 2, axis === 'x' ? 0 : Math.PI / 2, 0);
+      const ring = mesh(new THREE.TorusGeometry(w / 2 + .06, .07, 5, 16, Math.PI), trim, axis === 'x' ? wx : wx + outward * .06, wy + h / 2, axis === 'x' ? wz + outward * .06 : wz);
+      if (axis === 'z') ring.rotation.y = Math.PI / 2;
+      for (const side of [-1, 1]) along(side * (w / 2 + .06), 0, .06, .12, h, .1, trim);
+      along(0, 0, .05, .05, h + w / 2, .05, '#e9e3d2');
+      for (const row of [-.25, .1]) along(0, row * h, .05, w, .04, .05, '#e9e3d2');
+      along(0, -h / 2 - .08, .12, w + .35, .12, .25, trim);
+    };
+    for (const tier of [[2.4, 2.5], [6.15, 2.2]]) {
+      const [wy, wh] = tier;
+      for (let bay = 0; bay < 5; bay++) {
+        const wz = z - 6.2 + bay * 3.1;
+        for (const side of [-1, 1]) arched(x + side * halfWidth, .35 + wy, wz, 'z', 1.2, wh, side);
+      }
+      for (const side of [-1, 1]) arched(x + side * 3.1, .35 + wy, z - halfDepth, 'x', 1.2, wh, -1);
+      for (const side of [-1, 1]) arched(x + side * 3.4, .35 + wy, z + halfDepth, 'x', 1.1, wh, 1);
+    }
+    // Pilasters; Nauvoo's carry moonstones at the base and sunstones at the capital.
+    for (let bay = 0; bay < 6; bay++) {
+      const pz = z - halfDepth + .3 + bay * 3.28;
       for (const side of [-1, 1]) {
-        const windowZ = z - 6.3 + index * 3.1;
-        box(x + side * 5.54, 3.3, windowZ, 0.1, 2.7, 1.1, '#8a9b94');
-        box(x + side * 5.68, 5.9, windowZ, 0.35, 0.35, 1.35, '#d5be83');
+        kit.slab(x + side * (halfWidth + .12), .35 + height / 2, pz, .26, height, .55, dressed);
+        if (nauvooStyle) {
+          const sun = cylinder(x + side * (halfWidth + .3), .35 + height - .55, pz, .32, .32, .1, '#d6c38a', 16);
+          sun.rotation.z = Math.PI / 2;
+          const moon = cylinder(x + side * (halfWidth + .27), 1.05, pz, .2, .2, .08, '#c8c0aa', 14);
+          moon.rotation.z = Math.PI / 2;
+        }
       }
     }
-    for (const side of [-1, 1]) {
-      box(x + side * 3.8, 4, z + 8.55, 0.65, 7.7, 0.6, '#f4eace');
-      box(x + side * 2.1, 3.2, z + 8.55, 0.85, 3.1, 0.1, '#8a9b94');
+    for (const side of [-1, 1]) for (const end of [-1, 1]) kit.slab(x + side * (halfWidth - .05), .35 + height / 2, z + end * (halfDepth + .12), .7, height, .26, dressed);
+    // Cornice and frieze.
+    for (const [rise, grow, tint] of [[height - .2, .2, trim], [height + .02, .45, trim], [height + .18, .7, '#cfc7b3']]) box(x, .35 + rise, z, width + grow, .22, depth + grow, tint);
+    if (nauvooStyle) for (let star = 0; star < 6; star++) for (const side of [-1, 1]) {
+      const starstone = mesh(new THREE.CylinderGeometry(.16, .16, .06, 5), '#ded3b4', x + side * (halfWidth + .05), .35 + height - .05, z - halfDepth + 1.9 + star * 3.28);
+      starstone.rotation.z = Math.PI / 2;
     }
-    box(x, 2, z + 8.62, 1.6, 3.8, 0.13, '#756957');
-    box(x, 10.5, z + 5.6, 3.3, 3.6, 3.3, '#eadfc2');
-    cylinder(x, 13.2, z + 5.6, 1.55, 1.75, 2, '#d0ba87', 8);
-    cylinder(x, 15.5, z + 5.6, 0, 1.5, 2.8, '#a79c7d', 8);
-    sphere(x, 17.1, z + 5.6, 0.25, PALETTE.gold, 1);
-    colliders.push({ x, z, width: 14, depth: 19 });
+    // Front doors under a fanlight, and a dedicatory tablet.
+    for (const side of nauvooStyle ? [-1.2, 1.2] : [-.9, .9]) {
+      box(x + side, 1.65, z + halfDepth + .06, 1.2, 2.6, .1, '#5f4a38');
+      const fan = mesh(new THREE.CylinderGeometry(.6, .6, .1, 16, 1, false, -Math.PI / 2, Math.PI), '#9fb0ae', x + side, 2.95, z + halfDepth + .06);
+      fan.rotation.x = -Math.PI / 2;
+      for (const edge of [-1, 1]) box(x + side + edge * .68, 1.9, z + halfDepth + .1, .16, 3.1, .14, trim);
+    }
+    box(x, 4.35, z + halfDepth + .06, 3.4, .6, .08, nauvooStyle ? '#cbbf9f' : '#efe7d1');
+    box(x, 4.35, z + halfDepth + .1, 3.1, .02, .02, '#8a7f66');
+    const {rise} = kit.gableRoof({x, z, width: width + .5, depth: depth + .5, height: .35 + height + .3, pitch: .42, finish: kit.surface('shingles', nauvooStyle ? '#8e8d88' : '#9f8f78'), trim, overhang: .35, gableOverhang: .3, wallFinish: wall});
+    // Tower: square base, louvered belfry, clock stage (Nauvoo), octagonal drum, dome and spire.
+    const towerZ = z + halfDepth - 2.1;
+    let level = .35 + height + .3 + rise * .55;
+    kit.slab(x, level + 1.4, towerZ, 3.6, 2.8, 3.6, wall);
+    box(x, level + 2.9, towerZ, 4, .25, 4, trim);
+    level += 3;
+    kit.slab(x, level + 1.3, towerZ, 3.1, 2.6, 3.1, wall);
+    for (const [ax, az, ry] of [[0, 1, 0], [0, -1, 0], [1, 0, Math.PI / 2], [-1, 0, Math.PI / 2]]) {
+      const louver = box(x + ax * 1.56, level + 1.3, towerZ + az * 1.56, .9, 1.6, .06, '#4a4f4b');
+      louver.rotation.y = ry;
+      for (let slat = 0; slat < 6; slat++) {
+        const blade = box(x + ax * 1.6, level + .65 + slat * .26, towerZ + az * 1.6, .86, .05, .09, trim);
+        blade.rotation.y = ry;
+      }
+      if (nauvooStyle) {
+        const face = cylinder(x + ax * 1.57, level + 3.1, towerZ + az * 1.57, .48, .48, .06, '#f2ead6', 20);
+        face.rotation.set(Math.PI / 2, 0, ry);
+        const hand = box(x + ax * 1.62, level + 3.2, towerZ + az * 1.62, .04, .3, .03, '#2f2b27');
+        hand.rotation.y = ry;
+      }
+    }
+    box(x, level + 2.7, towerZ, 3.5, .22, 3.5, trim);
+    level += 2.8;
+    if (nauvooStyle) {
+      kit.slab(x, level + .7, towerZ, 2.6, 1.4, 2.6, wall);
+      box(x, level + 1.45, towerZ, 2.9, .18, 2.9, trim);
+      level += 1.5;
+    }
+    cylinder(x, level + .8, towerZ, 1.15, 1.3, 1.6, trim, 8);
+    for (let column = 0; column < 8; column++) {
+      const angle = column / 8 * Math.PI * 2 + Math.PI / 8;
+      cylinder(x + Math.cos(angle) * 1.25, level + .8, towerZ + Math.sin(angle) * 1.25, .07, .07, 1.6, '#e8e1cf', 6);
+    }
+    box(x, level + 1.66, towerZ, 2.8, .14, 2.8, '#cfc7b3').rotation.y = Math.PI / 4;
+    const dome = mesh(new THREE.SphereGeometry(1.15, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2), nauvooStyle ? '#c9b37a' : '#d9d0bb', x, level + 1.7, towerZ);
+    dome.castShadow = true;
+    cylinder(x, level + 3.4, towerZ, .02, .2, 2.6, PALETTE.gold, 8);
+    sphere(x, level + 4.75, towerZ, .16, PALETTE.gold, 1);
+    if (nauvooStyle) {
+      const vane = box(x, level + 5.15, towerZ, .08, .5, .9, PALETTE.gold);
+      vane.rotation.z = -.3;
+    }
+    colliders.push({x, z, width: width + 2.5, depth: depth + 2});
   }
 
   function memorialConference() {
@@ -472,6 +562,7 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     colliders.push({ x, z, radius: 1.1 });
   }
 
+  const kit = createArchitectureKit({group, mesh, box, cylinder, sphere, colliders, quality});
   scene.background = new THREE.Color(celestial ? '#26334e' : desert ? '#a98f77' : night ? '#333d4c' : '#cadad6');
   scene.fog = new THREE.FogExp2(celestial ? '#435a73' : desert ? '#bba184' : night ? '#596575' : '#d2dfd3', celestial ? 0.005 : 0.011);
   const hemisphere = new THREE.HemisphereLight(celestial ? '#d8eaff' : '#fff2da', night ? '#626479' : '#6e7654', night ? 2.2 : 2.3);
@@ -498,7 +589,7 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     if (!desert) flowerField(quality === 'low' ? 80 : 260);
   }
 
-  const architectureContext = {THREE, scene, chapter, quality, group, box, cylinder, sphere, mesh, material, colliders, points, spawn, focus, bounds, tree, fence, curve, bench, table, book, temple, animated};
+  const architectureContext = {THREE, scene, chapter, quality, group, box, cylinder, sphere, mesh, material, colliders, points, spawn, focus, bounds, tree, fence, curve, bench, table, book, temple, animated, kit, night};
   if (chapter.record) {
     const adventure = ['BM05', 'BM07', 'BM15', 'BM16', 'BM17', 'BM18', 'BM19', 'BM24', 'TX01', 'TX02', 'TX03'].includes(chapter.recordId);
     architecture = adventure ? buildRecordAdventureWorld(architectureContext) : buildRecordSacredWorld(architectureContext);
@@ -720,32 +811,42 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
   }
 
   const detail = buildWorldDetail({chapter, quality, box, cylinder, sphere, book}, architecture);
+  const life = buildAmbientLife({group, mesh, material, quality, chapter, environment, night, interior: interior && !connected, celestial, desert, bounds, colliders, architecture, random});
+  kit.finalizeParticles();
   const movingObjects = new Set(animated.map(item => item.object));
-  const batches = new Map();
-  for (const object of [...group.children]) {
-    if (!object.isMesh || object.isInstancedMesh || Array.isArray(object.material) || object.material.transparent || object.material.map || object.material.vertexColors || movingObjects.has(object) || object.name || !object.visible) continue;
-    object.updateMatrix();
-    const geometry = object.geometry.clone().applyMatrix4(object.matrix);
-    geometries.add(geometry);
-    const key = `${object.material.uuid}:${object.castShadow}:${object.receiveShadow}`;
-    if (!batches.has(key)) batches.set(key, {geometries: [], material: object.material, castShadow: object.castShadow, receiveShadow: object.receiveShadow});
-    batches.get(key).geometries.push(geometry.index ? geometry.toNonIndexed() : geometry);
-    object.removeFromParent();
-  }
-  for (const batch of batches.values()) {
-    batch.geometries.forEach(geometry => {
+  // Batch static meshes by material: the world group itself, plus any sub-assembly flagged
+  // mergeStatic (roof shells, furniture, doors) so cutaways and transforms keep working.
+  function mergeStatic(container) {
+    const batches = new Map();
+    for (const object of [...container.children]) {
+      if (!object.isMesh || object.isInstancedMesh || Array.isArray(object.material) || (object.material.transparent || object.material.map) && !object.material.userData.mergeable || object.material.vertexColors || movingObjects.has(object) || object.name || !object.visible) continue;
+      object.updateMatrix();
+      const geometry = object.geometry.clone().applyMatrix4(object.matrix);
       geometries.add(geometry);
-      for (const attribute of Object.keys(geometry.attributes)) if (!['position', 'normal', 'uv'].includes(attribute)) geometry.deleteAttribute(attribute);
-      if (!geometry.attributes.uv) geometry.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array(geometry.attributes.position.count * 2), 2));
-    });
-    const geometry = mergeGeometries(batch.geometries);
-    if (!geometry) continue;
-    geometries.add(geometry);
-    const merged = new THREE.Mesh(geometry, batch.material);
-    merged.castShadow = batch.castShadow;
-    merged.receiveShadow = batch.receiveShadow;
-    group.add(merged);
+      const key = `${object.material.uuid}:${object.castShadow}:${object.receiveShadow}`;
+      if (!batches.has(key)) batches.set(key, {geometries: [], material: object.material, castShadow: object.castShadow, receiveShadow: object.receiveShadow});
+      batches.get(key).geometries.push(geometry.index ? geometry.toNonIndexed() : geometry);
+      object.removeFromParent();
+    }
+    for (const batch of batches.values()) {
+      batch.geometries.forEach(geometry => {
+        geometries.add(geometry);
+        for (const attribute of Object.keys(geometry.attributes)) if (!['position', 'normal', 'uv'].includes(attribute)) geometry.deleteAttribute(attribute);
+        if (!geometry.attributes.uv) geometry.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array(geometry.attributes.position.count * 2), 2));
+      });
+      const geometry = mergeGeometries(batch.geometries);
+      if (!geometry) continue;
+      geometries.add(geometry);
+      const merged = new THREE.Mesh(geometry, batch.material);
+      merged.castShadow = batch.castShadow;
+      merged.receiveShadow = batch.receiveShadow;
+      container.add(merged);
+    }
   }
+  const flagged = [];
+  group.traverse(object => { if (object !== group && object.userData.mergeStatic) flagged.push(object); });
+  flagged.forEach(mergeStatic);
+  mergeStatic(group);
 
   return {
     group, spawn, focus, bounds, colliders, points, extras,
@@ -763,6 +864,8 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     cameraFar: architecture?.recommendedCameraFar ?? 700,
     update(delta, elapsed, playerPosition, cameraPosition) {
       architecture?.update?.(delta, elapsed, playerPosition, cameraPosition);
+      kit.update(delta, elapsed);
+      life.update(delta, elapsed, playerPosition);
       for (const item of animated) {
         if (item.kind === 'ripple') item.object.position.x = item.baseX + Math.sin(elapsed * 0.6 + item.phase) * 0.35;
         if (item.kind === 'planet') item.object.rotation.y += delta * 0.045;
@@ -772,6 +875,8 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     },
     dispose() {
       architecture?.dispose?.();
+      kit.dispose();
+      life.dispose();
       scene.remove(group);
       for (const geometry of geometries) geometry.dispose();
       for (const value of materials.values()) value.dispose();

@@ -28,9 +28,9 @@ export function buildWorldDetail(context, architecture) {
       writing(x + 3, 1.16, z - 1.8);
       block(x + 3, .07, z - 1.8, 3.6, .025, 4.5, '#877160');
       vessel(x + 3.5, 1.16, z - 1.7, .65);
-      basket(x + width / 2 - 1.1, .12, z - depth / 2 + 1.2);
+      basket(x - width / 2 + 1, .12, z - depth / 2 + 1.1);
       for (let log = 0; log < 4; log++) {
-        const firewood = round(x - .8 + log * .15, .19, z - depth / 2 + .8, .07, .09, .65, timber, 6);
+        const firewood = round(x + 1.75 + log * .15, .09 + (log % 2) * .1, z - depth / 2 + 1.25, .07, .09, .65, timber, 6);
         firewood.rotation.x = Math.PI / 2;
       }
     } else if (use === 'press') {
