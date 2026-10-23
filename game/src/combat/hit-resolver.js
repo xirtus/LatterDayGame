@@ -11,7 +11,7 @@ export function resolveStrike(attacker, targets, navigation, onImpact = () => {}
   const previous = state.previousTip ?? {x: position.x + Math.sin(facing - .95) * STRIKE.range, y: tip.y, z: position.z + Math.cos(facing - .95) * STRIKE.range};
   const origin = {x: position.x, y: position.y + 1.05, z: position.z};
   for (const target of targets) {
-    if (target.combat.protected || target.combat.health <= 0 || state.hitIds.includes(target.combat.id) || !target.actor.root.visible) continue;
+    if (target.combat.protected || target.combat.health <= 0 || state.hitIds.includes(target.combat.id) || !target.actor.root.visible && target.combat.enemy) continue;
     const body = target.actor.root.position;
     if (Math.abs(body.y - position.y) > 1.1 || Math.hypot(body.x - position.x, body.z - position.z) > STRIKE.range + .35) continue;
     let contact = false;

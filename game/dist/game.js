@@ -75239,7 +75239,7 @@ function resolveStrike(attacker, targets, navigation, onImpact = () => {
   const previous = state.previousTip ?? { x: position.x + Math.sin(facing - 0.95) * STRIKE.range, y: tip.y, z: position.z + Math.cos(facing - 0.95) * STRIKE.range };
   const origin = { x: position.x, y: position.y + 1.05, z: position.z };
   for (const target2 of targets) {
-    if (target2.combat.protected || target2.combat.health <= 0 || state.hitIds.includes(target2.combat.id) || !target2.actor.root.visible) continue;
+    if (target2.combat.protected || target2.combat.health <= 0 || state.hitIds.includes(target2.combat.id) || !target2.actor.root.visible && target2.combat.enemy) continue;
     const body = target2.actor.root.position;
     if (Math.abs(body.y - position.y) > 1.1 || Math.hypot(body.x - position.x, body.z - position.z) > STRIKE.range + 0.35) continue;
     let contact = false;
