@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "fixedStep": 0.016666666666666666,
+  "maximumAttackers": 2,
+  "challengeDefault": false,
+  "combatChapters": ["BM15", "BM18", "BM19", "BM24"],
+  "profiles": {
+    "BM03": {"kind": "treasury", "label": "Treasury watch", "notice": "Watch the sentries. Crouch, wait for a patrol, or use the side street. If challenged, withdraw; the account remains available.", "patrols": [[[22, 0, -7], [30, 0, -7], [30, 0, -11], [22, 0, -11]], [[35, 0, -17], [35, 0, -5], [26, 0, -5], [26, 0, -11]]]},
+    "BM15": {"kind": "defense", "label": "Hold the Noah approach", "minimumObjective": 2, "notice": "Protect the approach at Noah. Guard, make space and tend the wounded; this encounter cannot rewrite the account.", "patrols": [[[38, 0, 30], [43, 0, 25], [48, 0, 30]], [[49, 0, 32], [43, 0, 27], [37, 0, 32]]]},
+    "BM18": {"kind": "infiltration", "label": "Two distinct nights", "notice": "Observe the camp watch, crouch and choose a clear route. The later mission and its outcome remain part of the account.", "patrols": [[[-38, 0, 14], [-26, 0, 14], [-26, 0, -7], [-38, 0, -7]], [[-26, 0, -16], [-38, 0, -16], [-38, 0, 1], [-26, 0, 1]], [[26, 0, 14], [38, 0, 14], [38, 0, -7], [26, 0, -7]], [[38, 0, -16], [26, 0, -16], [26, 0, 1], [38, 0, 1]]]},
+    "BM19": {"kind": "formation", "label": "Protect the marching formation", "minimumObjective": 1, "notice": "Keep the passage clear for companions. Injuries lead to care, and young soldiers are never disposable units.", "patrols": [[[-7, 0, 9], [-3, 0, 5], [-7, 0, -1]], [[7, 0, 0], [3, 0, -6], [7, 0, -12]]]},
+    "BM24": {"kind": "passage", "label": "Protect the passage", "notice": "Hold the passage while people withdraw. Rally, guard and make space for the record; Cumorah cannot become a victory arena.", "patrols": [[[-7, 0, 7], [-3, 0, 3], [-7, 0, -7]], [[7, 0, 0], [3, 0, -5], [7, 0, -13]], [[-8, 0, -20], [-3, 0, -24], [-8, 0, -30]], [[8, 0, -26], [3, 0, -30], [8, 0, -36]]]},
+    "30": {"kind": "carthage", "label": "Carthage · source-locked encounter", "minimumObjective": 2, "notice": "The mob approaches the jail. This bounded scene preserves the historical outcome; observation and skip remain available.", "stages": ["waiting", "approach", "breach", "stairs", "upper-room", "aftermath"]}
+  }
+}

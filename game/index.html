@@ -7,6 +7,9 @@
   <meta name="description" content="A playable cel-shaded journey through the life of Joseph Smith, and the gathering of Zion.">
   <title>The Gathering of Zion · Joseph Smith</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scripture-theme.css">
+  <link rel="stylesheet" href="living-world.css">
+  <link rel="icon" type="image/svg+xml" href="plates.svg">
 </head>
 <body>
   <main id="game" aria-label="Three-dimensional game world"><canvas id="world" tabindex="0" aria-label="Explore the world. W A S D to walk, drag to look, E to interact."></canvas></main>
@@ -15,28 +18,36 @@
   <section id="menu" class="menu" aria-labelledby="game-title">
     <div class="menu-shade"></div>
     <div class="menu-content">
-      <p class="eyebrow">A life. A calling. A people.</p>
-      <span class="ornament" aria-hidden="true">✧</span>
+      <p class="eyebrow">An interactive chronicle of the Restoration</p>
+      <span class="ornament" aria-hidden="true"><img src="plates.svg" alt="" width="120" height="76"></span>
       <h1 id="game-title">The Gathering<br><em>of Zion</em></h1>
       <p class="menu-subtitle">The journey of Joseph Smith</p>
       <div class="fine-rule"></div>
       <p class="menu-copy">From a quiet grove to a world entrusted to love.<br>Walk the story. Listen. Serve. Seek the light.</p>
       <button id="begin" class="primary">Begin the journey <span>→</span></button>
       <button id="resume" class="text-button" hidden>Continue your journey</button>
-      <div class="menu-links"><button id="choose-chapter" class="text-button">Explore chapters</button><span>·</span><button id="witnesses" class="text-button">The plates &amp; witnesses</button></div>
-      <p class="build-note">PLAYABLE FIRST BUILD · LOCAL MESHy CHARACTERS<br>Devotional historical drama. Celestial chapters are imaginative.</p>
+      <button id="choose-record" class="text-button">The record within the record →</button>
+      <div class="menu-links"><button id="choose-chapter" class="text-button">Table of contents</button><span>·</span><button id="witnesses" class="text-button">The plates &amp; witnesses</button></div>
+      <p class="build-note">70 PLAYABLE CHAPTERS · LOCAL MESHY CHARACTERS<br>Devotional drama &amp; scriptural adaptations. Temporal missions are imaginative.</p>
     </div>
     <a class="report-link" href="../index.html">Design &amp; historical sources ↗</a>
     <p class="menu-corner">NEW YORK · OHIO · MISSOURI · NAUVOO · BEYOND</p>
   </section>
   <div id="hud" hidden>
     <header class="hud-header">
-      <button id="menu-button" class="brand-button" title="Pause and open menu" aria-label="Open menu">✧</button>
+      <button id="menu-button" class="brand-button" title="Pause and open the cover" aria-label="Open menu"><img src="plates.svg" alt="" width="52" height="38"></button>
       <div class="chapter-heading"><p id="chapter-location" class="eyebrow"></p><h2 id="chapter-title"></h2></div>
-      <div class="hud-tools"><button id="journal-button" class="icon-button" title="Journey journal [J]">Journey <kbd>J</kbd></button><button id="settings-button" class="icon-button" title="Settings">⚙</button></div>
+      <div class="hud-tools"><button id="record-return" class="icon-button" hidden>Return to Joseph</button><button id="record-button" class="icon-button" hidden>Ancient records</button><button id="journal-button" class="icon-button" title="Open contents and historical notes [J]">Contents <kbd>J</kbd></button><button id="settings-button" class="icon-button" title="Settings">⚙</button></div>
     </header>
     <div id="chapter-banner" class="chapter-banner" hidden><span id="banner-date" class="eyebrow"></span><h2 id="banner-title"></h2><p id="banner-place"></p></div>
-    <aside class="objective-card"><div class="objective-top"><span class="eyebrow">Your path</span><span id="objective-count"></span></div><div class="objective-line"><span class="objective-diamond">◇</span><h3 id="objective-title"></h3></div><p id="objective-hint"></p><div class="progress-track"><span id="objective-progress"></span></div></aside>
+    <aside class="objective-card"><div class="objective-top"><span class="eyebrow">In this chapter</span><span id="objective-count"></span></div><div class="objective-line"><span class="objective-diamond">❧</span><h3 id="objective-title"></h3></div><p id="objective-hint"></p><div class="progress-track"><span id="objective-progress"></span></div></aside>
+    <aside id="encounter-panel" class="encounter-panel" hidden aria-label="Encounter and story assist">
+      <p id="encounter-label" class="eyebrow"></p><p id="encounter-status" role="status"></p>
+      <div class="encounter-meters"><label>Health <meter id="health-meter" min="0" max="100" value="100"></meter></label><label>Stamina <meter id="stamina-meter" min="0" max="100" value="100"></meter></label><label>Awareness <meter id="suspicion-meter" min="0" max="1" value="0"></meter></label></div>
+      <div class="encounter-buttons"><button id="challenge-action" data-encounter-action="toggleChallenge">Enable challenge [H]</button><button data-encounter-action="crouch">Quiet [C]</button><button data-encounter-action="distract">Distract [X]</button><button data-encounter-action="skip">Story assist</button></div>
+      <div id="combat-actions" class="encounter-buttons" hidden><button data-encounter-action="attack">Strike [F]</button><button id="guard-action">Hold guard [G]</button><button data-encounter-action="evade">Withdraw [Q]</button><button data-encounter-action="recover">Recover</button></div>
+      <small>Optional challenges never change the account’s outcome.</small>
+    </aside>
     <div id="waypoint" class="waypoint" aria-hidden="true"><span>◇</span><small id="waypoint-distance"></small></div>
     <div id="crosshair" class="crosshair" hidden aria-hidden="true">·</div>
     <div id="interaction" class="interaction" hidden><button id="interact-button"><kbd>E</kbd><span id="interaction-label">Interact</span></button><div id="hold-progress"></div></div>
@@ -46,8 +57,9 @@
     <div class="touch-controls"><div class="touch-walk"><button data-move="KeyW" aria-label="Walk forward">↑</button><div><button data-move="KeyA" aria-label="Walk left">←</button><button data-move="KeyS" aria-label="Walk backward">↓</button><button data-move="KeyD" aria-label="Walk right">→</button></div></div><button id="touch-act" aria-label="Interact">Act</button></div>
     <p id="toast" class="toast" role="status" hidden></p>
   </div>
-  <dialog id="journal" class="journal"><div class="dialog-header"><div><p class="eyebrow">The life &amp; the light</p><h2>The journey</h2></div><button data-close="journal" class="close-button" aria-label="Close journal">×</button></div><div class="journal-tabs"><button id="tab-chapters" class="active">Chapters</button><button id="tab-history">This moment</button><button id="tab-cast">Characters</button></div><div id="journal-content"></div><p class="journal-footnote">Historical outcomes are fixed; your path through each moment is your own.<br>Later visions and time-travel episodes are clearly marked imaginative.</p></dialog>
+  <dialog id="journal" class="journal"><div class="dialog-header"><div><p class="eyebrow">The record of a gathering</p><h2>Journal of the Restoration</h2></div><button data-close="journal" class="close-button" aria-label="Close journal">×</button></div><div class="journal-tabs"><button id="tab-chapters" class="active">Contents</button><button id="tab-records">Ancient records</button><button id="tab-history">Source notes</button><button id="tab-cast">Characters</button></div><div id="journal-content"></div><p class="journal-footnote">An original devotional drama, not a new book of scripture.<br>Ancient architecture is an artistic reconstruction. Later visions and time-travel episodes are marked imaginative.</p></dialog>
   <dialog id="settings" class="settings"><div class="dialog-header"><div><p class="eyebrow">Make space for wonder</p><h2>Settings &amp; controls</h2></div><button data-close="settings" class="close-button" aria-label="Close settings">×</button></div><label class="setting-row"><span>Ambient sound</span><input id="sound" type="checkbox" checked></label><label class="setting-row"><span>Voice playback <small>Local MOSSlanding takes, when available</small></span><input id="voices" type="checkbox" checked></label><label class="setting-row"><span>Reduced motion</span><input id="reduced-motion" type="checkbox"></label><label class="setting-row"><span>Rendering quality</span><select id="quality"><option value="high">High</option><option value="low">Performance</option></select></label><label class="setting-row"><span>Look sensitivity</span><input id="sensitivity" type="range" min="1" max="8" value="3"></label><div class="control-list"><p><kbd>W A S D</kbd> / arrows · walk &nbsp; <kbd>Shift</kbd> · run</p><p>Drag · look &nbsp; scroll · third-person distance</p><p><kbd>1</kbd> first person &nbsp; <kbd>3</kbd> third person &nbsp; <kbd>V</kbd> free camera</p><p>Free camera: <kbd>Q</kbd> down &nbsp; <kbd>R</kbd> up. Free camera never moves Joseph.</p><p><kbd>E</kbd> interact / hold to pray &nbsp; <kbd>Space</kbd> continue dialogue</p><p><kbd>J</kbd> journal &nbsp; <kbd>Esc</kbd> pause</p><p>Touch: arrows to walk; drag the world to look; tap Act.</p></div><button id="reset-save" class="text-button danger">Reset journey progress</button><p class="small-note">Progress stays in this browser. No accounts, analytics, or external services. Voices are not synthesized; missing recordings remain subtitled.</p></dialog>
+  <template id="polish-settings"><label class="setting-row"><span>Reduced flashes <small>No muzzle flashes or lightning flicker</small></span><input id="reduced-flash" type="checkbox" checked></label><div class="control-list"><p>Ancient challenges: <kbd>H</kbd> challenge / story assist · <kbd>C</kbd> quiet movement · <kbd>X</kbd> distract</p><p><kbd>F</kbd> strike · hold <kbd>G</kbd> guard · <kbd>Q</kbd> withdraw. Only in designated scenes; never in free camera.</p><p>Story assist and Recover keep the account accessible without a combat requirement.</p></div></template>
   <div id="fatal" class="fatal" role="alert" hidden><h1>The world could not open</h1><p id="fatal-detail"></p><a href="../index.html">Return to the design report</a><button onclick="location.reload()">Try again</button></div>
   <script type="module" src="dist/game.js"></script>
 </body>

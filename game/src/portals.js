@@ -10,7 +10,7 @@ const ERAS = [
   ['E8', 'Zion', '#fff0b2'],
 ];
 
-export function createPortals(scene, chapterId) {
+export function createPortals(scene, chapterId, interior = false) {
   const group = new THREE.Group();
   group.name = 'era-portals';
   scene.add(group);
@@ -20,8 +20,9 @@ export function createPortals(scene, chapterId) {
   const textures = new Set();
   for (const [index, [id, label, color]] of ERAS.entries()) {
     if (id === chapterId) continue;
-    const position = new THREE.Vector3(-12, 0, 9 - index * 3.8);
-    const geometry = new THREE.SphereGeometry(.95, 32, 20);
+    const position = new THREE.Vector3(interior ? -6 : -12, 0, interior ? 8 - index * 2.4 : 9 - index * 3.8);
+    const radius = interior ? .6 : .95;
+    const geometry = new THREE.SphereGeometry(radius, 32, 20);
     geometries.add(geometry);
     const material = new THREE.MeshPhysicalMaterial({color, transparent: true, opacity: .24, roughness: .15, metalness: .3, clearcoat: 1, side: THREE.DoubleSide, depthWrite: false});
     material.userData.outlineParameters = {visible: false};
@@ -29,7 +30,7 @@ export function createPortals(scene, chapterId) {
     const bubble = new THREE.Mesh(geometry, material);
     bubble.position.copy(position).add(new THREE.Vector3(0, 1.2, 0));
     group.add(bubble);
-    const rimGeometry = new THREE.TorusGeometry(.98, .025, 7, 64);
+    const rimGeometry = new THREE.TorusGeometry(radius + .03, .025, 7, 64);
     geometries.add(rimGeometry);
     const rimMaterial = new THREE.MeshBasicMaterial({color, transparent: true, opacity: .8});
     materials.add(rimMaterial);

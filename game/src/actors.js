@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {clone as cloneSkeleton} from 'three/addons/utils/SkeletonUtils.js';
+import {createActorAnimator, getMotionCacheStatus} from './animation/actor-animator.js';
 
 const manifestURL = new URL('./content/assets.json', document.baseURI);
 const loader = new GLTFLoader();
@@ -31,7 +32,8 @@ export function getAssetStatus() {
   return {
     manifestReady: Boolean(manifestValue), glbCount: manifestValue?.glbCount ?? 0,
     loadedModels: cache.size,
-    actors: [...activeActors].map(actor => ({id: actor.id, kind: actor.kind, label: actor.label, error: actor.error ?? null, warning: actor.warning ?? null})),
+    animationCache: getMotionCacheStatus(),
+    actors: [...activeActors].map(actor => ({id: actor.id, variant: actor.variant, kind: actor.kind, label: actor.label, standInId: actor.standInId, source: actor.source, error: actor.error ?? null, warning: actor.warning ?? null, animation: actor.getAnimationDiagnostics()})),
   };
 }
 
@@ -86,6 +88,16 @@ function acquireAsset(asset) {
   if (!entry) {
     entry = {references: 0, value: null, url};
     entry.promise = loader.loadAsync(url).then(gltf => {
+      let hasBones = false;
+      let hasDeformingMesh = false;
+      gltf.scene.traverse(object => {
+        hasBones ||= Boolean(object.isBone);
+        if (object.isSkinnedMesh && object.geometry.attributes.skinIndex?.count === object.geometry.attributes.position?.count && object.geometry.attributes.skinWeight?.count === object.geometry.attributes.position?.count) hasDeformingMesh = true;
+      });
+      if ((asset.rigged || hasBones) && !hasDeformingMesh) {
+        disposeResources(gltf.scene);
+        throw new Error('Skeleton has no mesh with joint indices and skin weights');
+      }
       const textureMap = new Map();
       const sourceMaterials = new Set();
       const sourceTextures = new Set();
@@ -138,13 +150,22 @@ function namedMaterial(color) {
   return material;
 }
 
-function provisionalFigure(id) {
+export function chooseStandIn(id, manifest) {
+  if (['ELIJAH_ABLE', 'WALKER_LEWIS', 'JANE_MANNING'].includes(id)) return null;
+  const female = /EMMA|LUCY|ELIZA|LOUISA|SARAH|SARIAH|ABISH|QUEEN|RUTH|JANE|MOURNER|REFUGEE|FUTURE_GUIDE|SURVIVOR|CARETAKER|CROWD_F/.test(id);
+  const candidates = female ? ['LOUISA_FOLLETT', 'LOUISA'] : ['CHRISTIAN_WHITMER', 'JACOB_WHITMER', 'PETER_WHITMER_JR', 'JOHN_WHITMER', 'DAVID'];
+  const available = candidates.filter(identity => manifest.characters[identity]?.asset);
+  const seed = [...id].reduce((value, character) => value + character.charCodeAt(0), 0);
+  return available.length ? available[seed % available.length] : null;
+}
+
+function provisionalFigure(id, variant) {
   const group = new THREE.Group();
   const seed = [...id].reduce((value, character) => value + character.charCodeAt(0), 0);
   const sacred = ['CHRIST', 'FATHER', 'JOHN_BAPTIST', 'PETER', 'JAMES', 'JOHN', 'MOSES', 'ELIAS', 'ELIJAH', 'MORONI'].includes(id);
-  const female = /EMMA|LUCY|ELIZA|LOUISA|SARAH|RUTH|MOURNER|REFUGEE|FUTURE_GUIDE|SURVIVOR|CARETAKER/.test(id);
-  const skin = namedMaterial(['#ddac86', '#ba8565', '#efc8a0', '#a97657'][seed % 4]);
-  const cloth = namedMaterial(sacred ? '#f5ecd7' : ['#344750', '#4a4338', '#5c5b46', '#4b3540', '#364e47'][seed % 5]);
+  const female = /EMMA|LUCY|ELIZA|LOUISA|SARAH|SARIAH|ABISH|QUEEN|RUTH|JANE|MOURNER|REFUGEE|FUTURE_GUIDE|SURVIVOR|CARETAKER|CROWD_F/.test(id);
+  const skin = namedMaterial(['ELIJAH_ABLE', 'WALKER_LEWIS', 'JANE_MANNING'].includes(id) ? '#865a40' : ['#ddac86', '#ba8565', '#efc8a0', '#a97657'][seed % 4]);
+  const cloth = namedMaterial(id === 'CHRIST' && variant === 'red' ? '#984b41' : sacred ? '#f5ecd7' : ['#344750', '#4a4338', '#5c5b46', '#4b3540', '#364e47'][seed % 5]);
   const linen = namedMaterial('#e6d7bb');
   const hair = namedMaterial(sacred ? '#79634b' : ['#4b3529', '#846344', '#33302d', '#b8aaa0'][seed % 4]);
   const boots = namedMaterial('#292a27');
@@ -197,11 +218,117 @@ function defaultLabel(id) {
   return id.toLowerCase().split('_').map(word => word[0]?.toUpperCase() + word.slice(1)).join(' ');
 }
 
-export async function createActor({id, position = [0, 0, 0], rotation = 0, height, scene, player = false, onStatus} = {}) {
+function rotateBoneInWorld(bone, rotation) {
+  const parentRotation = bone.parent.getWorldQuaternion(new THREE.Quaternion());
+  const worldRotation = bone.getWorldQuaternion(new THREE.Quaternion());
+  bone.quaternion.copy(parentRotation.invert().multiply(rotation.clone().multiply(worldRotation)));
+  bone.updateWorldMatrix(true, true);
+}
+
+function aimBone(bone, child, target) {
+  const start = bone.getWorldPosition(new THREE.Vector3());
+  const current = child.getWorldPosition(new THREE.Vector3()).sub(start).normalize();
+  const desired = target.clone().sub(start).normalize();
+  rotateBoneInWorld(bone, new THREE.Quaternion().setFromUnitVectors(current, desired));
+}
+
+function relaxUnanimatedArms(figure, root, height) {
+  const bones = {};
+  figure.traverse(object => { if (object.isBone) bones[object.name.replace(/^.*[:|]/, '').replace(/^mixamorig/i, '')] = object; });
+  root.updateMatrixWorld(true);
+  const orientation = root.getWorldQuaternion(new THREE.Quaternion());
+  const down = new THREE.Vector3(0, -1, 0).applyQuaternion(orientation);
+  const right = new THREE.Vector3(1, 0, 0).applyQuaternion(orientation);
+  const forward = new THREE.Vector3(0, 0, 1).applyQuaternion(orientation);
+  for (const [index, side] of ['Left', 'Right'].entries()) {
+    const arm = bones[side + 'Arm'];
+    const elbow = bones[side + 'ForeArm'];
+    const hand = bones[side + 'Hand'];
+    if (!arm || !elbow || !hand) continue;
+    const shoulder = arm.getWorldPosition(new THREE.Vector3());
+    const outward = index === 0 ? 1 : -1;
+    aimBone(arm, elbow, shoulder.clone().addScaledVector(down, height * .2).addScaledVector(right, outward * height * .07));
+    aimBone(elbow, hand, shoulder.clone().addScaledVector(down, height * .43).addScaledVector(forward, height * .025).addScaledVector(right, outward * height * .08));
+  }
+}
+
+function solveLimb(upper, lower, tip, target, bendDirection) {
+  const start = upper.getWorldPosition(new THREE.Vector3());
+  const middle = lower.getWorldPosition(new THREE.Vector3());
+  const end = tip.getWorldPosition(new THREE.Vector3());
+  const upperLength = start.distanceTo(middle);
+  const lowerLength = middle.distanceTo(end);
+  if (upperLength < .005 || lowerLength < .005) return;
+  const direction = target.clone().sub(start);
+  const distance = THREE.MathUtils.clamp(direction.length(), Math.abs(upperLength - lowerLength) + .001, upperLength + lowerLength - .001);
+  direction.normalize();
+  const along = (upperLength * upperLength - lowerLength * lowerLength + distance * distance) / (2 * distance);
+  const across = Math.sqrt(Math.max(0, upperLength * upperLength - along * along));
+  const bend = bendDirection.clone().addScaledVector(direction, -bendDirection.dot(direction));
+  if (bend.lengthSq() < .0001) bend.set(1, 0, 0).addScaledVector(direction, -direction.x);
+  bend.normalize();
+  const knee = start.clone().addScaledVector(direction, along).addScaledVector(bend, across);
+  aimBone(upper, lower, knee);
+  aimBone(lower, tip, target);
+}
+
+function posePrayer(figure, holder, root, height) {
+  const bones = {};
+  figure.traverse(object => {
+    if (!object.isBone) return;
+    const name = object.name.replace(/[^a-z]/gi, '').toLowerCase();
+    for (const key of ['Hips', 'Spine', 'Spine2', 'Head', 'LeftArm', 'RightArm', 'LeftForeArm', 'RightForeArm', 'LeftHand', 'RightHand', 'LeftUpLeg', 'RightUpLeg', 'LeftLeg', 'RightLeg', 'LeftFoot', 'RightFoot']) {
+      if (name.endsWith(key.toLowerCase())) bones[key] = object;
+    }
+  });
+  root.updateMatrixWorld(true);
+  const rotation = root.getWorldQuaternion(new THREE.Quaternion());
+  const forward = new THREE.Vector3(0, 0, 1).applyQuaternion(rotation);
+  const right = new THREE.Vector3(1, 0, 0).applyQuaternion(rotation);
+  const up = new THREE.Vector3(0, 1, 0).applyQuaternion(rotation);
+  const completeLegs = ['Left', 'Right'].every(side => bones[side + 'UpLeg'] && bones[side + 'Leg'] && bones[side + 'Foot']);
+  if (completeLegs) {
+    const ankles = ['Left', 'Right'].map(side => bones[side + 'Foot'].getWorldPosition(new THREE.Vector3()));
+    const ground = Math.min(...ankles.map(position => position.y));
+    holder.position.y -= height * .23;
+    root.updateMatrixWorld(true);
+    for (const [index, side] of ['Left', 'Right'].entries()) {
+      const target = ankles[index].addScaledVector(forward, -height * .17);
+      target.y = ground + height * .015;
+      solveLimb(bones[side + 'UpLeg'], bones[side + 'Leg'], bones[side + 'Foot'], target, forward);
+    }
+  }
+  if (bones.Spine) rotateBoneInWorld(bones.Spine, new THREE.Quaternion().setFromAxisAngle(right, .08));
+  if (bones.Head) rotateBoneInWorld(bones.Head, new THREE.Quaternion().setFromAxisAngle(right, .24));
+  root.updateMatrixWorld(true);
+  const chest = (bones.Spine2 ?? bones.Spine)?.getWorldPosition(new THREE.Vector3());
+  if (chest) {
+    chest.addScaledVector(forward, height * .14).addScaledVector(up, height * .025);
+    for (const [index, side] of ['Left', 'Right'].entries()) {
+      if (!bones[side + 'Arm'] || !bones[side + 'ForeArm'] || !bones[side + 'Hand']) continue;
+      const sign = index === 0 ? -1 : 1;
+      const target = chest.clone().addScaledVector(right, sign * height * .018);
+      const bend = right.clone().multiplyScalar(sign * .5).addScaledVector(up, -1).normalize();
+      solveLimb(bones[side + 'Arm'], bones[side + 'ForeArm'], bones[side + 'Hand'], target, bend);
+    }
+  }
+  root.updateMatrixWorld(true);
+  return completeLegs ? 'kneeling' : bones.Head || chest ? 'bowed' : null;
+}
+
+export async function createActor({id, variant, position = [0, 0, 0], rotation = 0, height, scene, player = false, onStatus} = {}) {
   if (!id) throw new Error('createActor requires a cast ID');
+  const wardrobeID = /^CHRIST_(WHITE|RED)$/.exec(id);
+  if (wardrobeID) { id = 'CHRIST'; variant ??= wardrobeID[1].toLowerCase(); }
+  if (id === 'JEHOVAH') id = 'CHRIST';
+  const ageID = /^ORSON_(YOUNG|ELDER)$/.exec(id);
+  if (ageID) { id = 'ORSON'; variant ??= ageID[1].toLowerCase(); }
+  const permittedVariants = id === 'CHRIST' ? ['white', 'red'] : id === 'ORSON' ? ['young', 'elder'] : [];
+  const requestedVariant = permittedVariants.includes(variant) ? variant : null;
   const manifest = await loadAssetManifest();
-  const profile = manifest.characters[id];
-  const label = profile?.label ?? defaultLabel(id);
+  const variantProfile = requestedVariant ? manifest.characters[`${id}_${requestedVariant.toUpperCase()}`] : null;
+  const profile = variantProfile?.asset ? variantProfile : manifest.characters[id];
+  const label = manifest.characters[id]?.label ?? profile?.label ?? defaultLabel(id);
   const root = new THREE.Group();
   root.name = `actor:${id}`;
   root.userData.actorId = id;
@@ -216,22 +343,37 @@ export async function createActor({id, position = [0, 0, 0], rotation = 0, heigh
   let animations = [];
   let kind = 'placeholder';
   let errorMessage;
-  if (profile?.asset) {
-    try {
-      onStatus?.(`Loading ${label}…`);
-      resource = acquireAsset(profile.asset);
-      const source = await resource.promise;
-      figure = cloneSkeleton(source.scene);
-      animations = source.animations;
-      kind = 'model';
-    } catch (error) {
-      errorMessage = error.message;
-      if (resource) releaseAsset(resource);
-      resource = null;
-      console.warn(`Using a provisional figure for ${label}:`, error.message);
+  let standInId = !profile?.asset ? chooseStandIn(id, manifest) : null;
+  let selectedAsset = profile?.asset ?? manifest.characters[standInId]?.asset;
+  if (selectedAsset) {
+    const assetProfile = profile?.asset ? profile : manifest.characters[standInId];
+    const candidates = [selectedAsset, ...(assetProfile?.variants ?? []).filter(asset => asset.rigged && asset.url !== selectedAsset.url)];
+    for (const candidate of candidates) {
+      try {
+        onStatus?.(`Loading ${label}…`);
+        resource = acquireAsset(candidate);
+        const source = await resource.promise;
+        figure = cloneSkeleton(source.scene);
+        animations = source.animations;
+        selectedAsset = candidate;
+        kind = standInId ? 'stand-in' : 'model';
+        errorMessage = null;
+        break;
+      } catch (error) {
+        errorMessage = error.message;
+        if (resource) releaseAsset(resource);
+        resource = null;
+        console.warn(`Character export rejected for ${label} (${candidate.file}):`, error.message);
+      }
+    }
+    if (!figure) {
+      standInId = null;
+      selectedAsset = null;
     }
   }
-  if (!figure) figure = provisionalFigure(id);
+  if (!figure) figure = provisionalFigure(id, requestedVariant);
+  const resolvedVariant = kind === 'model' ? profile?.variant ?? profile?.defaultVariant ?? null : requestedVariant;
+  root.userData.variant = resolvedVariant;
   figure.updateMatrixWorld(true);
   const bounds = new THREE.Box3().setFromObject(figure);
   const size = bounds.getSize(new THREE.Vector3());
@@ -240,15 +382,22 @@ export async function createActor({id, position = [0, 0, 0], rotation = 0, heigh
   const figureHolder = new THREE.Group();
   figureHolder.scale.setScalar(scale);
   figureHolder.position.set(-center.x * scale, -bounds.min.y * scale, -center.z * scale);
+  const holderRestPosition = figureHolder.position.clone();
   figureHolder.add(figure);
   root.add(figureHolder);
   root.userData.kind = kind;
   root.userData.label = label;
+  let animator;
+  let animationError;
+  if (kind !== 'placeholder') {
+    try { animator = await createActorAnimator({figure, holder: figureHolder, root, height: targetHeight}); }
+    catch (error) { animationError = error.message; console.warn(`Motion library unavailable for ${label}:`, error.message); }
+  }
   const rest = [];
   figure.traverse(object => {
     rest.push({object, position: object.position.clone(), quaternion: object.quaternion.clone(), scale: object.scale.clone()});
   });
-  if (animations.length) mixer = new THREE.AnimationMixer(figure);
+  if (!animator && animations.length) mixer = new THREE.AnimationMixer(figure);
   let currentMotion;
   let elapsed = 0;
   let disposed = false;
@@ -257,38 +406,57 @@ export async function createActor({id, position = [0, 0, 0], rotation = 0, heigh
   const idleClip = animations.find(clip => clip.duration > .05 && /idle|stand|breath/i.test(clip.name));
   const prayClip = animations.find(clip => clip.duration > .05 && /pray|kneel/i.test(clip.name));
   const actor = {
-    root, id, kind, label, error: errorMessage, warning: profile?.warning ?? null, source: profile?.asset?.file ?? null,
-    setMotion(motion) {
-      if (motion === currentMotion || disposed) return;
+    root, id, variant: resolvedVariant, requestedVariant, kind, label, standInId, error: errorMessage, warning: standInId ? `Temporary visual borrowed from ${manifest.characters[standInId]?.label ?? standInId}; not the identity of this story role.` : profile?.warning ?? null, source: selectedAsset?.file ?? null,
+    setMotion(motion, options = {}) {
+      motion = ({speak: 'talk', speaking: 'talk', listening: 'listen', sitting: 'sit', prayer: 'pray'})[motion] ?? motion;
+      if (motion === currentMotion && !options.restart && options.speed === undefined || disposed) return;
       currentMotion = motion;
+      if (animator) {
+        root.userData.prayerPose = null;
+        animator.setMotion(motion, options);
+        if (motion === 'pray') root.userData.prayerPose = posePrayer(figure, figureHolder, root, targetHeight);
+        animator.update(0);
+        return;
+      }
       mixer?.stopAllAction();
+      figureHolder.position.copy(holderRestPosition);
+      root.userData.prayerPose = null;
       for (const transform of rest) {
         transform.object.position.copy(transform.position);
         transform.object.quaternion.copy(transform.quaternion);
         transform.object.scale.copy(transform.scale);
       }
-      if (!mixer) return;
-      const clip = motion === 'run' ? runClip ?? walkClip : motion === 'walk' ? walkClip ?? runClip : motion === 'pray' ? prayClip ?? idleClip : idleClip;
-      if (clip) mixer.clipAction(clip).reset().play();
-      else if (walkClip) {
+      const clip = motion === 'run' ? runClip ?? walkClip : motion === 'walk' ? walkClip ?? runClip : motion === 'pray' ? prayClip : idleClip;
+      if (clip && mixer) mixer.clipAction(clip).reset().play();
+      else if (walkClip && mixer) {
         const action = mixer.clipAction(walkClip).reset().play();
         action.time = Math.min(.12, walkClip.duration * .08);
         mixer.update(0);
         action.paused = true;
       }
+      if (!clip && !walkClip && kind !== 'placeholder') relaxUnanimatedArms(figure, root, targetHeight);
+      if (motion === 'pray' && !prayClip && kind !== 'placeholder') root.userData.prayerPose = posePrayer(figure, figureHolder, root, targetHeight);
       figure.updateMatrixWorld(true);
+    },
+    setAction(action, options = {}) { actor.setMotion(action, options); },
+    getAnimationDiagnostics() { return animator?.diagnostics() ?? {motion: currentMotion, rig: kind, fallback: true, error: animationError ?? null, rootMotionOwner: 'motor'}; },
+    getBoneSocket(name, target) { return animator?.getBoneSocket(name, target) ?? null; },
+    getSocket(name) {
+      const canonical = ({rightHand: 'RightHand', leftHand: 'LeftHand', head: 'Head', hips: 'Hips'})[name] ?? name;
+      return animator?.profile.bones[canonical] ?? null;
     },
     update(delta) {
       if (disposed) return;
       elapsed += delta;
-      mixer?.update(delta);
+      animator?.update(delta);
+      if (currentMotion !== 'pray' || prayClip) mixer?.update(delta);
       if (kind === 'placeholder') {
         const parts = figure.userData.parts;
         const moving = currentMotion === 'walk' || currentMotion === 'run';
         const stride = moving ? Math.sin(elapsed * (currentMotion === 'run' ? 12 : 7)) * .5 : 0;
         parts.arms.forEach((arm, index) => {
           arm.rotation.x = currentMotion === 'pray' ? -1.05 : stride * (index === 0 ? 1 : -1);
-          arm.rotation.z = currentMotion === 'pray' ? (index === 0 ? -.4 : .4) : 0;
+          arm.rotation.z = currentMotion === 'pray' ? (index === 0 ? .4 : -.4) : 0;
         });
         parts.legs.forEach((leg, index) => { leg.rotation.x = stride * (index === 0 ? -1 : 1); });
         parts.head.rotation.x = currentMotion === 'pray' ? .18 : 0;
@@ -300,6 +468,7 @@ export async function createActor({id, position = [0, 0, 0], rotation = 0, heigh
       root.removeFromParent();
       mixer?.stopAllAction();
       mixer?.uncacheRoot(figure);
+      animator?.dispose();
       if (resource) {
         figure.traverse(object => object.skeleton?.dispose());
         releaseAsset(resource);
@@ -310,6 +479,6 @@ export async function createActor({id, position = [0, 0, 0], rotation = 0, heigh
   activeActors.add(actor);
   actor.setMotion('idle');
   scene?.add(root);
-  onStatus?.(`${label} · ${kind === 'model' ? 'local Meshy model' : 'provisional character model'}`);
+  onStatus?.(`${label} · ${kind === 'model' ? 'local Meshy model' : kind === 'stand-in' ? 'temporary borrowed Meshy visual' : 'provisional character model'}`);
   return actor;
 }

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0c1216">
+<meta name="description" content="Lighting and colour staging studio for The Gathering of Zion. Load a chapter's real 3D place, then direct sun, sky, weather, grade and crowd.">
+<title>Light &amp; Colour Studio · The Gathering of Zion</title>
+<link rel="stylesheet" href="lighting-studio.css">
+</head>
+<body>
+<div class="studio-shell">
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✧</span>
+      <div class="brand-copy">
+        <p class="eyebrow">The Gathering of Zion · visual direction</p>
+        <h1>Light &amp; Colour <em>Studio</em></h1>
+      </div>
+    </div>
+    <div class="topbar-actions">
+      <a class="top-button ghost report-link" href="../docs/weather-lighting-report.html" target="_blank" rel="noopener">Research report ↗</a>
+      <button class="top-button ghost" id="btn-library" title="Toggle presets">Presets</button>
+      <button class="top-button ghost" id="btn-controls" title="Toggle controls">Controls</button>
+      <button class="top-button ghost" id="btn-link" title="Copy a share link">Share</button>
+      <button class="top-button" id="btn-reset">Reset</button>
+      <button class="top-button" id="btn-save">Save look</button>
+      <button class="top-button primary" id="btn-export">Export</button>
+      <button class="icon-button" id="btn-help" title="Help and shortcuts" aria-label="Help">?</button>
+    </div>
+  </header>
+
+  <aside class="library" id="library" aria-label="Preset library">
+    <div class="library-head">
+      <div>
+        <p class="eyebrow">Preset library</p>
+        <h2>Looks &amp; places</h2>
+      </div>
+      <span class="count-badge" id="preset-count">164</span>
+    </div>
+    <div class="search-wrap">
+      <span aria-hidden="true">⌕</span>
+      <input id="preset-search" type="search" placeholder="Search chapters, moods, weather…" autocomplete="off">
+    </div>
+    <div class="preset-tabs" id="preset-tabs" role="tablist" aria-label="Preset groups">
+      <button data-tab="chapter" class="active">Chapters <span>71</span></button>
+      <button data-tab="mood">Moods <span>44</span></button>
+      <button data-tab="weather">Weather <span>20</span></button>
+      <button data-tab="season">Seasons <span>7</span></button>
+      <button data-tab="time">Times <span>12</span></button>
+      <button data-tab="camera">Camera <span>10</span></button>
+      <button data-tab="saved">Saved</button>
+    </div>
+    <div class="preset-list" id="preset-list" role="tabpanel"></div>
+    <div class="library-foot">
+      <p><b>Research-led starting points.</b> Chapter cards carry a confidence line. The Carthage torchlit look is marked <span class="mini-flag">stylised</span> because the documented attack was late afternoon.</p>
+      <p class="tiny">Loads the real chapter geometry from the game's world builders. Does not modify the game.</p>
+    </div>
+  </aside>
+
+  <main class="viewport" id="viewport" aria-label="3D staging preview">
+    <canvas id="stage" tabindex="0" aria-label="Three-dimensional preview. Drag to orbit, scroll to zoom."></canvas>
+    <div class="viewport-grain" aria-hidden="true"></div>
+    <div class="viewport-top">
+      <div class="scene-copy">
+        <p class="eyebrow" id="scene-subtitle">Carthage · 27 June 1844</p>
+        <h2 id="scene-title">30 · Carthage · The Martyrdom</h2>
+        <div class="scene-badges" id="scene-badges"></div>
+      </div>
+      <div class="confidence-wrap">
+        <span class="confidence" id="badge-confidence">reported heat; late afternoon</span>
+      </div>
+    </div>
+    <div class="scene-note" id="scene-note"></div>
+    <div class="viewport-bottom">
+      <div class="camera-rail" id="camera-rail" aria-label="Quick camera">
+        <button data-camera="wide" class="active">Wide</button>
+        <button data-camera="medium">Medium</button>
+        <button data-camera="close">Close</button>
+        <button data-camera="low">Low</button>
+        <button data-camera="crane">Crane</button>
+        <button data-camera="window">Window</button>
+      </div>
+      <p class="hint"><span class="hint-key">Drag</span> orbit <span class="hint-key">Scroll</span> zoom <span class="hint-key">H</span> hide UI <span class="hint-key">R</span> reset look</p>
+    </div>
+    <div class="loading" id="loading"><div class="loading-inner"><span class="sun-mark">✧</span><span id="loading-label">Gathering the place…</span></div></div>
+    <div class="flash-layer" id="flash-layer" aria-hidden="true"></div>
+  </main>
+
+  <aside class="controls" id="controls" aria-label="Look controls">
+    <div class="controls-head">
+      <div>
+        <p class="eyebrow">Manual control</p>
+        <h2>Look controls</h2>
+      </div>
+      <button class="icon-button" id="btn-collapse" title="Collapse controls" aria-label="Collapse controls">⇤</button>
+    </div>
+    <div class="controls-body" id="controls-body"></div>
+    <div class="controls-foot">
+      <p class="tiny">The studio and game share the same lighting renderer. Save a look or export JSON to review changes before adding them to chapter cues.</p>
+    </div>
+  </aside>
+
+  <footer class="statusbar">
+    <span id="status-fps">— fps</span>
+    <span class="status-sep">·</span>
+    <span id="status-preset">Loading…</span>
+    <span class="status-sep">·</span>
+    <span id="status-sun">sun —</span>
+    <span class="status-sep">·</span>
+    <span id="status-time">—</span>
+    <span class="status-sep">·</span>
+    <span id="status-moon">moon —</span>
+    <span class="status-spacer"></span>
+    <span class="status-note">staging preview · not in-game capture</span>
+  </footer>
+</div>
+
+<dialog id="save-dialog" class="modal">
+  <form id="save-form" method="dialog">
+    <div class="modal-head"><div><p class="eyebrow">Keep this look</p><h2>Save a named variant</h2></div><button type="button" class="close-button" data-close="save-dialog">×</button></div>
+    <label class="modal-field"><span>Name</span><input id="save-name" required maxlength="80" autocomplete="off"></label>
+    <p class="tiny">Saved in this browser only. Export JSON or a share link to move it between machines.</p>
+    <div class="modal-actions"><button type="button" class="text-button" data-close="save-dialog">Cancel</button><button class="primary" type="submit">Save look</button></div>
+  </form>
+</dialog>
+
+<dialog id="export-dialog" class="modal wide">
+  <div class="modal-head"><div><p class="eyebrow">Portable look</p><h2>Export staging data</h2></div><button type="button" class="close-button" id="export-close">×</button></div>
+  <p id="export-note" class="small"></p>
+  <textarea id="export-json" spellcheck="false" aria-label="Exported JSON"></textarea>
+  <div class="modal-actions wrap">
+    <button type="button" class="text-button" id="export-copy">Copy look JSON</button>
+    <button type="button" class="text-button" id="export-game">Copy game config</button>
+    <button type="button" class="text-button" id="export-download">Download JSON</button>
+    <label class="text-button file-button">Import JSON<input id="export-import" type="file" accept="application/json,.json" hidden></label>
+  </div>
+  <p class="tiny">“Game config” is the subset a future scene-lighting implementation would consume. It is not applied automatically.</p>
+</dialog>
+
+<dialog id="help-dialog" class="modal">
+  <div class="modal-head"><div><p class="eyebrow">How to use the studio</p><h2>Staging guide</h2></div><button type="button" class="close-button" id="help-close">×</button></div>
+  <div class="help-grid">
+    <div><h3>1 · Start from a place</h3><p>Choose a chapter in the library or the Place &amp; time panel. The studio loads that chapter's real geometry, then applies its research-informed lighting preset.</p></div>
+    <div><h3>2 · Set the moment</h3><p>Change the date and clock. With “Sun follows date &amp; clock” on, sun azimuth/elevation and moon phase recompute from the chapter coordinates.</p></div>
+    <div><h3>3 · Layer a mood</h3><p>Moods, weather, seasons and times are partial layers. Apply them in any order; they tint the current place without resetting it.</p></div>
+    <div><h3>4 · Shape the image</h3><p>Use the key/fill/rim rig, practicals, fog, grade and post-processing. Vignette, grain, bloom, chromatic aberration and letterbox are all controllable.</p></div>
+    <div><h3>5 · Stage the crowd</h3><p>Crowd &amp; props adds simple blocking figures, firearms, pitchforks, torches and muzzle flashes. The historical Carthage preset has zero torches and zero pitchforks; the stylised nightmare preset has both.</p></div>
+    <div><h3>6 · Save and hand off</h3><p>Save a look in this browser, copy a share link, or export JSON. “Copy game config” exports a reviewable look for the shared chapter lighting runtime.</p></div>
+  </div>
+  <p class="tiny">Keyboard: <b>H</b> hide/show UI · <b>R</b> reset to current chapter preset · <b>Space</b> play/pause time. The research report at <code>docs/weather-lighting-report.html</code> explains every chapter choice.</p>
+</dialog>
+
+<div id="toast" class="toast" role="status" hidden></div>
+
+<script type="module" src="dist/lighting-studio.js"></script>
+</body>
+</html>

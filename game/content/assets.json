@@ -1,9 +1,45 @@
 {
-  "generated": "2026-10-22T12:17:42.623675+00:00",
+  "generated": "2026-10-23T10:48:16.466405+00:00",
   "source": "Organized models/ library; originals are preserved under their old names in models/manifest.json",
   "regenerate": "python3 tools/build_game_assets.py (with a local meshy/ source), then python3 tools/rewrite_game_assets.py",
-  "glbCount": 58,
+  "glbCount": 106,
   "characters": {
+    "ELIJAH_ABLE": {
+      "id": "ELIJAH_ABLE",
+      "label": "Elijah Able (also Abel)",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "JANE_MANNING": {
+      "id": "JANE_MANNING",
+      "label": "Jane Elizabeth Manning (later James)",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "WALKER_LEWIS": {
+      "id": "WALKER_LEWIS",
+      "label": "Quack Walker Lewis",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "WW_PHELPS": {
+      "id": "WW_PHELPS",
+      "label": "William W. Phelps",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
     "JOSEPH_CHILD": {
       "id": "JOSEPH_CHILD",
       "label": "Joseph Smith as a child",
@@ -438,9 +474,39 @@
     "ALVIN": {
       "id": "ALVIN",
       "label": "Alvin Smith",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_alvin_smith_rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_alvin_smith_rigged_All_Animations.glb",
+        "bytes": 22423448,
+        "triangles": 10335,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_alvin_smith_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_alvin_smith_rigged_All_Animations.glb",
+          "bytes": 22423448,
+          "triangles": 10335,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_alvin_smith_figure_1022130414_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_alvin_smith_figure_1022130414_image-to-3d-texture.glb",
+          "bytes": 31092744,
+          "triangles": 322444,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -485,12 +551,83 @@
     },
     "CHRIST": {
       "id": "CHRIST",
-      "label": "Jesus Christ also identified as Jehovah",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "label": "Jesus Christ",
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+        "bytes": 13310368,
+        "triangles": 19769,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+          "bytes": 13310368,
+          "triangles": 19769,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_mormon_jesus_optimize_1022123833_texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_optimize_1022123833_texture.glb",
+          "bytes": 20790028,
+          "triangles": 19769,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_mormon_rigged_All_Animations.glb",
+          "bytes": 13011132,
+          "triangles": 10000,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_mormon_figure_10k_1022123729_texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_figure_10k_1022123729_texture.glb",
+          "bytes": 19610488,
+          "triangles": 10000,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_jesus_figure_1022123707_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_figure_1022123707_image-to-3d-texture.glb",
+          "bytes": 45528784,
+          "triangles": 998696,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_figure_1022123720_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_figure_1022123720_image-to-3d-texture.glb",
+          "bytes": 46776244,
+          "triangles": 982306,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
-      "warning": ""
+      "warning": "",
+      "identity": "CHRIST",
+      "defaultVariant": "white",
+      "wardrobeProfiles": {
+        "white": "CHRIST_WHITE",
+        "red": "CHRIST_RED"
+      }
     },
     "MORONI": {
       "id": "MORONI",
@@ -616,9 +753,39 @@
     "MOSES": {
       "id": "MOSES",
       "label": "Moses",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Moses_Rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Moses_Rigged_All_Animations.glb",
+        "bytes": 23741676,
+        "triangles": 10163,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Moses_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Moses_Rigged_All_Animations.glb",
+          "bytes": 23741676,
+          "triangles": 10163,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Moses_1022134659_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Moses_1022134659_image-to-3d-texture.glb",
+          "bytes": 69715000,
+          "triangles": 1497680,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -634,9 +801,39 @@
     "ELIJAH": {
       "id": "ELIJAH",
       "label": "Elijah",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Elijah_Rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Elijah_Rigged_All_Animations.glb",
+        "bytes": 22979728,
+        "triangles": 10210,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Elijah_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Elijah_Rigged_All_Animations.glb",
+          "bytes": 22979728,
+          "triangles": 10210,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Elijah_3D_Model_1022134203_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Elijah_3D_Model_1022134203_image-to-3d-texture.glb",
+          "bytes": 56353232,
+          "triangles": 1058688,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -747,9 +944,39 @@
     "GRANDIN": {
       "id": "GRANDIN",
       "label": "Egbert B. Grandin",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_EB_Grandin_Rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_EB_Grandin_Rigged_All_Animations.glb",
+        "bytes": 18511744,
+        "triangles": 10298,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_EB_Grandin_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_EB_Grandin_Rigged_All_Animations.glb",
+          "bytes": 18511744,
+          "triangles": 10298,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_EB_Grandin_10k_1022132634_texture.glb",
+          "url": "../../meshy/Meshy_AI_EB_Grandin_10k_1022132634_texture.glb",
+          "bytes": 22770840,
+          "triangles": 10298,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -815,9 +1042,55 @@
     "WHITNEY": {
       "id": "WHITNEY",
       "label": "Newel K. Whitney",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Newel_K_Whitney_Rigge_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Newel_K_Whitney_Rigge_All_Animations.glb",
+        "bytes": 22116072,
+        "triangles": 10368,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Newel_K_Whitney_Rigge_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Newel_K_Whitney_Rigge_All_Animations.glb",
+          "bytes": 22116072,
+          "triangles": 10368,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Newel_K_Whitney_Remes_1022132405_texture.glb",
+          "url": "../../meshy/Meshy_AI_Newel_K_Whitney_Remes_1022132405_texture.glb",
+          "bytes": 27129996,
+          "triangles": 10368,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Newel_K_Whitney_1022132203_image-to-3d-texture (1).glb",
+          "url": "../../meshy/Meshy_AI_Newel_K_Whitney_1022132203_image-to-3d-texture (1).glb",
+          "bytes": 37480476,
+          "triangles": 544960,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Newel_K_Whitney_1022132203_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Newel_K_Whitney_1022132203_image-to-3d-texture.glb",
+          "bytes": 37480476,
+          "triangles": 544960,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -833,9 +1106,39 @@
     "EDWARD_PARTRIDGE": {
       "id": "EDWARD_PARTRIDGE",
       "label": "Edward Partridge",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Edward_Partridge_Rigg_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Edward_Partridge_Rigg_All_Animations.glb",
+        "bytes": 20427844,
+        "triangles": 10338,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Edward_Partridge_Rigg_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Edward_Partridge_Rigg_All_Animations.glb",
+          "bytes": 20427844,
+          "triangles": 10338,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Edward_Partridge_1022131603_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Edward_Partridge_1022131603_image-to-3d-texture.glb",
+          "bytes": 33057252,
+          "triangles": 431700,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -874,6 +1177,18 @@
           ]
         },
         {
+          "file": "Meshy_AI_Brigham_Young_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Brigham_Young_Rigged_All_Animations.glb",
+          "bytes": 18678932,
+          "triangles": 10257,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking",
+            "Talk_with_Hands_Open"
+          ]
+        },
+        {
           "file": "Meshy_AI_Brigham_Young_10k_1022104448_texture.glb",
           "url": "../../models/brigham-young/brigham-young-10k.glb",
           "bytes": 24017436,
@@ -905,11 +1220,62 @@
     "ORSON": {
       "id": "ORSON",
       "label": "Orson Pratt",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+        "bytes": 19642460,
+        "triangles": 10322,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+          "bytes": 19642460,
+          "triangles": 10322,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Elderly_Orson_Pratt_R_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_R_All_Animations.glb",
+          "bytes": 20236516,
+          "triangles": 10200,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Elderly_Orson_Pratt_1_1022131333_texture.glb",
+          "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_1_1022131333_texture.glb",
+          "bytes": 26953092,
+          "triangles": 10200,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Elderly_Orson_Pratt_1022131228_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_1022131228_image-to-3d-texture.glb",
+          "bytes": 58390904,
+          "triangles": 1219788,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
-      "warning": ""
+      "warning": "",
+      "identity": "ORSON",
+      "defaultVariant": "young"
     },
     "PARLEY": {
       "id": "PARLEY",
@@ -923,9 +1289,47 @@
     "ELIZA": {
       "id": "ELIZA",
       "label": "Eliza R. Snow",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Eliza_R_Snow_Rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Eliza_R_Snow_Rigged_All_Animations.glb",
+        "bytes": 19413960,
+        "triangles": 10240,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Eliza_R_Snow_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Eliza_R_Snow_Rigged_All_Animations.glb",
+          "bytes": 19413960,
+          "triangles": 10240,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Eliza_R_Snow_Lowpoly_1022132120_texture.glb",
+          "url": "../../meshy/Meshy_AI_Eliza_R_Snow_Lowpoly_1022132120_texture.glb",
+          "bytes": 25506500,
+          "triangles": 10240,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Eliza_R_Snow_1022132024_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Eliza_R_Snow_1022132024_image-to-3d-texture.glb",
+          "bytes": 48560812,
+          "triangles": 1059090,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -959,18 +1363,70 @@
     "LOUISA": {
       "id": "LOUISA",
       "label": "Louisa Tanner Follett",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Louisa Folett_rigged_All_Animations.glb",
+        "url": "../../meshy/Louisa Folett_rigged_All_Animations.glb",
+        "bytes": 19163132,
+        "triangles": 15413,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Louisa Folett_rigged_All_Animations.glb",
+          "url": "../../meshy/Louisa Folett_rigged_All_Animations.glb",
+          "bytes": 19163132,
+          "triangles": 15413,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Louisa Folett _1022132934_image-to-3d-texture.glb",
+          "url": "../../meshy/Louisa Folett _1022132934_image-to-3d-texture.glb",
+          "bytes": 43578620,
+          "triangles": 909158,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
     "WILLARD": {
       "id": "WILLARD",
       "label": "Willard Richards",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Willard_Richards_Rigg_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Willard_Richards_Rigg_All_Animations.glb",
+        "bytes": 20479108,
+        "triangles": 10306,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Willard_Richards_Rigg_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Willard_Richards_Rigg_All_Animations.glb",
+          "bytes": 20479108,
+          "triangles": 10306,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -995,9 +1451,48 @@
     "JOHN_TAYLOR": {
       "id": "JOHN_TAYLOR",
       "label": "John Taylor",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "James_Taylor_Rigged.glb",
+        "url": "../../meshy/James_Taylor_Rigged.glb",
+        "bytes": 22324080,
+        "triangles": 10307,
+        "rigged": true,
+        "animations": [
+          "Armature|clip0|baselayer"
+        ]
+      },
+      "variants": [
+        {
+          "file": "James_Taylor_Rigged.glb",
+          "url": "../../meshy/James_Taylor_Rigged.glb",
+          "bytes": 22324080,
+          "triangles": 10307,
+          "rigged": true,
+          "animations": [
+            "Armature|clip0|baselayer"
+          ]
+        },
+        {
+          "file": "Meshy_AI_James_Taylor_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_James_Taylor_Rigged_All_Animations.glb",
+          "bytes": 22499788,
+          "triangles": 10307,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_James_Taylor_3D_1022130218_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_James_Taylor_3D_1022130218_image-to-3d-texture.glb",
+          "bytes": 31441012,
+          "triangles": 325952,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -1190,12 +1685,234 @@
       "note": "",
       "warning": ""
     },
+    "ORSON_YOUNG": {
+      "id": "ORSON_YOUNG",
+      "label": "Orson Pratt \u2014 early ministry",
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+        "bytes": 19642460,
+        "triangles": 10322,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb",
+          "bytes": 19642460,
+          "triangles": 10322,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        }
+      ],
+      "note": "",
+      "warning": "",
+      "identity": "ORSON",
+      "variant": "young",
+      "profileType": "age"
+    },
+    "ORSON_ELDER": {
+      "id": "ORSON_ELDER",
+      "label": "Orson Pratt \u2014 later life",
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Elderly_Orson_Pratt_R_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_R_All_Animations.glb",
+        "bytes": 20236516,
+        "triangles": 10200,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Elderly_Orson_Pratt_R_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_R_All_Animations.glb",
+          "bytes": 20236516,
+          "triangles": 10200,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Elderly_Orson_Pratt_1_1022131333_texture.glb",
+          "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_1_1022131333_texture.glb",
+          "bytes": 26953092,
+          "triangles": 10200,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Elderly_Orson_Pratt_1022131228_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Elderly_Orson_Pratt_1022131228_image-to-3d-texture.glb",
+          "bytes": 58390904,
+          "triangles": 1219788,
+          "rigged": false,
+          "animations": []
+        }
+      ],
+      "note": "",
+      "warning": "",
+      "identity": "ORSON",
+      "variant": "elder",
+      "profileType": "age"
+    },
+    "CHRIST_WHITE": {
+      "id": "CHRIST_WHITE",
+      "label": "Jesus Christ \u2014 white garment",
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+        "bytes": 13310368,
+        "triangles": 19769,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+          "bytes": 13310368,
+          "triangles": 19769,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_mormon_jesus_optimize_1022123833_texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_optimize_1022123833_texture.glb",
+          "bytes": 20790028,
+          "triangles": 19769,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_jesus_figure_1022123707_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_figure_1022123707_image-to-3d-texture.glb",
+          "bytes": 45528784,
+          "triangles": 998696,
+          "rigged": false,
+          "animations": []
+        }
+      ],
+      "note": "",
+      "warning": "",
+      "identity": "CHRIST",
+      "variant": "white",
+      "profileType": "wardrobe"
+    },
+    "CHRIST_RED": {
+      "id": "CHRIST_RED",
+      "label": "Jesus Christ \u2014 red garment",
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_mormon_rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_mormon_rigged_All_Animations.glb",
+        "bytes": 13011132,
+        "triangles": 10000,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_mormon_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_mormon_rigged_All_Animations.glb",
+          "bytes": 13011132,
+          "triangles": 10000,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_mormon_figure_10k_1022123729_texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_figure_10k_1022123729_texture.glb",
+          "bytes": 19610488,
+          "triangles": 10000,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_figure_1022123720_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_figure_1022123720_image-to-3d-texture.glb",
+          "bytes": 46776244,
+          "triangles": 982306,
+          "rigged": false,
+          "animations": []
+        }
+      ],
+      "note": "",
+      "warning": "",
+      "identity": "CHRIST",
+      "variant": "red",
+      "profileType": "wardrobe"
+    },
     "CHRISTIAN_WHITMER": {
       "id": "CHRISTIAN_WHITMER",
       "label": "Christian Whitmer",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Christian_Whitmer_Rig_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Christian_Whitmer_Rig_All_Animations.glb",
+        "bytes": 19538732,
+        "triangles": 10324,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Christian_Whitmer_Rig_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Christian_Whitmer_Rig_All_Animations.glb",
+          "bytes": 19538732,
+          "triangles": 10324,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Christian_Whitmer_10k_1022124711_texture.glb",
+          "url": "../../meshy/Meshy_AI_Christian_Whitmer_10k_1022124711_texture.glb",
+          "bytes": 24140272,
+          "triangles": 10324,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Christian_Whitmer_Mod_1022124526_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Christian_Whitmer_Mod_1022124526_image-to-3d-texture.glb",
+          "bytes": 29249036,
+          "triangles": 395018,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -1249,9 +1966,57 @@
     "PETER_WHITMER_JR": {
       "id": "PETER_WHITMER_JR",
       "label": "Peter Whitmer Jr.",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_peter_whitmer_jr_reri_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_peter_whitmer_jr_reri_All_Animations.glb",
+        "bytes": 21769928,
+        "triangles": 10263,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_peter_whitmer_jr_reri_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_peter_whitmer_jr_reri_All_Animations.glb",
+          "bytes": 21769928,
+          "triangles": 10263,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "peter_whitmer_jr_rigged.glb",
+          "url": "../../meshy/peter_whitmer_jr_rigged.glb",
+          "bytes": 21339532,
+          "triangles": 10263,
+          "rigged": false,
+          "animations": [
+            "Armature|clip0|baselayer"
+          ]
+        },
+        {
+          "file": "Meshy_AI_peter_whitmer_jr_reme_1022124912_texture.glb",
+          "url": "../../meshy/Meshy_AI_peter_whitmer_jr_reme_1022124912_texture.glb",
+          "bytes": 25679540,
+          "triangles": 10263,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_peter_whitmer_jr_1022124736_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_peter_whitmer_jr_1022124736_image-to-3d-texture.glb",
+          "bytes": 30447924,
+          "triangles": 333318,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
@@ -1297,24 +2062,103 @@
     "HIRAM_PAGE": {
       "id": "HIRAM_PAGE",
       "label": "Hiram Page",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Rigged_Hyrum_Page_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_Rigged_Hyrum_Page_All_Animations.glb",
+        "bytes": 22415500,
+        "triangles": 10256,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Rigged_Hyrum_Page_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Rigged_Hyrum_Page_All_Animations.glb",
+          "bytes": 22415500,
+          "triangles": 10256,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Hyrum_Page_1022123958_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Hyrum_Page_1022123958_image-to-3d-texture.glb",
+          "bytes": 44746580,
+          "triangles": 775180,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
     "SAMUEL_SMITH": {
       "id": "SAMUEL_SMITH",
       "label": "Samuel H. Smith",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_Samuel_H_Smith_Rigged_All_Animations (1).glb",
+        "url": "../../meshy/Meshy_AI_Samuel_H_Smith_Rigged_All_Animations (1).glb",
+        "bytes": 22127908,
+        "triangles": 15445,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_Samuel_H_Smith_Rigged_All_Animations (1).glb",
+          "url": "../../meshy/Meshy_AI_Samuel_H_Smith_Rigged_All_Animations (1).glb",
+          "bytes": 22127908,
+          "triangles": 15445,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Samuel_H_Smith_Rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_Samuel_H_Smith_Rigged_All_Animations.glb",
+          "bytes": 22127908,
+          "triangles": 15445,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_Samuel_H_Smith_Optimi_1022125222_texture.glb",
+          "url": "../../meshy/Meshy_AI_Samuel_H_Smith_Optimi_1022125222_texture.glb",
+          "bytes": 27278856,
+          "triangles": 15452,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_Samuel_H_Smith_3D_1022124936_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_Samuel_H_Smith_3D_1022124936_image-to-3d-texture.glb",
+          "bytes": 32377728,
+          "triangles": 403432,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
       "warning": ""
     },
     "NEPHI": {
       "id": "NEPHI",
-      "label": "Nephi",
+      "label": "Nephi, son of Lehi",
       "status": "model",
       "asset": {
         "file": "Meshy_AI_Nephi_Rigged_All_Animations (1).glb",
@@ -1495,6 +2339,258 @@
       "note": "",
       "warning": ""
     },
+    "LEHI_PATRIARCH": {
+      "id": "LEHI_PATRIARCH",
+      "label": "Lehi",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "SARIAH": {
+      "id": "SARIAH",
+      "label": "Sariah",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "SAM": {
+      "id": "SAM",
+      "label": "Sam",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "ZORAM": {
+      "id": "ZORAM",
+      "label": "Zoram",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "LABAN": {
+      "id": "LABAN",
+      "label": "Laban",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "BROTHER_JARED": {
+      "id": "BROTHER_JARED",
+      "label": "The brother of Jared",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "JARED": {
+      "id": "JARED",
+      "label": "Jared",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "ALMA_ELDER": {
+      "id": "ALMA_ELDER",
+      "label": "Alma the Elder",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "AMULEK": {
+      "id": "AMULEK",
+      "label": "Amulek",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "KING_BENJAMIN": {
+      "id": "KING_BENJAMIN",
+      "label": "King Benjamin",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "ABINADI": {
+      "id": "ABINADI",
+      "label": "Abinadi",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "ABISH": {
+      "id": "ABISH",
+      "label": "Abish",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "LAMONI": {
+      "id": "LAMONI",
+      "label": "Lamoni",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "LAMONI_QUEEN": {
+      "id": "LAMONI_QUEEN",
+      "label": "Lamoni's queen",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "CAPTAIN_MORONI": {
+      "id": "CAPTAIN_MORONI",
+      "label": "Captain Moroni",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "LEHI_COMMANDER": {
+      "id": "LEHI_COMMANDER",
+      "label": "Lehi, commander at Noah",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "TEANCUM": {
+      "id": "TEANCUM",
+      "label": "Teancum",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "HELAMAN_COMMANDER": {
+      "id": "HELAMAN_COMMANDER",
+      "label": "Helaman, military and religious leader",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "NEPHI_SON_HELAMAN": {
+      "id": "NEPHI_SON_HELAMAN",
+      "label": "Nephi, son of Helaman",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "LEHI_SON_HELAMAN": {
+      "id": "LEHI_SON_HELAMAN",
+      "label": "Lehi, son of Helaman",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "AMINADAB": {
+      "id": "AMINADAB",
+      "label": "Aminadab",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "SAMUEL_LAMANITE": {
+      "id": "SAMUEL_LAMANITE",
+      "label": "Samuel the Lamanite",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "MORMON": {
+      "id": "MORMON",
+      "label": "Mormon",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "MORONI_RECORD_KEEPER": {
+      "id": "MORONI_RECORD_KEEPER",
+      "label": "Moroni, mortal record keeper",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "BOM_HOUSEHOLDS": {
+      "id": "BOM_HOUSEHOLDS",
+      "label": "Households, children, workers and travelers",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "BOM_CIVIC_AND_MILITARY": {
+      "id": "BOM_CIVIC_AND_MILITARY",
+      "label": "Court, scribes, guards and military leaders",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "ENOS": {
+      "id": "ENOS",
+      "label": "Enos",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
+    "ANGEL_BOM": {
+      "id": "ANGEL_BOM",
+      "label": "The angel in Alma's account",
+      "status": "placeholder",
+      "asset": null,
+      "variants": [],
+      "note": "",
+      "warning": ""
+    },
     "JOSEPH_ADULT": {
       "id": "JOSEPH_ADULT",
       "label": "Joseph Smith in his later ministry and celestial chapters",
@@ -1591,12 +2687,83 @@
     },
     "JEHOVAH": {
       "id": "JEHOVAH",
-      "label": "Jesus Christ also identified as Jehovah",
-      "status": "placeholder",
-      "asset": null,
-      "variants": [],
+      "label": "Jesus Christ",
+      "status": "model",
+      "asset": {
+        "file": "Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+        "url": "../../meshy/Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+        "bytes": 13310368,
+        "triangles": 19769,
+        "rigged": true,
+        "animations": [
+          "Running",
+          "Walking"
+        ]
+      },
+      "variants": [
+        {
+          "file": "Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_rigged_All_Animations.glb",
+          "bytes": 13310368,
+          "triangles": 19769,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_mormon_jesus_optimize_1022123833_texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_optimize_1022123833_texture.glb",
+          "bytes": 20790028,
+          "triangles": 19769,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_rigged_All_Animations.glb",
+          "url": "../../meshy/Meshy_AI_mormon_rigged_All_Animations.glb",
+          "bytes": 13011132,
+          "triangles": 10000,
+          "rigged": true,
+          "animations": [
+            "Running",
+            "Walking"
+          ]
+        },
+        {
+          "file": "Meshy_AI_mormon_figure_10k_1022123729_texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_figure_10k_1022123729_texture.glb",
+          "bytes": 19610488,
+          "triangles": 10000,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_jesus_figure_1022123707_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_jesus_figure_1022123707_image-to-3d-texture.glb",
+          "bytes": 45528784,
+          "triangles": 998696,
+          "rigged": false,
+          "animations": []
+        },
+        {
+          "file": "Meshy_AI_mormon_figure_1022123720_image-to-3d-texture.glb",
+          "url": "../../meshy/Meshy_AI_mormon_figure_1022123720_image-to-3d-texture.glb",
+          "bytes": 46776244,
+          "triangles": 982306,
+          "rigged": false,
+          "animations": []
+        }
+      ],
       "note": "",
-      "warning": ""
+      "warning": "",
+      "identity": "CHRIST",
+      "defaultVariant": "white",
+      "wardrobeProfiles": {
+        "white": "CHRIST_WHITE",
+        "red": "CHRIST_RED"
+      }
     },
     "HEAVENLY_FATHER": {
       "id": "HEAVENLY_FATHER",

@@ -1,4 +1,12 @@
 import * as THREE from 'three';
+import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
+import {buildConnectedSettlement} from './settlement-world.js';
+import {buildCarthageWorld} from './carthage-world.js';
+import {buildZionWorld} from './zion-world.js';
+import {buildRecordSacredWorld} from './record-sacred-world.js';
+import {buildRecordAdventureWorld} from './record-adventure-world.js';
+import {buildRecordHill} from './record-hill.js';
+import {buildWorldDetail} from './world-detail.js';
 
 const PALETTE = {
   grass: '#829b65', darkGrass: '#50684b', leaf: '#677c4a', lightLeaf: '#b3bc79',
@@ -26,9 +34,12 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
   const materials = new Map();
   const geometries = new Set();
   const interior = ['bedroom', 'harmony', 'liberty', 'carthage'].includes(environment);
-  const night = ['bedroom', 'liberty', 'carthage'].includes(environment);
+  const night = environment === 'liberty' || environment === 'bedroom' && chapter.id === '04';
   const celestial = environment === 'celestial';
   const desert = chapter.id === 'E6';
+  const connected = ['bedroom', 'harmony', 'farm', 'town', 'kirtland', 'nauvoo', 'lowell', 'manhattan'].includes(environment);
+  let architecture = null;
+  const extras = [];
   const bounds = interior ? { minX: -8, maxX: 8, minZ: -8, maxZ: 10 } : celestial ? { minX: -21, maxX: 21, minZ: -21, maxZ: 21 } : { minX: -31, maxX: 31, minZ: -31, maxZ: 31 };
   const spawn = new THREE.Vector3(0, 0, 8);
   const focus = new THREE.Vector3(0, 1.3, 0);
@@ -42,7 +53,13 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
 
   function material(color, options = {}) {
     const key = `${color}:${JSON.stringify(options)}`;
-    if (!materials.has(key)) materials.set(key, new THREE.MeshToonMaterial({ color, ...options }));
+    if (!materials.has(key)) {
+      const surface = new THREE.MeshToonMaterial({ color, ...options });
+      if ([PALETTE.grass, PALETTE.darkGrass].includes(color)) surface.userData.lightingRole = 'ground';
+      if ([PALETTE.leaf, PALETTE.lightLeaf, '#829357', '#687c50'].includes(color)) surface.userData.lightingRole = 'foliage';
+      if (color === PALETTE.gold) surface.userData.lightingRole = 'accent';
+      materials.set(key, surface);
+    }
     return materials.get(key);
   }
 
@@ -263,8 +280,94 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     colliders.push({ x, z, width: 14, depth: 19 });
   }
 
+  function memorialConference() {
+    box(0, -0.14, -2.8, 7, 0.28, 8.2, '#ad9164');
+    for (let index = 0; index < 13; index += 1) box(0, 0.006, -6.6 + index * 0.63, 6.96, 0.012, 0.018, '#7f6b4e');
+    for (const side of [-1, 1]) {
+      for (const z of [-6.8, -3.6]) box(side * 3.35, 0.38, z, 0.14, 0.76, 0.14, '#927652');
+      box(side * 3.35, 0.7, -5.2, 0.11, 0.12, 3.3, '#a98b5b');
+    }
+    box(-2.2, 0.55, -5.8, 0.9, 1.1, 0.65, '#8e6d46');
+    box(-2.2, 1.18, -5.8, 1.28, 0.13, 0.88, '#b49666').rotation.x = -0.12;
+    book(-2.2, 1.28, -5.8);
+    bench(2, -5.8, Math.PI, 1.5);
+
+    const batches = new Map();
+    const shapes = {
+      box: new THREE.BoxGeometry(1, 1, 1),
+      sphere: new THREE.IcosahedronGeometry(1, 1),
+      cylinder: new THREE.CylinderGeometry(1, 1, 1, 8),
+      skirt: new THREE.CylinderGeometry(0.65, 1, 1, 9),
+      bonnet: new THREE.TorusGeometry(1, 0.28, 5, 12),
+    };
+    Object.values(shapes).forEach(geometry => geometries.add(geometry));
+    const transform = new THREE.Object3D();
+    function part(shape, color, x, y, z, width, height, depth, rotation = 0) {
+      const key = `${shape}:${color}`;
+      if (!batches.has(key)) batches.set(key, { geometry: shapes[shape], color, matrices: [] });
+      transform.position.set(x, y, z);
+      transform.rotation.set(0, 0, rotation);
+      transform.scale.set(width, height, depth);
+      transform.updateMatrix();
+      batches.get(key).matrices.push(transform.matrix.clone());
+    }
+    const coats = ['#434b47', '#62665b', '#716454', '#5f6b69', '#77715c'];
+    const dresses = ['#65746b', '#777a73', '#998e7c', '#61717c', '#8b7b70'];
+    const skins = ['#c7a27a', '#d3b28e', '#b99470', '#dfc19a'];
+    const hairColors = ['#61533f', '#7c6b51', '#aaa18c', '#534c40'];
+    for (let row = 0; row < 5; row += 1) {
+      for (const side of [-1, 1]) {
+        const z = 6.8 + row * 3.35;
+        bench(side * 5.4, z, Math.PI, 4.8);
+        for (let seat = 0; seat < 3; seat += 1) {
+          const x = side * 5.4 + (seat - 1) * 1.3;
+          const woman = (row + seat + (side > 0 ? 1 : 0)) % 2 === 0;
+          const age = (row + seat) % 4;
+          const clothing = woman ? dresses[(row + seat) % dresses.length] : coats[(row + seat) % coats.length];
+          const skin = skins[(row + seat) % skins.length];
+          const hair = hairColors[age];
+          const headY = 1.4 + ((row + seat) % 3) * 0.035;
+          part('box', clothing, x, 0.94, z - 0.04, 0.43, 0.58, 0.29);
+          part('sphere', skin, x, headY, z - 0.06, 0.155, 0.19, 0.155);
+          part('sphere', hair, x, headY + 0.115, z - 0.025, 0.163, 0.092, 0.155);
+          part('sphere', skin, x, headY - 0.015, z - 0.212, 0.035, 0.05, 0.025);
+          for (const arm of [-1, 1]) {
+            part('box', clothing, x + arm * 0.27, 0.89, z - 0.09, 0.12, 0.39, 0.16, arm * 0.13);
+            part('sphere', skin, x + arm * 0.22, 0.69, z - 0.21, 0.07, 0.075, 0.065);
+            part('box', '#41433b', x + arm * 0.14, 0.09, z - 0.46, 0.15, 0.16, 0.3);
+            part('box', '#493e30', x + arm * 0.06, headY + 0.01, z - 0.211, 0.018, 0.023, 0.014);
+          }
+          if (woman) {
+            part('skirt', clothing, x, 0.43, z - 0.16, 0.36, 0.62, 0.41);
+            part('bonnet', '#b6aa8d', x, headY + 0.02, z - 0.025, 0.19, 0.21, 0.17);
+            part('box', '#d3c7a9', x, 1.1, z - 0.2, 0.3, 0.17, 0.03);
+          } else {
+            for (const leg of [-1, 1]) {
+              part('box', '#68634f', x + leg * 0.14, 0.58, z - 0.19, 0.17, 0.2, 0.48);
+              part('box', '#68634f', x + leg * 0.14, 0.32, z - 0.38, 0.16, 0.45, 0.16);
+            }
+            part('box', '#cabc9c', x, 1.1, z - 0.201, 0.16, 0.28, 0.035);
+            if (age === 2) part('sphere', hair, x, headY - 0.1, z - 0.15, 0.12, 0.1, 0.045);
+          }
+        }
+      }
+    }
+    for (const [key, batch] of batches) {
+      const figures = new THREE.InstancedMesh(batch.geometry, material(batch.color), batch.matrices.length);
+      batch.matrices.forEach((matrix, index) => figures.setMatrixAt(index, matrix));
+      figures.instanceMatrix.needsUpdate = true;
+      figures.castShadow = true;
+      figures.receiveShadow = false;
+      figures.name = `memorial-congregation-${key}`;
+      figures.userData.backgroundCongregation = true;
+      figures.visible = false;
+      group.add(figures);
+    }
+    points.push({ id: 'memorial-stand', label: 'An address of consolation', position: new THREE.Vector3(0, 0, -3), kind: 'speak' });
+  }
+
   function town() {
-    curve([[0, 40], [0, 15], [-1, 0], [0, -40]], 5.5);
+    curve([[0, 40], [0, 15], [-1, 0], [0, -40]], 5.5, PALETTE.path, chapter.id === '28' ? -0.005 : 0.022);
     for (let index = 0; index < 4; index += 1) {
       cottage(-13 - (index % 2) * 1.8, 14 - index * 11, 7 + random() * 2, 6, ['#c6b89a', '#b3a082', '#c2b3a1', '#ae9a7c'][index], 3.6 + (index % 2) * 2.7);
       if (!(environment === 'nauvoo' && index >= 2)) cottage(14, 16 - index * 13, 7.5, 6, index % 2 ? '#b4a486' : '#cebd9d', 4.2);
@@ -275,9 +378,12 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     table(3, -2);
     book(3, 1.14, -2);
     if (environment === 'nauvoo') {
-      for (let index = 0; index < 4; index += 1) bench(-6, 5 - index * 2.2, 0, 5);
-      box(0, 0.18, -6, 5, 0.35, 3, '#8f7c59');
-      box(0, 0.95, -6.3, 1.25, 1.25, 0.6, '#8d6845');
+      if (chapter.id === '28') memorialConference();
+      else {
+        for (let index = 0; index < 4; index += 1) bench(-6, 5 - index * 2.2, 0, 5);
+        box(0, 0.18, -6, 5, 0.35, 3, '#8f7c59');
+        box(0, 0.95, -6.3, 1.25, 1.25, 0.6, '#8d6845');
+      }
     }
     if (environment === 'town') {
       box(-4.8, 1.3, -4.5, 1.1, 1.8, 0.75, '#535b50');
@@ -379,7 +485,7 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
   sun.shadow.normalBias = 0.06;
   group.add(sun, sun.target);
 
-  if (!interior && !celestial) {
+  if (!interior && !celestial && !connected && !chapter.record) {
     const ground = mesh(new THREE.PlaneGeometry(400, 400), desert ? '#b39c7f' : PALETTE.grass, 0, -0.02, 0);
     ground.rotation.x = -Math.PI / 2;
     ground.castShadow = false;
@@ -392,7 +498,27 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     if (!desert) flowerField(quality === 'low' ? 80 : 260);
   }
 
-  if (environment === 'grove') {
+  const architectureContext = {THREE, scene, chapter, quality, group, box, cylinder, sphere, mesh, material, colliders, points, spawn, focus, bounds, tree, fence, curve, bench, table, book, temple, animated};
+  if (chapter.record) {
+    const adventure = ['BM05', 'BM07', 'BM15', 'BM16', 'BM17', 'BM18', 'BM19', 'BM24', 'TX01', 'TX02', 'TX03'].includes(chapter.recordId);
+    architecture = adventure ? buildRecordAdventureWorld(architectureContext) : buildRecordSacredWorld(architectureContext);
+    extras.push(...(architecture.extras ?? []));
+  } else if (environment === 'carthage') {
+    architecture = buildCarthageWorld(architectureContext);
+    scene.background = new THREE.Color('#cbd8d3');
+    scene.fog = new THREE.FogExp2('#d2d9cc', .004);
+    extras.push(...Array.from({length: quality === 'low' ? 6 : 12}, (_, index) => ({id: `MOB_M_${index}`, position: [index % 2 ? 7 + index % 4 : -7 - index % 4, 0, 9 + Math.floor(index / 2) * 2], rotation: Math.PI, height: 1.7 + index % 3 * .06})));
+  } else if (celestial) {
+    architecture = buildZionWorld(architectureContext);
+    scene.fog = new THREE.FogExp2('#ccdbd4', architecture.recommendedFogDensity ?? .0018);
+    scene.background = new THREE.Color('#cbdedc');
+  } else if (connected) {
+    architecture = buildConnectedSettlement(architectureContext);
+    scene.fog = new THREE.FogExp2(night ? '#596575' : '#d2dfd3', night ? .007 : .0035);
+    extras.push(...architecture.extras);
+    if (chapter.id === '28') memorialConference();
+    if (chapter.id === 'E4') archiveComputer();
+  } else if (environment === 'grove') {
     forest(quality === 'low' ? 30 : 58);
     curve([[0, 40], [1.5, 20], [-1, 9], [0, -4]], 1.65, '#b3a986');
     const clearing = cylinder(0, -0.015, -3, 5.2, 5.2, 0.025, '#9ca778', 40);
@@ -445,15 +571,7 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
       stars();
     }
   } else if (environment === 'hill') {
-    forest(28);
-    curve([[0, 40], [-3, 15], [-4, 5], [0, -5]], 1.7);
-    for (let index = 0; index < 5; index += 1) {
-      const stone = sphere(0.2 + Math.sin(index) * 0.8, 0.13, -5 + Math.cos(index) * 0.6, 0.5, '#a9a594', 0);
-      stone.scale.y = 0.45;
-    }
-    box(0, 0.11, -5, 1.2, 0.22, 1.1, '#6e7868');
-    box(0.7, 0.28, -5.5, 1.3, 0.2, 1.2, '#b3b2a0').rotation.z = 0.3;
-    plates(0, 0.26, -5);
+    architecture = buildRecordHill(architectureContext);
   } else if (environment === 'river') {
     river();
   } else if (['town', 'nauvoo', 'kirtland'].includes(environment)) {
@@ -601,9 +719,50 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
     animated.push({ object: dust, kind: 'dust' });
   }
 
+  const detail = buildWorldDetail({chapter, quality, box, cylinder, sphere, book}, architecture);
+  const movingObjects = new Set(animated.map(item => item.object));
+  const batches = new Map();
+  for (const object of [...group.children]) {
+    if (!object.isMesh || object.isInstancedMesh || Array.isArray(object.material) || object.material.transparent || object.material.map || object.material.vertexColors || movingObjects.has(object) || object.name || !object.visible) continue;
+    object.updateMatrix();
+    const geometry = object.geometry.clone().applyMatrix4(object.matrix);
+    geometries.add(geometry);
+    const key = `${object.material.uuid}:${object.castShadow}:${object.receiveShadow}`;
+    if (!batches.has(key)) batches.set(key, {geometries: [], material: object.material, castShadow: object.castShadow, receiveShadow: object.receiveShadow});
+    batches.get(key).geometries.push(geometry.index ? geometry.toNonIndexed() : geometry);
+    object.removeFromParent();
+  }
+  for (const batch of batches.values()) {
+    batch.geometries.forEach(geometry => {
+      geometries.add(geometry);
+      for (const attribute of Object.keys(geometry.attributes)) if (!['position', 'normal', 'uv'].includes(attribute)) geometry.deleteAttribute(attribute);
+      if (!geometry.attributes.uv) geometry.setAttribute('uv', new THREE.Float32BufferAttribute(new Float32Array(geometry.attributes.position.count * 2), 2));
+    });
+    const geometry = mergeGeometries(batch.geometries);
+    if (!geometry) continue;
+    geometries.add(geometry);
+    const merged = new THREE.Mesh(geometry, batch.material);
+    merged.castShadow = batch.castShadow;
+    merged.receiveShadow = batch.receiveShadow;
+    group.add(merged);
+  }
+
   return {
-    group, spawn, focus, bounds, colliders, points,
-    update(delta, elapsed) {
+    group, spawn, focus, bounds, colliders, points, extras,
+    objectivePoints: architecture?.objectivePoints, actorPositions: architecture?.actorPositions,
+    activityPoints: architecture?.activityPoints,
+    activityAnchors: detail.activityAnchors,
+    detail,
+    localPortals: architecture?.localPortals ?? [],
+    activatePortal: identity => architecture?.activatePortal?.(identity),
+    onObjective: index => architecture?.onObjective?.(index),
+    onObjectiveComplete: index => architecture?.onObjectiveComplete?.(index),
+    onActivity: (identity, count, total) => architecture?.onActivity?.(identity, count, total),
+    getGroundHeight: architecture?.getGroundHeight ?? (() => 0),
+    summary: architecture?.summary ?? architecture?.layout ?? {kind: environment},
+    cameraFar: architecture?.recommendedCameraFar ?? 700,
+    update(delta, elapsed, playerPosition, cameraPosition) {
+      architecture?.update?.(delta, elapsed, playerPosition, cameraPosition);
       for (const item of animated) {
         if (item.kind === 'ripple') item.object.position.x = item.baseX + Math.sin(elapsed * 0.6 + item.phase) * 0.35;
         if (item.kind === 'planet') item.object.rotation.y += delta * 0.045;
@@ -612,6 +771,7 @@ export function createWorld({ scene, chapter, quality = 'high' }) {
       }
     },
     dispose() {
+      architecture?.dispose?.();
       scene.remove(group);
       for (const geometry of geometries) geometry.dispose();
       for (const value of materials.values()) value.dispose();
