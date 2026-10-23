@@ -21,12 +21,12 @@ const VIEWS = {
   '20': [{name: 'temple', player: [0, 0, 8], from: [-38, 7, -24], to: [-55, 8, -52]}],
   '10': [{name: 'farm', player: [0, 0, 8], from: [-4, 4, 4], to: [-15, 2, -10]}],
   '30': [{name: 'exterior', player: [0, 0, 18], from: [12, 6, 26], to: [0, 3, 0]}],
-  'BM01': [{name: 'houses', player: [0, 0, 24], from: [-7, 3.2, 33], to: [-16, 2, 24]}],
   'BM13': [{name: 'household', player: [0, 0, 24], from: [9, 5, 9], to: [0, 2, -10]}],
   'N1': [{name: 'street', player: [-20, 0, -.5], from: [3, 4, 10], to: [-20, 4, -40]}],
 };
 
 const out = process.argv[2] ?? 'game/evidence/visual-overhaul';
+// Set CHROMIUM_PATH to use a local Chromium and PORT to target another server.
 const chapters = process.argv.slice(3).length ? process.argv.slice(3) : Object.keys(VIEWS);
 await mkdir(out, {recursive: true});
 const browser = await chromium.launch({headless: true, executablePath: process.env.CHROMIUM_PATH, args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader']});
@@ -34,7 +34,7 @@ const page = await browser.newPage({viewport: {width: 1280, height: 760}});
 const errors = [];
 page.on('pageerror', error => errors.push(error.message));
 await page.addInitScript(() => localStorage.setItem('gathering-of-zion:v1:settings', JSON.stringify({quality: 'high', sound: false, reducedMotion: true})));
-await page.goto(`http://127.0.0.1:8923/game/?chapter=${chapters[0]}`);
+await page.goto(`http://127.0.0.1:${process.env.PORT ?? 8923}/game/?chapter=${chapters[0]}`);
 for (const id of chapters) {
   await page.waitForFunction(() => window.zionGame?.getState, null, {timeout: 120000});
   await page.evaluate(id => window.zionGame.getState().chapter === id || window.zionGame.enterChapter(id), id);
