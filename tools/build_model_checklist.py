@@ -8,6 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 def main():
     manifest = json.loads((ROOT / "game/content/assets.json").read_text())
     campaign = json.loads((ROOT / "game/content/chapters.json").read_text())
+    plan = json.loads((ROOT / "game/content/record-cast-plan.json").read_text())
+    planned = {role["id"]: role for group in plan["groups"] for role in group["roles"]}
+    for identity, role in planned.items():
+        if identity in campaign["names"] and campaign["names"][identity] != role["name"]:
+            raise SystemExit(f"record-cast-plan.json id {identity} is already used for {campaign['names'][identity]!r}")
     appearances = {}
     for chapter in campaign["chapters"]:
         for identity in {chapter["playerId"], *(actor["id"] for actor in chapter["actors"])}:
@@ -30,7 +35,24 @@ def main():
             "current_file": candidate["file"] if candidate else "",
             "chapter_ids": "; ".join(chapters),
             "triangles": candidate["triangles"] if candidate else "",
+            "look": planned.get(identity, {}).get("look", ""),
+            "props": planned.get(identity, {}).get("props", ""),
             "notes": "Remesh and rig the existing source; a dense original is not selected for gameplay" if source_only else "Generic modular civilian rig may be reused with distinct clothing/face" if identity in composites else "A missing export may already exist in Meshy; export before remaking" if not asset else profile.get("warning", ""),
+        })
+    for identity, role in planned.items():
+        if identity in appearances:
+            continue
+        rows.append({
+            "priority": f"5 - Planned record cast ({role['priority']})",
+            "character_id": identity,
+            "name": role["name"],
+            "status": "Planned: not yet in a chapter",
+            "current_file": "",
+            "chapter_ids": role["missions"],
+            "triangles": "",
+            "look": role["look"],
+            "props": role["props"],
+            "notes": "From game/content/record-cast-plan.json; R1-R8 are proposed missions",
         })
     rows.sort(key=lambda row: (row["status"].startswith("Ready"), row["priority"], row["name"]))
     destination = ROOT / "game/content/model-checklist.csv"
@@ -45,7 +67,8 @@ def main():
         writer.writerows(pending_rows)
     missing = sum(row["status"].startswith("Stand-in") for row in rows)
     pending = len(pending_rows)
-    print(f"Model checklist: {len(rows)} active cast identities; {pending} roles need a game-ready rig, including {missing} without a local source.")
+    planned_only = sum(row["status"].startswith("Planned") for row in rows)
+    print(f"Model checklist: {len(rows) - planned_only} active cast identities and {planned_only} planned record roles; {pending} roles need a game-ready rig, including {missing} without a local source.")
 
 
 if __name__ == "__main__":

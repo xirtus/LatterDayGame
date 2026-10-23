@@ -1,0 +1,802 @@
+{
+  "note": "Planned Book of Mormon cast with period costume notes for modeling. Hand-maintained; read by tools/build_model_checklist.py. Mission codes R1-R8 are proposed missions in the Record Worlds report.",
+  "report": "https://claude.ai/artifact/4fDXYLb95jaDVMAyNcQCVi",
+  "groups": [
+    {
+      "id": "levant",
+      "name": "Lehi's family and Jerusalem",
+      "era": "Judah, about 600 BC (Iron Age II)",
+      "costumeBrief": "Men: ankle-length wool or linen tunic, belted; a wool mantle with corner fringes tied with a blue cord (Numbers 15:38); a wrapped head cloth or turban with a band, as on the Lachish reliefs; full beards; leather sandals. Women: long tunic with woven bands, a mantle worn over the head, earrings, nose rings, bracelets and anklets (Isaiah 3:18–23). Colors: undyed cream and brown wool, madder red, indigo blue; purple and crimson only for the rich. Faces and builds should read as Near Eastern.",
+      "roles": [
+        {
+          "id": "LEHI_PATRIARCH",
+          "name": "Lehi",
+          "priority": "A",
+          "missions": "BM01 BM02",
+          "look": "About 55 to 60, grey-streaked full beard, warm and urgent. Prosperous Jerusalem tunic with a red or blue border and fringed wool mantle; travel variant in undyed wool with staff and a sun cloth over the turban.",
+          "props": "Staff; the Liahona, a round brass ball with two spindles (1 Nephi 16:10)"
+        },
+        {
+          "id": "SARIAH",
+          "name": "Sariah",
+          "priority": "A",
+          "missions": "BM01 BM02 BM04 BM05",
+          "look": "About 50, strong and practical. Long tunic with embroidered bands, head mantle, a little jewelry in the city; travel variant with sun shawl and water skin.",
+          "props": "Water skin, grinding stone, cooking pot"
+        },
+        {
+          "id": "NEPHI",
+          "name": "Nephi, son of Lehi",
+          "priority": "A",
+          "missions": "BM01–BM05, R1–R4",
+          "look": "Young man, \"large in stature\" (1 Nephi 2:16), short beard. Needs four costume variants: Jerusalem tunic and mantle; Laban's garments and armor (1 Nephi 4:19); desert travel; Bountiful work clothes with bare arms and a leather apron. Later, as founder of the city of Nephi (R4), a simple ruler's mantle.",
+          "props": "Bow (steel, then wooden), the sword of Laban, the brass plates, tools"
+        },
+        {
+          "id": "LAMAN",
+          "name": "Laman",
+          "priority": "A",
+          "missions": "BM01–BM05",
+          "look": "Eldest brother. Check the existing model against Judean tunic, mantle and turban; add a desert travel variant.",
+          "props": "Spear or staff, water skin"
+        },
+        {
+          "id": "LEMUEL",
+          "name": "Lemuel",
+          "priority": "A",
+          "missions": "BM01–BM05",
+          "look": "Check the existing model as for Laman; give him a different silhouette (lighter build, different mantle color).",
+          "props": "Staff, bundle"
+        },
+        {
+          "id": "SAM",
+          "name": "Sam",
+          "priority": "B",
+          "missions": "BM01–BM04",
+          "look": "About 20, short beard, steady. Knee-length work tunic, belt, sling at the waist.",
+          "props": "Sling, rope"
+        },
+        {
+          "id": "ZORAM",
+          "name": "Zoram",
+          "priority": "B",
+          "missions": "BM03, BM04",
+          "look": "Young servant of Laban in good linen, with the treasury keys on his belt. Later travels with the family in plain wool.",
+          "props": "Keys, lamp"
+        },
+        {
+          "id": "LABAN",
+          "name": "Laban",
+          "priority": "B",
+          "missions": "BM03",
+          "look": "Commander of fifty and keeper of the plates (1 Nephi 3:31). Bronze scale coat over a fine tunic, rich mantle, officer's headdress. Shown in the earlier attempts; his death stays an off-screen, authored account.",
+          "props": "Sword with a gold hilt and fine steel blade (1 Nephi 4:9), the brass plates"
+        },
+        {
+          "id": "ISHMAEL",
+          "name": "Ishmael",
+          "priority": "B",
+          "missions": "R1, R3",
+          "look": "Elderly head of a large household, white beard, fine but older-fashioned mantle. Needs a burial-shroud variant for Nahom.",
+          "props": "Staff"
+        },
+        {
+          "id": "ISHMAEL_WIFE",
+          "name": "Ishmael's wife",
+          "priority": "B",
+          "missions": "R1",
+          "look": "Elderly matriarch; dark head mantle, many bracelets.",
+          "props": ""
+        },
+        {
+          "id": "NEPHI_WIFE",
+          "name": "Nephi's wife, a daughter of Ishmael",
+          "priority": "A",
+          "missions": "R1–R3, BM04, BM05",
+          "look": "Unnamed in the text (label the name as adapted if one is used). Young woman; colored tunic and head mantle; later a mother with infants in the wilderness.",
+          "props": "Infant in a sling"
+        },
+        {
+          "id": "ISHMAEL_DAUGHTER",
+          "name": "Ishmael's other daughters",
+          "priority": "C",
+          "missions": "R1–R3, BM04",
+          "look": "Four variants with different mantle colors and hair; married to Laman, Lemuel, Sam and Zoram.",
+          "props": ""
+        },
+        {
+          "id": "ISHMAEL_SON",
+          "name": "Ishmael's sons",
+          "priority": "C",
+          "missions": "R1",
+          "look": "Two adult men with their households (1 Nephi 7:6), Judean dress.",
+          "props": ""
+        },
+        {
+          "id": "JACOB_SON_OF_LEHI",
+          "name": "Jacob, younger brother",
+          "priority": "B",
+          "missions": "BM04, BM05",
+          "look": "Child born in the wilderness, about 6 to 8 at the shipyard; simple short tunic.",
+          "props": ""
+        },
+        {
+          "id": "JOSEPH_SON_OF_LEHI",
+          "name": "Joseph, younger brother",
+          "priority": "C",
+          "missions": "BM04, BM05",
+          "look": "Younger child, about 4 to 6; short tunic.",
+          "props": ""
+        },
+        {
+          "id": "JUDEAN_TOWNSMAN",
+          "name": "Jerusalem townsman",
+          "priority": "C",
+          "missions": "BM01, BM03",
+          "look": "Four variants (young, middle, old, laborer) in tunic, mantle and head cloth.",
+          "props": "Baskets, jars"
+        },
+        {
+          "id": "JUDEAN_TOWNSWOMAN",
+          "name": "Jerusalem townswoman",
+          "priority": "C",
+          "missions": "BM01, BM03",
+          "look": "Four variants; head mantle, jars carried on the head or hip.",
+          "props": "Water jar"
+        },
+        {
+          "id": "LEVITE_PRIEST",
+          "name": "Levite or temple priest",
+          "priority": "C",
+          "missions": "BM01",
+          "look": "White linen tunic with sash and linen cap.",
+          "props": ""
+        },
+        {
+          "id": "JUDEAN_SCRIBE",
+          "name": "Scribe",
+          "priority": "C",
+          "missions": "BM01, BM03",
+          "look": "Linen tunic, ink case at the belt (Ezekiel 9:2).",
+          "props": "Scroll, writing case"
+        },
+        {
+          "id": "JUDEAN_MERCHANT",
+          "name": "Merchant or potter",
+          "priority": "C",
+          "missions": "BM01",
+          "look": "Rolled sleeves, apron; variants for potter and cloth seller.",
+          "props": "Pots, cloth bolts, scales"
+        },
+        {
+          "id": "JUDEAN_SOLDIER",
+          "name": "Judean soldier and Laban's guard",
+          "priority": "C",
+          "missions": "BM03",
+          "look": "As on the Lachish reliefs: short tunic, headband with ear flaps or a pointed helmet, scale coat for officers, round shield, spear, short sword.",
+          "props": "Spear, round shield, torch"
+        },
+        {
+          "id": "JUDEAN_CHILD",
+          "name": "Jerusalem child",
+          "priority": "C",
+          "missions": "BM01",
+          "look": "Boy and girl in short tunics.",
+          "props": "Toys, goat on a rope"
+        },
+        {
+          "id": "SHEPHERD",
+          "name": "Shepherd",
+          "priority": "C",
+          "missions": "BM01",
+          "look": "Short tunic, sheepskin cloak, sling and staff.",
+          "props": "Sling, staff, sheep"
+        }
+      ]
+    },
+    {
+      "id": "arabia",
+      "name": "The Arabian road",
+      "era": "Red Sea coast to Dhofar, about 600 to 590 BC",
+      "costumeBrief": "Lehi's family keep Judean dress but it becomes worn, sun-faded and layered: head cloths wrapped against sun and sand, cloaks used as bedding, bows and quivers, water skins. Local people dress in the South Arabian way seen on Sabaean statues: men in knee-length wrap skirts with a belt and curved dagger, long hair or braids, cloaks; women in long dresses and veils. Camel caravans carry frankincense.",
+      "roles": [
+        {
+          "id": "ARABIAN_HERDER",
+          "name": "Arabian herder, man and woman",
+          "priority": "C",
+          "missions": "R2, R3",
+          "look": "Goat-hair cloaks, wrap skirts, head cloths; dark sun-weathered faces.",
+          "props": "Goats, staff, goat-hair tent"
+        },
+        {
+          "id": "CARAVAN_TRADER",
+          "name": "South Arabian caravan trader",
+          "priority": "C",
+          "missions": "R2",
+          "look": "Sabaean-style wrap skirt, belt with curved dagger, long braided hair, mantle; camel driver variant.",
+          "props": "Camels, incense bundles"
+        },
+        {
+          "id": "NIHM_ELDER",
+          "name": "Tribal elder near Nahom",
+          "priority": "C",
+          "missions": "R3",
+          "look": "Optional. Heavier mantle, staff, tribal ornaments.",
+          "props": ""
+        }
+      ]
+    },
+    {
+      "id": "jaredite",
+      "name": "The Jaredites",
+      "era": "The tower era, an ancient Near Eastern setting with no fixed date",
+      "costumeBrief": "Use early Mesopotamian dress: tufted fleece kaunakes skirts or fringed wool shawls wrapped over one shoulder, long beards, long hair bound with a fillet, bare feet or simple sandals. Women in long fringed wraps with hair in nets or coils. Keep it visibly older and stranger than Lehi's Judah.",
+      "roles": [
+        {
+          "id": "BROTHER_JARED",
+          "name": "The brother of Jared",
+          "priority": "A",
+          "missions": "BM06, BM07",
+          "look": "Strong, older craftsman with a long beard and fringed shawl over one shoulder; work variant with leather apron for the barges and the smelting of the stones.",
+          "props": "Sixteen small clear stones, crucible"
+        },
+        {
+          "id": "JARED",
+          "name": "Jared",
+          "priority": "B",
+          "missions": "BM06, BM07",
+          "look": "Brother of similar age, finer fringed shawl, a family leader rather than a craftsman.",
+          "props": ""
+        },
+        {
+          "id": "JAREDITE_FAMILY",
+          "name": "Jaredite families",
+          "priority": "C",
+          "missions": "BM06, BM07",
+          "look": "Men, women and children in kaunakes and wraps; barge builders and herders.",
+          "props": "Flocks, bee hives, fish vessels (Ether 2:2–3)"
+        }
+      ]
+    },
+    {
+      "id": "nephite",
+      "name": "Nephites and Lamanites, named",
+      "era": "Mesoamerica, about 550 BC to AD 421 (Preclassic to Early Classic)",
+      "costumeBrief": "Base dress: men wear a loincloth with a hip cloth and a cotton mantle knotted at one shoulder, leather or fiber sandals, headbands or wrapped headdresses, jade or shell ear ornaments. Women wear a wrap skirt with a blouse or shoulder cape, a shawl, and long hair with woven ribbons. Elites add quetzal and macaw feather headdresses, jaguar pelts, jade, shell, pyrite mirrors and red-dyed cloth. Warriors wear quilted cotton armor (\"thick clothing\"), breastplates, arm shields and head plates (Alma 43:19–21). Draw Nephites and Lamanites as Indigenous Mesoamerican peoples who differ in dress, heraldry and region, never in skin tone. The first Nephite generations (Enos, Jacob) can keep Old World touches such as the fringed mantle.",
+      "roles": [
+        {
+          "id": "ENOS",
+          "name": "Enos",
+          "priority": "B",
+          "missions": "BM08",
+          "look": "Highland hunter, about 30; first-generation Nephite mixing a fringed mantle with local cotton and sandals; bow and quiver.",
+          "props": "Bow, quiver, game"
+        },
+        {
+          "id": "KING_BENJAMIN",
+          "name": "King Benjamin",
+          "priority": "A",
+          "missions": "BM09",
+          "look": "Aged king who labored with his own hands (Mosiah 2:14): plain white cotton mantle with a woven border, modest jade, no feather crown.",
+          "props": "The sword of Laban (Words of Mormon 1:13), the plates"
+        },
+        {
+          "id": "KING_NOAH",
+          "name": "King Noah",
+          "priority": "A",
+          "missions": "BM10",
+          "look": "Heavy and lavish: quetzal-feather headdress, jaguar pelt over the shoulders, red mantle, gold and jade at the neck and wrists, as in the Friberg painting of Abinadi.",
+          "props": "Throne, wine cup, pet jaguars"
+        },
+        {
+          "id": "NOAH_PRIEST",
+          "name": "Noah's priests, with Amulon",
+          "priority": "B",
+          "missions": "BM10",
+          "look": "Five or six variants on ornate seats: rich cotton robes, red headbands, feather and jade ornaments; Amulon as a named lead.",
+          "props": ""
+        },
+        {
+          "id": "ABINADI",
+          "name": "Abinadi",
+          "priority": "A",
+          "missions": "BM10",
+          "look": "Old man, white beard, lean; arrives disguised in coarse clothes (Mosiah 12:1); bound with cords in the court.",
+          "props": "Cords"
+        },
+        {
+          "id": "ALMA_ELDER",
+          "name": "Alma the Elder",
+          "priority": "A",
+          "missions": "BM10, BM11, BM12",
+          "look": "Young priest of Noah in court finery, then a stripped-down refugee in plain cotton; older father in BM12.",
+          "props": "Written record of Abinadi's words"
+        },
+        {
+          "id": "ALMA_YOUNGER",
+          "name": "Alma the Younger",
+          "priority": "A",
+          "missions": "BM12, BM16",
+          "look": "Check the existing model against Nephite elite dress; needs a proud young variant and a later plain-mantle preacher variant.",
+          "props": ""
+        },
+        {
+          "id": "AMMON",
+          "name": "Ammon, son of Mosiah",
+          "priority": "A",
+          "missions": "BM13, R5",
+          "look": "Nephite prince serving as a Lamanite king's herdsman: plain servant's loincloth and mantle, sling, sword.",
+          "props": "Sling, obsidian-edged sword"
+        },
+        {
+          "id": "LAMONI",
+          "name": "Lamoni",
+          "priority": "A",
+          "missions": "BM13",
+          "look": "Lamanite king of the land of Ishmael: royal Lamanite heraldry, feather crest, jade, fine cotton.",
+          "props": ""
+        },
+        {
+          "id": "LAMONI_QUEEN",
+          "name": "Lamoni's queen",
+          "priority": "A",
+          "missions": "BM13",
+          "look": "Royal woman in fine embroidered blouse and wrap skirt, jade collar, feathered hair ornament.",
+          "props": ""
+        },
+        {
+          "id": "ABISH",
+          "name": "Abish",
+          "priority": "A",
+          "missions": "BM13",
+          "look": "Lamanite servant woman with agency and voice: work wrap skirt and blouse, hair bound back, a simple shell necklace.",
+          "props": ""
+        },
+        {
+          "id": "LAMONI_FATHER",
+          "name": "Lamoni's father, king over all the land",
+          "priority": "C",
+          "missions": "BM13, BM14",
+          "look": "Optional. Older Lamanite high king, heavier regalia than Lamoni.",
+          "props": ""
+        },
+        {
+          "id": "ANTI_NEPHI_LEHI",
+          "name": "Anti-Nephi-Lehi, the king",
+          "priority": "C",
+          "missions": "BM14",
+          "look": "Optional. Lamoni's brother, king at the covenant; regalia set aside at the burial of weapons.",
+          "props": ""
+        },
+        {
+          "id": "AMULEK",
+          "name": "Amulek",
+          "priority": "A",
+          "missions": "BM16",
+          "look": "Wealthy Ammonihah citizen: costly cotton mantle, then plain preacher's clothes; bound in prison.",
+          "props": ""
+        },
+        {
+          "id": "ZEEZROM",
+          "name": "Zeezrom",
+          "priority": "B",
+          "missions": "BM16",
+          "look": "Ammonihah lawyer in costly apparel, later fevered and humbled.",
+          "props": ""
+        },
+        {
+          "id": "AMMONIHAH_JUDGE",
+          "name": "Chief judge of Ammonihah",
+          "priority": "C",
+          "missions": "BM16",
+          "look": "Order of Nehor elite: costly apparel, feathered staff of office.",
+          "props": ""
+        },
+        {
+          "id": "CAPTAIN_MORONI",
+          "name": "Captain Moroni",
+          "priority": "A",
+          "missions": "BM15, R6",
+          "look": "Chief captain at 25: breastplate, arm shields, head plate and quilted cotton armor; commander's cape.",
+          "props": "The title of liberty, a rent coat on a pole (Alma 46:12–13)"
+        },
+        {
+          "id": "LEHI_COMMANDER",
+          "name": "Lehi, commander at Noah",
+          "priority": "B",
+          "missions": "BM15",
+          "look": "Nephite officer in heavy armor, distinct crest from Moroni.",
+          "props": ""
+        },
+        {
+          "id": "TEANCUM",
+          "name": "Teancum",
+          "priority": "A",
+          "missions": "BM18",
+          "look": "Night raider: dark cotton, light armor, face unpainted; a servant at his side.",
+          "props": "Javelin, cord for the wall"
+        },
+        {
+          "id": "AMALICKIAH",
+          "name": "Amalickiah",
+          "priority": "B",
+          "missions": "BM18, R6",
+          "look": "Nephite dissenter made Lamanite king: royal regalia, appears asleep in his tent on night one.",
+          "props": ""
+        },
+        {
+          "id": "AMMORON",
+          "name": "Ammoron",
+          "priority": "B",
+          "missions": "BM18",
+          "look": "Amalickiah's brother and successor; royal war tent and regalia, night two.",
+          "props": ""
+        },
+        {
+          "id": "HELAMAN_COMMANDER",
+          "name": "Helaman, military and religious leader",
+          "priority": "A",
+          "missions": "BM19",
+          "look": "Prophet and commander: armor over a priest's white mantle.",
+          "props": "The records, his army's standard"
+        },
+        {
+          "id": "ANTIPUS",
+          "name": "Antipus",
+          "priority": "B",
+          "missions": "BM19",
+          "look": "Nephite commander of the city of Judea, worn by long war.",
+          "props": ""
+        },
+        {
+          "id": "NEPHI_SON_HELAMAN",
+          "name": "Nephi, son of Helaman",
+          "priority": "A",
+          "missions": "BM17",
+          "look": "Missionary brother in plain travel cotton; Nephite, in a Lamanite prison.",
+          "props": ""
+        },
+        {
+          "id": "LEHI_SON_HELAMAN",
+          "name": "Lehi, son of Helaman",
+          "priority": "A",
+          "missions": "BM17",
+          "look": "Younger brother, same plain dress with a different mantle color.",
+          "props": ""
+        },
+        {
+          "id": "AMINADAB",
+          "name": "Aminadab",
+          "priority": "B",
+          "missions": "BM17",
+          "look": "Nephite-born dissenter living among the Lamanites; Lamanite dress with an older Nephite ornament.",
+          "props": ""
+        },
+        {
+          "id": "SAMUEL_LAMANITE",
+          "name": "Samuel the Lamanite",
+          "priority": "A",
+          "missions": "BM20",
+          "look": "Lamanite prophet; Friberg shows a red cape and bare chest on the wall. Give him Lamanite regional dress, sandals and a headband; no armor.",
+          "props": ""
+        },
+        {
+          "id": "LACHONEUS",
+          "name": "Lachoneus",
+          "priority": "B",
+          "missions": "R7",
+          "look": "Nephite chief judge and governor during the Gadianton war.",
+          "props": ""
+        },
+        {
+          "id": "GIDGIDDONI",
+          "name": "Gidgiddoni",
+          "priority": "B",
+          "missions": "R7",
+          "look": "Nephite chief captain and prophet; heavy armor.",
+          "props": ""
+        },
+        {
+          "id": "GIDDIANHI",
+          "name": "Giddianhi and Zemnarihah",
+          "priority": "B",
+          "missions": "R7",
+          "look": "Gadianton leaders; see the robber costume below, with leader ornaments.",
+          "props": ""
+        },
+        {
+          "id": "NEPHI_DISCIPLE",
+          "name": "Nephi, chief of the twelve disciples",
+          "priority": "A",
+          "missions": "BM21, BM22, R8",
+          "look": "Survivor of the destruction, then disciple: plain white cotton mantle.",
+          "props": ""
+        },
+        {
+          "id": "TWELVE_DISCIPLES",
+          "name": "The twelve disciples",
+          "priority": "B",
+          "missions": "BM21, BM22",
+          "look": "Eleven more variants of age and build in plain cotton mantles.",
+          "props": ""
+        },
+        {
+          "id": "MORMON",
+          "name": "Mormon",
+          "priority": "A",
+          "missions": "BM24",
+          "look": "\"Large in stature\" (Mormon 2:1), about 74 at Cumorah: weathered commander's armor, wounded variant.",
+          "props": "Record satchel, the plates"
+        },
+        {
+          "id": "MORONI_RECORD_KEEPER",
+          "name": "Moroni, mortal record keeper",
+          "priority": "A",
+          "missions": "BM24, BM25",
+          "look": "Warrior at Cumorah, then a lone wanderer for 36 years: cloak growing more patched, furs added as he walks north into snow. Different from the resurrected Moroni model used in chapters 04 to 10.",
+          "props": "Plates bundle, stone box"
+        },
+        {
+          "id": "ANGEL_BOM",
+          "name": "The angel in Alma's account",
+          "priority": "B",
+          "missions": "BM12",
+          "look": "Luminous figure; keep human and dignified, no wings.",
+          "props": ""
+        },
+        {
+          "id": "LAMANITE_GENERAL",
+          "name": "Lamanite commanders",
+          "priority": "C",
+          "missions": "BM15, BM19, BM24",
+          "look": "Generic war leaders with crested helmets, feather standards and heavy armor.",
+          "props": "Feather standard, conch trumpet"
+        }
+      ]
+    },
+    {
+      "id": "crowd",
+      "name": "Mesoamerican crowds and residents",
+      "era": "For Zarahemla, the land of Nephi, Bountiful and the war frontier",
+      "costumeBrief": "Build these as kits with interchangeable mantles, headdresses, jewelry and colors, so 10 to 15 bodies produce hundreds of residents. Ages: child, youth, adult, elder. Use the cotton, feather and jade language above, with hair in topknots, braids or wrapped turbans.",
+      "roles": [
+        {
+          "id": "MESO_FARMER",
+          "name": "Farmer, man and woman",
+          "priority": "B",
+          "missions": "All New World",
+          "look": "Loincloth and short mantle; wrap skirt and blouse; straw-brimmed sun cloths.",
+          "props": "Digging stick, maize basket"
+        },
+        {
+          "id": "MESO_MOTHER",
+          "name": "Mother with infant",
+          "priority": "B",
+          "missions": "All New World",
+          "look": "Shawl tied as a baby carrier, wrap skirt.",
+          "props": "Infant, water jar"
+        },
+        {
+          "id": "MESO_ELDER",
+          "name": "Elder, man and woman",
+          "priority": "B",
+          "missions": "All New World",
+          "look": "Heavier mantles, canes, grey hair.",
+          "props": "Cane"
+        },
+        {
+          "id": "MESO_CHILD",
+          "name": "Children",
+          "priority": "B",
+          "missions": "All New World",
+          "look": "Boys and girls, ages 4 to 12; small loincloths and wraps.",
+          "props": "Toys, rubber ball"
+        },
+        {
+          "id": "MESO_PORTER",
+          "name": "Porter with tumpline",
+          "priority": "B",
+          "missions": "Zarahemla, Bountiful, frontier",
+          "look": "Strap across the forehead holding a carrying frame; a strong signature silhouette.",
+          "props": "Carrying frame, bundles"
+        },
+        {
+          "id": "MESO_WEAVER",
+          "name": "Weaver",
+          "priority": "C",
+          "missions": "Zarahemla, Nephi, Bountiful",
+          "look": "Kneeling woman at a backstrap loom.",
+          "props": "Backstrap loom, cotton"
+        },
+        {
+          "id": "MESO_POTTER",
+          "name": "Potter",
+          "priority": "C",
+          "missions": "Zarahemla, Bountiful",
+          "look": "Clay-stained apron cloth.",
+          "props": "Pots"
+        },
+        {
+          "id": "MESO_MASON",
+          "name": "Mason and plasterer",
+          "priority": "C",
+          "missions": "Zarahemla, Bountiful",
+          "look": "Lime-whitened skin and loincloth, as in The Testaments building scene.",
+          "props": "Plaster trowel, stone blocks, ladders"
+        },
+        {
+          "id": "MESO_LIMEBURNER",
+          "name": "Lime burner",
+          "priority": "C",
+          "missions": "Zarahemla",
+          "look": "Soot and ash marks, head cloth.",
+          "props": "Firewood bundles"
+        },
+        {
+          "id": "MESO_KNAPPER",
+          "name": "Obsidian knapper",
+          "priority": "C",
+          "missions": "Zarahemla, Nephi",
+          "look": "Leather lap pad, seated.",
+          "props": "Obsidian cores and blades"
+        },
+        {
+          "id": "MESO_FEATHERWORKER",
+          "name": "Jade carver and featherworker",
+          "priority": "C",
+          "missions": "Nephi, Zarahemla",
+          "look": "Fine cotton, elite workshop servant.",
+          "props": "Feathers, jade beads"
+        },
+        {
+          "id": "MESO_SCRIBE",
+          "name": "Scribe",
+          "priority": "C",
+          "missions": "Zarahemla, Nephi",
+          "look": "White mantle, headband with a brush tucked in.",
+          "props": "Bark-paper book, ink pot"
+        },
+        {
+          "id": "MESO_VENDOR",
+          "name": "Market vendor",
+          "priority": "C",
+          "missions": "Zarahemla, Bountiful",
+          "look": "Seated vendors on mats; cacao, cotton, salt, fish.",
+          "props": "Mats, baskets, cacao beans"
+        },
+        {
+          "id": "MESO_FISHER",
+          "name": "Fisher and canoe man",
+          "priority": "C",
+          "missions": "Sidon, Bountiful coast",
+          "look": "Loincloth, head cloth, wet skin.",
+          "props": "Dugout canoe, paddle, net"
+        },
+        {
+          "id": "MESO_HUNTER",
+          "name": "Hunter",
+          "priority": "C",
+          "missions": "Highlands",
+          "look": "Deer-hide cape, bow.",
+          "props": "Bow, blowgun, game"
+        },
+        {
+          "id": "MESO_HERDSMAN",
+          "name": "Herdsman of the king's flocks",
+          "priority": "C",
+          "missions": "BM13, R5",
+          "look": "Lamanite servant dress with sling.",
+          "props": "Sling, staff"
+        },
+        {
+          "id": "MESO_NOBLE",
+          "name": "Noble, man and woman",
+          "priority": "B",
+          "missions": "Nephi, Zarahemla, late 4 Nephi",
+          "look": "Feather headdresses, jade collars, embroidered mantles; late 4 Nephi variant with \"costly apparel\" and pearls (4 Nephi 1:24).",
+          "props": ""
+        },
+        {
+          "id": "MESO_COURT_GUARD",
+          "name": "Court guard",
+          "priority": "C",
+          "missions": "BM10, BM13, BM16",
+          "look": "Spear, quilted vest, feather crest.",
+          "props": "Spear"
+        },
+        {
+          "id": "MESO_PRIEST",
+          "name": "Temple attendant",
+          "priority": "C",
+          "missions": "Zarahemla, Bountiful",
+          "look": "White or dark mantle, copal incense.",
+          "props": "Incense burner"
+        },
+        {
+          "id": "MESO_MUSICIAN",
+          "name": "Musician",
+          "priority": "C",
+          "missions": "Gatherings",
+          "look": "Conch trumpet, wooden drum, clay flute players.",
+          "props": "Conch, drum, flute"
+        },
+        {
+          "id": "NEPHITE_SOLDIER",
+          "name": "Nephite soldier",
+          "priority": "A",
+          "missions": "BM15, BM18, BM19, BM24, R7",
+          "look": "Light (sling or bow, cotton vest) and heavy (breastplate, arm shields, head plate) variants (Alma 43:19).",
+          "props": "Sling, bow, spear, obsidian-edged sword, round shield"
+        },
+        {
+          "id": "LAMANITE_WARRIOR",
+          "name": "Lamanite warrior",
+          "priority": "A",
+          "missions": "BM15, BM18, BM19, BM24, R5",
+          "look": "Early-war variant from Alma 3:5 (shaved head, leather loin garment, bow) and a later armored variant (Alma 49:6). Dignified, not savage.",
+          "props": "Bow, sling, club, shield, feather standard"
+        },
+        {
+          "id": "STRIPLING_WARRIOR",
+          "name": "Helaman's young soldiers",
+          "priority": "A",
+          "missions": "BM19",
+          "look": "Youths of 16 to 20 in plain quilted cotton armor; at least six face and build variants.",
+          "props": "Spear, shield"
+        },
+        {
+          "id": "GADIANTON_ROBBER",
+          "name": "Gadianton robber",
+          "priority": "B",
+          "missions": "R7",
+          "look": "Lamb skin dyed in blood about the loins, shorn heads covered with head plates (3 Nephi 4:7).",
+          "props": "Club, sword, bow"
+        },
+        {
+          "id": "WOUNDED",
+          "name": "Wounded and caregivers",
+          "priority": "B",
+          "missions": "BM15, BM19, BM24",
+          "look": "Bandaged soldiers and caregivers in plain cotton.",
+          "props": "Litters, water gourds"
+        },
+        {
+          "id": "BOM_SURVIVOR",
+          "name": "Survivors of the destruction",
+          "priority": "B",
+          "missions": "R8, BM21",
+          "look": "Ash-dusted, torn clothing, families clinging together.",
+          "props": ""
+        },
+        {
+          "id": "NEPHI_FOUNDER_SETTLER",
+          "name": "Settlers of Nephi's first city",
+          "priority": "C",
+          "missions": "R4",
+          "look": "Second-generation family dress mixing Judean mantles with local cotton.",
+          "props": "Tools, seed baskets"
+        }
+      ]
+    }
+  ],
+  "animations": [
+    "Kneel and pray",
+    "Sling throw",
+    "Bow draw and release",
+    "Carry with tumpline",
+    "Kneel at a backstrap loom",
+    "Grind on a metate",
+    "Paddle a canoe",
+    "Climb a ladder or scaffold",
+    "Plaster a wall",
+    "Haul a stone on rollers",
+    "Crouch-walk",
+    "Guard with shield",
+    "Shove and disarm",
+    "Carry a wounded person",
+    "Write on plates or bark paper",
+    "Hunt crouch and aim",
+    "Sit cross-legged and listen",
+    "Mourn"
+  ]
+}
