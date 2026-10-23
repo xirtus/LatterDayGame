@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+from build_record_story import build_record_chapters, CAST as RECORD_CAST
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -18,6 +19,7 @@ names.update({
     "HIRAM_PAGE": "Hiram Page",
     "SAMUEL_SMITH": "Samuel H. Smith",
 })
+names.update({person["id"]: person["name"] for person in RECORD_CAST})
 
 POINTS = {
     "center": [0, 0, 0],
@@ -38,6 +40,8 @@ def objective(label, point, kind, prompt, script=None, effect=None, note=None):
         "prompt": prompt,
         "script": script or [],
     }
+    if isinstance(point, str):
+        result["point"] = point
     if effect:
         result["effect"] = effect
     if note:
@@ -102,8 +106,11 @@ PLANS = {
     ]),
     "08": ("harmony", [
         objective("Welcome Oliver to the work", "gather", "talk", "Make room for the new scribe", [extra("OLIVER", "I have come to help. Show me where I should begin.")]),
-        objective("Prepare the instruments of translation", "study", "inspect", "Attend to the stone, hat, and writing materials", [extra("JOSEPH_YOUNG", "The gift is God's. Let us approach the work with care.")], "plates", "The hat excludes light; translation is received as revelation, not decoded in a language puzzle."),
+        objective("Prepare the writing place", "study", "serve", "Arrange paper, ink, quill and a place for the scribe", [extra("OLIVER", "The paper is ready. I will write what you dictate, and we can attend to it together.")]),
+        objective("Attend to the stone, hat and covered record", "study", "inspect", "Examine the ordinary objects without uncovering the plates", [extra("JOSEPH_YOUNG", "The gift is God's. Let us approach the work with care.")], "light", "Accounts describe the interpreters and a seer stone with a hat to exclude light. The plates remain covered here; this is not a cipher puzzle or a claim that every session used the same arrangement."),
+        objective("Take a quiet moment before dictation", "prayer", "pray", "Seek guidance without treating revelation as a machine", [extra("JOSEPH_YOUNG", "Heavenly Father, help us receive with humility and carry this work faithfully.")], "light"),
         objective("Dictate and hear the read-back", "center", "speak", "Speak carefully, then listen to Oliver", [0, 1], "light"),
+        objective("Pause for the household", "gather", "talk", "Listen when Emma returns to the room", [extra("EMMA", "I can keep this place quiet for a little while. Tell me what you need before you continue."), extra("JOSEPH_YOUNG", "Thank you. Let us not forget the work you carry alongside this work.")], "comfort", "Original household conversation informed by translation accounts; not a verbatim exchange witnessed in 1829."),
         objective("Accept the Whitmer family's welcome", "journey", "talk", "Continue the work at Fayette after a dated journey", [2, 3]),
     ]),
     "09": ("river", [
@@ -173,6 +180,10 @@ PLANS = {
     "20": ("kirtland", [
         objective("Finish the temple for the gathering", "gather", "serve", "Carry the final work into shared worship", [extra("EMMA", "There are families waiting outside. Let us make a place for them.")]),
         objective("Join the dedication · March 27, 1836", "center", "pray", "Offer the work to God", [extra("JOSEPH_MATURE", "May this house be a place of learning, service, and prayer.")], "light"),
+        objective("Recognize Elijah Able's ministry · March 31", "gather", "talk", "Hear Elijah speak about the responsibility of ministry", [extra("ELIJAH_ABLE", "A calling asks something of the whole person. I want to carry it with care, among people who will have questions of their own."), extra("JOSEPH_MATURE", "Let us hear those questions, and make room for the work you have to do.")], "comfort", "Dated reconstruction around Able's March 31, 1836 elder's license. Ambrose Palmer ordained him an elder; this is not Joseph performing that ordination."),
+        objective("Read the elder's license together", "study", "inspect", "Examine the date, office and institutional recognition", [extra("ELIJAH_ABLE", "A license is a beginning. It does not listen to a troubled person for me. That is work I must learn to do."), extra("JOSEPH_MATURE", "Then let this record be joined to the care we give each other.")], "light", "The surviving copied license names Joseph Smith Jr. as chairman. Its exact handover, blocking and conversation are original dramatization."),
+        objective("Prepare room for a ministry", "center", "serve", "Set aside a book and practical provisions", [extra("ELIJAH_ABLE", "I mean to listen as carefully as I speak. A person must not disappear behind the question we hope to answer.")], "comfort"),
+        objective("Part as fellow workers", "gather", "talk", "Let Elijah carry the final thought before the next dated scene", [extra("ELIJAH_ABLE", "There is much to learn. I am ready to begin with the people before me.")], "comfort"),
         objective("Return with Oliver · April 3, 1836", "prayer", "pray", "Pray beyond the curtain on the separate April date", [0], "revelation"),
         objective("Receive the heavenly visitors", "study", "listen", "Hear Christ, Moses, Elias, and Elijah in turn", [1, 2, 3, 4], "light"),
     ]),
@@ -209,11 +220,18 @@ PLANS = {
         objective("Listen as Emma and her counselors organize", "center", "listen", "Hear their priorities for relief", [1, 2, 3], "comfort"),
         objective("Prepare for covenant and family teachings", "prayer", "inspect", "Consider responsibility toward living and dead", [extra("JOSEPH_MATURE", "Let our promises be joined to the care we offer in our own homes.")], "light"),
         objective("Hear Emma in private", "gather", "talk", "Acknowledge the pain of plural marriage without inventing assent", [4, 5]),
+        objective("Make room for Jane Manning · fall 1843", "gather", "serve", "Open a place in the household for Jane and her family", [extra("JANE_MANNING", "We have come a long way. Before I put down this bundle, I would like to tell you who has come with me."), extra("EMMA", "Come in. We can begin by hearing you.")], "comfort", "A separately dated fall 1843 arrival, informed by Jane's later autobiography. Jane was not yet married to Isaac James. This adapted conversation is not a verbatim transcript."),
+        objective("Hear the journey in Jane's own voice", "study", "talk", "Give Jane time without interrupting her account", [extra("JANE_MANNING", "There were doors that did not open to us. We kept on together. I want that part remembered, too—not only the moment we arrived."), extra("JOSEPH_MATURE", "Tell us what you wish us to hear. We will stay and listen.")], "comfort"),
+        objective("Let welcome become friendship", "center", "talk", "Ask what a place of belonging should make possible", [extra("JANE_MANNING", "I have work to do and things to learn. I hope a home can make room for both."), extra("EMMA", "Then we should hear your hopes as well as your needs.")], "light", "Jane has spiritual and personal agency. Hospitality is not conditional on service or endorsement, and this scene does not assert that racism was absent."),
     ]),
     "27": ("nauvoo", [
-        objective("Review the presidential platform", "study", "inspect", "Prepare the pamphlet for the printer", [0]),
-        objective("Hear the questions of conscience", "gather", "talk", "Listen to disagreement about rights and responsibility", [1, 2]),
-        objective("Address the campaign gathering", "center", "speak", "Speak for religious liberty and equal protection", [3], "light"),
+        objective("Examine the candidates' replies · January 1844", "study", "inspect", "Compare promises with the protection the Saints have sought", [extra("SIDNEY", "A promise of fairness must answer the question we have actually asked: what protection will be given when a people is driven from its home?"), extra("JOSEPH_MATURE", "We must put that question plainly before the country.")], None, "Candidates' correspondence supplies the historical context. This discussion is adapted; no face-to-face debate with Clay or Van Buren is invented."),
+        objective("Commit to the campaign · January 29", "center", "speak", "Accept the public responsibility without an invented victory", [3], "light"),
+        objective("Work with Phelps on the platform · February", "study", "talk", "Read the national emancipation and reform proposals", [extra("WW_PHELPS", "The country must be able to read what you propose—not merely what your opponents suppose you propose."), extra("JOSEPH_MATURE", "Then let us be clear about freedom, public protection, and the duty of government.")], None, "Joseph's 1844 platform proposed compensated emancipation by 1850. Compensation would go to enslavers, not the formerly enslaved. The dialogue is an adaptation, not a quotation."),
+        objective("Proof the printer's copy", "study", "inspect", "Attend to the words before they go into type", [0, extra("WW_PHELPS", "A promise must survive being printed. Let us attend to every line.")]),
+        objective("Make space at the press", "gather", "serve", "Prepare paper and gather the finished pamphlets", [extra("WILLIAM_CLAYTON", "These sheets will travel farther than any one of us can. Keep the copies together and the words legible.")]),
+        objective("Hear questions of conscience", "gather", "talk", "Listen to disagreement about rights and responsibility", [1, extra("TOWNSPERSON", "How will a government protect a minority without simply asking the majority to be kinder?"), extra("JOSEPH_MATURE", "The protection we ask for must become a public obligation, not a favor withdrawn when it is inconvenient.")]),
+        objective("Address the early campaign gathering", "center", "speak", "Speak for religious liberty and protection under law", [3, extra("JOSEPH_MATURE", "A people's safety should not depend on whether its neighbors approve its worship.")], "light", "The later electioneer departure, convention and Polk nomination follow the April 7 discourse in the next chapter. This early gathering does not compress all of 1844 into January."),
     ]),
     "28": ("nauvoo", [
         objective("Listen to Louisa Follett", "gather", "talk", "Let the family's grief come before the public address", [0, 1], "comfort"),
@@ -221,6 +239,10 @@ PLANS = {
         objective("Console the gathered mourners", "center", "speak", "Speak gently to a grieving household", [3, 4, 5, 6]),
         objective("Teach divine life and eternal intelligence", "prayer", "speak", "Deliver the adapted discourse with room to pause", [7, 8, 9, 10, 11, 12], "stars", "This is an original adaptation based on surviving reports, not a verbatim transcript of the King Follett discourse."),
         objective("Return the teaching to a person", "gather", "talk", "Carry hope to the mourner and compare the recorders' notes", [13, 14, 15, 16, 17], "comfort"),
+        objective("Prepare the electioneers · April 9 onward", "study", "serve", "After the discourse, prepare travel packets and a route", [extra("BRIGHAM", "The road will take us among people who know little of this place. Let us carry clear words and listen to the people we meet."), extra("WW_PHELPS", "The pamphlets are ready. Each bundle needs a destination.")], None, "A separate dated campaign continuation after April 7, not part of the King Follett sermon. Individual departure details are condensed."),
+        objective("Consider Clay's reply · May 13", "study", "inspect", "Compare a national candidate's answer with Joseph's public response", [extra("JOSEPH_MATURE", "We have asked what protection would be offered to us. A candidate's answer deserves careful reading, and our own answer must be made in public.")], None, "Joseph's May 13 letter to Henry Clay is documented. No Clay actor appears as if he visited this Nauvoo meeting."),
+        objective("Address the convention · May 17", "center", "speak", "Stand before the gathering without changing the election's outcome", [extra("JOSEPH_MATURE", "Let the promises of this republic reach the people who have had least reason to trust them."), extra("SIDNEY", "Then the work is to carry that argument beyond this gathering.")], "light", "Adapted convention speech, not a verbatim transcript. Joseph remains a candidate; the player does not win the presidency."),
+        objective("Read the Polk nomination news · late May / June", "study", "inspect", "Understand the changed Democratic contest and the limits of fraternity", [extra("WW_PHELPS", "The Democrats have nominated James K. Polk. The contest has changed, and these reports must be read with care."), extra("JOSEPH_MATURE", "Let us judge proposals and the treatment of people. A fraternal bond does not answer every question of public duty.")], None, "Polk was nominated May 29, 1844, not at Joseph's January declaration. His Masonic affiliation is context, not evidence of a secret party conspiracy or a private Joseph–Polk meeting."),
     ]),
     "29": ("nauvoo", [
         objective("Hear the civic dispute", "study", "inspect", "Read the criticism and acknowledge its questions", [0]),
@@ -255,7 +277,7 @@ ACTORS = {
     "05": [actor("MORONI", [1.5, 0, -2], 0, 1), actor("ALVIN", [-5.5, 0, 1], 2, 2), actor("LUCY", [4.5, 0, -2], 3)],
     "06": [actor("ISAAC_HALE", [-5.5, 0, 1], 0, 0), actor("EMMA", [4.5, 0, -2], 1), actor("MORONI", [1.5, 0, -2], 2, 2)],
     "07": [actor("EMMA", [1.8, 0, -1.5]), actor("MARTIN", [-5.5, 0, 1], 1)],
-    "08": [actor("OLIVER", [-5.5, 0, 1]), actor("EMMA", [4.5, 0, -2]), actor("DAVID", [-2, 0, 11], 3), actor("PETER_WHITMER", [2, 0, 11], 3)],
+    "08": [actor("OLIVER", [-5.5, 0, 1]), actor("EMMA", [4.5, 0, -2]), actor("DAVID", [-2, 0, 11], 6), actor("PETER_WHITMER", [2, 0, 11], 6)],
     "09": [actor("OLIVER", [-4.5, 0, 0]), actor("JOHN_BAPTIST", [1.5, 0, -2], 1, 2), actor("PETER", [1.5, 0, -3], 3), actor("JAMES", [3.3, 0, -3], 3), actor("JOHN", [5.1, 0, -3], 3)],
     "10": [actor("OLIVER", [-3, 0, -3], 0, 1), actor("DAVID", [0, 0, -3], 0, 1), actor("MARTIN", [3, 0, -3], 0, 1), actor("MORONI", [0, 0, -6.5], 1, 1), actor("GRANDIN", [4.5, 0, -2], 4)],
     "11": [actor("EMMA", [4.5, 0, -2]), actor("OLIVER", [-2, 0, -2]), actor("PETER_WHITMER", [-5.5, 0, 1]), actor("NEWEL_KNIGHT", [1.5, 0, -5])],
@@ -267,15 +289,15 @@ ACTORS = {
     "17": [actor("EMMA", [4.5, 0, -2]), actor("REFUGEE", [-5.5, 0, 1]), actor("EDWARD_PARTRIDGE", [1.5, 0, -2])],
     "18": [actor("BRIGHAM", [-5.5, 0, 1]), actor("HEBER", [4.5, 0, -2]), actor("REFUGEE", [1.5, 0, -2]), actor("ORSON", [2, 0, -5])],
     "19": [actor("OLIVER", [1.5, 0, -2]), actor("BRIGHAM", [-5.5, 0, 1]), actor("HEBER", [-4, 0, -2]), actor("ORSON", [4.5, 0, -2])],
-    "20": [actor("OLIVER", [-2, 0, -5]), actor("EMMA", [-5.5, 0, 1], 0, 1), actor("CHRIST", [1.5, 0, -3], 3), actor("MOSES", [-3, 0, -3], 3), actor("ELIAS", [3, 0, -3], 3), actor("ELIJAH", [5, 0, -3], 3)],
+    "20": [actor("OLIVER", [-2, 0, -5]), actor("EMMA", [-5.5, 0, 1], 0, 1), actor("ELIJAH_ABLE", [-5.5, 0, 1], 2, 5), actor("CHRIST", [1.5, 0, -3], 7), actor("MOSES", [-3, 0, -3], 7), actor("ELIAS", [3, 0, -3], 7), actor("ELIJAH", [5, 0, -3], 7)],
     "21": [actor("DEPOSITOR", [-5.5, 0, 1]), actor("WHITNEY", [4.5, 0, -2]), actor("EMMA", [1.5, 0, -2])],
     "22": [actor("HYRUM", [1.5, 0, -2]), actor("SIDNEY", [4.5, 0, -2]), actor("REFUGEE", [-5.5, 0, 1]), actor("OFFICER", [2, 0, 11], 3)],
     "23": [actor("HYRUM", [-5.5, 0, 1]), actor("EMMA", [4.5, 0, -2], 1, 1)],
     "24": [actor("EMMA", [1.5, 0, -2]), actor("NEWEL_KNIGHT", [-5.5, 0, 1], 1), actor("VAN_BUREN", [4.5, 0, -2], 2, 2), actor("BRIGHAM", [2, 0, -5], 3)],
     "25": [actor("JONAS", [-5.5, 0, 1]), actor("SIDNEY", [4.5, 0, -2])],
-    "26": [actor("EMMA", [-5.5, 0, 1]), actor("ELIZA", [4.5, 0, -2], 0, 2), actor("SARAH_CLEVELAND", [-2, 0, -2], 0, 2), actor("ELIZABETH_WHITNEY", [2, 0, -2], 0, 2)],
-    "27": [actor("WILLIAM_CLAYTON", [4.5, 0, -2]), actor("SIDNEY", [-5.5, 0, 1]), actor("WILLIAM_LAW", [-3, 0, -1]), actor("HYRUM", [2, 0, -2])],
-    "28": [actor("LOUISA", [-5.5, 0, 1]), actor("MOURNER", [-3.8, 0, 2.5]), actor("WILLARD", [4.5, 0, -2]), actor("WILFORD", [6, 0, -2]), actor("THOMAS_BULLOCK", [5, 0, 0])],
+    "26": [actor("EMMA", [-5.5, 0, 1]), actor("ELIZA", [4.5, 0, -2], 0, 2), actor("SARAH_CLEVELAND", [-2, 0, -2], 0, 2), actor("ELIZABETH_WHITNEY", [2, 0, -2], 0, 2), actor("JANE_MANNING", [4.5, 0, -2], 4)],
+    "27": [actor("WILLIAM_CLAYTON", [4.5, 0, -2]), actor("SIDNEY", [-5.5, 0, 1]), actor("WW_PHELPS", [-3, 0, -1], 2), actor("HYRUM", [2, 0, -2]), actor("TOWNSPERSON", [-6, 0, 2], 5)],
+    "28": [actor("LOUISA", [-5.5, 0, 1], 0, 4), actor("MOURNER", [-3.8, 0, 2.5], 0, 4), actor("WILLARD", [4.5, 0, -2], 0, 4), actor("WILFORD", [6, 0, -2], 0, 4), actor("THOMAS_BULLOCK", [5, 0, 0], 0, 4), actor("WW_PHELPS", [4.5, 0, -2], 5), actor("BRIGHAM", [-5.5, 0, 1], 5), actor("SIDNEY", [2, 0, -2], 5)],
     "29": [actor("WILLIAM_LAW", [4.5, 0, -2], 0, 0), actor("EMMA", [-5.5, 0, 1], 0, 1), actor("CHILD", [-4.5, 0, 2], 0, 1, 1.1), actor("HYRUM", [-1.5, 0, 11], 2), actor("FORD", [1.5, 0, -2], 3)],
     "30": [actor("JOHN_TAYLOR", [4.5, 0, -2]), actor("DAN_JONES", [-5.5, 0, 1], 0, 1), actor("HYRUM", [-1.8, 0, -2]), actor("WILLARD", [1.8, 0, -2])],
     "31": [actor("HYRUM", [-5.5, 0, 1]), actor("ALVIN", [4.5, 0, -2]), actor("CHRIST", [1.5, 0, -2], 2)],
@@ -285,6 +307,7 @@ ACTORS = {
 WITNESSES = ["CHRISTIAN_WHITMER", "JACOB_WHITMER", "PETER_WHITMER_JR", "JOHN_WHITMER", "HIRAM_PAGE", "JOSEPH_SR", "HYRUM", "SAMUEL_SMITH"]
 WITNESS_POSITIONS = [[-4.8, 0, -1.6], [-3.3, 0, -3.1], [-1.5, 0, -3.7], [0.5, 0, -3.7], [2.5, 0, -3.1], [4.2, 0, -1.6], [4.2, 0, 1], [-4.8, 0, 1]]
 ACTORS["10"] += [actor(identity, position, 2, 3) for identity, position in zip(WITNESSES, WITNESS_POSITIONS)]
+USED_RECORDING_IDS = set()
 
 
 def make_lines(scene_id, scripts, objective_index):
@@ -292,31 +315,81 @@ def make_lines(scene_id, scripts, objective_index):
     for line_index, item in enumerate(scripts):
         if isinstance(item, int):
             speaker, text, direction = dialogue[scene_id][item]
-            result.append({"speaker": speaker, "text": text, "direction": direction, "lineId": f"JS_{scene_id}_{speaker}_{item + 1:03d}"})
+            line_id = f"JS_{scene_id}_{speaker}_{item + 1:03d}"
+            if line_id in USED_RECORDING_IDS:
+                line_id += f"_AT_{objective_index + 1:02d}_{line_index + 1:02d}"
+            result.append({"speaker": speaker, "text": text, "direction": direction, "lineId": line_id})
         else:
             result.append({**item, "lineId": f"GAME_{scene_id}_{objective_index + 1:02d}_{line_index + 1:02d}"})
+        USED_RECORDING_IDS.add(result[-1]["lineId"])
     return result
 
 
 def make_chapter(source, plan, actors):
     environment, objectives = plan
+    numeric_id = int(source["id"]) if source["id"].isdigit() else None
     chapter = {
         **{key: source[key] for key in ("id", "title", "date", "place", "status", "history", "minutes")},
         "environment": environment,
-        "playerId": "JOSEPH_CHILD" if source["id"] == "01" else "JOSEPH_YOUTH" if int(source["id"]) <= 5 else "JOSEPH_YOUNG" if int(source["id"]) < 20 else "JOSEPH_MATURE",
+        "playerId": source.get("playerId") or ("JOSEPH_CHILD" if numeric_id == 1 else "JOSEPH_YOUTH" if numeric_id and numeric_id <= 5 else "JOSEPH_YOUNG" if numeric_id and numeric_id < 20 else "JOSEPH_MATURE"),
         "intro": source["experience"],
         "epilogue": source["payoff"],
         "sourceUrls": [{"title": sources[key]["title"], "url": sources[key]["url"]} for key in source["sources"] if key in sources],
         "actors": actors,
         "objectives": [],
-        "speculative": int(source["id"]) >= 31,
+        "speculative": bool(numeric_id and numeric_id >= 31),
     }
+    for key in ["documentary", "perspective", "locationProfile"]:
+        if key in source:
+            chapter[key] = source[key]
+    migrations = {"08": [0, 2, 4, 6], "20": [0, 1, 6, 7], "27": [2, 5, 6]}
+    if source["id"] in migrations:
+        chapter["objectiveMigrationV1"] = migrations[source["id"]]
     for index, item in enumerate(objectives):
         chapter["objectives"].append({**{key: value for key, value in item.items() if key != "script"}, "id": f"{source['id']}-{index + 1}", "lines": make_lines(source["id"], item["script"], index)})
     return chapter
 
 
 chapters = [make_chapter(source, PLANS[source["id"]], ACTORS[source["id"]]) for source in campaign["scenes"]]
+
+DOCUMENTARY_SCENES = [
+    ({
+        "id": "N1", "title": "Great buildings, an open conversation", "date": "October 1832",
+        "place": "Lower Manhattan, New York City · Pearl Street House and streets",
+        "status": "Historical visit and letter; surroundings and private conversation dramatized",
+        "history": "Joseph's October 13, 1832 letter to Emma describes New York buildings and useful inventions, his longing for home, and a sustained religious conversation with a young man. The precise route, room arrangement and words of that conversation are not fixed by the letter. This is not an attested soapbox sermon or a modern transhumanist manifesto.",
+        "experience": "Walk a crowded commercial street with Whitney, consider useful inventions, return to the boarding house, listen before discussing faith, and write home. The city is an inhabited alternative to a frontier stereotype.",
+        "payoff": "Wonder at human ingenuity returns to concern for a person and a family.",
+        "minutes": 15, "sources": ["manhattan_letter"], "playerId": "JOSEPH_YOUNG", "documentary": True,
+        "perspective": "Joseph's documented 1832 visit; adapted dialogue, not a verbatim street sermon",
+    }, ("manhattan", [
+        objective("Walk the commercial city · October 1832", "journey", "travel", "Look along the busy street before returning to the boarding house", [extra("WHITNEY", "There is much to arrange before we return west. Let us keep the goods and the journey in order.")], None, "The streets evoke lower Manhattan; the precise walking route is interpretive, not a surveyed reconstruction."),
+        objective("Consider buildings and useful inventions", "study", "inspect", "Look at the city as a place of human ingenuity", [extra("JOSEPH_YOUNG", "If these works make people more comfortable, wiser, and happier, there is good in that labor. Let us not forget the people within these walls.")], "light", "Original paraphrase of the October 13 letter's reflection on useful inventions, not a historical quotation or modern transhumanist terminology."),
+        objective("Listen before teaching", "gather", "talk", "Hear a traveler's concern about illness and purpose", [extra("TOWNSPERSON", "After coming so near to death, I find myself asking what I ought to do with the life still before me."), extra("JOSEPH_YOUNG", "Then let us begin with that question, and take the time it deserves.")], "comfort", "The letter reports a conversation with a young man recovering from cholera. His words, appearance and exact setting here are dramatized."),
+        objective("Return to the room and write to Emma", "center", "inspect", "Let the sight of the city return your thoughts to home", [extra("JOSEPH_YOUNG", "There is much here to see, yet my thoughts return to you and the children. I will write before the day is done.")], "comfort"),
+    ]), [actor("WHITNEY", [4.5, 0, -2]), actor("TOWNSPERSON", [-5.5, 0, 1], 2, 2)], "15"),
+    ({
+        "id": "B1", "title": "Walker Lewis: a room for a great question", "date": "Circa 1843–1844 · parallel documentary vignette",
+        "place": "Lowell, Massachusetts · interpretive barbershop and mill-town street",
+        "status": "Documentary perspective outside Joseph's travels; original reflective dialogue",
+        "history": "Walker Lewis was a Massachusetts barber, abolitionist, Black fraternal leader and Latter-day Saint elder. William Smith ordained him around 1843 or 1844. His direct meeting with Joseph is not established here. The shop layout, daily tasks and reflective speech are interpretive, not recovered evidence of a specific day.",
+        "experience": "The viewpoint changes explicitly to Walker for a parallel documentary vignette. Open the shop, prepare tools, make room for study, examine abolition and ministry records, and return to the street. This is not Joseph visiting Lowell or an invented endorsement of Joseph's campaign.",
+        "payoff": "Religious fellowship and civic freedom become daily work in a community with its own center.",
+        "minutes": 18, "sources": ["walker_lewis"], "playerId": "WALKER_LEWIS", "documentary": True,
+        "perspective": "You now view a documentary dramatization through Walker Lewis, not a memory or visit by Joseph Smith. All spoken reflections are original adaptations.",
+    }, ("lowell", [
+        objective("Open Walker's working place", "center", "serve", "Enter from the street and prepare the room", [extra("WALKER_LEWIS", "A day's work begins with making a place ready. People bring more through a door than what first meets the eye.")]),
+        objective("Arrange the tools with care", "study", "inspect", "Attend to the basin, cloth and working chair", [extra("WALKER_LEWIS", "A person should be able to rest here a moment, and be treated with care.")], "comfort"),
+        objective("Make room for a great question", "gather", "inspect", "Set study beside skilled daily work", [extra("WALKER_LEWIS", "A room can be small and still make space for a great question.")], "light"),
+        objective("Consider freedom in daily practice", "study", "inspect", "Read the documentary account of Black abolitionist and fraternal organizing", [extra("WALKER_LEWIS", "Freedom must be more than a fine word. It must change what we permit one another to do.")], None, "Lewis's abolitionist organizing and Black Masonic leadership are documented; this reflection is dramatized, not an archival quotation. No campaign endorsement is asserted."),
+        objective("Consider the responsibilities of ministry", "prayer", "pray", "Read the evidence for an elder's calling and reflect", [extra("WALKER_LEWIS", "Let the care I offer in this place be joined to the faith I carry beyond it.")], "light", "William Smith's elder ordination of Lewis is approximately dated 1843 or 1844. This is not Joseph ordaining him or a reconstructed word-for-word ritual."),
+        objective("Return to the open street", "journey", "travel", "Leave the door open to work, learning and community", [extra("WALKER_LEWIS", "There is work still to do. Let the door remain open.")], "comfort"),
+    ]), [], "26"),
+]
+
+for source, plan, actors, after_id in DOCUMENTARY_SCENES:
+    insertion = next(index for index, chapter in enumerate(chapters) if chapter["id"] == after_id) + 1
+    chapters.insert(insertion, make_chapter(source, plan, actors))
 
 ERA_PLANS = [
     ("E1", "The garden before the years", "An imagined Eden", "grove", "FUTURE_GUIDE", "Care for a garden before crossing the years", "Plant a place of welcome", "Enter the mission's first bubble portal"),
@@ -355,7 +428,10 @@ for scene_id, title, date, environment, identity, first, second, third in ERA_PL
         "objectives": [{**{key: value for key, value in item.items() if key != "script"}, "id": f"{scene_id}-{index + 1}", "lines": make_lines(scene_id, item["script"], index)} for index, item in enumerate(objectives)],
     })
 
-assert [chapter["id"] for chapter in chapters[:32]] == [f"{index:02d}" for index in range(1, 33)]
+record_chapters = build_record_chapters()
+chapters.extend(record_chapters)
+
+assert [chapter["id"] for chapter in chapters if chapter["id"].isdigit()] == [f"{index:02d}" for index in range(1, 33)]
 for chapter in chapters:
     assert chapter["objectives"]
     assert len({person["id"] for person in chapter["actors"]}) == len(chapter["actors"]), chapter["id"]
@@ -371,5 +447,5 @@ assert next(person for person in witness_chapter["actors"] if person["id"] == "M
 assert all(next(person for person in witness_chapter["actors"] if person["id"] == identity)["showFrom"] == 2 for identity in WITNESSES)
 
 OUTPUT.mkdir(parents=True, exist_ok=True)
-(OUTPUT / "chapters.json").write_text(json.dumps({"title": campaign["working_title"], "version": 1, "coreCount": 32, "names": names, "chapters": chapters}, indent=2) + "\n")
+(OUTPUT / "chapters.json").write_text(json.dumps({"title": campaign["working_title"], "version": 2, "coreCount": 32, "documentaryCount": len(DOCUMENTARY_SCENES), "recordCount": len(record_chapters), "recordCast": RECORD_CAST, "names": names, "chapters": chapters}, indent=2) + "\n")
 print(f"Built {len(chapters)} chapters and {sum(len(chapter['objectives']) for chapter in chapters)} playable objectives.")

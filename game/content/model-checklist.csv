@@ -1,0 +1,105 @@
+priority,character_id,name,status,current_file,chapter_ids,triangles,notes
+2 - Main historical cast,ELIAS,Elias as named in Doctrine and Covenants 110,Stand-in: dedicated game export missing,,20,,A missing export may already exist in Meshy; export before remaking
+2 - Main historical cast,JAMES,James,Stand-in: dedicated game export missing,,09,,A missing export may already exist in Meshy; export before remaking
+2 - Main historical cast,JOHN,John the Apostle,Stand-in: dedicated game export missing,,09,,A missing export may already exist in Meshy; export before remaking
+2 - Main historical cast,PETER,Peter,Stand-in: dedicated game export missing,,09,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ABINADI,Abinadi,Stand-in: dedicated game export missing,,BM10,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ABISH,Abish,Stand-in: dedicated game export missing,,BM13,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,JONAS,Abraham Jonas,Stand-in: dedicated game export missing,,25,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ALMA_ELDER,Alma the Elder,Stand-in: dedicated game export missing,,BM10; BM11; BM12,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,AMINADAB,Aminadab,Stand-in: dedicated game export missing,,BM17,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,AMULEK,Amulek,Stand-in: dedicated game export missing,,BM16,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,CAPTAIN_MORONI,Captain Moroni,Stand-in: dedicated game export missing,,BM15,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,BAPTIST,Composite Baptist minister,Stand-in: dedicated game export missing,,02,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,DEPOSITOR,Composite Kirtland depositor,Stand-in: dedicated game export missing,,21,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,METHODIST,Composite Methodist minister,Stand-in: dedicated game export missing,,02,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,PRESBYTERIAN,Composite Presbyterian minister,Stand-in: dedicated game export missing,,02,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,CHILD,Composite Smith household child,Stand-in: dedicated game export missing,,29,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,MOURNER,Composite mourner,Stand-in: dedicated game export missing,,28; 32,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,OFFICER,Composite officers and guard voice family,Stand-in: dedicated game export missing,,22,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,REFUGEE,Composite refugee voice family,Stand-in: dedicated game export missing,,17; 18; 22,,Generic modular civilian rig may be reused with distinct clothing/face
+3 - Supporting cast,TOWNSPERSON,Composite townspeople voice family,Stand-in: dedicated game export missing,,N1; 27,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,BOM_CIVIC_AND_MILITARY,"Court, scribes, guards and military leaders",Stand-in: dedicated game export missing,,BM18,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,DAN_JONES,Dan Jones,Stand-in: dedicated game export missing,,30,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,FUTURE_SCIENTIST,Elias Vale a fictional Zion scientist,Stand-in: dedicated game export missing,,E5; TX02; TX03,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ELIJAH_ABLE,Elijah Able (also Abel),Stand-in: dedicated game export missing,,20,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ELIZABETH_WHITNEY,Elizabeth Ann Whitney,Stand-in: dedicated game export missing,,12; 26,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ENOS,Enos,Stand-in: dedicated game export missing,,BM08,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,FORD,Governor Thomas Ford,Stand-in: dedicated game export missing,,29,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,HEBER,Heber C. Kimball,Stand-in: dedicated game export missing,,18; 19,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,HELAMAN_COMMANDER,"Helaman, military and religious leader",Stand-in: dedicated game export missing,,BM19,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,BOM_HOUSEHOLDS,"Households, children, workers and travelers",Stand-in: dedicated game export missing,,BM07; BM09; BM11; BM13; BM14; BM15; BM17; BM19; BM20; BM21; BM22; BM23; BM24,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ISAAC_HALE,Isaac Hale,Stand-in: dedicated game export missing,,06,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,JANE_MANNING,Jane Elizabeth Manning (later James),Stand-in: dedicated game export missing,,26,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,JARED,Jared,Stand-in: dedicated game export missing,,BM06; BM07,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,JOHN_JOHNSON,John Johnson,Stand-in: dedicated game export missing,,15,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,KING_BENJAMIN,King Benjamin,Stand-in: dedicated game export missing,,BM09,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,LAMONI,Lamoni,Stand-in: dedicated game export missing,,BM13,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,LAMONI_QUEEN,Lamoni's queen,Stand-in: dedicated game export missing,,BM13,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,LEHI_PATRIARCH,Lehi,Stand-in: dedicated game export missing,,BM01; BM02,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,LEHI_COMMANDER,"Lehi, commander at Noah",Stand-in: dedicated game export missing,,BM15,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,LEHI_SON_HELAMAN,"Lehi, son of Helaman",Stand-in: dedicated game export missing,,BM17,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,SURVIVOR,Mara a fictional future desert survivor,Stand-in: dedicated game export missing,,E6; TX01; TX02,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,VAN_BUREN,Martin Van Buren,Stand-in: dedicated game export missing,,24,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,FUTURE_GUIDE,Miriam a fictional celestial mission guide,Stand-in: dedicated game export missing,,32; E1; E2; E3; E4; E5; E6; E7; E8; TX01; TX02; TX03,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,MORMON,Mormon,Stand-in: dedicated game export missing,,BM24,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,MORONI_RECORD_KEEPER,"Moroni, mortal record keeper",Stand-in: dedicated game export missing,,BM24; BM25,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,NEPHI_SON_HELAMAN,"Nephi, son of Helaman",Stand-in: dedicated game export missing,,BM17,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,NEWEL_KNIGHT,Newel Knight,Stand-in: dedicated game export missing,,11; 24,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,PETER_WHITMER,Peter Whitmer Sr.,Stand-in: dedicated game export missing,,08; 11,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,WALKER_LEWIS,Quack Walker Lewis,Stand-in: dedicated game export missing,,B1,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,SAM,Sam,Stand-in: dedicated game export missing,,BM01; BM02; BM03; BM04,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,SAMUEL_LAMANITE,Samuel the Lamanite,Stand-in: dedicated game export missing,,BM20,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,SARAH_CLEVELAND,Sarah M. Cleveland,Stand-in: dedicated game export missing,,26,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,SARIAH,Sariah,Stand-in: dedicated game export missing,,BM01; BM02; BM04; BM05,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,TEANCUM,Teancum,Stand-in: dedicated game export missing,,BM18,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ANGEL_BOM,The angel in Alma's account,Stand-in: dedicated game export missing,,BM12,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,BROTHER_JARED,The brother of Jared,Stand-in: dedicated game export missing,,BM06; BM07,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,THOMAS_BULLOCK,Thomas Bullock,Stand-in: dedicated game export missing,,28,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,WILFORD,Wilford Woodruff,Stand-in: dedicated game export missing,,28,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,WILLIAM_CLAYTON,William Clayton,Stand-in: dedicated game export missing,,27,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,WILLIAM_LAW,William Law,Stand-in: dedicated game export missing,,29,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,WW_PHELPS,William W. Phelps,Stand-in: dedicated game export missing,,27; 28,,A missing export may already exist in Meshy; export before remaking
+3 - Supporting cast,ZORAM,Zoram,Stand-in: dedicated game export missing,,BM03,,A missing export may already exist in Meshy; export before remaking
+4 - Speculative expansion,CARETAKER_2026,Ada a fictional present-day caretaker,Stand-in: dedicated game export missing,,E5,,A missing export may already exist in Meshy; export before remaking
+4 - Speculative expansion,ARCHIVIST_1994,Daniel a fictional 1994 family archivist,Stand-in: dedicated game export missing,,E4,,A missing export may already exist in Meshy; export before remaking
+4 - Speculative expansion,MISSIONARY_1955,Ruth a fictional 1955 missionary,Stand-in: dedicated game export missing,,E3,,A missing export may already exist in Meshy; export before remaking
+4 - Speculative expansion,ARCHIVE_KEEPER,The fictional custodian of the closed archive,Stand-in: dedicated game export missing,,E7,,A missing export may already exist in Meshy; export before remaking
+1 - Eight Witnesses,CHRISTIAN_WHITMER,Christian Whitmer,Ready: model and rig,Meshy_AI_Christian_Whitmer_Rig_All_Animations.glb,10,10324,
+1 - Eight Witnesses,HIRAM_PAGE,Hiram Page,Ready: model and rig,Meshy_AI_Rigged_Hyrum_Page_All_Animations.glb,10,10256,
+1 - Eight Witnesses,HYRUM,Hyrum Smith,Ready: model and rig,Meshy_AI_Hyrum_Smith_Rigged_All_Animations.glb,10; 22; 23; 27; 29; 30; 31,30728,
+1 - Eight Witnesses,JACOB_WHITMER,Jacob Whitmer,Ready: model and rig,Meshy_AI_Rigged_Jacob_Whitmer_All_Animations.glb,10,10192,
+1 - Eight Witnesses,JOHN_WHITMER,John Whitmer,Ready: model and rig,Meshy_AI_john_whitmer_rigged_All_Animations.glb,10,30894,
+1 - Eight Witnesses,JOSEPH_SR,Joseph Smith Sr.,Ready: model and rig,josephsmithSR_father_n_All_Animations.glb,01; 04; 10,10380,
+1 - Eight Witnesses,PETER_WHITMER_JR,Peter Whitmer Jr.,Ready: model and rig,Meshy_AI_peter_whitmer_jr_reri_All_Animations.glb,10,10263,
+1 - Eight Witnesses,SAMUEL_SMITH,Samuel H. Smith,Ready: model and rig,Meshy_AI_Samuel_H_Smith_Rigged_All_Animations (1).glb,10,15445,
+2 - Main historical cast,ALVIN,Alvin Smith,Ready: model and rig,Meshy_AI_alvin_smith_rigged_All_Animations.glb,05; 31,10335,
+2 - Main historical cast,ELIJAH,Elijah,Ready: model and rig,Meshy_AI_Elijah_Rigged_All_Animations.glb,20,10210,
+2 - Main historical cast,ELIZA,Eliza R. Snow,Ready: model and rig,Meshy_AI_Eliza_R_Snow_Rigged_All_Animations.glb,26,10240,
+2 - Main historical cast,CHRIST,Jesus Christ,Ready: model and rig,Meshy_AI_mormon_jesus_rigged_All_Animations.glb,03; 14; 20; 31; 32; E8; BM06; BM21; BM22,19769,
+2 - Main historical cast,JOHN_TAYLOR,John Taylor,Ready: model and rig,James_Taylor_Rigged.glb,30,10307,
+2 - Main historical cast,LOUISA,Louisa Tanner Follett,Ready: model and rig,Louisa Folett_rigged_All_Animations.glb,28,15413,
+2 - Main historical cast,MOSES,Moses,Ready: model and rig,Meshy_AI_Moses_Rigged_All_Animations.glb,20,10163,
+2 - Main historical cast,WHITNEY,Newel K. Whitney,Ready: model and rig,Meshy_AI_Newel_K_Whitney_Rigge_All_Animations.glb,12; N1; 16; 21,10368,
+2 - Main historical cast,ORSON,Orson Pratt,Ready: model and rig,Meshy_AI_Orson_Pratt_Rigged_All_Animations.glb,16; 18; 19; E2,10322,
+2 - Main historical cast,WILLARD,Willard Richards,Ready: model and rig,Meshy_AI_Willard_Richards_Rigg_All_Animations.glb,28; 30,10306,
+3 - Supporting cast,ALMA_YOUNGER,Alma the Younger,Ready: model and rig,Meshy_AI_alma_the_younger_rigg_All_Animations.glb,BM12; BM16,10387,
+3 - Supporting cast,BRIGHAM,Brigham Young,Ready: model and rig,Brigham_Young_Rigged.glb,18; 19; 24; 28; E2,10257,
+3 - Supporting cast,DAVID,David Whitmer,Ready: model and rig,Meshy_AI_Rigged_David_Whitmer_All_Animations.glb,08; 10,10259,
+3 - Supporting cast,EDWARD_PARTRIDGE,Edward Partridge,Ready: model and rig,Meshy_AI_Edward_Partridge_Rigg_All_Animations.glb,13; 17,10338,
+3 - Supporting cast,GRANDIN,Egbert B. Grandin,Ready: model and rig,Meshy_AI_EB_Grandin_Rigged_All_Animations.glb,10,10298,
+3 - Supporting cast,EMMA,Emma Hale Smith,Ready: model and rig,Meshy_AI_Emma_Smith_Rigged_All_Animations.glb,06; 07; 08; 11; 12; 15; 16; 17; 20; 21; 23; 24; 26; 29,10231,
+3 - Supporting cast,FATHER,God the Father,Ready: model and rig,Meshy_AI_Heavenly_Father_Rigge_All_Animations.glb,03,15054,
+3 - Supporting cast,JOHN_BAPTIST,John the Baptist,Ready: model and rig,Meshy_AI_john_the_baptist_rigg_All_Animations.glb,09,10328,
+3 - Supporting cast,JOSEPH_CHILD,Joseph Smith as a child,Ready: model and rig,Meshy_AI_child_joseph_smith_ri_All_Animations.glb,01,10322,
+3 - Supporting cast,JOSEPH_YOUTH,Joseph Smith as a teenager,Ready: model and rig,Meshy_AI_young_joseph_smith_ri_All_Animations.glb,02; 03; 04; 05,19726,
+3 - Supporting cast,JOSEPH_YOUNG,Joseph Smith as a young adult,Ready: model and rig,Meshy_AI_young_joseph_smith_ri_All_Animations (1).glb,06; 07; 08; 09; 10; 11; 12; 13; 14; 15; N1; 16; 17; 18; 19,10310,
+3 - Supporting cast,JOSEPH_MATURE,Joseph Smith in his later ministry and celestial chapters,Ready: model and rig,josephsmith_rigged.glb,20; 21; 22; 23; 24; 25; 26; 27; 28; 29; 30; 31; 32; E1; E2; E3; E4; E5; E6; E7; E8; TX01; TX02; TX03,10242,
+3 - Supporting cast,LAMAN,Laman,Ready: model and rig,Meshy_AI_laman_rigged_All_Animations.glb,BM04; BM05,10079,
+3 - Supporting cast,LEMUEL,Lemuel,Ready: model and rig,Meshy_AI_lemuel_rigged_All_Animations.glb,BM04; BM05,9905,
+3 - Supporting cast,LUCY,Lucy Mack Smith,Ready: model and rig,luckymacksmith_Rigge_All_Animations.glb,01; 05,18549,
+3 - Supporting cast,MARTIN,Martin Harris,Ready: model and rig,Meshy_AI_Martin_Harris_Rigged_All_Animations.glb,07; 10,10378,
+3 - Supporting cast,MORONI,Moroni,Ready: model and rig,Meshy_AI_Moroni_Rigged_All_Animations.glb,04; 05; 06; 10,30760,
+3 - Supporting cast,NEPHI,"Nephi, son of Lehi",Ready: model and rig,Meshy_AI_Nephi_Rigged_All_Animations (1).glb,BM01; BM02; BM03; BM04; BM05,10358,
+3 - Supporting cast,OLIVER,Oliver Cowdery,Ready: model and rig,Meshy_AI_Rigged_Oliver_Cowdery_All_Animations.glb,08; 09; 10; 11; 19; 20,10274,
+3 - Supporting cast,SIDNEY,Sidney Rigdon,Ready: model and rig,Meshy_AI_young_sidney_rigdon_rigged_All_Animations.glb,12; 13; 14; 15; 16; 22; 25; 27; 28,20534,

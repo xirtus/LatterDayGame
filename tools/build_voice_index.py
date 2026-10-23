@@ -17,6 +17,8 @@ FIELDS = (
 def build_voice_index(root=ROOT):
     content = json.loads((root / "game/content/chapters.json").read_text())
     cast = {person["id"]: person for person in json.loads((root / "docs/cast.json").read_text())}
+    for person in content.get("recordCast", []):
+        cast.setdefault(person["id"], person)
     audio = root / "game/audio"
     audio.mkdir(parents=True, exist_ok=True)
     takes = audio / "takes"

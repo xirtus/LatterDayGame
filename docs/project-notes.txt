@@ -1,6 +1,69 @@
 Joseph Smith Life History and Game Production Report
 22 October 2026
 
+LIVING WORLDS — IMPLEMENTATION PASS (23 OCTOBER)
+===============================================
+Read docs/living-worlds-implementation.html for the delivered systems, controls,
+validation and honest remaining production gates. Shared lighting now covers all
+70 chapters, actor animation is calibrated to target rigs, and optional combat,
+stealth perception, living roles, Carthage mob circulation and selected scene
+dressing are integrated. Saves upgrade to version 4. This is not finished AAA.
+Build without regenerating any voice files: npm run build:runtime
+Start the local game without voice regeneration: npm run dev:runtime
+Motion re-extraction is separate: npm run build:motion (requires sibling sources).
+All audio, voice preparation files and MOSSlanding remain untouched this pass.
+
+LIVING WORLDS — NEXT PRODUCTION PLAN
+==================================
+Read docs/polish-overhaul-report.html for the audited animation, lighting,
+living-NPC, full combat/stealth and scene-polish plan. It includes bounded Astra
+specialist assignments, six benchmark scenes and a 70-chapter rollout matrix.
+Make character voice references before recording lines:
+  docs/voice-preparation.csv  — all 96 current speaking IDs, briefs and auditions
+  docs/voice-identities.csv   — 94 base-profile groups before crowd-pool splitting
+  docs/voice-next-roles.csv   — planned barks, crowds and optional added speakers
+The current line packet remains game/audio/recording-plan.csv (358 lines).
+Rebuild planning exports: python3 tools/build_polish_plan.py
+This report is a production proposal, not a claim these new systems are built.
+
+BOOK OF MORMON EXPANSION — PLAYABLE PROTOTYPE
+============================================
+The game now contains 70 chapters and 286 objectives: the existing 42 campaign
+chapters plus 25 optional ancient-record episodes and 3 clearly marked fictional
+time missions. Open Ancient records from the journal or the main menu. Entering
+a record bookmarks the current Joseph chapter, objective, position and camera;
+Return to Joseph resumes that place. Activities persist partial progress and
+use 152 spatial stations across 43 collection, work, care and navigation tasks.
+The sixteen stones, eight vessel preparations, dream, Christ gathering and
+Moroni farewell are playable adaptations, not only concept cards.
+
+docs/book-of-mormon-scenes-report.html retains the illustrated source/design
+report, 18 original cel-shaded concept panels and the larger production targets.
+docs/record-expansion-implementation.md documents what is actually implemented,
+the controls, modules, validation commands, pending assets and limitations.
+This is not finished AAA combat, stealth AI, film-like acting or a voice release.
+Scene data: docs/book-of-mormon-expansion.json
+Art and prompts: art/book-of-mormon/ and docs/book-of-mormon-art-prompts.json
+Casting direction: docs/book-of-mormon-cast-plan.csv
+Active voice packet: game/audio/recording-plan.csv (358 lines; no local takes)
+Rebuild this report: python3 tools/build_book_of_mormon_report.py
+
+ARCHITECTURE AND NARRATIVE OVERHAUL
+===================================
+Read docs/world-overhaul-report.html for the source-led architectural contract,
+with linked Carthage floor-plan, Zion-plat, and Black Saints/election scene reports.
+The base campaign includes Manhattan and Lowell documentary chapters (42 total),
+expanded Elijah Able/Jane Manning/election/translation interactions, enterable
+domestic and urban buildings, a two-story Carthage jail and a walkable future
+Zion with 24 temple halls. Neighborhood layouts remain interpretive, not surveyed
+replicas. This is a substantial playable architecture pass, not finished AAA
+cinematics or an RDR2-scale simulation. Some older location families remain
+prototype scenery and require further bespoke reconstruction and acting work.
+Missing male/female roles borrow labeled Whitmer/Louisa visuals. Elijah Able,
+Walker Lewis and Jane Manning retain provisional figures until their rigs arrive.
+Saved progress upgrades to version 3 with record bookmarks/activity progress
+and preserves migration for earlier expanded objectives.
+
 PLAY THE GAME — FIRST LOCAL BUILD
 ================================
 Open http://127.0.0.1:8923/game/ while the project server is running.
@@ -20,8 +83,9 @@ Space continue dialogue, 1 first person, 3 third person, V free camera,
 Q/R down/up in free camera, J journey journal, Escape pause.
 Touch controls appear on narrow screens. Free camera does not move Joseph.
 
-This first playable has 32 core chapters, 8 clearly speculative era chapters,
-146 walk-to interactions, staged Three/Eight Witnesses, 14 procedural environment
+This playable has 32 core chapters, 8 clearly speculative era chapters,
+2 documentary insertions, 28 optional records and 286 objectives, staged Three/Eight Witnesses,
+regional procedural environment
 families with era-specific scenery, local Meshy characters, saves, subtitles,
 procedural ambience, and optional actual-recording playback. Bubble portals link
 the speculative eras. This is an explorable chapter-and-dialogue prototype,
@@ -31,8 +95,16 @@ Many characters still use marked provisional models, and spoken takes are pendin
 Models: add exports to meshy/, then run npm run build and reload the game.
 Use child/teenage/young-adult and character names in filenames. Sources remain
 unchanged. game/ASSETS.txt explains matching, optimization, and missing models.
+game/content/model-checklist.csv lists every active identity, missing exports,
+rig status, selected file, and chapter appearances, ordered by production need.
+The Characters tab lists all roles in the current chapter, including later beats.
+The interface uses a scripture-book cover, golden-plate emblem, vellum pages,
+contents, chapter marginalia, and historical notes rather than a generic RPG HUD.
+Jesus has white-robed and red-coat model variants, with one CHRIST identity and
+voice. The white rig is used for the Grove/temple/celestial commission; red for
+the imagined reunion and speculative era mission. Both local rigs are integrated.
 Recordings: game/audio/README.txt and game/audio/recording-plan.csv give the
-189-line MOSSlanding packet. Drop approved takes into game/audio/takes/ using
+358-line MOSSlanding packet, including 126 new record lines. Drop approved takes into game/audio/takes/ using
 their line IDs, run npm run build, then refresh. No voices are generated by build.
 
 Validation, with the server running:
@@ -40,6 +112,9 @@ Validation, with the server running:
   node tools/test_game.mjs --all
   node tools/test_actors.mjs
   node tools/test_actors.mjs --browser
+  python3 tools/test_game_story.py
+  node tools/test_record_play.mjs
+  node tools/test_record_game.mjs
 Screenshots and results are written to game/evidence/.
 
 ILLUSTRATED PREPRODUCTION REPORT
@@ -50,13 +125,16 @@ The report works from local files and does not require a running game server.
 Contents
 32 chapter treatments covering Joseph's life and an explicitly imaginative
 postmortal and celestial continuation; 40 concept panels across five boards;
-65 casting and voice-family briefs; working scene dialogue and audition lines;
+69 casting and voice-family briefs; working scene dialogue and audition lines;
 Celandia reuse and style direction; MOSSlanding workflow; source references;
 and the optional xChurch-inspired seven-era Zion campaign.
 The character-design addition includes four new character concept sheets,
 the complete modeling roster, and a live original/toon material comparison.
 
 Important working files
+docs/election-and-black-saints-plan.html  Sourced integration plan and larger targets:
+  expanded 1844 campaign, early Black Saints, dated scenes, new cast/voice priorities,
+  Lincoln framing, source guardrails, and implementation acceptance gates.
 docs/campaign.json             Chapter dates, history, play, art, and sources
 docs/cast.json                 Character voice descriptions and auditions
 docs/dialogue.json             Working dialogue beats

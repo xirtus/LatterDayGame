@@ -1,0 +1,3145 @@
+{
+  "schema": "zion-scene-cues/v1",
+  "generatedBy": "tools/build_lighting_data.py",
+  "chapters": {
+    "01": {
+      "presetId": "chapter-01",
+      "objectives": [
+        {
+          "objectiveId": "01-1",
+          "label": "Ask your father to stay",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "01-2",
+          "label": "Accept Lucy's care",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "01-3",
+          "label": "Take a supported step",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "02": {
+      "presetId": "chapter-02",
+      "objectives": [
+        {
+          "objectiveId": "02-1",
+          "label": "Listen at the Methodist gathering",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "02-2",
+          "label": "Hear the Presbyterian minister",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "02-3",
+          "label": "Speak with the Baptist minister",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "02-4",
+          "label": "Seek wisdom in scripture",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "03": {
+      "presetId": "chapter-03",
+      "objectives": [
+        {
+          "objectiveId": "03-1",
+          "label": "Find a quiet place in the grove",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "03-2",
+          "label": "Kneel and ask God",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "mist": 0.12
+            }
+          }
+        },
+        {
+          "objectiveId": "03-3",
+          "label": "Attend to the Father and the Son",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "mist": 0.12,
+              "godRays": 0.55,
+              "motes": 0.18
+            },
+            "sun": {
+              "color": "#fff0cd",
+              "intensity": 2.7
+            },
+            "grade": {
+              "bloom": 0.16
+            }
+          }
+        },
+        {
+          "objectiveId": "03-4",
+          "label": "Carry the answer home",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "mist": 0.12,
+              "godRays": 0.55,
+              "motes": 0.18
+            },
+            "sun": {
+              "color": "#fff0cd",
+              "intensity": 2.7
+            },
+            "grade": {
+              "bloom": 0.16
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "04": {
+      "presetId": "chapter-04",
+      "objectives": [
+        {
+          "objectiveId": "04-1",
+          "label": "Pray beside the bed",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "04-2",
+          "label": "Hear Moroni's message",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "rim": {
+              "color": "#dedfea",
+              "intensity": 0.65
+            },
+            "fx": {
+              "motes": 0.25
+            },
+            "grade": {
+              "bloom": 0.2
+            }
+          }
+        },
+        {
+          "objectiveId": "04-3",
+          "label": "Remember the repeated instruction",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "rim": {
+              "color": "#dedfea",
+              "intensity": 0.65
+            },
+            "fx": {
+              "motes": 0.25
+            },
+            "grade": {
+              "bloom": 0.2
+            }
+          }
+        },
+        {
+          "objectiveId": "04-4",
+          "label": "Tell your father in the morning",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "rim": {
+              "color": "#dedfea",
+              "intensity": 0.65
+            },
+            "fx": {
+              "motes": 0.25
+            },
+            "grade": {
+              "bloom": 0.2
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "05": {
+      "presetId": "chapter-05",
+      "objectives": [
+        {
+          "objectiveId": "05-1",
+          "label": "Approach the stone box",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "05-2",
+          "label": "Receive the charge to prepare",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "05-3",
+          "label": "Remember Alvin's kindness",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "05-4",
+          "label": "Sit with the grieving family",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "06": {
+      "presetId": "chapter-06",
+      "objectives": [
+        {
+          "objectiveId": "06-1",
+          "label": "Speak plainly with Emma's father",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "06-2",
+          "label": "Make your commitment to Emma",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "06-3",
+          "label": "Receive the plates \u00b7 September 22, 1827",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "06-4",
+          "label": "Prepare to leave for Harmony",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "07": {
+      "presetId": "chapter-07",
+      "objectives": [
+        {
+          "objectiveId": "07-1",
+          "label": "Prepare the writing place",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "07-2",
+          "label": "Face the loss of the manuscript",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "07-3",
+          "label": "Pray in repentance",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "07-4",
+          "label": "Remain beside Emma",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "08": {
+      "presetId": "chapter-08",
+      "objectives": [
+        {
+          "objectiveId": "08-1",
+          "label": "Welcome Oliver to the work",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "08-2",
+          "label": "Prepare the writing place",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.95
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.26
+            }
+          }
+        },
+        {
+          "objectiveId": "08-3",
+          "label": "Attend to the stone, hat and covered record",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.95
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.26
+            }
+          }
+        },
+        {
+          "objectiveId": "08-4",
+          "label": "Take a quiet moment before dictation",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1.05
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.26
+            },
+            "fx": {
+              "motes": 0.15
+            }
+          }
+        },
+        {
+          "objectiveId": "08-5",
+          "label": "Dictate and hear the read-back",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1.05
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.26
+            },
+            "fx": {
+              "motes": 0.15
+            }
+          }
+        },
+        {
+          "objectiveId": "08-6",
+          "label": "Pause for the household",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1.05
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.26
+            },
+            "fx": {
+              "motes": 0.15
+            }
+          }
+        },
+        {
+          "objectiveId": "08-7",
+          "label": "Accept the Whitmer family's welcome",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1.05
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.26
+            },
+            "fx": {
+              "motes": 0.15
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "09": {
+      "presetId": "chapter-09",
+      "objectives": [
+        {
+          "objectiveId": "09-1",
+          "label": "Bring the question of baptism to God",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "09-2",
+          "label": "Receive John the Baptist's commission",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "09-3",
+          "label": "Approach the water with Oliver",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "09-4",
+          "label": "A subsequent apostolic encounter",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "10": {
+      "presetId": "chapter-10",
+      "objectives": [
+        {
+          "objectiveId": "10-1",
+          "label": "Pray with the Three Witnesses",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "10-2",
+          "label": "Hear the Three bear witness",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "10-3",
+          "label": "The Eight \u00b7 show the plates",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "10-4",
+          "label": "Listen to the Eight's testimony",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "10-5",
+          "label": "Place the printed book in another hand",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "11": {
+      "presetId": "chapter-11",
+      "objectives": [
+        {
+          "objectiveId": "11-1",
+          "label": "Prepare the founding gathering",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "11-2",
+          "label": "Participate in the Church's organization",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "11-3",
+          "label": "Teach the first New York congregation",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "11-4",
+          "label": "Walk beside Emma after baptism",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "11-5",
+          "label": "Face an early arrest with support",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "12": {
+      "presetId": "chapter-12",
+      "objectives": [
+        {
+          "objectiveId": "12-1",
+          "label": "Arrive at Whitney's store",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "12-2",
+          "label": "Find room for the newcomers",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "12-3",
+          "label": "Plan a people of mutual care",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "13": {
+      "presetId": "chapter-13",
+      "objectives": [
+        {
+          "objectiveId": "13-1",
+          "label": "Walk the land at Independence",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "13-2",
+          "label": "Pray at the place for Zion",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "13-3",
+          "label": "Place the first survey stake",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "13-4",
+          "label": "Count the households needing shelter",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "14": {
+      "presetId": "chapter-14",
+      "objectives": [
+        {
+          "objectiveId": "14-1",
+          "label": "Study beside Sidney",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "14-2",
+          "label": "Ask for understanding",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "14-3",
+          "label": "Receive the vision of eternity",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "15": {
+      "presetId": "chapter-15",
+      "objectives": [
+        {
+          "objectiveId": "15-1",
+          "label": "Accept help after the assault",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "15-2",
+          "label": "Hear Emma's grief and resolve",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "15-3",
+          "label": "Prepare to face the congregation",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "15-4",
+          "label": "Go out to teach",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "N1": {
+      "presetId": "chapter-N1",
+      "objectives": [
+        {
+          "objectiveId": "N1-1",
+          "label": "Walk the commercial city \u00b7 October 1832",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "N1-2",
+          "label": "Consider buildings and useful inventions",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "N1-3",
+          "label": "Listen before teaching",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "N1-4",
+          "label": "Return to the room and write to Emma",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "16": {
+      "presetId": "chapter-16",
+      "objectives": [
+        {
+          "objectiveId": "16-1",
+          "label": "Prepare the schoolroom",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "16-2",
+          "label": "Hear Emma's concern",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "16-3",
+          "label": "Study the Word of Wisdom in its 1833 setting",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "16-4",
+          "label": "Ask Orson about learning and the heavens",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "17": {
+      "presetId": "chapter-17",
+      "objectives": [
+        {
+          "objectiveId": "17-1",
+          "label": "Receive the letter from Jackson County",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "17-2",
+          "label": "Listen to a displaced family",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "17-3",
+          "label": "Set aside relief supplies",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "18": {
+      "presetId": "chapter-18",
+      "objectives": [
+        {
+          "objectiveId": "18-1",
+          "label": "Share provisions on the road",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "18-2",
+          "label": "Help repair the wagon",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "18-3",
+          "label": "Sit beside the ill",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "18-4",
+          "label": "Choose restraint and continued service",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "19": {
+      "presetId": "chapter-19",
+      "objectives": [
+        {
+          "objectiveId": "19-1",
+          "label": "Convene the ministry council",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "19-2",
+          "label": "Prepare a missionary departure",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "19-3",
+          "label": "Study scripture and the heavens",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "20": {
+      "presetId": "chapter-20",
+      "objectives": [
+        {
+          "objectiveId": "20-1",
+          "label": "Finish the temple for the gathering",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "20-2",
+          "label": "Join the dedication \u00b7 March 27, 1836",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "20-3",
+          "label": "Recognize Elijah Able's ministry \u00b7 March 31",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "20-4",
+          "label": "Read the elder's license together",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "20-5",
+          "label": "Prepare room for a ministry",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "20-6",
+          "label": "Part as fellow workers",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "20-7",
+          "label": "Return with Oliver \u00b7 April 3, 1836",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "godRays": 0.6,
+              "motes": 0.3
+            },
+            "grade": {
+              "bloom": 0.22,
+              "exposure": 0.98
+            }
+          }
+        },
+        {
+          "objectiveId": "20-8",
+          "label": "Receive the heavenly visitors",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "godRays": 0.6,
+              "motes": 0.3
+            },
+            "grade": {
+              "bloom": 0.22,
+              "exposure": 0.98
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "21": {
+      "presetId": "chapter-21",
+      "objectives": [
+        {
+          "objectiveId": "21-1",
+          "label": "Hear the depositors",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "21-2",
+          "label": "Examine the needs with Whitney",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "21-3",
+          "label": "Help a household before leaving",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "22": {
+      "presetId": "chapter-22",
+      "objectives": [
+        {
+          "objectiveId": "22-1",
+          "label": "Hear the gathering's hopeful plans",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "22-2",
+          "label": "Receive the news from Hawn's Mill",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "22-3",
+          "label": "Help a family prepare to leave",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.45,
+              "mist": 0.3
+            },
+            "grade": {
+              "saturation": 0.54
+            }
+          }
+        },
+        {
+          "objectiveId": "22-4",
+          "label": "Submit during the Far West collapse",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.45,
+              "mist": 0.3
+            },
+            "grade": {
+              "saturation": 0.54
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "23": {
+      "presetId": "chapter-23",
+      "objectives": [
+        {
+          "objectiveId": "23-1",
+          "label": "Share the cold room with Hyrum",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "23-2",
+          "label": "Receive Emma's news",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "23-3",
+          "label": "Pray from the confinement",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1.3
+            },
+            "grade": {
+              "contrast": 1.02,
+              "saturation": 0.62
+            }
+          }
+        },
+        {
+          "objectiveId": "23-4",
+          "label": "Continue the letter in hope",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1.3
+            },
+            "grade": {
+              "contrast": 1.02,
+              "saturation": 0.62
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "24": {
+      "presetId": "chapter-24",
+      "objectives": [
+        {
+          "objectiveId": "24-1",
+          "label": "Begin a home beside the river",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "24-2",
+          "label": "Visit the sick with Newel Knight",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "24-3",
+          "label": "Seek redress \u00b7 Washington, 1839",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "24-4",
+          "label": "Return to Nauvoo and the temple work",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "25": {
+      "presetId": "chapter-25",
+      "objectives": [
+        {
+          "objectiveId": "25-1",
+          "label": "Enter the Red Brick Store \u00b7 March 15",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "25-2",
+          "label": "Attend to the fraternal instruction",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "25-3",
+          "label": "Return for advancement \u00b7 March 16",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "26": {
+      "presetId": "chapter-26",
+      "objectives": [
+        {
+          "objectiveId": "26-1",
+          "label": "Prepare the Relief Society meeting",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "26-2",
+          "label": "Listen as Emma and her counselors organize",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "26-3",
+          "label": "Prepare for covenant and family teachings",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "26-4",
+          "label": "Hear Emma in private",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "26-5",
+          "label": "Make room for Jane Manning \u00b7 fall 1843",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "26-6",
+          "label": "Hear the journey in Jane's own voice",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "26-7",
+          "label": "Let welcome become friendship",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "B1": {
+      "presetId": "chapter-B1",
+      "objectives": [
+        {
+          "objectiveId": "B1-1",
+          "label": "Open Walker's working place",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "B1-2",
+          "label": "Arrange the tools with care",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "B1-3",
+          "label": "Make room for a great question",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "B1-4",
+          "label": "Consider freedom in daily practice",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "B1-5",
+          "label": "Consider the responsibilities of ministry",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "B1-6",
+          "label": "Return to the open street",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "27": {
+      "presetId": "chapter-27",
+      "objectives": [
+        {
+          "objectiveId": "27-1",
+          "label": "Examine the candidates' replies \u00b7 January 1844",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "27-2",
+          "label": "Commit to the campaign \u00b7 January 29",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "27-3",
+          "label": "Work with Phelps on the platform \u00b7 February",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "27-4",
+          "label": "Proof the printer's copy",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "27-5",
+          "label": "Make space at the press",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "27-6",
+          "label": "Hear questions of conscience",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "27-7",
+          "label": "Address the early campaign gathering",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "28": {
+      "presetId": "chapter-28",
+      "objectives": [
+        {
+          "objectiveId": "28-1",
+          "label": "Listen to Louisa Follett",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-2",
+          "label": "Step to the stand and seek God's guidance",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-3",
+          "label": "Console the gathered mourners",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-4",
+          "label": "Teach divine life and eternal intelligence",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-5",
+          "label": "Return the teaching to a person",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-6",
+          "label": "Prepare the electioneers \u00b7 April 9 onward",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-7",
+          "label": "Consider Clay's reply \u00b7 May 13",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-8",
+          "label": "Address the convention \u00b7 May 17",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "28-9",
+          "label": "Read the Polk nomination news \u00b7 late May / June",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "29": {
+      "presetId": "chapter-29",
+      "objectives": [
+        {
+          "objectiveId": "29-1",
+          "label": "Hear the civic dispute",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "29-2",
+          "label": "Say goodbye to Emma and the children",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "29-3",
+          "label": "Take the road with Hyrum",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "29-4",
+          "label": "Hear the governor's assurance",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "30": {
+      "presetId": "chapter-30",
+      "objectives": [
+        {
+          "objectiveId": "30-1",
+          "label": "Listen to John Taylor",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "30-2",
+          "label": "Entrust a message to Dan Jones",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.36
+            },
+            "grade": {
+              "saturation": 0.4
+            }
+          }
+        },
+        {
+          "objectiveId": "30-3",
+          "label": "Remain beside your companions",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.48,
+              "mist": 0.28
+            },
+            "grade": {
+              "saturation": 0.32,
+              "exposure": 0.84,
+              "bloom": 0.03
+            },
+            "sky": {
+              "haze": 0.58
+            },
+            "palette": {
+              "foliage": "#737b65",
+              "strength": 0.72
+            }
+          }
+        }
+      ],
+      "events": {
+        "carthage-assault": {
+          "label": "Historical late-afternoon assault \u2014 smoke and ash",
+          "fields": {
+            "fx": {
+              "dust": 0.65,
+              "mist": 0.4,
+              "lightning": 0
+            },
+            "grade": {
+              "saturation": 0.28,
+              "exposure": 0.82
+            }
+          }
+        },
+        "carthage-stillness": {
+          "label": "Grief and stillness",
+          "fields": {
+            "fx": {
+              "dust": 0.28,
+              "mist": 0.2,
+              "wind": 0.04
+            },
+            "grade": {
+              "saturation": 0.25
+            }
+          }
+        }
+      }
+    },
+    "31": {
+      "presetId": "chapter-31",
+      "objectives": [
+        {
+          "objectiveId": "31-1",
+          "label": "Recognize your brother beyond the veil",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "31-2",
+          "label": "Meet Alvin in the imagined garden",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "31-3",
+          "label": "Welcome someone still alone",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "31-4",
+          "label": "Prepare the garden for another arrival",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "32": {
+      "presetId": "chapter-32",
+      "objectives": [
+        {
+          "objectiveId": "32-1",
+          "label": "Receive a world as a stewardship",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "32-2",
+          "label": "Open a spring for the garden",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "32-3",
+          "label": "Prepare a home for free inhabitants",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "32-4",
+          "label": "Offer another person a hand",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E1": {
+      "presetId": "chapter-E1",
+      "objectives": [
+        {
+          "objectiveId": "E1-1",
+          "label": "Care for a garden before crossing the years",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E1-2",
+          "label": "Plant a place of welcome",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E1-3",
+          "label": "Enter the mission's first bubble portal",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E2": {
+      "presetId": "chapter-E2",
+      "objectives": [
+        {
+          "objectiveId": "E2-1",
+          "label": "Hear Brigham reflect on Joseph's unfinished work",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E2-2",
+          "label": "Read with Orson without mistaking speculation for doctrine",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E2-3",
+          "label": "Carry humility to the next crossing",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E3": {
+      "presetId": "chapter-E3",
+      "objectives": [
+        {
+          "objectiveId": "E3-1",
+          "label": "Meet Ruth before the missionary visit",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E3-2",
+          "label": "Offer useful help without demanding belief",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E3-3",
+          "label": "Leave the household free to decide",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E4": {
+      "presetId": "chapter-E4",
+      "objectives": [
+        {
+          "objectiveId": "E4-1",
+          "label": "Ask Daniel about the neglected family recording",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E4-2",
+          "label": "Listen to the person behind the archive",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E4-3",
+          "label": "Preserve a memory with permission",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E5": {
+      "presetId": "chapter-E5",
+      "objectives": [
+        {
+          "objectiveId": "E5-1",
+          "label": "Ask Ada what the garden needs",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E5-2",
+          "label": "Share water fairly among the households",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E5-3",
+          "label": "Open the crossing without deciding another's life",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E6": {
+      "presetId": "chapter-E6",
+      "objectives": [
+        {
+          "objectiveId": "E6-1",
+          "label": "Hear Mara's practical request",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E6-2",
+          "label": "Repair the well before promising paradise",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E6-3",
+          "label": "Offer shelter without claiming control",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E7": {
+      "presetId": "chapter-E7",
+      "objectives": [
+        {
+          "objectiveId": "E7-1",
+          "label": "Hear the custodian's fear of an open future",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E7-2",
+          "label": "Ask whose freedom the closed archive has taken",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E7-3",
+          "label": "Restore the record to the people",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        }
+      ],
+      "events": {}
+    },
+    "E8": {
+      "presetId": "chapter-E8",
+      "objectives": [
+        {
+          "objectiveId": "E8-1",
+          "label": "See the city as unfinished shared work",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "E8-2",
+          "label": "Open the garden to another free arrival",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "grade": {
+              "exposure": 1.02,
+              "bloom": 0.14,
+              "contrast": 0.98
+            },
+            "fx": {
+              "godRays": 0.35
+            }
+          }
+        },
+        {
+          "objectiveId": "E8-3",
+          "label": "Continue the mission in love",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "grade": {
+              "exposure": 1.04,
+              "bloom": 0.18,
+              "contrast": 0.98
+            },
+            "fx": {
+              "godRays": 0.35
+            },
+            "rim": {
+              "intensity": 0.55
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM01": {
+      "presetId": "chapter-BM01",
+      "objectives": [
+        {
+          "objectiveId": "BM01-1",
+          "label": "Hear the warning at home",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM01-2",
+          "label": "Prepare the household supplies",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM01-3",
+          "label": "Follow the road into the wilderness",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0
+            },
+            "fx": {
+              "dust": 0.32
+            },
+            "sun": {
+              "elevation": 18
+            },
+            "grade": {
+              "saturation": 0.86
+            }
+          }
+        },
+        {
+          "objectiveId": "BM01-4",
+          "label": "Read the later account of Jerusalem",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0
+            },
+            "fx": {
+              "dust": 0.32
+            },
+            "sun": {
+              "elevation": 18
+            },
+            "grade": {
+              "saturation": 0.86
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM02": {
+      "presetId": "chapter-BM02",
+      "objectives": [
+        {
+          "objectiveId": "BM02-1",
+          "label": "Pray in the uncertain wilderness",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM02-2",
+          "label": "Follow the iron rod through the mist",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM02-3",
+          "label": "Receive the fruit of the tree",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fog": {
+              "density": 0.025
+            },
+            "sky": {
+              "horizon": "#ccd6cf"
+            }
+          }
+        },
+        {
+          "objectiveId": "BM02-4",
+          "label": "Call to your family",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fog": {
+              "density": 0.025
+            },
+            "sky": {
+              "horizon": "#ccd6cf"
+            },
+            "rim": {
+              "color": "#f1e8cc",
+              "intensity": 0.7
+            },
+            "practical": {
+              "lamp": 0.45,
+              "lampColor": "#f1e8cc"
+            },
+            "grade": {
+              "exposure": 1.03,
+              "bloom": 0.14
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM03": {
+      "presetId": "chapter-BM03",
+      "objectives": [
+        {
+          "objectiveId": "BM03-1",
+          "label": "Remember the earlier attempts",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM03-2",
+          "label": "Observe a quiet approach",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM03-3",
+          "label": "Attend to Nephi's difficult account",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.4
+            },
+            "fill": {
+              "intensity": 0.3
+            }
+          }
+        },
+        {
+          "objectiveId": "BM03-4",
+          "label": "Hear Zoram's decision",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.4
+            },
+            "fill": {
+              "intensity": 0.3
+            },
+            "grade": {
+              "contrast": 1.04
+            },
+            "fx": {
+              "mist": 0.04
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM04": {
+      "presetId": "chapter-BM04",
+      "objectives": [
+        {
+          "objectiveId": "BM04-1",
+          "label": "Make a working camp at Bountiful",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM04-2",
+          "label": "Gather materials and prepare tools",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sun": {
+              "elevation": 26,
+              "intensity": 2.5
+            },
+            "fx": {
+              "mist": 0.08
+            }
+          }
+        },
+        {
+          "objectiveId": "BM04-3",
+          "label": "Listen through the disagreement",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sun": {
+              "elevation": 26,
+              "intensity": 2.5
+            },
+            "fx": {
+              "mist": 0.08
+            }
+          }
+        },
+        {
+          "objectiveId": "BM04-4",
+          "label": "Prepare the vessel for departure",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sun": {
+              "elevation": 38,
+              "intensity": 2.5,
+              "color": "#ffe7b8"
+            },
+            "fx": {
+              "mist": 0.08
+            },
+            "sky": {
+              "horizon": "#e2dcc4"
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM05": {
+      "presetId": "chapter-BM05",
+      "objectives": [
+        {
+          "objectiveId": "BM05-1",
+          "label": "Listen from Nephi's constrained place",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM05-2",
+          "label": "Support the household in the storm",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM05-3",
+          "label": "Witness the release",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "rain": 0.45,
+              "wind": 0.48,
+              "lightning": 0
+            }
+          }
+        },
+        {
+          "objectiveId": "BM05-4",
+          "label": "Pray as the sea becomes calm",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "rain": 0.08,
+              "wind": 0.2,
+              "lightning": 0
+            },
+            "sky": {
+              "top": "#789497",
+              "horizon": "#ced8ce",
+              "cloudCover": 0.45
+            },
+            "sun": {
+              "intensity": 1.4
+            },
+            "grade": {
+              "contrast": 0.98,
+              "saturation": 0.7
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM06": {
+      "presetId": "chapter-BM06",
+      "objectives": [
+        {
+          "objectiveId": "BM06-1",
+          "label": "Consider light and air inside the hull",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM06-2",
+          "label": "Prepare sixteen clear stones",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM06-3",
+          "label": "Carry the request up the mountain",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.7,
+              "lampColor": "#f2dfb0"
+            },
+            "fx": {
+              "motes": 0.2
+            }
+          }
+        },
+        {
+          "objectiveId": "BM06-4",
+          "label": "Receive the light and prepare eight vessels",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.7,
+              "lampColor": "#f2dfb0"
+            },
+            "fx": {
+              "motes": 0.2
+            },
+            "rim": {
+              "intensity": 0.7,
+              "color": "#f0ddb1"
+            },
+            "grade": {
+              "bloom": 0.16
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM07": {
+      "presetId": "chapter-BM07",
+      "objectives": [
+        {
+          "objectiveId": "BM07-1",
+          "label": "Prepare provisions and animal care",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM07-2",
+          "label": "Secure cargo and attend to the air",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM07-3",
+          "label": "Endure the deep waters together",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM07-4",
+          "label": "Open the vessel at landfall",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "interior": false,
+            "sky": {
+              "top": "#708d9c",
+              "horizon": "#cdd8c9"
+            },
+            "sun": {
+              "intensity": 1.4,
+              "elevation": 10
+            },
+            "grade": {
+              "contrast": 0.98,
+              "exposure": 1.05
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM08": {
+      "presetId": "chapter-BM08",
+      "objectives": [
+        {
+          "objectiveId": "BM08-1",
+          "label": "Remember the words of your father",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM08-2",
+          "label": "Pray for your own soul",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM08-3",
+          "label": "Let the prayer widen to others",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "top": "#677f95",
+              "horizon": "#d8bf9d"
+            },
+            "sun": {
+              "elevation": 8,
+              "intensity": 1.5
+            },
+            "grade": {
+              "saturation": 0.88
+            }
+          }
+        },
+        {
+          "objectiveId": "BM08-4",
+          "label": "Leave the wider prayer in the record",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "top": "#677f95",
+              "horizon": "#d8bf9d"
+            },
+            "sun": {
+              "elevation": 16,
+              "intensity": 1.5
+            },
+            "grade": {
+              "saturation": 0.88
+            },
+            "fx": {
+              "mist": 0.08
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM09": {
+      "presetId": "chapter-BM09",
+      "objectives": [
+        {
+          "objectiveId": "BM09-1",
+          "label": "Help a household find a place",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM09-2",
+          "label": "Carry water and the written message",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM09-3",
+          "label": "Hear a king speak of service",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.7
+            },
+            "grade": {
+              "contrast": 0.96
+            }
+          }
+        },
+        {
+          "objectiveId": "BM09-4",
+          "label": "Return the teaching to daily work",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.7
+            },
+            "grade": {
+              "contrast": 0.96
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM10": {
+      "presetId": "chapter-BM10",
+      "objectives": [
+        {
+          "objectiveId": "BM10-1",
+          "label": "Listen within the hostile court",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM10-2",
+          "label": "Plead and leave the court",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM10-3",
+          "label": "Find shelter and preserve the testimony",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "godRays": 0
+            },
+            "sun": {
+              "intensity": 0.4
+            },
+            "practical": {
+              "lamp": 0.75
+            }
+          }
+        },
+        {
+          "objectiveId": "BM10-4",
+          "label": "Remember Abinadi and choose a changed life",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "godRays": 0
+            },
+            "sun": {
+              "intensity": 0.4
+            },
+            "practical": {
+              "lamp": 0.95
+            },
+            "grade": {
+              "contrast": 1.02,
+              "vignette": 0.3
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM11": {
+      "presetId": "chapter-BM11",
+      "objectives": [
+        {
+          "objectiveId": "BM11-1",
+          "label": "Prepare a safe approach to the waters",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM11-2",
+          "label": "Hear the covenant of mutual care",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM11-3",
+          "label": "Participate reverently at the water",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.74
+            },
+            "fx": {
+              "mist": 0.05
+            }
+          }
+        },
+        {
+          "objectiveId": "BM11-4",
+          "label": "Share the work after the gathering",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.74
+            },
+            "fx": {
+              "mist": 0.05
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM12": {
+      "presetId": "chapter-BM12",
+      "objectives": [
+        {
+          "objectiveId": "BM12-1",
+          "label": "Remember the road before the warning",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM12-2",
+          "label": "Attend to the angelic warning",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM12-3",
+          "label": "Turn your memory toward Christ",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "top": "#6b8296",
+              "horizon": "#d3c1a4"
+            },
+            "sun": {
+              "elevation": 12,
+              "intensity": 1.5
+            },
+            "grade": {
+              "contrast": 0.98,
+              "saturation": 0.85,
+              "temperature": 0.04
+            }
+          }
+        },
+        {
+          "objectiveId": "BM12-4",
+          "label": "Begin repairing what you harmed",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "top": "#6b8296",
+              "horizon": "#d3c1a4"
+            },
+            "sun": {
+              "elevation": 12,
+              "intensity": 1.5
+            },
+            "grade": {
+              "contrast": 0.98,
+              "saturation": 0.85,
+              "temperature": 0.04
+            },
+            "practical": {
+              "lamp": 0.65
+            },
+            "ambient": {
+              "intensity": 0.65
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM13": {
+      "presetId": "chapter-BM13",
+      "objectives": [
+        {
+          "objectiveId": "BM13-1",
+          "label": "Understand the household's encounter",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM13-2",
+          "label": "Invite the neighbors",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM13-3",
+          "label": "Listen to the gathered questions",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.82
+            },
+            "grade": {
+              "contrast": 0.96
+            }
+          }
+        },
+        {
+          "objectiveId": "BM13-4",
+          "label": "Return to the queen",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.82
+            },
+            "grade": {
+              "contrast": 0.96
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM14": {
+      "presetId": "chapter-BM14",
+      "objectives": [
+        {
+          "objectiveId": "BM14-1",
+          "label": "Hear why the weapons are relinquished",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM14-2",
+          "label": "Lay the weapons in the earth",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM14-3",
+          "label": "Attend to the threatened people",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "grade": {
+              "saturation": 0.54
+            },
+            "sky": {
+              "haze": 0.32
+            }
+          }
+        },
+        {
+          "objectiveId": "BM14-4",
+          "label": "Remember the dead and the changed hearts",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "grade": {
+              "saturation": 0.48
+            },
+            "sky": {
+              "haze": 0.32
+            },
+            "sun": {
+              "intensity": 0.45
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM15": {
+      "presetId": "chapter-BM15",
+      "objectives": [
+        {
+          "objectiveId": "BM15-1",
+          "label": "Inspect the defenses at Ammonihah",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM15-2",
+          "label": "Test the sightlines from the earthworks",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM15-3",
+          "label": "Continue to the separate city of Noah",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.6,
+              "mist": 0.34
+            },
+            "grade": {
+              "saturation": 0.6
+            }
+          }
+        },
+        {
+          "objectiveId": "BM15-4",
+          "label": "Care for the wounded defenders",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.32,
+              "mist": 0.24
+            },
+            "grade": {
+              "saturation": 0.6,
+              "contrast": 1.01
+            },
+            "ambient": {
+              "intensity": 0.74
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM16": {
+      "presetId": "chapter-BM16",
+      "objectives": [
+        {
+          "objectiveId": "BM16-1",
+          "label": "Remain beside Amulek in grief",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM16-2",
+          "label": "Endure the confrontation together",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM16-3",
+          "label": "Pray as the prison breaks",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.7
+            },
+            "grade": {
+              "contrast": 1.05
+            }
+          }
+        },
+        {
+          "objectiveId": "BM16-4",
+          "label": "Emerge through the broken prison",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.3
+            },
+            "grade": {
+              "contrast": 1.05,
+              "exposure": 1,
+              "saturation": 0.66
+            },
+            "interior": false,
+            "sky": {
+              "top": "#819095",
+              "horizon": "#c5c8bc"
+            },
+            "sun": {
+              "intensity": 1.4
+            },
+            "ambient": {
+              "intensity": 0.74
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM17": {
+      "presetId": "chapter-BM17",
+      "objectives": [
+        {
+          "objectiveId": "BM17-1",
+          "label": "Hear the two sons of Helaman",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM17-2",
+          "label": "Find the speakers through the darkness",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.65,
+              "lampColor": "#f1bd78"
+            },
+            "fx": {
+              "motes": 0.25
+            }
+          }
+        },
+        {
+          "objectiveId": "BM17-3",
+          "label": "Help the crowd turn toward prayer",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1,
+              "lampColor": "#f1bd78"
+            },
+            "fx": {
+              "motes": 0.25
+            },
+            "ambient": {
+              "intensity": 0.65
+            },
+            "grade": {
+              "contrast": 1,
+              "saturation": 0.86,
+              "bloom": 0.14
+            }
+          }
+        },
+        {
+          "objectiveId": "BM17-4",
+          "label": "Leave the prison in shared light",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 1,
+              "lampColor": "#f1bd78"
+            },
+            "fx": {
+              "motes": 0.25
+            },
+            "ambient": {
+              "intensity": 0.65
+            },
+            "grade": {
+              "contrast": 1,
+              "saturation": 0.86,
+              "bloom": 0.14
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM18": {
+      "presetId": "chapter-BM18",
+      "objectives": [
+        {
+          "objectiveId": "BM18-1",
+          "label": "Study the first night camp",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM18-2",
+          "label": "Move quietly toward Amalickiah's tent",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM18-3",
+          "label": "Return after the first night",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "mist": 0.08
+            },
+            "sun": {
+              "intensity": 0.72
+            }
+          }
+        },
+        {
+          "objectiveId": "BM18-4",
+          "label": "Read the later night and Teancum's death",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "mist": 0.08
+            },
+            "sun": {
+              "intensity": 0.72
+            },
+            "practical": {
+              "torch": 0.18
+            },
+            "grade": {
+              "saturation": 0.63
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM19": {
+      "presetId": "chapter-BM19",
+      "objectives": [
+        {
+          "objectiveId": "BM19-1",
+          "label": "Prepare provisions and hear the young soldiers",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM19-2",
+          "label": "Maintain the marching formation",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sun": {
+              "elevation": 12,
+              "color": "#e9bb86"
+            },
+            "grade": {
+              "saturation": 0.64
+            },
+            "fx": {
+              "dust": 0.5
+            }
+          }
+        },
+        {
+          "objectiveId": "BM19-3",
+          "label": "Coordinate the limited maneuver",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sun": {
+              "elevation": 12,
+              "color": "#e9bb86"
+            },
+            "grade": {
+              "saturation": 0.64
+            },
+            "fx": {
+              "dust": 0.5
+            }
+          }
+        },
+        {
+          "objectiveId": "BM19-4",
+          "label": "Tend the wounded and remember home",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sun": {
+              "elevation": 12,
+              "color": "#e9bb86"
+            },
+            "grade": {
+              "saturation": 0.64,
+              "contrast": 1
+            },
+            "fx": {
+              "dust": 0.25
+            },
+            "practical": {
+              "lamp": 0.65
+            },
+            "ambient": {
+              "intensity": 0.6
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM20": {
+      "presetId": "chapter-BM20",
+      "objectives": [
+        {
+          "objectiveId": "BM20-1",
+          "label": "Hear the concerns of a household",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM20-2",
+          "label": "Reach the wall above the gathering",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM20-3",
+          "label": "Speak with the people in view",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "rim": {
+              "intensity": 0.65
+            },
+            "grade": {
+              "contrast": 0.98
+            }
+          }
+        },
+        {
+          "objectiveId": "BM20-4",
+          "label": "Leave without turning the warning into vengeance",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "rim": {
+              "intensity": 0.65
+            },
+            "grade": {
+              "contrast": 0.98
+            },
+            "fx": {
+              "dust": 0.18
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM21": {
+      "presetId": "chapter-BM21",
+      "objectives": [
+        {
+          "objectiveId": "BM21-1",
+          "label": "Enter the inhabited temple approach",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM21-2",
+          "label": "Attend as the gathering grows quiet",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "cloudCover": 0.45,
+              "horizon": "#ddd9c7"
+            },
+            "sun": {
+              "color": "#f5e2bd",
+              "intensity": 2.1
+            },
+            "rim": {
+              "color": "#f4e0b9",
+              "intensity": 0.6
+            },
+            "fx": {
+              "motes": 0.12,
+              "godRays": 0.18
+            }
+          }
+        },
+        {
+          "objectiveId": "BM21-3",
+          "label": "Approach the risen Christ",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "cloudCover": 0.45,
+              "horizon": "#ddd9c7"
+            },
+            "sun": {
+              "color": "#f5e2bd",
+              "intensity": 2.1
+            },
+            "rim": {
+              "color": "#f4e0b9",
+              "intensity": 0.6
+            },
+            "fx": {
+              "motes": 0.12,
+              "godRays": 0.18
+            }
+          }
+        },
+        {
+          "objectiveId": "BM21-4",
+          "label": "Return among the gathered households",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "cloudCover": 0.45,
+              "horizon": "#ddd9c7"
+            },
+            "sun": {
+              "color": "#f5e2bd",
+              "intensity": 2.1
+            },
+            "rim": {
+              "color": "#f4e0b9",
+              "intensity": 0.6
+            },
+            "fx": {
+              "motes": 0.12,
+              "godRays": 0.18
+            },
+            "grade": {
+              "contrast": 0.95,
+              "bloom": 0.1
+            },
+            "ambient": {
+              "intensity": 0.78
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM22": {
+      "presetId": "chapter-BM22",
+      "objectives": [
+        {
+          "objectiveId": "BM22-1",
+          "label": "Ask what assistance is wanted",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM22-2",
+          "label": "Accompany the person to the gathering",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.82
+            },
+            "grade": {
+              "contrast": 0.92
+            }
+          }
+        },
+        {
+          "objectiveId": "BM22-3",
+          "label": "Make room for the children and remain",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.82
+            },
+            "grade": {
+              "contrast": 0.92
+            }
+          }
+        },
+        {
+          "objectiveId": "BM22-4",
+          "label": "Return with a family after the encounter",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "ambient": {
+              "intensity": 0.82
+            },
+            "grade": {
+              "contrast": 0.92
+            },
+            "rim": {
+              "intensity": 0.5
+            },
+            "fx": {
+              "motes": 0.08
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM23": {
+      "presetId": "chapter-BM23",
+      "objectives": [
+        {
+          "objectiveId": "BM23-1",
+          "label": "Share the work of the public place",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM23-2",
+          "label": "Bring worship and daily work together",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM23-3",
+          "label": "Mark the passing generations",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "grade": {
+              "saturation": 0.86,
+              "contrast": 1
+            },
+            "sky": {
+              "cloudCover": 0.28
+            }
+          }
+        },
+        {
+          "objectiveId": "BM23-4",
+          "label": "Recognize the emerging divisions",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "grade": {
+              "saturation": 0.78,
+              "contrast": 1.02
+            },
+            "sky": {
+              "cloudCover": 0.38
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "BM24": {
+      "presetId": "chapter-BM24",
+      "objectives": [
+        {
+          "objectiveId": "BM24-1",
+          "label": "Hear Mormon before the final battle",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM24-2",
+          "label": "Find the threatened local passage",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.72,
+              "mist": 0.52
+            },
+            "fog": {
+              "density": 0.026
+            }
+          }
+        },
+        {
+          "objectiveId": "BM24-3",
+          "label": "Protect the record and help survivors",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.72,
+              "mist": 0.52
+            },
+            "fog": {
+              "density": 0.026
+            },
+            "ambient": {
+              "intensity": 0.8
+            },
+            "grade": {
+              "contrast": 1.02,
+              "saturation": 0.38
+            }
+          }
+        },
+        {
+          "objectiveId": "BM24-4",
+          "label": "Remain with the aftermath",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "fx": {
+              "dust": 0.48,
+              "mist": 0.4
+            },
+            "fog": {
+              "density": 0.026
+            },
+            "ambient": {
+              "intensity": 0.8
+            },
+            "grade": {
+              "contrast": 1.02,
+              "saturation": 0.32
+            }
+          }
+        }
+      ],
+      "events": {
+        "cumorah-withdrawal": {
+          "label": "Preserve life and the record",
+          "fields": {
+            "fx": {
+              "dust": 0.55,
+              "mist": 0.48
+            },
+            "grade": {
+              "saturation": 0.3,
+              "bloom": 0.02
+            }
+          }
+        }
+      }
+    },
+    "BM25": {
+      "presetId": "chapter-BM25",
+      "objectives": [
+        {
+          "objectiveId": "BM25-1",
+          "label": "Carry the record through the passing years",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "BM25-2",
+          "label": "Finish the farewell in a sheltered place",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.6,
+              "lampColor": "#d7b782"
+            }
+          }
+        },
+        {
+          "objectiveId": "BM25-3",
+          "label": "Kneel and entrust the record to God",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.6,
+              "lampColor": "#d7b782"
+            },
+            "fx": {
+              "snow": 0.22,
+              "wind": 0.1
+            },
+            "grade": {
+              "contrast": 0.94
+            }
+          }
+        },
+        {
+          "objectiveId": "BM25-4",
+          "label": "Close the earth and remember the future reader",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "practical": {
+              "lamp": 0.15,
+              "lampColor": "#d7b782"
+            },
+            "fx": {
+              "snow": 0.12,
+              "wind": 0.1
+            },
+            "grade": {
+              "contrast": 0.94
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "TX01": {
+      "presetId": "chapter-TX01",
+      "objectives": [
+        {
+          "objectiveId": "TX01-1",
+          "label": "Learn the garden's hill and spring",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "TX01-2",
+          "label": "Cross to the imagined desert",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "palette": {
+              "foliage": "#8a8a70",
+              "ground": "#aa9d86"
+            },
+            "sky": {
+              "top": "#b3ac99",
+              "horizon": "#d5ccb5"
+            },
+            "grade": {
+              "saturation": 0.5
+            },
+            "fx": {
+              "dust": 0.45,
+              "mist": 0
+            }
+          }
+        },
+        {
+          "objectiveId": "TX01-3",
+          "label": "Open a route into future Zion",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "palette": {
+              "foliage": "#8a8a70",
+              "ground": "#aa9d86"
+            },
+            "sky": {
+              "top": "#b3ac99",
+              "horizon": "#d5ccb5"
+            },
+            "grade": {
+              "saturation": 0.5
+            },
+            "fx": {
+              "dust": 0.45,
+              "mist": 0
+            }
+          }
+        },
+        {
+          "objectiveId": "TX01-4",
+          "label": "Offer assistance across the thresholds",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "palette": {
+              "foliage": "#a1ba83",
+              "ground": "#aa9d86"
+            },
+            "sky": {
+              "top": "#7ab2c5",
+              "horizon": "#e7dfc8"
+            },
+            "grade": {
+              "saturation": 1,
+              "bloom": 0.14
+            },
+            "fx": {
+              "dust": 0.45,
+              "mist": 0
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "TX02": {
+      "presetId": "chapter-TX02",
+      "objectives": [
+        {
+          "objectiveId": "TX02-1",
+          "label": "Ask the travelers where they want to go",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "TX02-2",
+          "label": "Prepare the accessible passenger places",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "TX02-3",
+          "label": "Protect the occupants during the crossing",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "interior": false,
+            "sky": {
+              "top": "#7eaabe",
+              "horizon": "#e0e1cd"
+            },
+            "sun": {
+              "intensity": 2.4
+            },
+            "grade": {
+              "saturation": 0.94,
+              "tint": 0
+            }
+          }
+        },
+        {
+          "objectiveId": "TX02-4",
+          "label": "Help people arrive in a free community",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "interior": false,
+            "sky": {
+              "top": "#7eaabe",
+              "horizon": "#e0e1cd"
+            },
+            "sun": {
+              "intensity": 2.4
+            },
+            "grade": {
+              "saturation": 0.94,
+              "tint": 0,
+              "bloom": 0.16,
+              "contrast": 0.98
+            }
+          }
+        }
+      ],
+      "events": {}
+    },
+    "TX03": {
+      "presetId": "chapter-TX03",
+      "objectives": [
+        {
+          "objectiveId": "TX03-1",
+          "label": "Choose and read the imagined map layer",
+          "transitionSeconds": 2.5,
+          "fields": {}
+        },
+        {
+          "objectiveId": "TX03-2",
+          "label": "Study the southern route and crew safety",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "haze": 0.34
+            },
+            "fx": {
+              "mist": 0.16
+            }
+          }
+        },
+        {
+          "objectiveId": "TX03-3",
+          "label": "Visit a settlement as guests",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "haze": 0.34
+            },
+            "fx": {
+              "mist": 0.16
+            }
+          }
+        },
+        {
+          "objectiveId": "TX03-4",
+          "label": "Return with consented knowledge",
+          "transitionSeconds": 2.5,
+          "fields": {
+            "sky": {
+              "haze": 0.34,
+              "horizon": "#dfd4b8"
+            },
+            "fx": {
+              "mist": 0.16
+            },
+            "sun": {
+              "elevation": 18,
+              "color": "#f0d1a2"
+            },
+            "grade": {
+              "temperature": 0.05
+            }
+          }
+        }
+      ],
+      "events": {}
+    }
+  }
+}

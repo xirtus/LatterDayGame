@@ -10,24 +10,64 @@ matched separately. Include child, teenage, or young adult in new file names.
 Two ambiguous existing young-Joseph rigs were visually checked: the original
 farm-suspenders model is youth, and its '(1)' formal-coat variant is young adult.
 Dedicated child assets are never replaced by a scaled-down adult likeness.
-The child now has a dedicated 10,322-triangle remeshed source. It is not yet
-rigged, so movement translates the model without claiming missing animation.
+The child now has a dedicated 10,322-triangle rigged source with Walking and
+Running clips. The manifest prefers this over the static remeshed source.
 A high-poly child-only fallback is permitted with an explicit manifest warning
 if the optimized export is temporarily absent; the source is never modified.
-Missing dedicated characters use explicitly provisional procedural figures,
-never another named historical person's likeness.
+Missing male characters temporarily borrow rigged Whitmer-family visuals and
+female characters borrow Louisa Follett, as requested by the user. Story IDs,
+names and voices remain the intended role; the Characters journal labels the
+borrowed visual. Unnamed mob stand-ins do not identify a Whitmer as an attacker.
+Elijah Able, Walker Lewis and Jane Manning are the user-authorized exception:
+they use explicitly provisional procedural figures until dedicated rigs arrive.
 
 The eight witnesses are Christian Whitmer, Jacob Whitmer, Peter Whitmer Jr.,
 John Whitmer, Hiram Page, Joseph Smith Sr., Hyrum Smith and Samuel H. Smith.
 They are not the Three Witnesses (Oliver Cowdery, David Whitmer, Martin Harris).
+The filename spelling Hyrum_Page is accepted for HIRAM_PAGE but explicitly
+excluded from HYRUM (Hyrum Smith); the displayed historical name is Hiram Page.
 
 Runtime converts materials to four-band toon shading and downsamples base
-color textures to 1024 pixels. Emissive/PBR maps are not used. Resources are
+color textures to 2048 pixels. Linear filtering without mipmaps reduces color
+bleeding between tightly packed source UV islands. Thin baked atlas seams can
+remain; production atlases need proper UV padding or artist-approved repainting.
+Emissive/PBR maps are not used. Resources are
 loaded only for the current scene, reference-counted and released with actors.
-Animation support follows actual GLB clips. Where no idle/prayer clip exists,
-the actor uses a paused relaxed walk frame rather than claiming a bespoke
-performance. These rigs do not yet contain production facial/finger animation.
+Walking and running use actual GLB clips. Missing idle motion uses a relaxed
+paused walk frame. Missing prayer animation uses a reversible procedural pose:
+world-space two-bone leg/arm solving, grounded ankles, folded hands and a bowed
+head. Unknown skeletons receive only the safe upper-body fallback. It is not a
+motion-captured performance. Saved local transforms restore the original stance
+when changing motion. These rigs do not contain production facial/finger animation.
 
 Meshy file names can be matched case-insensitively by cast name. Christ's model
-must include Jesus or Christ in its file name; John Whitmer is distinguished
+can include Jesus, Christ, Savior or Saviour in its file name. Add white or red
+for distinct garment exports (for example Jesus_White_Robe_Rigged.glb and
+Jesus_Red_Coat_Rigged.glb). These are wardrobe profiles of the same CHRIST
+identity and voice, not additional characters. createActor({id:'CHRIST',
+variant:'white'|'red'}) uses the requested optimized profile when present,
+otherwise the default Christ model or a provisional figure. Default prefers
+an optimized explicit white garment. Add files, regenerate the manifest, and
+reload the game; no original models are modified.
+The October22 exports were visually verified before mapping ambiguous names:
+Meshy_AI_mormon_rigged_All_Animations.glb is Jesus in the red coat; the matching
+mormon_figure original/remesh files are the same red model. The mormon_jesus
+source/optimized/export family is Jesus in white. These explicit mappings do
+not classify other generically named Mormon figures as Christ.
+
+John Whitmer is distinguished
 from John the Baptist, and Joseph Smith Sr. from Joseph himself.
+
+Orson Pratt's early-ministry and elderly exports are age variants of ORSON,
+not different people or voice identities. Core chapters use the young rig;
+the speculative later-era tableau uses the elderly rig. Include Elderly or
+Older in later-life filenames. The user confirmed the existing James_Taylor
+exports are intended for John Taylor in Carthage. Only those exact confirmed
+filenames map to JOHN_TAYLOR; James the Apostle stays a separate identity.
+Louisa Folett_rigged_All_Animations.glb maps to Louisa Tanner Follett; the
+in-game historical spelling is preserved without renaming the source file.
+
+For the next sacred-visitor exports, use Peter_Apostle, James_Son_of_Zebedee,
+John_Apostle, Moses, Elias, and Elijah in their filenames. In the restoration
+trio, James is John's brother, not James the brother of Jesus. Church reference:
+https://www.churchofjesuschrist.org/study/scriptures/gs/james-son-of-zebedee?lang=eng

@@ -4,7 +4,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "python3 tools/build_game_story.py && python3 tools/build_game_assets.py && python3 tools/build_voice_index.py && node tools/build_game.mjs",
+    "build:runtime": "python3 tools/build_game_story.py && python3 tools/build_game_assets.py && python3 tools/build_model_checklist.py && python3 tools/build_lighting_data.py && node tools/build_game.mjs && node tools/build_lighting_studio.mjs",
+    "build:motion": "node tools/build_motion_library.mjs",
+    "dev:runtime": "npm run build:runtime && python3 -m http.server 8923 --bind 127.0.0.1",
+    "build": "python3 tools/build_game_story.py && python3 tools/build_game_assets.py && python3 tools/build_model_checklist.py && python3 tools/build_voice_index.py && node tools/build_game.mjs",
     "dev": "npm run build && python3 -m http.server 8923 --bind 127.0.0.1",
     "test": "node tools/test_game.mjs"
   },
